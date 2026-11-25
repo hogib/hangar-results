@@ -1,0 +1,8 @@
+    0.000 s  start: 300 s
+    0.005 s  link state 3 (topic 0.08 s old), last packet 0.10 s ago | safety state 1 triggers 0 outputs 1 by "topside:topside_mavlink" reason "" | ardusub armed 1
+   71.645 s  link state 3 (topic 0.06 s old), last packet 0.50 s ago | safety state 1 triggers 0 outputs 1 by "topside:topside_mavlink" reason "" | ardusub armed 1
+   74.155 s  link state 3 (topic 0.02 s old), last packet 3.01 s ago | safety state 2 triggers 2 outputs 0 by "tether" reason "tether: no packet from the topside for 3.0 s" | ardusub armed 0
+   74.155 s  >>> FAILSAFE entered: last packet 3.01 s ago; safety.state stamped 3.002 s after the last packet
+   74.255 s  link state 2 (topic 0.03 s old), last packet 3.11 s ago | safety state 2 triggers 2 outputs 0 by "tether" reason "tether: no packet from the topside for 3.0 s" | ardusub armed 0
+   86.302 s  link state 3 (topic 0.02 s old), last packet 0.04 s ago | safety state 2 triggers 2 outputs 0 by "tether" reason "tether: no packet from the topside for 3.0 s" | ardusub armed 0
+  105.292 s  link state 3 (topic 0.01 s old), last packet 0.02 s ago | safety state 0 triggers 0 outputs 0 by "admin:bluerov2" reason "failsafe cleared" | ardusub armed 0

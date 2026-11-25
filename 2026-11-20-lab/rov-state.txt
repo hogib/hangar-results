@@ -1,0 +1,16 @@
+== state at start (2026-11-20T13:08:28+03:00)
+encoder              ready        2028     0 -           6m46s  uvc:/dev/video2 to 192.168.2.1:5610: 13119 frames, 438 keyframes, 493674 packets, 1091
+mavlink              ready        2029     0 -           6m46s  ardusub armed mode 19 params 1; gate open; rx 93113 rejected 0 (-) unknown-id 45331
+recorder             ready        2032     0 -           6m47s  recording 20261120-100539-ubuntu 13386528 bytes, 30 topics, 0 gaps
+safety               ready        2033     0 -           6m47s  armed by topside:topside_mavlink
+temp=64.2'C
+throttled=0x0
+frequency(0)=2100024704
+ondemand
+== state at end (2026-11-20T13:09:29+03:00)
+encoder              ready        2028     0 -           7m48s  uvc:/dev/video2 to 192.168.2.1:5610: 15093 frames, 504 keyframes, 567820 packets, 1096
+mavlink              ready        2029     0 -           7m48s  ardusub armed mode 19 params 1; gate open; rx 107540 rejected 0 (-) unknown-id 52516
+recorder             ready        2032     0 -           7m48s  recording 20261120-100539-ubuntu 18184368 bytes, 30 topics, 0 gaps
+safety               ready        2033     0 -           7m48s  armed by topside:topside_mavlink
+temp=64.2'C
+throttled=0x0

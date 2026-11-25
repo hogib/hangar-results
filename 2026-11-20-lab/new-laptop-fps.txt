@@ -1,0 +1,3 @@
+  pilot-out    mean  32.1 frames/s, worst  26.7  (30 samples)
+  camera-in    mean  32.2 frames/s, worst  26.7  (30 samples)
+  enp6s0f3u2 over 96 s: in 11.41 Mbit/s, out 0.05 Mbit/s

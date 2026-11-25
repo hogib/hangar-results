@@ -1,0 +1,3 @@
+hangar-bridge: vehicle, UDP 5614, 192.168.2.1:5614, 15 topics and 1 globs to send, 4 mirror lines in
+hangar-bridge: link up with 192.168.2.1:5614 (peer id 69a9fe6d)
+hangar-bridge: the peer: release dev, configurations match

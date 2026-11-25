@@ -1,0 +1,2 @@
+hangar-mavlink: parameter backups in /dev/shm/hangar-vehicle/var/lib/hangar/mavlink/params-backup
+hangar-mavlink: the vehicle's MAVLink module: as system 255 component 190 to ArduSub (system 1) over serial /dev/ttyACM0 115200 open, signing off, 40 parameters in /dev/shm/hangar-vehicle/etc/hangar/ardusub.params

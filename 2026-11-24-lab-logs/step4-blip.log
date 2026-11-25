@@ -1,0 +1,27 @@
+    0.000 s  start: 600 s
+    0.004 s  link state 3 (topic 0.10 s old), last packet 0.11 s ago | safety state 0 triggers 0 outputs 0 by "admin:bluerov2" reason "failsafe cleared" | ardusub armed 0
+   45.530 s  link state 3 (topic 0.06 s old), last packet 0.52 s ago | safety state 0 triggers 0 outputs 0 by "admin:bluerov2" reason "failsafe cleared" | ardusub armed 0
+   48.102 s  link state 2 (topic 0.01 s old), last packet 3.09 s ago | safety state 0 triggers 0 outputs 0 by "admin:bluerov2" reason "failsafe cleared" | ardusub armed 0
+   51.794 s  link state 3 (topic 0.02 s old), last packet 0.02 s ago | safety state 0 triggers 0 outputs 0 by "admin:bluerov2" reason "failsafe cleared" | ardusub armed 0
+   91.201 s  link state 3 (topic 0.01 s old), last packet 0.03 s ago | safety state 3 triggers 0 outputs 0 by "topside:topside_mavlink" reason "" | ardusub armed 0
+   92.232 s  link state 3 (topic 0.10 s old), last packet 0.10 s ago | safety state 1 triggers 0 outputs 1 by "topside:topside_mavlink" reason "" | ardusub armed 1
+  110.296 s  link state 3 (topic 0.10 s old), last packet 0.52 s ago | safety state 1 triggers 0 outputs 1 by "topside:topside_mavlink" reason "" | ardusub armed 1
+  110.844 s  link state 3 (topic 0.02 s old), last packet 0.03 s ago | safety state 1 triggers 0 outputs 1 by "topside:topside_mavlink" reason "" | ardusub armed 1
+  119.303 s  link state 3 (topic 0.06 s old), last packet 0.51 s ago | safety state 1 triggers 0 outputs 1 by "topside:topside_mavlink" reason "" | ardusub armed 1
+  121.466 s  link state 3 (topic 0.01 s old), last packet 0.02 s ago | safety state 1 triggers 0 outputs 1 by "topside:topside_mavlink" reason "" | ardusub armed 1
+  147.704 s  link state 2 (topic 0.01 s old), last packet -1.00 s ago | safety state 1 triggers 0 outputs 1 by "topside:topside_mavlink" reason "" | ardusub armed 1
+  147.805 s  link state 3 (topic 0.00 s old), last packet 0.01 s ago | safety state 1 triggers 0 outputs 1 by "topside:topside_mavlink" reason "" | ardusub armed 1
+  173.630 s  link state 3 (topic 0.32 s old), last packet 0.34 s ago | safety state 2 triggers 128 outputs 0 by "input" reason "input: bridge.vehicle.link stale" | ardusub armed 2
+  173.630 s  >>> FAILSAFE entered: last packet 0.34 s ago; safety.state stamped 0.333 s after the last packet
+  173.654 s  link state 3 (topic 0.34 s old), last packet 0.36 s ago | safety state 2 triggers 128 outputs 0 by "input" reason "input: bridge.vehicle.link stale" | ardusub armed 0
+  173.801 s  link state 3 (topic 0.49 s old), last packet 0.51 s ago | safety state 2 triggers 128 outputs 0 by "input" reason "input: bridge.vehicle.link stale" | ardusub armed 0
+  173.826 s  link state 3 (topic 0.51 s old), last packet 0.53 s ago | safety state 2 triggers 128 outputs 0 by "input" reason "input: bridge.vehicle.link stale" | ardusub armed 0
+  176.318 s  link state 3 (topic 3.01 s old), last packet 3.03 s ago | safety state 2 triggers 130 outputs 0 by "input" reason "tether: no packet from the topside for 3.0 s" | ardusub armed 0
+  179.674 s  link state 3 (topic 0.03 s old), last packet 0.03 s ago | safety state 2 triggers 130 outputs 0 by "input" reason "tether: no packet from the topside for 3.0 s" | ardusub armed 0
+  179.870 s  link state 2 (topic 0.01 s old), last packet -1.00 s ago | safety state 2 triggers 130 outputs 0 by "input" reason "tether: no packet from the topside for 3.0 s" | ardusub armed 0
+  179.967 s  link state 3 (topic 0.00 s old), last packet 0.01 s ago | safety state 2 triggers 130 outputs 0 by "input" reason "tether: no packet from the topside for 3.0 s" | ardusub armed 0
+  193.609 s  link state 3 (topic 0.06 s old), last packet 0.06 s ago | safety state 0 triggers 0 outputs 0 by "admin:bluerov2" reason "failsafe cleared" | ardusub armed 0
+  291.923 s  link state 3 (topic 0.07 s old), last packet 0.07 s ago | safety state 3 triggers 0 outputs 0 by "topside:topside_mavlink" reason "" | ardusub armed 0
+  292.957 s  link state 3 (topic 0.05 s old), last packet 0.07 s ago | safety state 1 triggers 0 outputs 1 by "topside:topside_mavlink" reason "" | ardusub armed 1
+  438.354 s  link state 3 (topic 0.51 s old), last packet 0.51 s ago | safety state 1 triggers 0 outputs 1 by "topside:topside_mavlink" reason "" | ardusub armed 1
+  600.015 s  end

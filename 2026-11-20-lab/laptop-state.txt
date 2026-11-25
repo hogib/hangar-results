@@ -1,0 +1,8 @@
+laptop: mousev 7.3.4-arch1-2, 12 cores
+[ OK ] pipeline camera-in: source rtp:5610 (1280x720, 41 frames in 1.2s)
+[ OK ] pipeline camera-in: sink bus:camera (41 frames)
+[ OK ] pipeline pilot-out: source bus:pilot (1280x720, 41 frames in 1.2s)
+[ OK ] pipeline pilot-out: sink rtp:127.0.0.1:5600 (41 frames)
+[ OK ] bus stream raw: 1280x720, last frame 0.01s ago
+[ OK ] bus stream pilot: 1280x720, last frame 0.01s ago
+[ OK ] bus stream camera: 1280x720, last frame 0.01s ago

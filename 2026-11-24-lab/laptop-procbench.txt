@@ -1,0 +1,1 @@
+60 s on x86_64, 12 cores, the whole machine 2.7 % busy (of all cores), 51.0-54.0 C

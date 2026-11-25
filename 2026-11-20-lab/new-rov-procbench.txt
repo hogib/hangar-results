@@ -1,0 +1,19 @@
+60 s on Raspberry Pi 5 Model B Rev 1.0, 4 cores, the whole machine 36.1 % busy (of all cores), 82.6-86.5 C
+
+hangar
+  hangar-mavlink (vehicle)       1.75 % CPU     0.44 MB PSS   (pid 2029)
+  hangar-safety                  1.29 % CPU     0.59 MB PSS   (pid 2033)
+  hangar-encoder                 1.09 % CPU     7.34 MB PSS   (pid 3864)
+  hangar-mavlink (topside)       1.08 % CPU     0.37 MB PSS   (pid 2027)
+  recorder                       0.64 % CPU    21.04 MB PSS   (pid 2032)
+  hangar-mux                     0.56 % CPU     0.48 MB PSS   (pid 2031)
+  dawn-patrold (vehicle)         0.21 % CPU     7.90 MB PSS   (pid 2484)
+  dawn-patrold (topside)         0.08 % CPU     0.63 MB PSS   (pid 2025)
+  hangard (vehicle)              0.03 % CPU     1.69 MB PSS   (pid 2022)
+  hangard (topside)              0.03 % CPU     1.08 MB PSS   (pid 2023)
+  total                          6.77 % CPU    41.58 MB PSS   (10 processes)
+
+MAVROS relay
+  mavros_node                   33.79 % CPU   108.17 MB PSS   (pid 2042)
+  ros2                           0.00 % CPU    18.97 MB PSS   (pid 1981)
+  total                         33.79 % CPU   127.13 MB PSS   (2 processes)

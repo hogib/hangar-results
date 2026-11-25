@@ -1,0 +1,2 @@
+  encoder      32.4 frames/s over 60 s, a keyframe every 29.9 frames
+  eth0 out 11.40 Mbit/s

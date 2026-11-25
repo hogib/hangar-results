@@ -1,0 +1,5 @@
+rov: RELAY=0: no relay
+rov: the vehicle role is up on this Pi, with the bridge (Peer=192.168.2.1)
+  vehicle  /dev/shm/hangar-vehicle  safety, mux, mavlink, recorder, bridge, console on http://127.0.0.1:8080
+  topside  on the laptop: BRIDGE=1 tools/rov/rov.sh topside up (key: /home/bluerov2/hangar-rov/bridge.key)
+  link     HANGAR_ROOT=/dev/shm/hangar-vehicle /home/bluerov2/hangar-root/bin/hangar status   (bridge: up <laptop>, rtt ...)

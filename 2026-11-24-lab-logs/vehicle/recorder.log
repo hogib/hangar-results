@@ -1,0 +1,29 @@
+recorder: no group hangar-rec on this machine: the group of /home/bluerov2/hangar-sessions is not checked
+recorder: recording to /home/bluerov2/hangar-sessions; black box 60s in 32MB; AutoStart=armed
+recorder: mavlink.rep: full, black box high
+recorder: ardusub.params_job: full, black box high
+recorder: thr.out: full, black box normal
+recorder: power.battery: full, black box high
+recorder: nav.depth: full, black box normal
+recorder: nav.imu: full, black box normal
+recorder: mux.rep: full, black box high
+recorder: nav.attitude: full, black box normal
+recorder: ardusub.param: full, black box high
+recorder: mux.state: full, black box high
+recorder: ardusub.state: full, black box high
+recorder: ctl.wrench: full, black box normal
+recorder: ardusub.manual_control: full, black box normal
+recorder: mux.params: full, black box high
+recorder: safety.rep: full, black box high
+recorder: safety.req: full, black box high
+recorder: safety.state: full, black box high
+recorder: safety.params: full, black box high
+recorder: hangar.vehicle.admin.req: full, black box high
+recorder: hangar.vehicle.modules: full, black box normal
+recorder: hangar.vehicle.system: full, black box normal
+recorder: recorder.rep: full, black box high
+recorder: recorder.session: full, black box high
+recorder: recorder.status: full, black box high
+recorder: bridge.vehicle.link: full, black box normal
+recorder: pilot.buttons: full, black box normal
+recorder: pilot.wrench: full, black box normal

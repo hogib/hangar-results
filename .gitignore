@@ -1,0 +1,5 @@
+# Figure material for the paper, not measurements: kept beside the results, not in them.
+/paper-figures/
+# Clips made from a snapshot for the paper's figure script: large, and made again with
+# the ffmpeg line in the paper repository's figures/README.md.
+*.h264

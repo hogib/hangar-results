@@ -1,0 +1,1 @@
+dawn-patrold: listening on 127.0.0.1:8080, role vehicle, topics /dev/shm/hangar-vehicle/dev/shm/hangar, control /dev/shm/hangar-vehicle/run/hangar/control, hellion http://127.0.0.1:8091/

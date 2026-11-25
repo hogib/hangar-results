@@ -1,0 +1,3 @@
+hangar-bridge: topside, UDP 5614, 192.168.2.10:5614, 5 topics and 0 globs to send, 13 mirror lines in
+hangar-bridge: link up with 192.168.2.10:5614 (peer id 3ceabfb6)
+hangar-bridge: the peer: release dev, configurations match

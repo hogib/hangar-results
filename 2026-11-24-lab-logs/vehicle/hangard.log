@@ -1,0 +1,72 @@
+hangard: starting: role vehicle, modules /dev/shm/hangar-vehicle/etc/hangar/modules, topics /dev/shm/hangar-vehicle/dev/shm/hangar, root /dev/shm/hangar-vehicle
+hangard: not running as root: user switching, scheduling, capabilities and cgroups are skipped
+hangard: warning: console: [Subscribe hangar.vehicle.system]: no enabled module publishes it
+hangard: warning: console: [Subscribe hangar.vehicle.modules]: no enabled module publishes it
+hangard: warning: mux: [Subscribe ctl.depth_hold]: no enabled module publishes it
+hangard: warning: safety: [Subscribe hangar.vehicle.modules]: no enabled module publishes it
+hangard: warning: safety: [Subscribe hangar.vehicle.system]: no enabled module publishes it
+hangard: warning: safety: [Subscribe vehicle.leak]: no enabled module publishes it
+hangard: bridge: skipping step 2 (cgroup): not running as root
+hangard: bridge: skipping steps 7-9 (capabilities, user hg-bridge, group hangar): not running as root
+hangard: bridge: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/bridge.log
+hangard: bridge: started, pid 2260
+hangard: bridge: starting
+hangard: console: skipping step 2 (cgroup): not running as root
+hangard: console: skipping steps 7-9 (capabilities, user hangar, group hangar): not running as root
+hangard: console: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/console.log
+hangard: console: started, pid 2261
+hangard: console: starting
+hangard: mavlink: skipping step 2 (cgroup): not running as root
+hangard: mavlink: skipping steps 7-9 (capabilities, user hg-mavlink, group hangar): not running as root
+hangard: mavlink: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/mavlink.log
+hangard: mavlink: started, pid 2263
+hangard: mavlink: starting
+hangard: mux: skipping step 2 (cgroup): not running as root
+hangard: mux: skipping steps 7-9 (capabilities, user hangar, group hangar): not running as root
+hangard: mux: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/mux.log
+hangard: mux: started, pid 2264
+hangard: mux: starting
+hangard: recorder: skipping step 2 (cgroup): not running as root
+hangard: recorder: skipping steps 7-9 (capabilities, user hangar, group hangar): not running as root
+hangard: recorder: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/recorder.log
+hangard: recorder: started, pid 2265
+hangard: recorder: starting
+hangard: safety: skipping step 2 (cgroup): not running as root
+hangard: safety: skipping steps 7-9 (capabilities, user hangar, group hangar): not running as root
+hangard: safety: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/safety.log
+hangard: safety: started, pid 2266
+hangard: safety: starting
+hangard: ready: 6 modules
+hangard: safety: opened safety.params (params:safety, 16 slots)
+hangard: safety: opened safety.state (safety_state, 16 slots)
+hangard: safety: opened safety.req (req:safety, 16 slots)
+hangard: safety: opened safety.rep (rep:safety, 16 slots)
+hangard: mux: opened mux.params (params:mux, 16 slots)
+hangard: mavlink: opened ardusub.manual_control (manual_control, 16 slots)
+hangard: mux: opened ctl.wrench (wrench, 16 slots)
+hangard: mavlink: opened ardusub.state (ardusub_state, 16 slots)
+hangard: mux: opened mux.state (mux_state, 16 slots)
+hangard: mavlink: opened ardusub.param (ardusub_param, 16 slots)
+hangard: mavlink: opened nav.attitude (attitude, 16 slots)
+hangard: mux: opened mux.rep (rep:mux, 16 slots)
+hangard: mavlink: opened nav.imu (imu, 16 slots)
+hangard: mavlink: opened nav.depth (depth, 16 slots)
+hangard: mavlink: opened power.battery (battery, 16 slots)
+hangard: mavlink: opened thr.out (thruster_out, 16 slots)
+hangard: mavlink: opened ardusub.params_job (params_job, 16 slots)
+hangard: mavlink: opened mavlink.rep (rep:mavlink, 16 slots)
+hangard: bridge: opened bridge.vehicle.link (bridge_link, 16 slots)
+hangard: recorder: opened recorder.status (recorder_status, 16 slots)
+hangard: recorder: opened recorder.session (recorder_session, 16 slots)
+hangard: recorder: opened recorder.rep (rep:recorder, 16 slots)
+hangard: bridge: ready
+hangard: console: ready
+hangard: mux: ready
+hangard: recorder: ready
+hangard: safety: ready
+hangard: bridge: opened pilot.wrench, mirrored from topside (writer topside_mavlink)
+hangard: bridge: opened pilot.buttons, mirrored from topside (writer topside_mavlink)
+hangard: mavlink: ready
+hangard: call mavlink.setup by admin:bluerov2: call 1, deadline 3000 ms
+hangard: call safety.set_params by admin:bluerov2: call 2, deadline 2000 ms
+hangard: call safety.check by admin:bluerov2: call 3, deadline 3000 ms

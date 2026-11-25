@@ -1,0 +1,55 @@
+# Bench, 2026-11-24T15:47:16+03:00
+
+60 s on both machines, by tools/rov/lab.sh bench (hangar v0.1.4-3-gde9cb0c).
+The state before and after: state-before.txt, state-after.txt (armed or not, temperature,
+throttling: a throttled or hot Pi reads high). Frame rates: hellion's "frames in ~1.2 s"
+reads ~32 for 30 fps; the encoder's own counter is exact.
+
+## rov-procbench
+
+```
+60 s on Raspberry Pi 5 Model B Rev 1.0, 4 cores, the whole machine 15.0 % busy (of all cores), 61.1-65.0 C
+
+hangar
+  hangar-mavlink (vehicle)       1.84 % CPU        - MB PSS     477.1 wake-ups/s   (pid 1627)
+  hangar-safety                  1.69 % CPU        - MB PSS     131.3 wake-ups/s   (pid 1921)
+  hangar-mavlink (topside)       1.03 % CPU        - MB PSS     337.6 wake-ups/s   (pid 1634)
+  hangar-mux                     0.53 % CPU        - MB PSS     100.0 wake-ups/s   (pid 1628)
+  recorder                       0.31 % CPU        - MB PSS      99.9 wake-ups/s   (pid 1630)
+  dawn-patrold (?)               0.08 % CPU        - MB PSS       3.0 wake-ups/s   (pid 1626)
+  hangard (?)                    0.03 % CPU        - MB PSS      11.0 wake-ups/s   (pid 1623)
+  dawn-patrold (?)               0.03 % CPU        - MB PSS       3.0 wake-ups/s   (pid 1631)
+  hangard (?)                    0.02 % CPU        - MB PSS      11.0 wake-ups/s   (pid 1619)
+  total                          5.56 % CPU     0.00 MB PSS    1173.9 wake-ups/s   (9 processes)
+
+electric-eye
+  eeye                          15.54 % CPU        - MB PSS     108.9 wake-ups/s   (pid 716)
+  hellion                        1.97 % CPU        - MB PSS      49.3 wake-ups/s   (pid 813)
+  total                         17.51 % CPU     0.00 MB PSS     158.2 wake-ups/s   (2 processes)
+
+MAVROS relay
+  mavros_node                   30.98 % CPU   111.15 MB PSS    1707.9 wake-ups/s   (pid 1687)
+  ros2                           0.00 % CPU    20.63 MB PSS       0.0 wake-ups/s   (pid 1569)
+  total                         30.98 % CPU   131.78 MB PSS    1707.9 wake-ups/s   (2 processes)
+```
+
+## rov-fps
+
+```
+  hellion pilot-up   mean  16.7 frames/s, worst  14.2  (19 samples)
+  encoder  no frames counted (not running?)
+  eth0 over 61 s: in 0.00 Mbit/s, out 0.02 Mbit/s
+```
+
+## laptop-procbench
+
+```
+60 s on x86_64, 12 cores, the whole machine 2.7 % busy (of all cores), 51.0-54.0 C
+```
+
+## laptop-fps
+
+```
+  enp6s0f3u2 over 60 s: in 0.02 Mbit/s, out 0.00 Mbit/s
+```
+

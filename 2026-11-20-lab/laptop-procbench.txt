@@ -1,0 +1,8 @@
+60 s on x86_64, 12 cores, the whole machine 11.0 % busy (of all cores), 66.0-66.0 C
+
+electric-eye
+  ffmpeg                        27.27 % CPU    45.78 MB PSS   (pid 106234)
+  ffmpeg                        25.31 % CPU    92.67 MB PSS   (pid 106348)
+  eeye                          18.39 % CPU    56.12 MB PSS   (pid 106315)
+  hellion                       13.10 % CPU    34.70 MB PSS   (pid 106189)
+  total                         84.08 % CPU   229.28 MB PSS   (4 processes)

@@ -1,0 +1,2 @@
+  pilot-up     mean  32.1 frames/s, worst  26.7  (30 samples)
+  eth0 over 96 s: in 0.06 Mbit/s, out 4.67 Mbit/s

@@ -1,0 +1,27 @@
+== the Pi (bluerov2@192.168.2.10)
+  system   nominal  (for 3m11s)
+  console              ready        1626     0 -           3m11s  serving http://127.0.0.1:8080 (role vehicle)
+  mavlink              ready        1627     0 -           3m07s  ardusub disarmed mode 19 params 1; gate disarmed; rx 416
+  mux                  ready        1628     0 -           3m11s  manual: sources 111111 limits 0
+  recorder             ready        1630     0 -           3m11s  idle 7069280 bytes, 30 topics, 0 gaps
+  safety               ready        1921     0 -             47s  disarmed: start
+  system   nominal  (for 3m11s)
+  console              ready        1631     0 -           3m11s  serving http://127.0.0.1:8081 (role topside)
+  topside_mavlink      ready        1634     0 -           3m11s  QGC connected; link up; 674 manual_control, 3 calls, 7 t
+  MAVROS relay: running
+  eeye: active
+  hellion: active
+  temp=62.6'C throttled=0x0 arm Hz=2000020352
+  clock 2026-11-24 12:46:14 UTC, up 10 minutes
+== this laptop
+  hellion: not running
+  eeye: not running
+  consoles http://127.0.0.1:18080, :18081
+== the session
+  started=2026-11-24T15:43:03+03:00
+  bridge=0
+  serial=0
+  hangar_up=1
+  params_backup=hangar-rov/lab-20261124-154308-before.params
+  battery_check=off
+  tunnels=1
