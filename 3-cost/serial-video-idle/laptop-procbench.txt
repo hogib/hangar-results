@@ -1,0 +1,15 @@
+60 s on x86_64, 12 cores, the whole machine 11.5 % busy (of all cores), 62.0-64.0 C
+
+hangar
+  hangar-bridge                  1.24 % CPU        - MB PSS     272.8 wake-ups/s   (pid 159948)
+  hangar-mavlink (topside)       0.59 % CPU        - MB PSS     164.5 wake-ups/s   (pid 159951)
+  dawn-patrold (?)               0.13 % CPU        - MB PSS       7.6 wake-ups/s   (pid 159950)
+  hangard (?)                    0.03 % CPU        - MB PSS      11.0 wake-ups/s   (pid 159944)
+  total                          1.99 % CPU     0.00 MB PSS     455.9 wake-ups/s   (4 processes)
+
+electric-eye
+  ffmpeg                        31.08 % CPU    54.54 MB PSS     904.2 wake-ups/s   (pid 160048)
+  eeye                          29.54 % CPU    50.07 MB PSS    1255.7 wake-ups/s   (pid 160098)
+  ffmpeg                        29.50 % CPU    72.04 MB PSS    1462.8 wake-ups/s   (pid 160124)
+  hellion                       13.73 % CPU    27.08 MB PSS     591.2 wake-ups/s   (pid 160011)
+  total                        103.86 % CPU   203.72 MB PSS    4213.9 wake-ups/s   (4 processes)

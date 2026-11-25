@@ -1,0 +1,21 @@
+60 s on Raspberry Pi 5 Model B Rev 1.0, 4 cores, the whole machine 10.6 % busy (of all cores), 55.6-58.4 C
+
+hangar
+  hangar-mavlink (vehicle)       1.45 % CPU        - MB PSS     478.2 wake-ups/s   (pid 9672)
+  hangar-bridge                  1.09 % CPU        - MB PSS     247.8 wake-ups/s   (pid 9670)
+  hangar-safety                  0.87 % CPU        - MB PSS     141.2 wake-ups/s   (pid 9675)
+  hangar-mux                     0.36 % CPU        - MB PSS     100.0 wake-ups/s   (pid 9673)
+  recorder                       0.23 % CPU        - MB PSS      99.9 wake-ups/s   (pid 9674)
+  dawn-patrold (?)               0.07 % CPU        - MB PSS       3.0 wake-ups/s   (pid 9671)
+  hangard (?)                    0.03 % CPU        - MB PSS      11.0 wake-ups/s   (pid 9665)
+  total                          4.09 % CPU     0.00 MB PSS    1081.2 wake-ups/s   (7 processes)
+
+electric-eye
+  eeye                          12.59 % CPU        - MB PSS     109.6 wake-ups/s   (pid 6179)
+  hellion                        1.99 % CPU        - MB PSS      49.3 wake-ups/s   (pid 6180)
+  total                         14.58 % CPU     0.00 MB PSS     158.9 wake-ups/s   (2 processes)
+
+MAVROS relay
+  mavros_node                   25.24 % CPU   110.97 MB PSS    1641.2 wake-ups/s   (pid 9684)
+  ros2                           0.00 % CPU    20.10 MB PSS       0.0 wake-ups/s   (pid 9625)
+  total                         25.24 % CPU   131.07 MB PSS    1641.2 wake-ups/s   (2 processes)

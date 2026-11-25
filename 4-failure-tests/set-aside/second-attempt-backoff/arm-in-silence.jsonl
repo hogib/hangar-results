@@ -1,0 +1,2 @@
+{"ok": false, "error": "no result from the vehicle: ", "name": "arm-in-silence", "rep": 1, "at": "2026-11-25T17:45:00", "load_cores": 0, "thermal_before": "temp=57.1'C throttled=0xe0000", "thermal_after": "temp=58.2'C throttled=0xe0000"}
+{"ok": false, "error": "no result from the vehicle: ", "name": "arm-in-silence", "rep": 2, "at": "2026-11-25T17:46:46", "load_cores": 0, "thermal_before": "temp=57.1'C throttled=0xe0000", "thermal_after": "temp=57.6'C throttled=0xe0000"}

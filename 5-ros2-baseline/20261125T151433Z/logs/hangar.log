@@ -1,0 +1,27 @@
+machine   aarch64 6.8.0-1048-raspi, 2 cpus, Raspberry Pi 5 Model B Rev 1.0, Raspberry Pi 5 Model B Rev 1.0, governor performance, lib/hg db2dfc8
+wake     100 Hz  p50     5.5  p99    16.1  p99.9    16.1  max     16.1 us  (copied out 5.7, 18.9, 18.9, 18.9)   msgs 100 wakes 100 gaps 0 late 0  cpu w 0.1% r 0.1%
+report    /home/bluerov2/hangar-ros2-bench/results/20261125T151433Z/logs/hg_bench-probe.json
+machine   aarch64 6.8.0-1048-raspi, 1 cpus, Raspberry Pi 5 Model B Rev 1.0, Raspberry Pi 5 Model B Rev 1.0, governor performance, lib/hg db2dfc8
+publish         16 B        80.2 ns/msg   (median of 3 x 200000, no reader)
+publish        256 B        96.1 ns/msg   (median of 3 x 200000, no reader)
+publish       4096 B       358.6 ns/msg   (median of 3 x 200000, no reader)
+publish    1048576 B    122924.8 ns/msg   (median of 3 x 782, no reader)
+latest          16 B        52.9 ns/read  (median of 3 x 200000)
+latest         256 B       120.8 ns/read  (median of 3 x 200000)
+latest        4096 B       416.2 ns/read  (median of 3 x 200000)
+latest     1048576 B    198459.1 ns/read  (median of 3 x 782)
+report    /home/bluerov2/hangar-ros2-bench/results/20261125T151433Z/logs/hg_bench-hg_cost-0.json
+machine   aarch64 6.8.0-1048-raspi, 2 cpus, Raspberry Pi 5 Model B Rev 1.0, Raspberry Pi 5 Model B Rev 1.0, governor performance, lib/hg db2dfc8
+wake     100 Hz  p50     5.4  p99     8.5  p99.9    15.4  max     15.4 us  (copied out 5.6, 10.1, 18.2, 18.2)   msgs 300 wakes 300 gaps 0 late 0  cpu w 0.1% r 0.1%
+wake    1000 Hz  p50     5.5  p99     5.6  p99.9    14.6  max    149.4 us  (copied out 5.6, 5.8, 17.4, 149.8)   msgs 3000 wakes 3000 gaps 0 late 0  cpu w 0.6% r 0.6%
+wake   10000 Hz  p50     5.1  p99     5.5  p99.9     9.6  max    746.5 us  (copied out 5.3, 5.6, 10.0, 746.9)   msgs 30000 wakes 29988 gaps 0 late 10  cpu w 6.0% r 5.4%
+idle  3 s asleep in hg_wait: ctxsw +0/+0, cpu ticks +0, rss 300 -> 300 kB
+wake    1000 Hz  p50     5.4  p99     5.6  p99.9    15.6  max    170.7 us  (copied out 5.6, 5.8, 29.9, 171.3)   msgs 3000 wakes 3000 gaps 0 late 0  cpu w 0.6% r 0.6%
+rss   1 kHz pair: writer Pss 129 kB (Rss 308), reader Pss 141 kB (Rss 332)
+report    /home/bluerov2/hangar-ros2-bench/results/20261125T151433Z/logs/hg_bench-hg_pair-0.json
+machine   aarch64 6.8.0-1048-raspi, 4 cpus, Raspberry Pi 5 Model B Rev 1.0, Raspberry Pi 5 Model B Rev 1.0, governor performance, lib/hg db2dfc8
+wake    1000 Hz  p50     5.5  p99     5.6  p99.9     8.6  max     13.3 us  (copied out 5.7, 5.8, 9.0, 15.8)   msgs 3000 wakes 3000 gaps 0 late 0  cpu w 0.6% r 0.6%
+report    /home/bluerov2/hangar-ros2-bench/results/20261125T151433Z/logs/hg_bench-hg_nopin-0.json
+machine   aarch64 6.8.0-1048-raspi, 2 cpus, Raspberry Pi 5 Model B Rev 1.0, Raspberry Pi 5 Model B Rev 1.0, governor performance, lib/hg db2dfc8
+wake      30 Hz  p50   217.6  p99  1051.3  p99.9  1051.3  max   1051.3 us  (copied out 328.6, 1725.1, 1725.1, 1725.1)   msgs 90 wakes 90 gaps 0 late 0  cpu w 1.5% r 1.0%
+report    /home/bluerov2/hangar-ros2-bench/results/20261125T151433Z/logs/hg_bench-hg_frame-0.json

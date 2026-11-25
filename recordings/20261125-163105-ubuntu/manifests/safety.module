@@ -1,0 +1,62 @@
+# /usr/share/hangar/modules/safety.module: the vehicle's state (docs/07-safety.md;
+# modules/safety/README.md). Enable it by symlinking into /dev/shm/hangar-vehicle/etc/hangar/modules/.
+[Module]
+Description=Vehicle state: arm, disarm, failsafe
+Exec=/home/bluerov2/hangar-root/bin/hangar-safety
+
+# The manager's view of the modules (the `required` checklist) and of the
+# system (the `module` trigger).
+[Subscribe hangar.vehicle.modules]
+[Subscribe hangar.vehicle.system]
+# The inputs the triggers watch.
+[Subscribe vehicle.leak]
+[Subscribe power.battery]
+[Subscribe nav.depth]
+[Subscribe ardusub.state]
+# The tether, from the vehicle's bridge. A machine without a bridge module
+# sets tether_enabled = 0 in the safety module's parameters: nothing
+# publishes the topic there, and arming would be refused for it.
+[Subscribe bridge.vehicle.link]
+# The mux's envelope gives the depth band the `depth` trigger watches.
+[Subscribe mux.params]
+
+[Publish safety.state]
+Type=safety_state
+Rate=10
+
+[Params]
+Type=safety_params
+Allow=topside:pilot_console admin topside:admin
+
+[Serve arm]
+Request=empty
+Reply=empty
+Allow=topside:pilot_console topside:topside_mavlink admin topside:admin
+
+[Serve disarm]
+Request=empty
+Reply=empty
+Allow=* topside:* admin topside:admin
+
+[Serve estop]
+Request=empty
+Reply=empty
+Allow=* topside:* admin topside:admin
+
+[Serve clear]
+Request=empty
+Reply=empty
+Allow=topside:pilot_console topside:topside_mavlink admin topside:admin
+
+[Serve check]
+Request=empty
+Reply=check_rep
+Allow=* topside:* admin topside:admin
+
+# Phase 1: ArduSub is armed through the vehicle's mavlink module. Without a
+# mavlink module enabled, drop this section: arming then leads to armed at
+# once (docs/07 "Without an autopilot behind the actuators").
+[Call mavlink.arm]
+
+[Restart]
+Policy=always

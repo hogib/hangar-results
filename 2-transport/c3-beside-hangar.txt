@@ -1,0 +1,13 @@
+machine   aarch64 6.8.0-1048-raspi, 4 cpus, Raspberry Pi 5 Model B Rev 1.0, Raspberry Pi 5 Model B Rev 1.0, governor performance, lib/hg db2dfc8
+publish         16 B        80.3 ns/msg   (median of 5 x 1000000, no reader)
+publish        256 B        94.6 ns/msg   (median of 5 x 1000000, no reader)
+publish       4096 B       359.9 ns/msg   (median of 5 x 1000000, no reader)
+publish    1048576 B    224272.4 ns/msg   (median of 5 x 3907, no reader)
+latest          16 B        53.9 ns/read  (median of 5 x 1000000)
+latest         256 B       120.4 ns/read  (median of 5 x 1000000)
+latest        4096 B       420.6 ns/read  (median of 5 x 1000000)
+latest     1048576 B    274701.4 ns/read  (median of 5 x 3907)
+wake     100 Hz  p50    16.3  p99  1362.5  p99.9  2376.4  max   2376.7 us  (copied out 17.4, 1364.5, 2378.7, 2379.5)   msgs 2000 wakes 2000 gaps 0 late 0  cpu w 0.2% r 0.2%
+wake    1000 Hz  p50     7.0  p99  1235.1  p99.9  1837.6  max   2842.0 us  (copied out 7.3, 1237.5, 1838.6, 2843.6)   msgs 20000 wakes 19617 gaps 0 late 223  cpu w 0.9% r 0.9%  (did not keep up)
+wake   10000 Hz  p50     5.0  p99   874.5  p99.9  1418.5  max   2148.5 us  (copied out 5.2, 876.1, 1420.2, 2149.6)   msgs 198782 wakes 187466 gaps 1218 late 10704  cpu w 6.0% r 5.4%  (did not keep up)
+report    c3-beside-hangar.json

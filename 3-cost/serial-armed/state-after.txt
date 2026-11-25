@@ -1,0 +1,31 @@
+== the Pi (bluerov2@192.168.2.10)
+  system   nominal  (for 9m57s)
+  bridge               ready       57199     0 -           4m12s  up 192.168.2.1:5614, rtt 4.1 ms, offset +21714199.212 ms
+  console              ready       52800     0 -           9m57s  serving http://127.0.0.1:8080 (role vehicle)
+  mavlink              ready       59387     0 -           1m34s  serial open; ardusub armed mode 19 params 1; gate open; 
+  mux                  ready       56146     0 -           5m15s  manual: sources 111111 limits 0
+  recorder             ready       52803     0 -           9m57s  recording 20261125-163718-ubuntu 5370024 bytes, 28 topic
+  safety               ready       55104     0 -           6m01s  armed by topside:topside_mavlink
+  MAVROS relay: not running (--serial: the mavlink module holds /dev/ttyACM0 itself)
+  eeye: inactive
+  hellion: inactive
+  temp=53.2'C throttled=0xe0000 arm Hz=2400033792
+  clock 2026-11-25 16:38:29 UTC, up 3 hours, 46 minutes
+== this laptop
+  system   nominal  (for 9m56s)
+  bridge               ready      158665     0 -           2m57s  up 192.168.2.10:5614, rtt 3.0 ms, offset -21714198.900 m
+  console              ready      156812     0 -           9m56s  serving http://127.0.0.1:8081 (role topside)
+  topside_mavlink      ready      156813     0 -           9m56s  QGC connected; link up; 13422 manual_control, 3 calls, 1
+  topside console http://127.0.0.1:8081
+  hellion: not running
+  eeye: not running
+  consoles http://127.0.0.1:18080, :18081
+== the session
+  started=2026-11-25T19:28:32+03:00
+  bridge=1
+  serial=1
+  hangar_up=1
+  topside=1
+  params_backup=hangar-rov/lab-20261125-192835-before.params
+  battery_check=off
+  tunnels=1

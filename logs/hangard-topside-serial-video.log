@@ -1,0 +1,289 @@
+hangard: starting: role topside, modules /dev/shm/hangar-topside/etc/hangar/modules, topics /dev/shm/hangar-topside/dev/shm/hangar, root /dev/shm/hangar-topside
+hangard: not running as root: user switching, scheduling, capabilities and cgroups are skipped
+hangard: warning: console: [Subscribe hangar.topside.system]: no enabled module publishes it
+hangard: warning: console: [Subscribe hangar.topside.modules]: no enabled module publishes it
+hangard: bridge: skipping step 2 (cgroup): not running as root
+hangard: bridge: skipping steps 7-9 (capabilities, user hg-bridge, group hangar): not running as root
+hangard: bridge: no journald at /dev/shm/hangar-topside/run/systemd/journal/stdout: logging to /dev/shm/hangar-topside/run/hangar/log/bridge.log
+hangard: bridge: started, pid 159948
+hangard: bridge: starting
+hangard: console: skipping step 2 (cgroup): not running as root
+hangard: console: skipping steps 7-9 (capabilities, user hangar, group hangar): not running as root
+hangard: console: no journald at /dev/shm/hangar-topside/run/systemd/journal/stdout: logging to /dev/shm/hangar-topside/run/hangar/log/console.log
+hangard: console: started, pid 159950
+hangard: console: starting
+hangard: topside_mavlink: skipping step 2 (cgroup): not running as root
+hangard: topside_mavlink: skipping steps 7-9 (capabilities, user hg-tmavlink, group hangar): not running as root
+hangard: topside_mavlink: no journald at /dev/shm/hangar-topside/run/systemd/journal/stdout: logging to /dev/shm/hangar-topside/run/hangar/log/topside_mavlink.log
+hangard: topside_mavlink: started, pid 159951
+hangard: topside_mavlink: starting
+hangard: ready: 3 modules
+hangard: topside_mavlink: opened pilot.wrench (wrench, 16 slots)
+hangard: topside_mavlink: opened pilot.buttons (pilot_buttons, 16 slots)
+hangard: topside_mavlink: opened topside_mavlink.req (req:topside_mavlink, 16 slots)
+hangard: bridge: opened bridge.topside.link (bridge_link, 16 slots)
+hangard: bridge: opened ardusub.param, mirrored from vehicle (writer mavlink)
+hangard: bridge: ready
+hangard: console: ready
+hangard: topside_mavlink: ready
+hangard: bridge: opened video.index, mirrored from vehicle (writer encoder)
+hangard: bridge: opened mux.state, mirrored from vehicle (writer mux)
+hangard: bridge: opened safety.state, mirrored from vehicle (writer safety)
+hangard: bridge: opened nav.attitude, mirrored from vehicle (writer mavlink)
+hangard: bridge: opened bridge.vehicle.link, mirrored from vehicle (writer bridge)
+hangard: bridge: opened nav.imu, mirrored from vehicle (writer mavlink)
+hangard: bridge: opened nav.depth, mirrored from vehicle (writer mavlink)
+hangard: bridge: opened ardusub.state, mirrored from vehicle (writer mavlink)
+hangard: bridge: opened power.battery, mirrored from vehicle (writer mavlink)
+hangard: bridge: opened hangar.vehicle.admin.req, mirrored from vehicle (writer hangar)
+hangard: bridge: opened mavlink.rep, mirrored from vehicle (writer mavlink)
+hangard: bridge: opened hangar.vehicle.system, mirrored from vehicle (writer hangar)
+hangard: bridge: opened hangar.vehicle.modules, mirrored from vehicle (writer hangar)
+hangard: bridge: opened recorder.status, mirrored from vehicle (writer recorder)
+hangard: bridge: opened safety.rep, mirrored from vehicle (writer safety)
+hangard: bridge: unhealthy: bridge.topside.link stale for 1037 ms
+hangard: bridge: pid 159948 exited with status 0
+hangard: bridge: backoff: bridge.topside.link stale for 1037 ms; restarting in 0.1 s (failure 1)
+hangard: bridge: skipping step 2 (cgroup): not running as root
+hangard: bridge: skipping steps 7-9 (capabilities, user hg-bridge, group hangar): not running as root
+hangard: bridge: no journald at /dev/shm/hangar-topside/run/systemd/journal/stdout: logging to /dev/shm/hangar-topside/run/hangar/log/bridge.log
+hangard: bridge: started, pid 163221
+hangard: bridge: starting
+hangard: bridge: opened bridge.topside.link (bridge_link, 16 slots)
+hangard: bridge: ready
+hangard: bridge: opened ardusub.param, mirrored from vehicle (writer mavlink)
+hangard: bridge: opened video.index, mirrored from vehicle (writer encoder)
+hangard: bridge: opened nav.depth, mirrored from vehicle (writer mavlink)
+hangard: bridge: opened nav.imu, mirrored from vehicle (writer mavlink)
+hangard: bridge: opened nav.attitude, mirrored from vehicle (writer mavlink)
+hangard: bridge: opened ardusub.state, mirrored from vehicle (writer mavlink)
+hangard: bridge: opened bridge.vehicle.link, mirrored from vehicle (writer bridge)
+hangard: bridge: opened safety.state, mirrored from vehicle (writer safety)
+hangard: bridge: opened mux.state, mirrored from vehicle (writer mux)
+hangard: bridge: opened power.battery, mirrored from vehicle (writer mavlink)
+hangard: bridge: opened hangar.vehicle.system, mirrored from vehicle (writer hangar)
+hangard: bridge: opened hangar.vehicle.modules, mirrored from vehicle (writer hangar)
+hangard: bridge: opened recorder.status, mirrored from vehicle (writer recorder)
+hangard: bridge: opened hangar.vehicle.admin.req, mirrored from vehicle (writer hangar)
+hangard: bridge: opened safety.rep, mirrored from vehicle (writer safety)
+hangard: bridge: stopping: restart requested
+hangard: bridge: pid 163221 exited with status 0
+hangard: bridge: skipping step 2 (cgroup): not running as root
+hangard: bridge: skipping steps 7-9 (capabilities, user hg-bridge, group hangar): not running as root
+hangard: bridge: no journald at /dev/shm/hangar-topside/run/systemd/journal/stdout: logging to /dev/shm/hangar-topside/run/hangar/log/bridge.log
+hangard: bridge: started, pid 163235
+hangard: bridge: starting
+hangard: bridge: opened bridge.topside.link (bridge_link, 16 slots)
+hangard: bridge: opened video.index, mirrored from vehicle (writer encoder)
+hangard: bridge: ready
+hangard: bridge: opened nav.imu, mirrored from vehicle (writer mavlink)
+hangard: bridge: opened nav.attitude, mirrored from vehicle (writer mavlink)
+hangard: bridge: opened safety.state, mirrored from vehicle (writer safety)
+hangard: bridge: opened mux.state, mirrored from vehicle (writer mux)
+hangard: bridge: opened bridge.vehicle.link, mirrored from vehicle (writer bridge)
+hangard: bridge: opened nav.depth, mirrored from vehicle (writer mavlink)
+hangard: bridge: opened ardusub.state, mirrored from vehicle (writer mavlink)
+hangard: bridge: opened power.battery, mirrored from vehicle (writer mavlink)
+hangard: bridge: opened hangar.vehicle.system, mirrored from vehicle (writer hangar)
+hangard: bridge: opened hangar.vehicle.modules, mirrored from vehicle (writer hangar)
+hangard: bridge: opened recorder.status, mirrored from vehicle (writer recorder)
+hangard: bridge: opened hangar.vehicle.admin.req, mirrored from vehicle (writer hangar)
+hangard: bridge: opened safety.rep, mirrored from vehicle (writer safety)
+hangard: bridge: opened mavlink.rep, mirrored from vehicle (writer mavlink)
+hangard: bridge: unhealthy: bridge.topside.link stale for 1075 ms
+hangard: bridge: pid 163235 exited with status 0
+hangard: bridge: backoff: bridge.topside.link stale for 1075 ms; restarting in 0.1 s (failure 1)
+hangard: bridge: skipping step 2 (cgroup): not running as root
+hangard: bridge: skipping steps 7-9 (capabilities, user hg-bridge, group hangar): not running as root
+hangard: bridge: no journald at /dev/shm/hangar-topside/run/systemd/journal/stdout: logging to /dev/shm/hangar-topside/run/hangar/log/bridge.log
+hangard: bridge: started, pid 163271
+hangard: bridge: starting
+hangard: bridge: opened bridge.topside.link (bridge_link, 16 slots)
+hangard: bridge: ready
+hangard: bridge: opened ardusub.param, mirrored from vehicle (writer mavlink)
+hangard: bridge: opened video.index, mirrored from vehicle (writer encoder)
+hangard: bridge: opened ardusub.state, mirrored from vehicle (writer mavlink)
+hangard: bridge: opened nav.depth, mirrored from vehicle (writer mavlink)
+hangard: bridge: opened nav.imu, mirrored from vehicle (writer mavlink)
+hangard: bridge: opened nav.attitude, mirrored from vehicle (writer mavlink)
+hangard: bridge: opened safety.state, mirrored from vehicle (writer safety)
+hangard: bridge: opened mux.state, mirrored from vehicle (writer mux)
+hangard: bridge: opened bridge.vehicle.link, mirrored from vehicle (writer bridge)
+hangard: bridge: opened power.battery, mirrored from vehicle (writer mavlink)
+hangard: bridge: opened hangar.vehicle.system, mirrored from vehicle (writer hangar)
+hangard: bridge: opened hangar.vehicle.modules, mirrored from vehicle (writer hangar)
+hangard: bridge: opened recorder.status, mirrored from vehicle (writer recorder)
+hangard: bridge: opened hangar.vehicle.admin.req, mirrored from vehicle (writer hangar)
+hangard: bridge: opened safety.rep, mirrored from vehicle (writer safety)
+hangard: bridge: stopping: restart requested
+hangard: bridge: pid 163271 exited with status 0
+hangard: bridge: skipping step 2 (cgroup): not running as root
+hangard: bridge: skipping steps 7-9 (capabilities, user hg-bridge, group hangar): not running as root
+hangard: bridge: no journald at /dev/shm/hangar-topside/run/systemd/journal/stdout: logging to /dev/shm/hangar-topside/run/hangar/log/bridge.log
+hangard: bridge: started, pid 163323
+hangard: bridge: starting
+hangard: bridge: opened bridge.topside.link (bridge_link, 16 slots)
+hangard: bridge: opened video.index, mirrored from vehicle (writer encoder)
+hangard: bridge: ready
+hangard: bridge: opened ardusub.state, mirrored from vehicle (writer mavlink)
+hangard: bridge: opened bridge.vehicle.link, mirrored from vehicle (writer bridge)
+hangard: bridge: opened nav.imu, mirrored from vehicle (writer mavlink)
+hangard: bridge: opened mux.state, mirrored from vehicle (writer mux)
+hangard: bridge: opened safety.state, mirrored from vehicle (writer safety)
+hangard: bridge: opened nav.depth, mirrored from vehicle (writer mavlink)
+hangard: bridge: opened nav.attitude, mirrored from vehicle (writer mavlink)
+hangard: bridge: opened power.battery, mirrored from vehicle (writer mavlink)
+hangard: bridge: opened hangar.vehicle.system, mirrored from vehicle (writer hangar)
+hangard: bridge: opened hangar.vehicle.modules, mirrored from vehicle (writer hangar)
+hangard: bridge: opened recorder.status, mirrored from vehicle (writer recorder)
+hangard: bridge: opened hangar.vehicle.admin.req, mirrored from vehicle (writer hangar)
+hangard: bridge: opened safety.rep, mirrored from vehicle (writer safety)
+hangard: bridge: opened mavlink.rep, mirrored from vehicle (writer mavlink)
+hangard: bridge: unhealthy: bridge.topside.link stale for 1033 ms
+hangard: bridge: pid 163323 exited with status 0
+hangard: bridge: backoff: bridge.topside.link stale for 1033 ms; restarting in 0.1 s (failure 1)
+hangard: bridge: skipping step 2 (cgroup): not running as root
+hangard: bridge: skipping steps 7-9 (capabilities, user hg-bridge, group hangar): not running as root
+hangard: bridge: no journald at /dev/shm/hangar-topside/run/systemd/journal/stdout: logging to /dev/shm/hangar-topside/run/hangar/log/bridge.log
+hangard: bridge: started, pid 163353
+hangard: bridge: starting
+hangard: bridge: opened bridge.topside.link (bridge_link, 16 slots)
+hangard: bridge: ready
+hangard: bridge: opened ardusub.param, mirrored from vehicle (writer mavlink)
+hangard: bridge: opened video.index, mirrored from vehicle (writer encoder)
+hangard: bridge: opened mux.state, mirrored from vehicle (writer mux)
+hangard: bridge: opened ardusub.state, mirrored from vehicle (writer mavlink)
+hangard: bridge: opened nav.depth, mirrored from vehicle (writer mavlink)
+hangard: bridge: opened nav.imu, mirrored from vehicle (writer mavlink)
+hangard: bridge: opened nav.attitude, mirrored from vehicle (writer mavlink)
+hangard: bridge: opened bridge.vehicle.link, mirrored from vehicle (writer bridge)
+hangard: bridge: opened safety.state, mirrored from vehicle (writer safety)
+hangard: bridge: opened power.battery, mirrored from vehicle (writer mavlink)
+hangard: bridge: opened hangar.vehicle.system, mirrored from vehicle (writer hangar)
+hangard: bridge: opened hangar.vehicle.modules, mirrored from vehicle (writer hangar)
+hangard: bridge: opened recorder.status, mirrored from vehicle (writer recorder)
+hangard: bridge: opened hangar.vehicle.admin.req, mirrored from vehicle (writer hangar)
+hangard: bridge: opened safety.rep, mirrored from vehicle (writer safety)
+hangard: bridge: stopping: restart requested
+hangard: bridge: pid 163353 exited with status 0
+hangard: bridge: skipping step 2 (cgroup): not running as root
+hangard: bridge: skipping steps 7-9 (capabilities, user hg-bridge, group hangar): not running as root
+hangard: bridge: no journald at /dev/shm/hangar-topside/run/systemd/journal/stdout: logging to /dev/shm/hangar-topside/run/hangar/log/bridge.log
+hangard: bridge: started, pid 163378
+hangard: bridge: starting
+hangard: bridge: opened bridge.topside.link (bridge_link, 16 slots)
+hangard: bridge: ready
+hangard: bridge: opened video.index, mirrored from vehicle (writer encoder)
+hangard: bridge: opened safety.state, mirrored from vehicle (writer safety)
+hangard: bridge: opened mux.state, mirrored from vehicle (writer mux)
+hangard: bridge: opened nav.imu, mirrored from vehicle (writer mavlink)
+hangard: bridge: opened nav.depth, mirrored from vehicle (writer mavlink)
+hangard: bridge: opened bridge.vehicle.link, mirrored from vehicle (writer bridge)
+hangard: bridge: opened nav.attitude, mirrored from vehicle (writer mavlink)
+hangard: bridge: opened ardusub.state, mirrored from vehicle (writer mavlink)
+hangard: bridge: opened power.battery, mirrored from vehicle (writer mavlink)
+hangard: bridge: opened hangar.vehicle.system, mirrored from vehicle (writer hangar)
+hangard: bridge: opened hangar.vehicle.modules, mirrored from vehicle (writer hangar)
+hangard: bridge: opened recorder.status, mirrored from vehicle (writer recorder)
+hangard: bridge: opened hangar.vehicle.admin.req, mirrored from vehicle (writer hangar)
+hangard: bridge: opened safety.rep, mirrored from vehicle (writer safety)
+hangard: bridge: opened mavlink.rep, mirrored from vehicle (writer mavlink)
+hangard: bridge: unhealthy: bridge.topside.link stale for 1037 ms
+hangard: bridge: pid 163378 exited with status 0
+hangard: bridge: backoff: bridge.topside.link stale for 1037 ms; restarting in 0.1 s (failure 1)
+hangard: bridge: skipping step 2 (cgroup): not running as root
+hangard: bridge: skipping steps 7-9 (capabilities, user hg-bridge, group hangar): not running as root
+hangard: bridge: no journald at /dev/shm/hangar-topside/run/systemd/journal/stdout: logging to /dev/shm/hangar-topside/run/hangar/log/bridge.log
+hangard: bridge: started, pid 163409
+hangard: bridge: starting
+hangard: bridge: opened bridge.topside.link (bridge_link, 16 slots)
+hangard: bridge: ready
+hangard: bridge: opened ardusub.param, mirrored from vehicle (writer mavlink)
+hangard: bridge: opened video.index, mirrored from vehicle (writer encoder)
+hangard: bridge: opened nav.depth, mirrored from vehicle (writer mavlink)
+hangard: bridge: opened nav.imu, mirrored from vehicle (writer mavlink)
+hangard: bridge: opened nav.attitude, mirrored from vehicle (writer mavlink)
+hangard: bridge: opened safety.state, mirrored from vehicle (writer safety)
+hangard: bridge: opened bridge.vehicle.link, mirrored from vehicle (writer bridge)
+hangard: bridge: opened ardusub.state, mirrored from vehicle (writer mavlink)
+hangard: bridge: opened mux.state, mirrored from vehicle (writer mux)
+hangard: bridge: opened power.battery, mirrored from vehicle (writer mavlink)
+hangard: bridge: opened hangar.vehicle.system, mirrored from vehicle (writer hangar)
+hangard: bridge: opened hangar.vehicle.modules, mirrored from vehicle (writer hangar)
+hangard: bridge: opened recorder.status, mirrored from vehicle (writer recorder)
+hangard: bridge: opened hangar.vehicle.admin.req, mirrored from vehicle (writer hangar)
+hangard: bridge: opened safety.rep, mirrored from vehicle (writer safety)
+hangard: bridge: stopping: restart requested
+hangard: bridge: pid 163409 exited with status 0
+hangard: bridge: skipping step 2 (cgroup): not running as root
+hangard: bridge: skipping steps 7-9 (capabilities, user hg-bridge, group hangar): not running as root
+hangard: bridge: no journald at /dev/shm/hangar-topside/run/systemd/journal/stdout: logging to /dev/shm/hangar-topside/run/hangar/log/bridge.log
+hangard: bridge: started, pid 163429
+hangard: bridge: starting
+hangard: bridge: opened bridge.topside.link (bridge_link, 16 slots)
+hangard: bridge: opened video.index, mirrored from vehicle (writer encoder)
+hangard: bridge: ready
+hangard: bridge: opened nav.depth, mirrored from vehicle (writer mavlink)
+hangard: bridge: opened nav.imu, mirrored from vehicle (writer mavlink)
+hangard: bridge: opened nav.attitude, mirrored from vehicle (writer mavlink)
+hangard: bridge: opened safety.state, mirrored from vehicle (writer safety)
+hangard: bridge: opened ardusub.state, mirrored from vehicle (writer mavlink)
+hangard: bridge: opened bridge.vehicle.link, mirrored from vehicle (writer bridge)
+hangard: bridge: opened mux.state, mirrored from vehicle (writer mux)
+hangard: bridge: opened power.battery, mirrored from vehicle (writer mavlink)
+hangard: bridge: opened hangar.vehicle.system, mirrored from vehicle (writer hangar)
+hangard: bridge: opened hangar.vehicle.modules, mirrored from vehicle (writer hangar)
+hangard: bridge: opened recorder.status, mirrored from vehicle (writer recorder)
+hangard: bridge: opened hangar.vehicle.admin.req, mirrored from vehicle (writer hangar)
+hangard: bridge: opened safety.rep, mirrored from vehicle (writer safety)
+hangard: bridge: opened mavlink.rep, mirrored from vehicle (writer mavlink)
+hangard: bridge: unhealthy: bridge.topside.link stale for 1056 ms
+hangard: bridge: pid 163429 exited with status 0
+hangard: bridge: backoff: bridge.topside.link stale for 1056 ms; restarting in 0.1 s (failure 1)
+hangard: bridge: skipping step 2 (cgroup): not running as root
+hangard: bridge: skipping steps 7-9 (capabilities, user hg-bridge, group hangar): not running as root
+hangard: bridge: no journald at /dev/shm/hangar-topside/run/systemd/journal/stdout: logging to /dev/shm/hangar-topside/run/hangar/log/bridge.log
+hangard: bridge: started, pid 163506
+hangard: bridge: starting
+hangard: bridge: opened bridge.topside.link (bridge_link, 16 slots)
+hangard: bridge: opened ardusub.param, mirrored from vehicle (writer mavlink)
+hangard: bridge: ready
+hangard: bridge: opened video.index, mirrored from vehicle (writer encoder)
+hangard: bridge: opened nav.depth, mirrored from vehicle (writer mavlink)
+hangard: bridge: opened nav.imu, mirrored from vehicle (writer mavlink)
+hangard: bridge: opened nav.attitude, mirrored from vehicle (writer mavlink)
+hangard: bridge: opened bridge.vehicle.link, mirrored from vehicle (writer bridge)
+hangard: bridge: opened ardusub.state, mirrored from vehicle (writer mavlink)
+hangard: bridge: opened mux.state, mirrored from vehicle (writer mux)
+hangard: bridge: opened safety.state, mirrored from vehicle (writer safety)
+hangard: bridge: opened power.battery, mirrored from vehicle (writer mavlink)
+hangard: bridge: opened hangar.vehicle.system, mirrored from vehicle (writer hangar)
+hangard: bridge: opened hangar.vehicle.modules, mirrored from vehicle (writer hangar)
+hangard: bridge: opened recorder.status, mirrored from vehicle (writer recorder)
+hangard: bridge: opened hangar.vehicle.admin.req, mirrored from vehicle (writer hangar)
+hangard: bridge: opened safety.rep, mirrored from vehicle (writer safety)
+hangard: bridge: stopping: restart requested
+hangard: bridge: pid 163506 exited with status 0
+hangard: bridge: skipping step 2 (cgroup): not running as root
+hangard: bridge: skipping steps 7-9 (capabilities, user hg-bridge, group hangar): not running as root
+hangard: bridge: no journald at /dev/shm/hangar-topside/run/systemd/journal/stdout: logging to /dev/shm/hangar-topside/run/hangar/log/bridge.log
+hangard: bridge: started, pid 163528
+hangard: bridge: starting
+hangard: bridge: opened bridge.topside.link (bridge_link, 16 slots)
+hangard: bridge: ready
+hangard: bridge: opened video.index, mirrored from vehicle (writer encoder)
+hangard: bridge: opened bridge.vehicle.link, mirrored from vehicle (writer bridge)
+hangard: bridge: opened mux.state, mirrored from vehicle (writer mux)
+hangard: bridge: opened safety.state, mirrored from vehicle (writer safety)
+hangard: bridge: opened ardusub.state, mirrored from vehicle (writer mavlink)
+hangard: bridge: opened nav.depth, mirrored from vehicle (writer mavlink)
+hangard: bridge: opened nav.imu, mirrored from vehicle (writer mavlink)
+hangard: bridge: opened nav.attitude, mirrored from vehicle (writer mavlink)
+hangard: bridge: opened power.battery, mirrored from vehicle (writer mavlink)
+hangard: bridge: opened hangar.vehicle.system, mirrored from vehicle (writer hangar)
+hangard: bridge: opened hangar.vehicle.modules, mirrored from vehicle (writer hangar)
+hangard: bridge: opened recorder.status, mirrored from vehicle (writer recorder)
+hangard: bridge: opened hangar.vehicle.admin.req, mirrored from vehicle (writer hangar)
+hangard: bridge: opened safety.rep, mirrored from vehicle (writer safety)
+hangard: bridge: opened ardusub.param, mirrored from vehicle (writer mavlink)
+hangard: bridge: opened mavlink.rep, mirrored from vehicle (writer mavlink)

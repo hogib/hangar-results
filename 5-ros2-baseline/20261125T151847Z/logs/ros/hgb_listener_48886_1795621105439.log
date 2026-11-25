@@ -1,0 +1,1 @@
+[WARN] [1795621105.466813360] [hgb_listener]: Loaned messages are only safe with const ref subscription callbacks. If you are using any other kind of subscriptions, set the ROS_DISABLE_LOANED_MESSAGES environment variable to 1 (the default).

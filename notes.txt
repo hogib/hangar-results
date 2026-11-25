@@ -1,0 +1,61 @@
+15:58:51 A passed: topside restart 15:58:10, sticks follow at once, dropped_old 0. B2 next
+15:59:53 B2 start (up, bridge, disarmed)
+16:04:59 B2 end
+16:05:35 B3 start (armed, sticks)
+16:10:41 B3 end
+16:13:00 B4 start (armed, video)
+16:18:13 B4 end; B5 start (armed, video, 4-core load 600 s)
+
+FINDINGS (to fix after the visit)
+F1 lab.sh up --video: does not notice UDP 5610 already taken on the laptop (the laptop's own
+   hellion.service, started 16:01:47). Session hellion's camera-in: "cannot bind UDP port 5610";
+   eeye had no input; lab.sh status read the system hellion's pipeline and said OK. Fix: refuse
+   --video when 5610 is taken; status must read the session hellion (:8092) only.
+   Recovered by itself when the system hellion was stopped (16:20), no restart.
+F2 profiles/rov-topside/console.module frames hellion at http://127.0.0.1:8080/ (the system
+   hellion); the lab session's is on :8092. Dawn Patrol's Hellion tab shows the wrong one, or nothing.
+   Fix: lab.sh/rov.sh pass --hellion with the session's port.
+F3 Camera controls (exposure, brightness, white balance) do nothing with --video: hellion sends
+   them to the vehicle's hellion ("camera_controls": "peer"), which is stopped; hangar's encoder
+   owns the camera and has no such controls. Effects work (laptop side). Fix: controls as
+   parameters of the encoder module, reachable over the bridge; the panel talks to those.
+16:24:12 B5 load stopped early (plateau 83-85 C, soft limit since 16:19:30); B6 cooling starts
+16:25:58 topside console pointed at :8092 (F2 worked around in the laid-out root)
+16:28:02 B1 start (hangar down, lab services, governor performance)
+16:33:04 B1 end; C1 start (hg_bench quiet, lab services running)
+16:33:55 unattended-upgrade ran on the Pi 16:24:35 to about now at 100 % of a core: B6 (cooling) and B1 (baseline 63.4 C) INVALID, to repeat. B2-B5 unaffected.
+  apt-daily-upgrade.service, apt-daily-upgrade.timer, apt-daily.timer stopped by the user: START THE TWO TIMERS AGAIN BEFORE LEAVING.
+16:33:55 B1 again: start (hangar down, lab services, governor performance)
+16:36:42 upgrade process idle (0 % CPU, waiting on a download; TERM sent). B1 again: start now
+16:41:58 B1 again: 55.8 C last minute (54.9-57.6), load 0.13. C1 start
+16:43:34 C1 done; C2 start: 2-core load, then 4-core
+16:49:19 C2 done; cooling again (B6 repeat) from now
+16:54:29 C2: 2-core load 68-75 C not throttled; 4-core 76->84 C, soft limit after ~35 s. B6 again: 83.4 C -> 57 C in 90 s, 55-56 C within 2.5 min (load off 16:49:18).
+16:55:07 hangar up --bridge (no sudo needed), disarmed. C3 then D idle x3
+17:00:53 C3 (beside hangar) and D idle x3 done: 2026-11-25-lab, -lab-2, -lab-3. hangar on the Pi 4.09/4.09/4.13 % of a core. Stopped before E (arms by itself; user away). hangar up --bridge, disarmed.
+17:25:54 E start: one repetition of safety-kill first
+17:26:09 E quiet: failtest.py all
+17:30:34 E quiet stopped at safety-kill rep 5: the manager gave up on safety after 6 kills in 60 s (Burst=5/60s, by design); ArduSub disarmed, gate closed (its writer gone). failtest_vehicle.py now restarts the killed module after each repetition (resets the count). safety restarted by hand. First 5 reps: disarmed 5.8-7.0 ms.
+17:30:56 E quiet again: failtest.py all (first attempt kept in 2026-11-25-failtests/first-attempt)
+17:37:03 order changed by the user: G (ROS 2 baseline) directly after E
+17:47:30 E quiet: safety-kill 10, mavlink-kill 5, mux-kill 5, bridge-hang 10, silence-5 10, silence-1 10 complete and valid.
+  silence-2.5 stopped at rep 6: the TOPSIDE manager restarts the suspended bridge (health: link topic stale ~1 s), each time with a longer back-off, and gave up at the 6th (Burst). Real silences were 2578, 2727, 2855 (no failsafe), 3318, 4056, 7478 ms (tether failsafe 3006-3018 ms after the last packet): correct every time; the test's silence was longer than asked. Kept in second-attempt-backoff/. failtest.py now restarts the topside bridge after each silence repetition.
+  Topside bridge restarted by hand, failsafe cleared. Vehicle disarmed, state 0.
+17:50:49 E quiet finished. silence-2.5: 9 valid, silences 2548-2628 ms, no failsafe, still armed (rep 1 not run: "did not arm ... autopilot: ArduSub armed while hangar was disarmed", unexplained, to look at in the recording). arm-in-silence 5/5 refused (tether: no packet for 2.0 s).
+  mux-kill 5/5: no failsafe, still armed, mux restarted. The script does not observe the gate's output, so "gate neutral within 200 ms" is NOT shown by it: check in the recordings.
+17:55:30 E unplug x3 (run by the user): tether failsafe 3000.4, 3008.1, 3010.6 ms after the last packet; cable out 10-14 s. E under load starts: 2 cores then 4 cores, five tests, 5 reps each.
+18:06:49 E under load (5 reps each, 2 and 4 cores) done for four tests; silence-5 under load starts
+18:11:05 E under load complete incl. silence-5: tether failsafe 3000.0-3017.5 ms (2 cores), 3000.5-3015.4 ms (4 cores, throttled). Today's recorder sessions copied to load/pi/sessions.
+18:14:34 G start: hangar down, lab services stopped, governor performance; smoke test
+18:18:47 G smoke passed (Fast DDS and Fast DDS data-sharing only; Cyclone and Zenoh not installed). Full run starts, --no-build, performance
+19:26:08 G finished about 18:56 (my waiter did not notice: it matched itself). Results in load/pi/ros2/20261125T151847Z
+19:29:54 F: up --serial --bridge; user armed, sticks followed, disarmed. Idle cost then failure tests
+19:31:03 F idle: hangar 1.86 % of a core on the Pi, machine 0.7 % busy (lab services stopped). Failure tests on serial -> /home/hogib/hangar-results/2026-11-25-failtests-serial
+19:35:53 F failure tests: safety-kill 5/5 (4.3-6.4 ms), bridge-hang 5/5, silence-5 5/5 (3010-3020 ms), mux 5/5 restarted. mavlink-kill: rep 1 ok (180 ms, serial reopened), reps 2-5 refused 'ArduSub parameters not read yet' (module re-reads params after restart). Script now waits for params; rerun
+19:38:31 F armed with sticks, 60 s: /home/hogib/hangar-results/2026-11-25-lab-5
+19:44:14 up --serial --bridge --video. Snapshots taken (load/snapshots). Cost with video (disarmed), then failure tests with video
+19:45:27 serial+video idle: hangar 2.76 % of a core (8 processes), Pi 1.3 % busy, 59.5-62.2 C, 32.3 fps, 11.1 Mbit/s. encoder: 99 send errors after 3.5 min (watch). Failure tests with video -> /home/hogib/hangar-results/2026-11-25-failtests-serial-video
+19:50:28 failure tests on serial+video done: 25/25 as expected (safety 3.7-6.5 ms, mavlink 179.3-180.8, bridge 215-296, tether 3000.2-3013.6 after last packet)
+19:55:07 clear while unplugged: refused 3 of 3 (link state 2, last packet 4.3, 5.6, 6.9 s old); cleared once the link was back; ended disarmed. (First try: my wrapper hung, nothing pulled, script timed out and disarmed.)
+19:57:08 soak NOT run (battery, time): for the next visit; soak.py kept. Final copy taken.
+19:58:37 left as found: eeye, hellion, both apt timers active; governor ondemand; hangar down; logger stopped. unattended-upgrade pid 5796 still alive, idle.

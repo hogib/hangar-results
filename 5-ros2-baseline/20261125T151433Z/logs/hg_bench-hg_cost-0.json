@@ -1,0 +1,15 @@
+{
+ "hg_bench": {"hg_commit": "db2dfc8", "compiler": "Clang 22.1.8", "args": "publish latest --runs 3 --count 200000 --json /home/bluerov2/hangar-ros2-bench/results/20261125T151433Z/logs/hg_bench-hg_cost-0.json"},
+ "date": "2026-11-25T15:16:08Z",
+ "machine": {"arch": "aarch64", "kernel": "6.8.0-1048-raspi", "cpu": "Raspberry Pi 5 Model B Rev 1.0", "model": "Raspberry Pi 5 Model B Rev 1.0", "cpus": 1, "governor": "performance", "topic_dir": "/dev/shm/hg-bench-1004-45270"},
+ "publish": {"runs": 3, "sizes": [
+  {"bytes": 16, "count": 200000, "ns": 80.24, "raw": [80.22, 80.24, 80.49]},
+  {"bytes": 256, "count": 200000, "ns": 96.11, "raw": [96.05, 96.11, 96.12]},
+  {"bytes": 4096, "count": 200000, "ns": 358.64, "raw": [358.49, 358.64, 358.65]},
+  {"bytes": 1048576, "count": 782, "ns": 122924.81, "raw": [118094.70, 122924.81, 136723.60]}]},
+ "latest": {"runs": 3, "sizes": [
+  {"bytes": 16, "count": 200000, "ns": 52.92, "no_message": 0, "raw": [52.68, 52.92, 52.94]},
+  {"bytes": 256, "count": 200000, "ns": 120.79, "no_message": 0, "raw": [120.61, 120.79, 121.03]},
+  {"bytes": 4096, "count": 200000, "ns": 416.17, "no_message": 0, "raw": [414.39, 416.17, 416.41]},
+  {"bytes": 1048576, "count": 782, "ns": 198459.08, "no_message": 0, "raw": [190017.31, 198459.08, 205629.30]}]}
+}

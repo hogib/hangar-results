@@ -1,0 +1,44 @@
+hangar-mavlink: parameter backups in /dev/shm/hangar-vehicle/var/lib/hangar/mavlink/params-backup
+hangar-mavlink: the vehicle's MAVLink module: as system 255 component 190 to ArduSub (system 1) over serial /dev/ttyACM0 115200 open, signing off, 40 parameters in /dev/shm/hangar-vehicle/etc/hangar/ardusub.params
+hangar-mavlink: params_dump save-20261125-164044-60394 by admin:bluerov2: into /dev/shm/hangar-vehicle/var/lib/hangar/mavlink/params-backup
+hangar-mavlink: params job 1 done: 979 of 979 read
+hangar-mavlink: parameter backups in /dev/shm/hangar-vehicle/var/lib/hangar/mavlink/params-backup
+hg_call: mavlink.rep: 8 replies of the previous instance found in the ring; their requests are not run again
+hg_call: mavlink.rep: 1 of them answer requests still in time: published again, for the instance after this one
+hangar-mavlink: the vehicle's MAVLink module: as system 255 component 190 to ArduSub (system 1) over serial /dev/ttyACM0 115200 open, signing off, 40 parameters in /dev/shm/hangar-vehicle/etc/hangar/ardusub.params
+hangar-mavlink: stopping: neutral and disarm sent; serial /dev/ttyACM0 115200 open resync 76 B
+hangar-mavlink: parameter backups in /dev/shm/hangar-vehicle/var/lib/hangar/mavlink/params-backup
+hg_call: mavlink.rep: 1 replies of the previous instance found in the ring; their requests are not run again
+hangar-mavlink: the vehicle's MAVLink module: as system 255 component 190 to ArduSub (system 1) over serial /dev/ttyACM0 115200 open, signing off, 40 parameters in /dev/shm/hangar-vehicle/etc/hangar/ardusub.params
+hangar-mavlink: parameter backups in /dev/shm/hangar-vehicle/var/lib/hangar/mavlink/params-backup
+hg_call: mavlink.rep: 3 replies of the previous instance found in the ring; their requests are not run again
+hg_call: mavlink.rep: 1 of them answer requests still in time: published again, for the instance after this one
+hangar-mavlink: the vehicle's MAVLink module: as system 255 component 190 to ArduSub (system 1) over serial /dev/ttyACM0 115200 open, signing off, 40 parameters in /dev/shm/hangar-vehicle/etc/hangar/ardusub.params
+hangar-mavlink: stopping: neutral and disarm sent; serial /dev/ttyACM0 115200 open resync 76 B
+hangar-mavlink: parameter backups in /dev/shm/hangar-vehicle/var/lib/hangar/mavlink/params-backup
+hg_call: mavlink.rep: 2 replies of the previous instance found in the ring; their requests are not run again
+hangar-mavlink: the vehicle's MAVLink module: as system 255 component 190 to ArduSub (system 1) over serial /dev/ttyACM0 115200 open, signing off, 40 parameters in /dev/shm/hangar-vehicle/etc/hangar/ardusub.params
+hangar-mavlink: parameter backups in /dev/shm/hangar-vehicle/var/lib/hangar/mavlink/params-backup
+hg_call: mavlink.rep: 3 replies of the previous instance found in the ring; their requests are not run again
+hg_call: mavlink.rep: 1 of them answer requests still in time: published again, for the instance after this one
+hangar-mavlink: the vehicle's MAVLink module: as system 255 component 190 to ArduSub (system 1) over serial /dev/ttyACM0 115200 open, signing off, 40 parameters in /dev/shm/hangar-vehicle/etc/hangar/ardusub.params
+hangar-mavlink: stopping: neutral and disarm sent; serial /dev/ttyACM0 115200 open resync 131 B
+hangar-mavlink: parameter backups in /dev/shm/hangar-vehicle/var/lib/hangar/mavlink/params-backup
+hg_call: mavlink.rep: 3 replies of the previous instance found in the ring; their requests are not run again
+hangar-mavlink: the vehicle's MAVLink module: as system 255 component 190 to ArduSub (system 1) over serial /dev/ttyACM0 115200 open, signing off, 40 parameters in /dev/shm/hangar-vehicle/etc/hangar/ardusub.params
+hangar-mavlink: parameter backups in /dev/shm/hangar-vehicle/var/lib/hangar/mavlink/params-backup
+hg_call: mavlink.rep: 2 replies of the previous instance found in the ring; their requests are not run again
+hg_call: mavlink.rep: 1 of them answer requests still in time: published again, for the instance after this one
+hangar-mavlink: the vehicle's MAVLink module: as system 255 component 190 to ArduSub (system 1) over serial /dev/ttyACM0 115200 open, signing off, 40 parameters in /dev/shm/hangar-vehicle/etc/hangar/ardusub.params
+hangar-mavlink: stopping: neutral and disarm sent; serial /dev/ttyACM0 115200 open resync 68 B
+hangar-mavlink: parameter backups in /dev/shm/hangar-vehicle/var/lib/hangar/mavlink/params-backup
+hg_call: mavlink.rep: 4 replies of the previous instance found in the ring; their requests are not run again
+hangar-mavlink: the vehicle's MAVLink module: as system 255 component 190 to ArduSub (system 1) over serial /dev/ttyACM0 115200 open, signing off, 40 parameters in /dev/shm/hangar-vehicle/etc/hangar/ardusub.params
+hangar-mavlink: parameter backups in /dev/shm/hangar-vehicle/var/lib/hangar/mavlink/params-backup
+hg_call: mavlink.rep: 1 replies of the previous instance found in the ring; their requests are not run again
+hg_call: mavlink.rep: 1 of them answer requests still in time: published again, for the instance after this one
+hangar-mavlink: the vehicle's MAVLink module: as system 255 component 190 to ArduSub (system 1) over serial /dev/ttyACM0 115200 open, signing off, 40 parameters in /dev/shm/hangar-vehicle/etc/hangar/ardusub.params
+hangar-mavlink: stopping: neutral and disarm sent; serial /dev/ttyACM0 115200 open resync 123 B
+hangar-mavlink: parameter backups in /dev/shm/hangar-vehicle/var/lib/hangar/mavlink/params-backup
+hg_call: mavlink.rep: 5 replies of the previous instance found in the ring; their requests are not run again
+hangar-mavlink: the vehicle's MAVLink module: as system 255 component 190 to ArduSub (system 1) over serial /dev/ttyACM0 115200 open, signing off, 40 parameters in /dev/shm/hangar-vehicle/etc/hangar/ardusub.params

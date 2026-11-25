@@ -1,0 +1,119 @@
+# hangar against ROS 2: Pi 5, heatsink, performance, 2026-11-25
+
+2026-11-25T15:18:47Z, Raspberry Pi 5 Model B Rev 1.0, aarch64, Linux 6.8.0-1048-raspi, 4 CPUs, governor performance.
+ROS 2 jazzy; hangar lib/hg db2dfc8 (Clang 22.1.8), bench/ros2 at unknown.
+3 repetition(s); each rate run 20 s after 2 s of warm-up (ROS 2), idle 30 s; writer on CPU 2, reader on CPU 3, the same two for both systems.
+Load average at the start 0.21; running beside the benchmark: nothing procbench.py knows.
+
+A cell is the median over the repetitions, (min–max) when there are several, and **×N**: how many times hangar's figure the ROS 2 one is. † marks a figure with a run in it during which the machine was hot, throttled, frequency-capped or busy with something else (listed below).
+
+| | hangar | `fastdds` | `fastdds-datasharing` |
+|---|---|---|---|
+| **Publish, ns per message, nobody subscribed (hg_publish; publish())** | | | |
+| 16 B | 80.2 (79.8–80.2) | 974 (969–974) **×12.1** | 1 330 (1 328–1 416) **×16.6** |
+| 256 B | 96.7 (96.7–96.7) | 1 019 (990–1 020) **×10.5** | 1 284 (1 284–1 300) **×13.3** |
+| 4 KB | 357 (357–357) | 1 072 (1 058–1 078) **×3.01** | 1 328 (1 286–1 330) **×3.72** |
+| 1 MB | 125 412 (117 919–126 404) | 68 207 (65 580–72 561) **×0.54** | 1 324 (1 285–1 336) **×0.01** |
+| **Read the newest message, ns (hg_latest; take() of a message just published in the same process)** | | | |
+| 16 B | 53.8 (53.6–54.2) | 1 558 (1 516–1 612) **×28.9** | 1 426 (1 423–1 480) **×26.5** |
+| 256 B | 130 (130–131) | 1 651 (1 617–1 660) **×12.7** | 1 518 (1 474–1 633) **×11.6** |
+| 4 KB | 417 (416–417) | 1 773 (1 755–1 822) **×4.26** | 1 556 (1 547–1 560) **×3.74** |
+| 1 MB | 187 924 (187 663–194 888) | 39 582 (38 841–45 174) **×0.21** | 121 559 (106 566–130 316) **×0.65** |
+| **256 B at 100 Hz, two processes on two CPUs; ROS 2 QoS: best-effort keep-last 1** | | | |
+| publish → message in the reader's hands, p50, µs | 5.60 (5.60–5.60) | 38.6 (37.4–39.4) **×6.89** | 26.3 (26.2–26.8) **×4.70** |
+| p99, µs | 9.10 (7.30–9.20) | 67.9 (58.0–70.4) **×7.46** | 44.1 (40.2–46.2) **×4.85** |
+| p99.9, µs | 602 (491–730) | 184 (183–851) **×0.30** | 142 (134–428) **×0.24** |
+| max, µs | 966 (891–984) | 472 (328–980) **×0.49** | 623 (340–980) **×0.65** |
+| CPU, both processes, % of one core | 0.120 (0.120–0.120) | 0.615 (0.597–0.627) **×5.12** | 0.500 (0.494–0.522) **×4.17** |
+| context switches per second, both processes | 201 (201–201) | 314 (313–316) **×1.56** | 317 (316–317) **×1.57** |
+| messages lost, % | 0 (0–0) | 0 (0–0) | 0 (0–0) |
+| **256 B at 100 Hz, two processes on two CPUs; ROS 2 QoS: reliable keep-last 16** | | | |
+| publish → message in the reader's hands, p50, µs | 5.60 (5.60–5.60) | 41.3 (40.3–42.6) **×7.38** | 36.0 (35.3–36.7) **×6.43** |
+| p99, µs | 9.10 (7.30–9.20) | 72.6 (60.3–77.1) **×7.98** | 61.5 (52.1–64.7) **×6.76** |
+| p99.9, µs | 602 (491–730) | 221 (206–227) **×0.37** | 202 (182–382) **×0.34** |
+| max, µs | 966 (891–984) | 568 (547–852) **×0.59** | 923 (677–1 012) **×0.96** |
+| CPU, both processes, % of one core | 0.120 (0.120–0.120) | 0.748 (0.722–0.761) **×6.23** | 0.740 (0.724–0.768) **×6.17** |
+| context switches per second, both processes | 201 (201–201) | 443 (431–443) **×2.20** | 415 (415–415) **×2.06** |
+| messages lost, % | 0 (0–0) | 0 (0–0) | 0 (0–0) |
+| **256 B at 1 kHz, two processes on two CPUs; ROS 2 QoS: best-effort keep-last 1** | | | |
+| publish → message in the reader's hands, p50, µs | 5.60 (5.60–5.60) | 35.9 (34.4–37.7) **×6.41** | 26.1 (25.7–26.6) **×4.66** |
+| p99, µs | 5.70 (5.70–5.70) | 40.8 (38.8–41.9) **×7.16** | 30.1 (28.7–30.2) **×5.28** |
+| p99.9, µs | 9.40 (8.60–246) | 65.5 (64.1–66.9) **×6.97** | 47.2 (43.1–49.9) **×5.02** |
+| max, µs | 996 (886–1 504) | 1 025 (838–1 025) **×1.03** | 998 (692–1 017) **×1.00** |
+| CPU, both processes, % of one core | 1.16 (1.16–1.16) | 5.30 (5.14–5.58) **×4.57** | 4.62 (4.41–4.66) **×3.98** |
+| context switches per second, both processes | 2 001 (2 001–2 001) | 3 014 (3 014–3 014) **×1.51** | 3 017 (3 017–3 021) **×1.51** |
+| messages lost, % | 0 (0–0) | 0 (0–0) | 0 (0–0) |
+| **256 B at 1 kHz, two processes on two CPUs; ROS 2 QoS: reliable keep-last 16** | | | |
+| publish → message in the reader's hands, p50, µs | 5.60 (5.60–5.60) | 41.6 (40.1–43.2) **×7.43** | 34.8 (33.4–35.4) **×6.21** |
+| p99, µs | 5.70 (5.70–5.70) | 50.1 (47.6–51.5) **×8.79** | 41.6 (38.8–41.7) **×7.30** |
+| p99.9, µs | 9.40 (8.60–246) | 95.3 (81.6–101) **×10.1** | 61.1 (60.4–75.8) **×6.50** |
+| max, µs | 996 (886–1 504) | 1 038 (820–1 056) **×1.04** | 920 (887–957) **×0.92** |
+| CPU, both processes, % of one core | 1.16 (1.16–1.16) | 6.70 (6.70–7.66) **×5.78** | 6.69 (6.42–7.05) **×5.77** |
+| context switches per second, both processes | 2 001 (2 001–2 001) | 4 168 (4 168–4 170) **×2.08** | 4 015 (4 015–4 015) **×2.01** |
+| messages lost, % | 0 (0–0) | 0 (0–0) | 0 (0–0) |
+| **256 B at 10 kHz, two processes on two CPUs; ROS 2 QoS: best-effort keep-last 1** | | | |
+| publish → message in the reader's hands, p50, µs | 5.40 (5.40–5.40) | 36.2 (33.7–39.1) **×6.70** | 25.0 (23.9–26.7) **×4.63** |
+| p99, µs | 5.70 (5.60–5.70) | 37.8 (37.3–47.7) **×6.63** | 27.6 (25.4–28.2) **×4.84** |
+| p99.9, µs | 271 (5.70–614) | 43.8 (42.2–58.4) **×0.16** | 31.1 (30.2–31.9) **×0.11** |
+| max, µs | 1 002 (843–1 415) | 355 (353–412) **×0.35** | 130 (117–170) **×0.13** |
+| CPU, both processes, % of one core | 11.2 (11.1–11.2) | 52.2 (49.3–56.1) **×4.68** | 42.6 (40.7–46.3) **×3.82** |
+| context switches per second, both processes | 19 987 (19 978–19 999) | 30 011 (29 998–30 019) **×1.50** | 30 007 (30 003–30 009) **×1.50** |
+| messages lost, % | 0 (0–0.008) | 0.081 (0.017–0.143) | 0.079 (0.071–0.083) |
+| **256 B at 10 kHz, two processes on two CPUs; ROS 2 QoS: reliable keep-last 16** | | | |
+| publish → message in the reader's hands, p50, µs | 5.40 (5.40–5.40) | 41.7 (40.2–45.2) **×7.72** | 33.1 (32.6–33.3) **×6.13** |
+| p99, µs | 5.70 (5.60–5.70) | 57.4 (56.6–72.0) **×10.1** | 35.5 (35.0–38.0) **×6.23** |
+| p99.9, µs | 271 (5.70–614) | 118 (111–319) **×0.43** | 126 (116–335) **×0.46** |
+| max, µs | 1 002 (843–1 415) | 1 084 (1 081–1 110) **×1.08** | 1 057 (1 042–1 058) **×1.05** |
+| CPU, both processes, % of one core | 11.2 (11.1–11.2) | 65.2 (63.3–68.5) **×5.84** | 64.6 (63.4–66.5) **×5.79** |
+| context switches per second, both processes | 19 987 (19 978–19 999) | 40 517 (40 458–40 522) **×2.03** | 40 003 (39 989–40 007) **×2.00** |
+| messages lost, % | 0 (0–0.008) | 0 (0–0) | 0 (0–0) |
+| **256 B at 1 kHz, the pair left to the scheduler (not pinned); best-effort keep-last 1** | | | |
+| p50, µs | 5.70 (5.70–5.70) | 34.2 (34.0–35.4) **×6.00** | 25.7 (24.5–26.5) **×4.51** |
+| p99, µs | 6.10 (5.80–7.60) | 49.8 (49.6–51.6) **×8.16** | 32.4 (31.7–33.7) **×5.31** |
+| max, µs | 20.0 (18.6–97.0) | 116 (102–295) **×5.81** | 75.4 (75.1–76.8) **×3.77** |
+| CPU, both processes, % of one core | 1.16 (1.16–1.18) | 5.89 (5.88–6.15) **×5.08** | 4.66 (4.62–4.90) **×4.02** |
+| **1 MB at 30 Hz (a camera's frames), two processes on two CPUs; best-effort keep-last 1** | | | |
+| p50, µs | 318 (317–320) | 1 071 (1 062–1 081) **×3.36** | 31.9 (31.2–34.1) **×0.10** |
+| p99, µs | 1 644 (1 639–1 647) | 1 404 (1 361–1 455) **×0.85** | 82.5 (78.0–91.0) **×0.05** |
+| max, µs | 1 843 (1 823–1 880) | 1 577 (1 567–1 578) **×0.86** | 469 (241–790) **×0.25** |
+| CPU, both processes, % of one core | 1.63 (1.63–1.64) | 5.34 (5.33–5.39) **×3.28** | 0.808 (0.805–0.819) **×0.50** |
+| messages lost, % | 0 (0–0) | 0.167 (0.167–0.167) | 0 (0–0) |
+| **Idle: matched, nothing published** | | | |
+| subscriber: context switches per second | 0 (0–0) | 8.40 (8.20–8.43) | 8.50 (8.40–8.57) |
+| subscriber: CPU, % of one core | 0 (0–0) | 0.019 (0.019–0.020) | 0.020 (0.019–0.020) |
+| publisher: context switches per second (hangar: none to count, it has no thread asleep) | – | 8.73 (8.60–8.77) | 8.60 (8.50–8.83) |
+| publisher: CPU, % of one core | – | 0.018 (0.018–0.019) | 0.018 (0.018–0.020) |
+| **Memory and start, the 1 kHz pair** | | | |
+| PSS, both processes, kB | 270 (270–272) | 31 220 (31 208–31 228) **×116** | 31 432 (31 394–31 468) **×116** |
+| threads, both processes | 2 | 28 **×14.0** | 29 **×14.5** |
+| start of both processes → first message received, ms (hg_bench does not measure it) | – | 321 (63.0–321) | 65.0 (63.8–254) |
+| **NOT the comparison: both nodes composed in ONE process, rclcpp intra-process delivery, 256 B at 1 kHz** | | | |
+| p50, µs | – | 4.20 (4.10–4.30) | 3.90 (3.20–4.20) |
+| p99, µs | – | 5.10 (4.90–5.20) | 4.80 (3.90–5.10) |
+| max, µs | – | 13.2 (11.1–1 019) | 11.9 (10.4–24.9) |
+| CPU, the one process, % | – | 3.85 (3.80–3.89) | 3.78 (3.54–3.91) |
+| context switches per second | – | 1 008 (1 008–1 008) | 1 008 (1 008–1 008) |
+| PSS, the one process, kB | – | 23 656 (23 644–23 656) | 23 800 (23 792–23 811) |
+
+## The columns
+
+| | |
+|---|---|
+| hangar | `hg_bench` (/home/bluerov2/hangar-root/bin/hg_bench): shared-memory ring of 16 slots, one futex wake |
+| `fastdds` | Fast DDS, as installed (UDP and its shared-memory transport) |
+| `fastdds-datasharing` | Fast DDS, data-sharing delivery and loaned messages (config/fastdds-datasharing.xml); loaned messages: granted |
+
+The ROS 2 processes: `ROS_DOMAIN_ID=77`, `ROS_AUTOMATIC_DISCOVERY_RANGE=LOCALHOST`, a SingleThreadedExecutor, every thread of a process pinned to its one CPU.
+
+## Not run
+
+- `cyclonedds`: rmw_cyclonedds_cpp is not installed; to add it: sudo apt install ros-jazzy-rmw-cyclonedds-cpp
+- `cyclonedds-iceoryx`: rmw_cyclonedds_cpp is not installed; to add it: sudo apt install ros-jazzy-rmw-cyclonedds-cpp
+- `zenoh`: rmw_zenoh_cpp is not installed; to add it: sudo apt install ros-jazzy-rmw-zenoh-cpp
+- `zenoh-shm`: rmw_zenoh_cpp is not installed; to add it: sudo apt install ros-jazzy-rmw-zenoh-cpp
+
+## Thermal state
+
+At the start: 56.2 °C, performance, get_throttled 0xe0000. At the end: 52.4 °C, performance, get_throttled 0xe0000.
+
+No run was flagged: never hot, throttled, frequency-capped or with other load beside it between a run's start and its end.

@@ -1,0 +1,7 @@
+{
+ "hg_bench": {"hg_commit": "db2dfc8", "compiler": "Clang 22.1.8", "args": "wake --wake-bytes 1048576 --wake-rate 30 --seconds 3 --json /home/bluerov2/hangar-ros2-bench/results/20261125T151433Z/logs/hg_bench-hg_frame-0.json"},
+ "date": "2026-11-25T15:16:30Z",
+ "machine": {"arch": "aarch64", "kernel": "6.8.0-1048-raspi", "cpu": "Raspberry Pi 5 Model B Rev 1.0", "model": "Raspberry Pi 5 Model B Rev 1.0", "cpus": 2, "governor": "performance", "topic_dir": "/dev/shm/hg-bench-1004-45302"},
+ "wake": [
+  {"rate_hz": 30, "seconds": 3, "payload": 1048576, "slots": 16, "writer_cpu": 2, "reader_cpu": 3, "expected": 90, "published": 90, "msgs": 90, "wakes": 90, "timeouts": 0, "gaps": 0, "torn": 0, "writer_late": 0, "kept_up": true, "samples": 90, "p50_us": 217.6, "p99_us": 1051.3, "p999_us": 1051.3, "max_us": 1051.3, "mean_us": 348.7, "copied_p50_us": 328.6, "copied_p99_us": 1725.1, "copied_p999_us": 1725.1, "copied_max_us": 1725.1, "writer_cpu_s": 0.046, "reader_cpu_s": 0.030, "writer_cpu_pct": 1.54, "reader_cpu_pct": 1.01, "writer_ctxsw": [114, 1], "reader_ctxsw": [90, 2]}]
+}

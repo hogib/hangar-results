@@ -1,0 +1,147 @@
+hg_params: /dev/shm/hangar-vehicle/var/lib/hangar/safety/params: action_module is not in the saved file: default taken
+hg_params: /dev/shm/hangar-vehicle/var/lib/hangar/safety/params: action_tether is not in the saved file: default taken
+hg_params: /dev/shm/hangar-vehicle/var/lib/hangar/safety/params: action_leak is not in the saved file: default taken
+hg_params: /dev/shm/hangar-vehicle/var/lib/hangar/safety/params: action_battery is not in the saved file: default taken
+hg_params: /dev/shm/hangar-vehicle/var/lib/hangar/safety/params: action_depth is not in the saved file: default taken
+hg_params: /dev/shm/hangar-vehicle/var/lib/hangar/safety/params: action_autopilot is not in the saved file: default taken
+hg_params: /dev/shm/hangar-vehicle/var/lib/hangar/safety/params: action_input is not in the saved file: default taken
+hg_params: /dev/shm/hangar-vehicle/var/lib/hangar/safety/params: battery_required is not in the saved file: default taken
+hg_params: /dev/shm/hangar-vehicle/var/lib/hangar/safety/params: depth_required is not in the saved file: default taken
+hg_params: /dev/shm/hangar-vehicle/var/lib/hangar/safety/params: pad0 is not in the saved file: default taken
+hg_params: /dev/shm/hangar-vehicle/var/lib/hangar/safety/params: tether_timeout is not in the saved file: default taken
+hg_params: /dev/shm/hangar-vehicle/var/lib/hangar/safety/params: battery_min is not in the saved file: default taken
+hg_params: /dev/shm/hangar-vehicle/var/lib/hangar/safety/params: battery_time is not in the saved file: default taken
+hg_params: /dev/shm/hangar-vehicle/var/lib/hangar/safety/params: depth_margin is not in the saved file: default taken
+hg_params: /dev/shm/hangar-vehicle/var/lib/hangar/safety/params: hold_time is not in the saved file: default taken
+hg_params: /dev/shm/hangar-vehicle/var/lib/hangar/safety/params: arm_timeout is not in the saved file: default taken
+hg_params: /dev/shm/hangar-vehicle/var/lib/hangar/safety/params: autopilot_silence is not in the saved file: default taken
+hangar-safety: with an autopilot behind the actuators
+hangar-safety: disarmed: start
+hangar-safety: parameters v2 by admin:bluerov2
+hangar-safety: arming by admin:bluerov2
+hangar-safety: armed by admin:bluerov2
+hg_call: safety.rep: 3 replies of the previous instance found in the ring; their requests are not run again
+hangar-safety: with an autopilot behind the actuators
+hangar-safety: disarmed: start
+hangar-safety: stopping (disarmed)
+hangar-safety: with an autopilot behind the actuators
+hangar-safety: disarmed: start
+hangar-safety: arming by admin:bluerov2
+hangar-safety: armed by admin:bluerov2
+hg_call: safety.rep: 4 replies of the previous instance found in the ring; their requests are not run again
+hangar-safety: with an autopilot behind the actuators
+hangar-safety: disarmed: start
+hangar-safety: stopping (disarmed)
+hangar-safety: with an autopilot behind the actuators
+hangar-safety: disarmed: start
+hangar-safety: arming by admin:bluerov2
+hangar-safety: armed by admin:bluerov2
+hg_call: safety.rep: 5 replies of the previous instance found in the ring; their requests are not run again
+hangar-safety: with an autopilot behind the actuators
+hangar-safety: disarmed: start
+hangar-safety: stopping (disarmed)
+hangar-safety: with an autopilot behind the actuators
+hangar-safety: disarmed: start
+hangar-safety: arming by admin:bluerov2
+hangar-safety: armed by admin:bluerov2
+hg_call: safety.rep: 6 replies of the previous instance found in the ring; their requests are not run again
+hangar-safety: with an autopilot behind the actuators
+hangar-safety: disarmed: start
+hangar-safety: stopping (disarmed)
+hangar-safety: with an autopilot behind the actuators
+hangar-safety: disarmed: start
+hangar-safety: arming by admin:bluerov2
+hangar-safety: armed by admin:bluerov2
+hg_call: safety.rep: 7 replies of the previous instance found in the ring; their requests are not run again
+hangar-safety: with an autopilot behind the actuators
+hangar-safety: disarmed: start
+hangar-safety: stopping (disarmed)
+hangar-safety: with an autopilot behind the actuators
+hangar-safety: disarmed: start
+hangar-safety: arming by admin:bluerov2
+hangar-safety: armed by admin:bluerov2
+hangar-safety: failsafe (neutral): autopilot: autopilot: ArduSub disarmed itself: no reason given
+hangar-safety: disarmed by admin:bluerov2: failsafe cleared
+hangar-safety: arming by admin:bluerov2
+hangar-safety: armed by admin:bluerov2
+hangar-safety: failsafe (neutral): autopilot: autopilot: ArduSub disarmed itself: no reason given
+hangar-safety: disarmed by admin:bluerov2: failsafe cleared
+hangar-safety: arming by admin:bluerov2
+hangar-safety: armed by admin:bluerov2
+hangar-safety: failsafe (neutral): autopilot: autopilot: ArduSub disarmed itself: no reason given
+hangar-safety: disarmed by admin:bluerov2: failsafe cleared
+hangar-safety: arming by admin:bluerov2
+hangar-safety: armed by admin:bluerov2
+hangar-safety: failsafe (neutral): autopilot: autopilot: ArduSub disarmed itself: no reason given
+hangar-safety: disarmed by admin:bluerov2: failsafe cleared
+hangar-safety: arming by admin:bluerov2
+hangar-safety: armed by admin:bluerov2
+hangar-safety: failsafe (neutral): autopilot: autopilot: ArduSub disarmed itself: no reason given
+hangar-safety: disarmed by admin:bluerov2: failsafe cleared
+hangar-safety: arming by admin:bluerov2
+hangar-safety: armed by admin:bluerov2
+hangar-safety: disarmed by admin:bluerov2
+hangar-safety: arming by admin:bluerov2
+hangar-safety: armed by admin:bluerov2
+hangar-safety: disarmed by admin:bluerov2
+hangar-safety: arming by admin:bluerov2
+hangar-safety: armed by admin:bluerov2
+hangar-safety: disarmed by admin:bluerov2
+hangar-safety: arming by admin:bluerov2
+hangar-safety: armed by admin:bluerov2
+hangar-safety: disarmed by admin:bluerov2
+hangar-safety: arming by admin:bluerov2
+hangar-safety: armed by admin:bluerov2
+hangar-safety: disarmed by admin:bluerov2
+hangar-safety: arming by admin:bluerov2
+hangar-safety: armed by admin:bluerov2
+hangar-safety: failsafe (neutral): input: input: bridge.vehicle.link stale
+hangar-safety: failsafe (neutral): tether,input: tether: no packet from the topside for 3.0 s
+hangar-safety: disarmed by admin:bluerov2: failsafe cleared
+hangar-safety: arming by admin:bluerov2
+hangar-safety: armed by admin:bluerov2
+hangar-safety: failsafe (neutral): input: input: bridge.vehicle.link stale
+hangar-safety: failsafe (neutral): tether,input: tether: no packet from the topside for 3.0 s
+hangar-safety: disarmed by admin:bluerov2: failsafe cleared
+hangar-safety: arming by admin:bluerov2
+hangar-safety: armed by admin:bluerov2
+hangar-safety: failsafe (neutral): input: input: bridge.vehicle.link stale
+hangar-safety: failsafe (neutral): tether,input: tether: no packet from the topside for 3.0 s
+hangar-safety: disarmed by admin:bluerov2: failsafe cleared
+hangar-safety: arming by admin:bluerov2
+hangar-safety: armed by admin:bluerov2
+hangar-safety: failsafe (neutral): input: input: bridge.vehicle.link stale
+hangar-safety: failsafe (neutral): tether,input: tether: no packet from the topside for 3.0 s
+hangar-safety: disarmed by admin:bluerov2: failsafe cleared
+hangar-safety: arming by admin:bluerov2
+hangar-safety: armed by admin:bluerov2
+hangar-safety: failsafe (neutral): input: input: bridge.vehicle.link stale
+hangar-safety: failsafe (neutral): tether,input: tether: no packet from the topside for 3.0 s
+hangar-safety: disarmed by admin:bluerov2: failsafe cleared
+hangar-safety: arming by admin:bluerov2
+hangar-safety: armed by admin:bluerov2
+hangar-safety: failsafe (neutral): tether: tether: no packet from the topside for 3.0 s
+hangar-safety: disarmed by admin:bluerov2: failsafe cleared
+hangar-safety: arming by admin:bluerov2
+hangar-safety: armed by admin:bluerov2
+hangar-safety: failsafe (neutral): tether: tether: no packet from the topside for 3.0 s
+hangar-safety: disarmed by admin:bluerov2: failsafe cleared
+hangar-safety: arming by admin:bluerov2
+hangar-safety: armed by admin:bluerov2
+hangar-safety: failsafe (neutral): tether: tether: no packet from the topside for 3.0 s
+hangar-safety: disarmed by admin:bluerov2: failsafe cleared
+hangar-safety: arming by admin:bluerov2
+hangar-safety: armed by admin:bluerov2
+hangar-safety: failsafe (neutral): tether: tether: no packet from the topside for 3.0 s
+hangar-safety: disarmed by admin:bluerov2: failsafe cleared
+hangar-safety: arming by admin:bluerov2
+hangar-safety: armed by admin:bluerov2
+hangar-safety: failsafe (neutral): tether: tether: no packet from the topside for 3.0 s
+hangar-safety: disarmed by admin:bluerov2: failsafe cleared
+hangar-safety: arming by admin:bluerov2
+hangar-safety: armed by admin:bluerov2
+hangar-safety: disarmed by admin:bluerov2
+hangar-safety: arming by admin:bluerov2
+hangar-safety: armed by admin:bluerov2
+hangar-safety: failsafe (neutral): tether: tether: no packet from the topside for 3.0 s
+hangar-safety: disarmed by admin:bluerov2: failsafe cleared

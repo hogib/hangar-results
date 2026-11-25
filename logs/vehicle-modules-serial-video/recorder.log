@@ -1,0 +1,104 @@
+recorder: no group hangar-rec on this machine: the group of /home/bluerov2/hangar-sessions is not checked
+recorder: recording to /home/bluerov2/hangar-sessions; black box 60s in 32MB; AutoStart=armed
+recorder: mux.state: full, black box high
+recorder: ctl.wrench: full, black box normal
+recorder: mux.params: full, black box high
+recorder: video.index: full, black box high
+recorder: bridge.vehicle.link: full, black box normal
+recorder: safety.rep: full, black box high
+recorder: safety.req: full, black box high
+recorder: safety.state: full, black box high
+recorder: safety.params: full, black box high
+recorder: hangar.vehicle.admin.req: full, black box high
+recorder: hangar.vehicle.modules: full, black box normal
+recorder: hangar.vehicle.system: full, black box normal
+recorder: recorder.rep: full, black box high
+recorder: ardusub.param: full, black box high
+recorder: recorder.session: full, black box high
+recorder: ardusub.state: full, black box high
+recorder: recorder.status: full, black box high
+recorder: ardusub.manual_control: full, black box normal
+recorder: mux.rep: full, black box high
+recorder: mavlink.rep: full, black box high
+recorder: ardusub.params_job: full, black box high
+recorder: thr.out: full, black box normal
+recorder: power.battery: full, black box high
+recorder: nav.depth: full, black box normal
+recorder: nav.imu: full, black box normal
+recorder: nav.attitude: full, black box normal
+recorder: pilot.buttons: full, black box normal
+recorder: pilot.wrench: full, black box normal
+recorder: session 20261125-164528-ubuntu started (autostart:armed)
+recorder: black box: dump to /home/bluerov2/hangar-sessions/blackbox-20261125-164529-1 (module safety exited)
+recorder: session 20261125-164528-ubuntu stopped (autostart:disarmed)
+recorder: session 20261125-164536-ubuntu started (autostart:armed)
+recorder: black box: dump to /home/bluerov2/hangar-sessions/blackbox-20261125-164537-2 (module safety exited)
+recorder: session 20261125-164536-ubuntu stopped (autostart:disarmed)
+recorder: session 20261125-164544-ubuntu started (autostart:armed)
+recorder: black box: dump to /home/bluerov2/hangar-sessions/blackbox-20261125-164545-3 (module safety exited)
+recorder: session 20261125-164544-ubuntu stopped (autostart:disarmed)
+recorder: session 20261125-164552-ubuntu started (autostart:armed)
+recorder: black box: dump to /home/bluerov2/hangar-sessions/blackbox-20261125-164553-4 (module safety exited)
+recorder: session 20261125-164552-ubuntu stopped (autostart:disarmed)
+recorder: session 20261125-164600-ubuntu started (autostart:armed)
+recorder: black box: dump to /home/bluerov2/hangar-sessions/blackbox-20261125-164601-5 (module safety exited)
+recorder: session 20261125-164600-ubuntu stopped (autostart:disarmed)
+recorder: session 20261125-164609-ubuntu started (autostart:armed)
+recorder: black box: dump to /home/bluerov2/hangar-sessions/blackbox-20261125-164610-6 (module mavlink exited)
+recorder: session 20261125-164609-ubuntu stopped (autostart:disarmed)
+recorder: session 20261125-164622-ubuntu started (autostart:armed)
+recorder: black box: dump to /home/bluerov2/hangar-sessions/blackbox-20261125-164623-7 (module mavlink exited)
+recorder: session 20261125-164622-ubuntu stopped (autostart:disarmed)
+recorder: session 20261125-164634-ubuntu started (autostart:armed)
+recorder: black box: dump to /home/bluerov2/hangar-sessions/blackbox-20261125-164635-8 (module mavlink exited)
+recorder: session 20261125-164634-ubuntu stopped (autostart:disarmed)
+recorder: session 20261125-164646-ubuntu started (autostart:armed)
+recorder: black box: dump to /home/bluerov2/hangar-sessions/blackbox-20261125-164647-9 (module mavlink exited)
+recorder: session 20261125-164646-ubuntu stopped (autostart:disarmed)
+recorder: session 20261125-164659-ubuntu started (autostart:armed)
+recorder: black box: dump to /home/bluerov2/hangar-sessions/blackbox-20261125-164700-10 (module mavlink exited)
+recorder: session 20261125-164659-ubuntu stopped (autostart:disarmed)
+recorder: session 20261125-164712-ubuntu started (autostart:armed)
+recorder: black box: dump to /home/bluerov2/hangar-sessions/blackbox-20261125-164713-11 (module mux exited)
+recorder: session 20261125-164712-ubuntu stopped (autostart:disarmed)
+recorder: session 20261125-164721-ubuntu started (autostart:armed)
+recorder: black box: dump to /home/bluerov2/hangar-sessions/blackbox-20261125-164722-12 (module mux exited)
+recorder: session 20261125-164721-ubuntu stopped (autostart:disarmed)
+recorder: session 20261125-164730-ubuntu started (autostart:armed)
+recorder: black box: dump to /home/bluerov2/hangar-sessions/blackbox-20261125-164731-13 (module mux exited)
+recorder: session 20261125-164730-ubuntu stopped (autostart:disarmed)
+recorder: session 20261125-164739-ubuntu started (autostart:armed)
+recorder: black box: dump to /home/bluerov2/hangar-sessions/blackbox-20261125-164740-14 (module mux exited)
+recorder: session 20261125-164739-ubuntu stopped (autostart:disarmed)
+recorder: session 20261125-164748-ubuntu started (autostart:armed)
+recorder: black box: dump to /home/bluerov2/hangar-sessions/blackbox-20261125-164749-15 (module mux exited)
+recorder: session 20261125-164748-ubuntu stopped (autostart:disarmed)
+recorder: session 20261125-164758-ubuntu started (autostart:armed)
+recorder: session 20261125-164758-ubuntu stopped (autostart:disarmed)
+recorder: black box: dump to /home/bluerov2/hangar-sessions/blackbox-20261125-164805-16 (module bridge exited)
+recorder: session 20261125-164811-ubuntu started (autostart:armed)
+recorder: session 20261125-164811-ubuntu stopped (autostart:disarmed)
+recorder: black box: dump to /home/bluerov2/hangar-sessions/blackbox-20261125-164818-17 (module bridge exited)
+recorder: session 20261125-164823-ubuntu started (autostart:armed)
+recorder: session 20261125-164823-ubuntu stopped (autostart:disarmed)
+recorder: black box: dump to /home/bluerov2/hangar-sessions/blackbox-20261125-164830-18 (module bridge exited)
+recorder: session 20261125-164836-ubuntu started (autostart:armed)
+recorder: session 20261125-164836-ubuntu stopped (autostart:disarmed)
+recorder: black box: dump to /home/bluerov2/hangar-sessions/blackbox-20261125-164843-19 (module bridge exited)
+recorder: session 20261125-164849-ubuntu started (autostart:armed)
+recorder: session 20261125-164849-ubuntu stopped (autostart:disarmed)
+recorder: black box: dump to /home/bluerov2/hangar-sessions/blackbox-20261125-164856-20 (module bridge exited)
+recorder: session 20261125-164902-ubuntu started (autostart:armed)
+recorder: session 20261125-164902-ubuntu stopped (autostart:disarmed)
+recorder: session 20261125-164917-ubuntu started (autostart:armed)
+recorder: session 20261125-164917-ubuntu stopped (autostart:disarmed)
+recorder: session 20261125-164931-ubuntu started (autostart:armed)
+recorder: session 20261125-164931-ubuntu stopped (autostart:disarmed)
+recorder: session 20261125-164946-ubuntu started (autostart:armed)
+recorder: session 20261125-164946-ubuntu stopped (autostart:disarmed)
+recorder: session 20261125-165002-ubuntu started (autostart:armed)
+recorder: session 20261125-165002-ubuntu stopped (autostart:disarmed)
+recorder: session 20261125-165218-ubuntu started (autostart:armed)
+recorder: session 20261125-165218-ubuntu stopped (autostart:disarmed)
+recorder: session 20261125-165406-ubuntu started (autostart:armed)
+recorder: session 20261125-165406-ubuntu stopped (autostart:disarmed)

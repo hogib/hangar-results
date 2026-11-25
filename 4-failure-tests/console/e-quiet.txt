@@ -1,0 +1,118 @@
+mavlink              ready       18080     0 -          13m34s  ardusub disarmed mode 19 params 1; gate failsafe; rx 182
+safety               ready       17108     0 -          14m36s  failsafe (neutral): tether: disarmed by admin:bluerov2 i
+
+== safety-kill, 10 repetitions -> /home/hogib/hangar-results/2026-11-25-failtests/safety-kill.jsonl
+   1  no failsafe; ArduSub disarmed at 6.3 ms; restarted: safety   [temp=58.2'C throttled=0xe0000]
+   2  no failsafe; ArduSub disarmed at 5.9 ms; restarted: safety   [temp=59.8'C throttled=0xe0000]
+   3  no failsafe; ArduSub disarmed at 6.7 ms; restarted: safety   [temp=58.2'C throttled=0xe0000]
+   4  no failsafe; ArduSub disarmed at 4.4 ms; restarted: safety   [temp=58.7'C throttled=0xe0000]
+   5  no failsafe; ArduSub disarmed at 5.2 ms; restarted: safety   [temp=58.2'C throttled=0xe0000]
+   6  no failsafe; ArduSub disarmed at 4.8 ms; restarted: safety   [temp=59.8'C throttled=0xe0000]
+   7  no failsafe; ArduSub disarmed at 6.1 ms; restarted: safety   [temp=58.2'C throttled=0xe0000]
+   8  no failsafe; ArduSub disarmed at 6.5 ms; restarted: safety   [temp=59.3'C throttled=0xe0000]
+   9  no failsafe; ArduSub disarmed at 4.2 ms; restarted: safety   [temp=59.3'C throttled=0xe0000]
+  10  no failsafe; ArduSub disarmed at 8.0 ms; restarted: safety   [temp=57.6'C throttled=0xe0000]
+  outputs_closed_ms              n=10 min    104.5  median    104.6  max    105.2
+  ardusub_disarming_ms           n=10 min      0.5  median      0.6  max      0.6
+  ardusub_disarmed_ms            n=10 min      4.2  median      6.0  max      8.0
+  longest_silence_ms             n=10 min     16.5  median     16.8  max     26.5
+  failsafe in 0 of 10; not run 0
+
+== mavlink-kill, 5 repetitions -> /home/hogib/hangar-results/2026-11-25-failtests/mavlink-kill.jsonl
+   1  failsafe by autopilot after 169.3 ms; 51.3 ms after the last packet; ArduSub disarmed at 169.1 ms; restarted: mavlink   [temp=58.7'C throttled=0xe0000]
+   2  failsafe by autopilot after 168.6 ms; 78.2 ms after the last packet; ArduSub disarmed at 168.4 ms; restarted: mavlink   [temp=57.6'C throttled=0xe0000]
+   3  failsafe by autopilot after 167.7 ms; 23.0 ms after the last packet; ArduSub disarmed at 167.6 ms; restarted: mavlink   [temp=58.7'C throttled=0xe0000]
+   4  failsafe by autopilot after 167.8 ms; 102.4 ms after the last packet; ArduSub disarmed at 167.7 ms; restarted: mavlink   [temp=58.2'C throttled=0xe0000]
+   5  failsafe by autopilot after 167.8 ms; 107.5 ms after the last packet; ArduSub disarmed at 167.7 ms; restarted: mavlink   [temp=58.7'C throttled=0xe0000]
+  failsafe_ms                    n=5  min    167.7  median    167.8  max    169.3
+  failsafe_after_last_packet_ms  n=5  min     23.0  median     78.2  max    107.5
+  outputs_closed_ms              n=5  min    167.7  median    167.8  max    169.4
+  ardusub_disarmed_ms            n=5  min    167.6  median    167.7  max    169.1
+  longest_silence_ms             n=5  min     16.7  median     17.3  max     26.5
+  failsafe in 5 of 5; not run 0
+
+== mux-kill, 5 repetitions -> /home/hogib/hangar-results/2026-11-25-failtests/mux-kill.jsonl
+   1  no failsafe; still armed; restarted: mux   [temp=57.1'C throttled=0xe0000]
+   2  no failsafe; still armed; restarted: mux   [temp=58.7'C throttled=0xe0000]
+   3  no failsafe; still armed; restarted: mux   [temp=57.1'C throttled=0xe0000]
+   4  no failsafe; still armed; restarted: mux   [temp=57.1'C throttled=0xe0000]
+   5  no failsafe; still armed; restarted: mux   [temp=57.6'C throttled=0xe0000]
+  longest_silence_ms             n=5  min     16.4  median     16.5  max     26.4
+  failsafe in 0 of 5; not run 0
+
+== bridge-hang, 10 repetitions -> /home/hogib/hangar-results/2026-11-25-failtests/bridge-hang.jsonl
+   1  failsafe by input after 277.3 ms; 323.2 ms after the last packet; ArduSub disarmed at 282.0 ms; restarted: bridge   [temp=58.2'C throttled=0xe0000]
+   2  failsafe by input after 279.6 ms; 325.9 ms after the last packet; ArduSub disarmed at 285.3 ms; restarted: bridge   [temp=57.6'C throttled=0xe0000]
+   3  failsafe by input after 297.4 ms; 316.4 ms after the last packet; ArduSub disarmed at 302.3 ms; restarted: bridge   [temp=58.2'C throttled=0xe0000]
+   4  failsafe by input after 252.9 ms; 317.5 ms after the last packet; ArduSub disarmed at 259.1 ms; restarted: bridge   [temp=56.5'C throttled=0xe0000]
+   5  failsafe by input after 246.6 ms; 313.9 ms after the last packet; ArduSub disarmed at 252.0 ms; restarted: bridge   [temp=56.0'C throttled=0xe0000]
+   6  failsafe by input after 317.4 ms; 331.8 ms after the last packet; ArduSub disarmed at 322.1 ms; restarted: bridge   [temp=57.1'C throttled=0xe0000]
+   7  failsafe by input after 263.5 ms; 312.1 ms after the last packet; ArduSub disarmed at 268.4 ms; restarted: bridge   [temp=57.1'C throttled=0xe0000]
+   8  failsafe by input after 299.3 ms; 306.8 ms after the last packet; ArduSub disarmed at 304.5 ms; restarted: bridge   [temp=58.7'C throttled=0xe0000]
+   9  failsafe by input after 218.1 ms; 316.7 ms after the last packet; ArduSub disarmed at 228.8 ms; restarted: bridge   [temp=58.2'C throttled=0xe0000]
+  10  failsafe by input after 298.1 ms; 310.4 ms after the last packet; ArduSub disarmed at 302.8 ms; restarted: bridge   [temp=57.6'C throttled=0xe0000]
+  failsafe_ms                    n=10 min    218.1  median    278.5  max    317.4
+  failsafe_after_last_packet_ms  n=10 min    306.8  median    316.5  max    331.8
+  outputs_closed_ms              n=10 min    218.2  median    278.5  max    317.5
+  ardusub_disarming_ms           n=10 min    218.2  median    278.7  max    317.6
+  ardusub_disarmed_ms            n=10 min    228.8  median    283.6  max    322.1
+  longest_silence_ms             n=8  min      0.5  median     12.5  max     21.0
+  failsafe in 10 of 10; not run 0
+
+== silence-5, 10 repetitions -> /home/hogib/hangar-results/2026-11-25-failtests/silence-5.jsonl
+   1  failsafe by tether after 3011.2 ms; 3007.0 ms after the last packet; ArduSub disarmed at 3015.9 ms; topside_bridge_restarted: True   [temp=57.6'C throttled=0xe0000]
+   2  failsafe by tether after 2994.3 ms; 3002.5 ms after the last packet; ArduSub disarmed at 3000.2 ms; topside_bridge_restarted: True   [temp=57.1'C throttled=0xe0000]
+   3  failsafe by tether after 3010.1 ms; 3012.5 ms after the last packet; ArduSub disarmed at 3018.1 ms; topside_bridge_restarted: True   [temp=58.7'C throttled=0xe0000]
+   4  failsafe by tether after 2999.2 ms; 3000.2 ms after the last packet; ArduSub disarmed at 3004.7 ms; topside_bridge_restarted: True   [temp=57.6'C throttled=0xe0000]
+   5  failsafe by tether after 3007.6 ms; 3008.3 ms after the last packet; ArduSub disarmed at 3012.2 ms; topside_bridge_restarted: True   [temp=57.1'C throttled=0xe0000]
+   6  failsafe by tether after 3009.2 ms; 3004.3 ms after the last packet; ArduSub disarmed at 3015.0 ms; topside_bridge_restarted: True   [temp=59.3'C throttled=0xe0000]
+   7  failsafe by tether after 3010.0 ms; 3012.7 ms after the last packet; ArduSub disarmed at 3015.9 ms; topside_bridge_restarted: True   [temp=58.2'C throttled=0xe0000]
+   8  failsafe by tether after 3007.4 ms; 3011.6 ms after the last packet; ArduSub disarmed at 3013.1 ms; topside_bridge_restarted: True   [temp=58.2'C throttled=0xe0000]
+   9  failsafe by tether after 2988.5 ms; 3001.3 ms after the last packet; ArduSub disarmed at 2994.0 ms; topside_bridge_restarted: True   [temp=58.2'C throttled=0xe0000]
+  10  failsafe by tether after 3014.1 ms; 3014.0 ms after the last packet; ArduSub disarmed at 3019.7 ms; topside_bridge_restarted: True   [temp=58.7'C throttled=0xe0000]
+  failsafe_ms                    n=10 min   2988.5  median   3008.4  max   3014.1
+  failsafe_after_last_packet_ms  n=10 min   3000.2  median   3007.7  max   3014.0
+  outputs_closed_ms              n=10 min   2988.6  median   3008.5  max   3014.2
+  ardusub_disarming_ms           n=10 min   2988.7  median   3008.5  max   3014.4
+  ardusub_disarmed_ms            n=10 min   2994.0  median   3014.1  max   3019.7
+  longest_silence_ms             n=10 min   4908.3  median   5573.4  max   9998.3
+  failsafe in 10 of 10; not run 0
+
+== silence-1, 10 repetitions -> /home/hogib/hangar-results/2026-11-25-failtests/silence-1.jsonl
+   1  no failsafe; still armed   [temp=60.4'C throttled=0xe0000]
+   2  no failsafe; still armed   [temp=58.2'C throttled=0xe0000]
+   3  no failsafe; still armed   [temp=58.7'C throttled=0xe0000]
+   4  no failsafe; still armed   [temp=59.8'C throttled=0xe0000]
+   5  no failsafe; still armed   [temp=59.3'C throttled=0xe0000]
+   6  no failsafe; still armed   [temp=58.2'C throttled=0xe0000]
+   7  no failsafe; still armed   [temp=59.8'C throttled=0xe0000]
+   8  no failsafe; still armed   [temp=59.3'C throttled=0xe0000]
+   9  no failsafe; still armed   [temp=58.2'C throttled=0xe0000]
+  10  no failsafe; still armed   [temp=58.2'C throttled=0xe0000]
+  longest_silence_ms             n=10 min    918.3  median    948.0  max   1018.0
+  failsafe in 0 of 10; not run 0
+
+== silence-2.5, 10 repetitions -> /home/hogib/hangar-results/2026-11-25-failtests/silence-2.5.jsonl
+   1  no failsafe; still armed; topside_bridge_restarted: True   [temp=58.7'C throttled=0xe0000]
+   2  no failsafe; still armed; topside_bridge_restarted: True   [temp=58.7'C throttled=0xe0000]
+   3  no failsafe; still armed; topside_bridge_restarted: True   [temp=57.6'C throttled=0xe0000]
+   4  failsafe by tether after 3003.0 ms; 3007.9 ms after the last packet; ArduSub disarmed at 3008.2 ms; topside_bridge_restarted: True   [temp=57.6'C throttled=0xe0000]
+   5  failsafe by tether after 2994.5 ms; 3005.8 ms after the last packet; ArduSub disarmed at 2998.4 ms; topside_bridge_restarted: True   [temp=57.6'C throttled=0xe0000]
+   6  failsafe by tether after 3010.5 ms; 3017.8 ms after the last packet; ArduSub disarmed at 3016.2 ms; NOT PUT BACK; topside_bridge_restarted: True   [temp=57.6'C throttled=0xe0000]
+      stopping this test: the vehicle was not put back
+  failsafe_ms                    n=3  min   2994.5  median   3003.0  max   3010.5
+  failsafe_after_last_packet_ms  n=3  min   3005.8  median   3007.9  max   3017.8
+  outputs_closed_ms              n=3  min   2994.6  median   3003.0  max   3010.6
+  ardusub_disarming_ms           n=3  min   2994.7  median   3003.1  max   3010.7
+  ardusub_disarmed_ms            n=3  min   2998.4  median   3008.2  max   3016.2
+  longest_silence_ms             n=6  min   2578.1  median   3086.8  max   7478.0
+  failsafe in 3 of 6; not run 0
+
+== arm-in-silence, 5 repetitions -> /home/hogib/hangar-results/2026-11-25-failtests/arm-in-silence.jsonl
+   1  NOT RUN: no result from the vehicle: 
+   2  NOT RUN: no result from the vehicle: 
+
+interrupted
+
+leaving the vehicle disarmed:
+results in /home/hogib/hangar-results/2026-11-25-failtests

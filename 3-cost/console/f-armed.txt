@@ -1,0 +1,23 @@
+lab: benchmarking both machines for 60 s into /home/hogib/hangar-results/2026-11-25-lab-5
+## rov-fps
+  encoder  no frames counted (not running?)
+  eth0 over 60 s: in 0.11 Mbit/s, out 0.14 Mbit/s
+## laptop-procbench
+  hangar-bridge                  1.48 % CPU        - MB PSS     266.4 wake-ups/s   (pid 158665)
+  hangar-mavlink (topside)       0.76 % CPU        - MB PSS     184.0 wake-ups/s   (pid 156813)
+  dawn-patrold (?)               0.11 % CPU        - MB PSS       7.7 wake-ups/s   (pid 156812)
+  hangard (?)                    0.03 % CPU        - MB PSS      11.0 wake-ups/s   (pid 156806)
+  total                          2.38 % CPU     0.00 MB PSS     469.1 wake-ups/s   (4 processes)
+## laptop-fps
+  enp6s0f3u2 over 60 s: in 0.14 Mbit/s, out 0.12 Mbit/s
+## rov-link-before
+## rov-link-after
+## laptop-link-before
+## laptop-link-after
+rov-procbench.txt:60 s on Raspberry Pi 5 Model B Rev 1.0, 4 cores, the whole machine 0.8 % busy (of all cores), 51.8-54.5 C
+rov-procbench.txt:  total                          2.06 % CPU     0.00 MB PSS    1020.1 wake-ups/s   (7 processes)
+laptop-procbench.txt:60 s on x86_64, 12 cores, the whole machine 2.3 % busy (of all cores), 56.0-56.0 C
+laptop-procbench.txt:  total                          2.38 % CPU     0.00 MB PSS     469.1 wake-ups/s   (4 processes)
+  the link, from the Pi:      bridge ready 57199 0 - 4m13s up 192.168.2.1:5614, rtt 3.7 ms, offset +21714199.109 ms, 3 topics in, 18870 msgs
+  the link, from this laptop: bridge ready 158665 0 - 2m57s up 192.168.2.10:5614, rtt 3.8 ms, offset -21714198.900 ms, 15 topics in, 17803 m
+lab: saved in /home/hogib/hangar-results/2026-11-25-lab-5

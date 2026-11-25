@@ -1,0 +1,3 @@
+  hellion pilot-up   mean  16.7 frames/s, worst  14.2  (19 samples)
+  encoder  no frames counted (not running?)
+  eth0 over 61 s: in 0.12 Mbit/s, out 0.13 Mbit/s

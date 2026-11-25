@@ -1,0 +1,2236 @@
+hangard: starting: role vehicle, modules /dev/shm/hangar-vehicle/etc/hangar/modules, topics /dev/shm/hangar-vehicle/dev/shm/hangar, root /dev/shm/hangar-vehicle
+hangard: not running as root: user switching, scheduling, capabilities and cgroups are skipped
+hangard: warning: console: [Subscribe hangar.vehicle.system]: no enabled module publishes it
+hangard: warning: console: [Subscribe hangar.vehicle.modules]: no enabled module publishes it
+hangard: warning: mux: [Subscribe ctl.depth_hold]: no enabled module publishes it
+hangard: warning: safety: [Subscribe hangar.vehicle.modules]: no enabled module publishes it
+hangard: warning: safety: [Subscribe hangar.vehicle.system]: no enabled module publishes it
+hangard: warning: safety: [Subscribe vehicle.leak]: no enabled module publishes it
+hangard: bridge: skipping step 2 (cgroup): not running as root
+hangard: bridge: skipping steps 7-9 (capabilities, user hg-bridge, group hangar): not running as root
+hangard: bridge: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/bridge.log
+hangard: bridge: started, pid 9670
+hangard: bridge: starting
+hangard: console: skipping step 2 (cgroup): not running as root
+hangard: console: skipping steps 7-9 (capabilities, user hangar, group hangar): not running as root
+hangard: console: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/console.log
+hangard: console: started, pid 9671
+hangard: console: starting
+hangard: mavlink: skipping step 2 (cgroup): not running as root
+hangard: mavlink: skipping steps 7-9 (capabilities, user hg-mavlink, group hangar): not running as root
+hangard: mavlink: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/mavlink.log
+hangard: mavlink: started, pid 9672
+hangard: mavlink: starting
+hangard: mux: skipping step 2 (cgroup): not running as root
+hangard: mux: skipping steps 7-9 (capabilities, user hangar, group hangar): not running as root
+hangard: mux: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/mux.log
+hangard: mux: started, pid 9673
+hangard: mux: starting
+hangard: recorder: skipping step 2 (cgroup): not running as root
+hangard: recorder: skipping steps 7-9 (capabilities, user hangar, group hangar): not running as root
+hangard: recorder: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/recorder.log
+hangard: recorder: started, pid 9674
+hangard: recorder: starting
+hangard: safety: skipping step 2 (cgroup): not running as root
+hangard: safety: skipping steps 7-9 (capabilities, user hangar, group hangar): not running as root
+hangard: safety: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/safety.log
+hangard: safety: started, pid 9675
+hangard: safety: starting
+hangard: ready: 6 modules
+hangard: safety: opened safety.params (params:safety, 16 slots)
+hangard: safety: opened safety.state (safety_state, 16 slots)
+hangard: safety: opened safety.req (req:safety, 16 slots)
+hangard: safety: opened safety.rep (rep:safety, 16 slots)
+hangard: bridge: opened bridge.vehicle.link (bridge_link, 16 slots)
+hangard: mavlink: opened ardusub.manual_control (manual_control, 16 slots)
+hangard: mavlink: opened ardusub.state (ardusub_state, 16 slots)
+hangard: mux: opened mux.params (params:mux, 16 slots)
+hangard: mavlink: opened ardusub.param (ardusub_param, 16 slots)
+hangard: mavlink: opened nav.attitude (attitude, 16 slots)
+hangard: mux: opened ctl.wrench (wrench, 16 slots)
+hangard: mavlink: opened nav.imu (imu, 16 slots)
+hangard: mux: opened mux.state (mux_state, 16 slots)
+hangard: mavlink: opened nav.depth (depth, 16 slots)
+hangard: recorder: opened recorder.status (recorder_status, 16 slots)
+hangard: mux: opened mux.rep (rep:mux, 16 slots)
+hangard: mavlink: opened power.battery (battery, 16 slots)
+hangard: mavlink: opened thr.out (thruster_out, 16 slots)
+hangard: recorder: opened recorder.session (recorder_session, 16 slots)
+hangard: mavlink: opened ardusub.params_job (params_job, 16 slots)
+hangard: recorder: opened recorder.rep (rep:recorder, 16 slots)
+hangard: mavlink: opened mavlink.rep (rep:mavlink, 16 slots)
+hangard: bridge: ready
+hangard: console: ready
+hangard: mux: ready
+hangard: recorder: ready
+hangard: safety: ready
+hangard: mavlink: ready
+hangard: bridge: opened pilot.wrench, mirrored from topside (writer topside_mavlink)
+hangard: bridge: opened pilot.buttons, mirrored from topside (writer topside_mavlink)
+hangard: call mavlink.params_dump by admin:bluerov2: call 1, deadline 3000 ms
+hangard: call mavlink.setup by admin:bluerov2: call 2, deadline 3000 ms
+hangard: call safety.set_params by admin:bluerov2: call 3, deadline 2000 ms
+hangard: call safety.check by admin:bluerov2: call 4, deadline 3000 ms
+hangard: call safety.arm by admin:bluerov2: call 5, deadline 1000 ms
+hangard: safety: pid 9675 killed by signal 9 (Killed)
+hangard: safety: backoff: pid 9675 killed by signal 9 (Killed); restarting in 0.1 s (failure 1)
+hangard: safety: skipping step 2 (cgroup): not running as root
+hangard: safety: skipping steps 7-9 (capabilities, user hangar, group hangar): not running as root
+hangard: safety: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/safety.log
+hangard: safety: started, pid 12072
+hangard: safety: starting
+hangard: safety: opened safety.params (params:safety, 16 slots)
+hangard: safety: opened safety.state (safety_state, 16 slots)
+hangard: safety: opened safety.req (req:safety, 16 slots)
+hangard: safety: opened safety.rep (rep:safety, 16 slots)
+hangard: safety: ready
+hangard: call safety.disarm by admin:bluerov2: call 6, deadline 1000 ms
+hangard: call safety.arm by admin:bluerov2: call 7, deadline 1000 ms
+hangard: safety: pid 12072 killed by signal 9 (Killed)
+hangard: safety: backoff: pid 12072 killed by signal 9 (Killed); restarting in 0.2 s (failure 2)
+hangard: safety: skipping step 2 (cgroup): not running as root
+hangard: safety: skipping steps 7-9 (capabilities, user hangar, group hangar): not running as root
+hangard: safety: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/safety.log
+hangard: safety: started, pid 12366
+hangard: safety: starting
+hangard: safety: opened safety.params (params:safety, 16 slots)
+hangard: safety: opened safety.state (safety_state, 16 slots)
+hangard: safety: opened safety.req (req:safety, 16 slots)
+hangard: safety: opened safety.rep (rep:safety, 16 slots)
+hangard: safety: ready
+hangard: call safety.arm by admin:bluerov2: call 8, deadline 1000 ms
+hangard: safety: pid 12366 killed by signal 9 (Killed)
+hangard: safety: backoff: pid 12366 killed by signal 9 (Killed); restarting in 0.4 s (failure 3)
+hangard: safety: skipping step 2 (cgroup): not running as root
+hangard: safety: skipping steps 7-9 (capabilities, user hangar, group hangar): not running as root
+hangard: safety: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/safety.log
+hangard: safety: started, pid 12548
+hangard: safety: starting
+hangard: safety: opened safety.params (params:safety, 16 slots)
+hangard: safety: opened safety.state (safety_state, 16 slots)
+hangard: safety: opened safety.req (req:safety, 16 slots)
+hangard: safety: opened safety.rep (rep:safety, 16 slots)
+hangard: safety: ready
+hangard: call safety.arm by admin:bluerov2: call 9, deadline 1000 ms
+hangard: safety: pid 12548 killed by signal 9 (Killed)
+hangard: safety: backoff: pid 12548 killed by signal 9 (Killed); restarting in 0.8 s (failure 4)
+hangard: safety: skipping step 2 (cgroup): not running as root
+hangard: safety: skipping steps 7-9 (capabilities, user hangar, group hangar): not running as root
+hangard: safety: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/safety.log
+hangard: safety: started, pid 12729
+hangard: safety: starting
+hangard: safety: opened safety.params (params:safety, 16 slots)
+hangard: safety: opened safety.state (safety_state, 16 slots)
+hangard: safety: opened safety.req (req:safety, 16 slots)
+hangard: safety: opened safety.rep (rep:safety, 16 slots)
+hangard: safety: ready
+hangard: call safety.arm by admin:bluerov2: call 10, deadline 1000 ms
+hangard: safety: pid 12729 killed by signal 9 (Killed)
+hangard: safety: backoff: pid 12729 killed by signal 9 (Killed); restarting in 1.6 s (failure 5)
+hangard: safety: skipping step 2 (cgroup): not running as root
+hangard: safety: skipping steps 7-9 (capabilities, user hangar, group hangar): not running as root
+hangard: safety: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/safety.log
+hangard: safety: started, pid 12904
+hangard: safety: starting
+hangard: safety: opened safety.params (params:safety, 16 slots)
+hangard: safety: opened safety.state (safety_state, 16 slots)
+hangard: safety: opened safety.req (req:safety, 16 slots)
+hangard: safety: opened safety.rep (rep:safety, 16 slots)
+hangard: safety: ready
+hangard: call safety.arm by admin:bluerov2: call 11, deadline 1000 ms
+hangard: safety: pid 12904 killed by signal 9 (Killed)
+hangard: safety: failed: 6 failures within 60 s: given up (pid 12904 killed by signal 9 (Killed))
+hangard: system degraded: safety given up
+hangard: call safety.disarm by admin:bluerov2: call 12, deadline 1000 ms
+hangard: call safety.disarm by admin:bluerov2: call 13, deadline 1000 ms
+hangard: call safety.disarm by admin:bluerov2: call 14, deadline 1000 ms
+hangard: call safety.disarm by admin:bluerov2: call 15, deadline 1000 ms
+hangard: call safety.disarm by admin:bluerov2: call 16, deadline 1000 ms
+hangard: call safety.disarm by admin:bluerov2: call 17, deadline 1000 ms
+hangard: call safety.disarm by admin:bluerov2: call 18, deadline 1000 ms
+hangard: call safety.disarm by admin:bluerov2: call 19, deadline 1000 ms
+hangard: call safety.disarm by admin:bluerov2: call 20, deadline 1000 ms
+hangard: call safety.disarm by admin:bluerov2: call 21, deadline 1000 ms
+hangard: call safety.disarm by admin:bluerov2: call 22, deadline 1000 ms
+hangard: call safety.disarm by admin:bluerov2: call 23, deadline 1000 ms
+hangard: call safety.disarm by admin:bluerov2: call 24, deadline 1000 ms
+hangard: call safety.disarm by admin:bluerov2: call 25, deadline 1000 ms
+hangard: call safety.disarm by admin:bluerov2: call 26, deadline 1000 ms
+hangard: call safety.disarm by admin:bluerov2: call 27, deadline 1000 ms
+hangard: safety: skipping step 2 (cgroup): not running as root
+hangard: safety: skipping steps 7-9 (capabilities, user hangar, group hangar): not running as root
+hangard: safety: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/safety.log
+hangard: safety: started, pid 14778
+hangard: safety: starting
+hangard: system nominal
+hangard: safety: opened safety.params (params:safety, 16 slots)
+hangard: safety: opened safety.state (safety_state, 16 slots)
+hangard: safety: opened safety.req (req:safety, 16 slots)
+hangard: safety: opened safety.rep (rep:safety, 16 slots)
+hangard: safety: ready
+hangard: call safety.arm by admin:bluerov2: call 28, deadline 1000 ms
+hangard: safety: pid 14778 killed by signal 9 (Killed)
+hangard: safety: backoff: pid 14778 killed by signal 9 (Killed); restarting in 0.1 s (failure 1)
+hangard: safety: skipping step 2 (cgroup): not running as root
+hangard: safety: skipping steps 7-9 (capabilities, user hangar, group hangar): not running as root
+hangard: safety: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/safety.log
+hangard: safety: started, pid 14961
+hangard: safety: starting
+hangard: safety: opened safety.params (params:safety, 16 slots)
+hangard: safety: opened safety.state (safety_state, 16 slots)
+hangard: safety: opened safety.req (req:safety, 16 slots)
+hangard: safety: opened safety.rep (rep:safety, 16 slots)
+hangard: safety: ready
+hangard: safety: stopping: restart requested
+hangard: safety: pid 14961 exited with status 0
+hangard: safety: skipping step 2 (cgroup): not running as root
+hangard: safety: skipping steps 7-9 (capabilities, user hangar, group hangar): not running as root
+hangard: safety: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/safety.log
+hangard: safety: started, pid 14969
+hangard: safety: starting
+hangard: safety: opened safety.params (params:safety, 16 slots)
+hangard: safety: opened safety.state (safety_state, 16 slots)
+hangard: safety: opened safety.req (req:safety, 16 slots)
+hangard: safety: opened safety.rep (rep:safety, 16 slots)
+hangard: safety: ready
+hangard: call safety.arm by admin:bluerov2: call 29, deadline 1000 ms
+hangard: safety: pid 14969 killed by signal 9 (Killed)
+hangard: safety: backoff: pid 14969 killed by signal 9 (Killed); restarting in 0.1 s (failure 1)
+hangard: safety: skipping step 2 (cgroup): not running as root
+hangard: safety: skipping steps 7-9 (capabilities, user hangar, group hangar): not running as root
+hangard: safety: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/safety.log
+hangard: safety: started, pid 15145
+hangard: safety: starting
+hangard: safety: opened safety.params (params:safety, 16 slots)
+hangard: safety: opened safety.state (safety_state, 16 slots)
+hangard: safety: opened safety.req (req:safety, 16 slots)
+hangard: safety: opened safety.rep (rep:safety, 16 slots)
+hangard: safety: ready
+hangard: safety: stopping: restart requested
+hangard: safety: pid 15145 exited with status 0
+hangard: safety: skipping step 2 (cgroup): not running as root
+hangard: safety: skipping steps 7-9 (capabilities, user hangar, group hangar): not running as root
+hangard: safety: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/safety.log
+hangard: safety: started, pid 15153
+hangard: safety: starting
+hangard: safety: opened safety.params (params:safety, 16 slots)
+hangard: safety: opened safety.state (safety_state, 16 slots)
+hangard: safety: opened safety.req (req:safety, 16 slots)
+hangard: safety: opened safety.rep (rep:safety, 16 slots)
+hangard: safety: ready
+hangard: call safety.disarm by admin:bluerov2: call 30, deadline 1000 ms
+hangard: call safety.arm by admin:bluerov2: call 31, deadline 1000 ms
+hangard: safety: pid 15153 killed by signal 9 (Killed)
+hangard: safety: backoff: pid 15153 killed by signal 9 (Killed); restarting in 0.1 s (failure 1)
+hangard: safety: skipping step 2 (cgroup): not running as root
+hangard: safety: skipping steps 7-9 (capabilities, user hangar, group hangar): not running as root
+hangard: safety: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/safety.log
+hangard: safety: started, pid 15448
+hangard: safety: starting
+hangard: safety: opened safety.params (params:safety, 16 slots)
+hangard: safety: opened safety.state (safety_state, 16 slots)
+hangard: safety: opened safety.req (req:safety, 16 slots)
+hangard: safety: opened safety.rep (rep:safety, 16 slots)
+hangard: safety: ready
+hangard: safety: stopping: restart requested
+hangard: safety: pid 15448 exited with status 0
+hangard: safety: skipping step 2 (cgroup): not running as root
+hangard: safety: skipping steps 7-9 (capabilities, user hangar, group hangar): not running as root
+hangard: safety: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/safety.log
+hangard: safety: started, pid 15450
+hangard: safety: starting
+hangard: safety: opened safety.params (params:safety, 16 slots)
+hangard: safety: opened safety.state (safety_state, 16 slots)
+hangard: safety: opened safety.req (req:safety, 16 slots)
+hangard: safety: opened safety.rep (rep:safety, 16 slots)
+hangard: safety: ready
+hangard: call safety.arm by admin:bluerov2: call 32, deadline 1000 ms
+hangard: safety: pid 15450 killed by signal 9 (Killed)
+hangard: safety: backoff: pid 15450 killed by signal 9 (Killed); restarting in 0.1 s (failure 1)
+hangard: safety: skipping step 2 (cgroup): not running as root
+hangard: safety: skipping steps 7-9 (capabilities, user hangar, group hangar): not running as root
+hangard: safety: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/safety.log
+hangard: safety: started, pid 15632
+hangard: safety: starting
+hangard: safety: opened safety.params (params:safety, 16 slots)
+hangard: safety: opened safety.state (safety_state, 16 slots)
+hangard: safety: opened safety.req (req:safety, 16 slots)
+hangard: safety: opened safety.rep (rep:safety, 16 slots)
+hangard: safety: ready
+hangard: safety: stopping: restart requested
+hangard: safety: pid 15632 exited with status 0
+hangard: safety: skipping step 2 (cgroup): not running as root
+hangard: safety: skipping steps 7-9 (capabilities, user hangar, group hangar): not running as root
+hangard: safety: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/safety.log
+hangard: safety: started, pid 15634
+hangard: safety: starting
+hangard: safety: opened safety.params (params:safety, 16 slots)
+hangard: safety: opened safety.state (safety_state, 16 slots)
+hangard: safety: opened safety.req (req:safety, 16 slots)
+hangard: safety: opened safety.rep (rep:safety, 16 slots)
+hangard: safety: ready
+hangard: call safety.arm by admin:bluerov2: call 33, deadline 1000 ms
+hangard: safety: pid 15634 killed by signal 9 (Killed)
+hangard: safety: backoff: pid 15634 killed by signal 9 (Killed); restarting in 0.1 s (failure 1)
+hangard: safety: skipping step 2 (cgroup): not running as root
+hangard: safety: skipping steps 7-9 (capabilities, user hangar, group hangar): not running as root
+hangard: safety: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/safety.log
+hangard: safety: started, pid 15810
+hangard: safety: starting
+hangard: safety: opened safety.params (params:safety, 16 slots)
+hangard: safety: opened safety.state (safety_state, 16 slots)
+hangard: safety: opened safety.req (req:safety, 16 slots)
+hangard: safety: opened safety.rep (rep:safety, 16 slots)
+hangard: safety: ready
+hangard: safety: stopping: restart requested
+hangard: safety: pid 15810 exited with status 0
+hangard: safety: skipping step 2 (cgroup): not running as root
+hangard: safety: skipping steps 7-9 (capabilities, user hangar, group hangar): not running as root
+hangard: safety: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/safety.log
+hangard: safety: started, pid 15818
+hangard: safety: starting
+hangard: safety: opened safety.params (params:safety, 16 slots)
+hangard: safety: opened safety.state (safety_state, 16 slots)
+hangard: safety: opened safety.req (req:safety, 16 slots)
+hangard: safety: opened safety.rep (rep:safety, 16 slots)
+hangard: safety: ready
+hangard: call safety.arm by admin:bluerov2: call 34, deadline 1000 ms
+hangard: safety: pid 15818 killed by signal 9 (Killed)
+hangard: safety: backoff: pid 15818 killed by signal 9 (Killed); restarting in 0.1 s (failure 1)
+hangard: safety: skipping step 2 (cgroup): not running as root
+hangard: safety: skipping steps 7-9 (capabilities, user hangar, group hangar): not running as root
+hangard: safety: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/safety.log
+hangard: safety: started, pid 15994
+hangard: safety: starting
+hangard: safety: opened safety.params (params:safety, 16 slots)
+hangard: safety: opened safety.state (safety_state, 16 slots)
+hangard: safety: opened safety.req (req:safety, 16 slots)
+hangard: safety: opened safety.rep (rep:safety, 16 slots)
+hangard: safety: ready
+hangard: safety: stopping: restart requested
+hangard: safety: pid 15994 exited with status 0
+hangard: safety: skipping step 2 (cgroup): not running as root
+hangard: safety: skipping steps 7-9 (capabilities, user hangar, group hangar): not running as root
+hangard: safety: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/safety.log
+hangard: safety: started, pid 16002
+hangard: safety: starting
+hangard: safety: opened safety.params (params:safety, 16 slots)
+hangard: safety: opened safety.state (safety_state, 16 slots)
+hangard: safety: opened safety.req (req:safety, 16 slots)
+hangard: safety: opened safety.rep (rep:safety, 16 slots)
+hangard: safety: ready
+hangard: call safety.arm by admin:bluerov2: call 35, deadline 1000 ms
+hangard: safety: pid 16002 killed by signal 9 (Killed)
+hangard: safety: backoff: pid 16002 killed by signal 9 (Killed); restarting in 0.1 s (failure 1)
+hangard: safety: skipping step 2 (cgroup): not running as root
+hangard: safety: skipping steps 7-9 (capabilities, user hangar, group hangar): not running as root
+hangard: safety: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/safety.log
+hangard: safety: started, pid 16187
+hangard: safety: starting
+hangard: safety: opened safety.params (params:safety, 16 slots)
+hangard: safety: opened safety.state (safety_state, 16 slots)
+hangard: safety: opened safety.req (req:safety, 16 slots)
+hangard: safety: opened safety.rep (rep:safety, 16 slots)
+hangard: safety: ready
+hangard: safety: stopping: restart requested
+hangard: safety: pid 16187 exited with status 0
+hangard: safety: skipping step 2 (cgroup): not running as root
+hangard: safety: skipping steps 7-9 (capabilities, user hangar, group hangar): not running as root
+hangard: safety: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/safety.log
+hangard: safety: started, pid 16189
+hangard: safety: starting
+hangard: safety: opened safety.params (params:safety, 16 slots)
+hangard: safety: opened safety.state (safety_state, 16 slots)
+hangard: safety: opened safety.req (req:safety, 16 slots)
+hangard: safety: opened safety.rep (rep:safety, 16 slots)
+hangard: safety: ready
+hangard: call safety.arm by admin:bluerov2: call 36, deadline 1000 ms
+hangard: safety: pid 16189 killed by signal 9 (Killed)
+hangard: safety: backoff: pid 16189 killed by signal 9 (Killed); restarting in 0.1 s (failure 1)
+hangard: safety: skipping step 2 (cgroup): not running as root
+hangard: safety: skipping steps 7-9 (capabilities, user hangar, group hangar): not running as root
+hangard: safety: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/safety.log
+hangard: safety: started, pid 16372
+hangard: safety: starting
+hangard: safety: opened safety.params (params:safety, 16 slots)
+hangard: safety: opened safety.state (safety_state, 16 slots)
+hangard: safety: opened safety.req (req:safety, 16 slots)
+hangard: safety: opened safety.rep (rep:safety, 16 slots)
+hangard: safety: ready
+hangard: safety: stopping: restart requested
+hangard: safety: pid 16372 exited with status 0
+hangard: safety: skipping step 2 (cgroup): not running as root
+hangard: safety: skipping steps 7-9 (capabilities, user hangar, group hangar): not running as root
+hangard: safety: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/safety.log
+hangard: safety: started, pid 16374
+hangard: safety: starting
+hangard: safety: opened safety.params (params:safety, 16 slots)
+hangard: safety: opened safety.state (safety_state, 16 slots)
+hangard: safety: opened safety.req (req:safety, 16 slots)
+hangard: safety: opened safety.rep (rep:safety, 16 slots)
+hangard: safety: ready
+hangard: call safety.arm by admin:bluerov2: call 37, deadline 1000 ms
+hangard: safety: pid 16374 killed by signal 9 (Killed)
+hangard: safety: backoff: pid 16374 killed by signal 9 (Killed); restarting in 0.1 s (failure 1)
+hangard: safety: skipping step 2 (cgroup): not running as root
+hangard: safety: skipping steps 7-9 (capabilities, user hangar, group hangar): not running as root
+hangard: safety: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/safety.log
+hangard: safety: started, pid 16556
+hangard: safety: starting
+hangard: safety: opened safety.params (params:safety, 16 slots)
+hangard: safety: opened safety.state (safety_state, 16 slots)
+hangard: safety: opened safety.req (req:safety, 16 slots)
+hangard: safety: opened safety.rep (rep:safety, 16 slots)
+hangard: safety: ready
+hangard: safety: stopping: restart requested
+hangard: safety: pid 16556 exited with status 0
+hangard: safety: skipping step 2 (cgroup): not running as root
+hangard: safety: skipping steps 7-9 (capabilities, user hangar, group hangar): not running as root
+hangard: safety: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/safety.log
+hangard: safety: started, pid 16558
+hangard: safety: starting
+hangard: safety: opened safety.params (params:safety, 16 slots)
+hangard: safety: opened safety.state (safety_state, 16 slots)
+hangard: safety: opened safety.req (req:safety, 16 slots)
+hangard: safety: opened safety.rep (rep:safety, 16 slots)
+hangard: safety: ready
+hangard: call safety.arm by admin:bluerov2: call 38, deadline 1000 ms
+hangard: safety: pid 16558 killed by signal 9 (Killed)
+hangard: safety: backoff: pid 16558 killed by signal 9 (Killed); restarting in 0.1 s (failure 1)
+hangard: safety: skipping step 2 (cgroup): not running as root
+hangard: safety: skipping steps 7-9 (capabilities, user hangar, group hangar): not running as root
+hangard: safety: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/safety.log
+hangard: safety: started, pid 16736
+hangard: safety: starting
+hangard: safety: opened safety.params (params:safety, 16 slots)
+hangard: safety: opened safety.state (safety_state, 16 slots)
+hangard: safety: opened safety.req (req:safety, 16 slots)
+hangard: safety: opened safety.rep (rep:safety, 16 slots)
+hangard: safety: ready
+hangard: safety: stopping: restart requested
+hangard: safety: pid 16736 exited with status 0
+hangard: safety: skipping step 2 (cgroup): not running as root
+hangard: safety: skipping steps 7-9 (capabilities, user hangar, group hangar): not running as root
+hangard: safety: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/safety.log
+hangard: safety: started, pid 16744
+hangard: safety: starting
+hangard: safety: opened safety.params (params:safety, 16 slots)
+hangard: safety: opened safety.state (safety_state, 16 slots)
+hangard: safety: opened safety.req (req:safety, 16 slots)
+hangard: safety: opened safety.rep (rep:safety, 16 slots)
+hangard: safety: ready
+hangard: call safety.arm by admin:bluerov2: call 39, deadline 1000 ms
+hangard: safety: pid 16744 killed by signal 9 (Killed)
+hangard: safety: backoff: pid 16744 killed by signal 9 (Killed); restarting in 0.1 s (failure 1)
+hangard: safety: skipping step 2 (cgroup): not running as root
+hangard: safety: skipping steps 7-9 (capabilities, user hangar, group hangar): not running as root
+hangard: safety: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/safety.log
+hangard: safety: started, pid 16921
+hangard: safety: starting
+hangard: safety: opened safety.params (params:safety, 16 slots)
+hangard: safety: opened safety.state (safety_state, 16 slots)
+hangard: safety: opened safety.req (req:safety, 16 slots)
+hangard: safety: opened safety.rep (rep:safety, 16 slots)
+hangard: safety: ready
+hangard: safety: stopping: restart requested
+hangard: safety: pid 16921 exited with status 0
+hangard: safety: skipping step 2 (cgroup): not running as root
+hangard: safety: skipping steps 7-9 (capabilities, user hangar, group hangar): not running as root
+hangard: safety: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/safety.log
+hangard: safety: started, pid 16929
+hangard: safety: starting
+hangard: safety: opened safety.params (params:safety, 16 slots)
+hangard: safety: opened safety.state (safety_state, 16 slots)
+hangard: safety: opened safety.req (req:safety, 16 slots)
+hangard: safety: opened safety.rep (rep:safety, 16 slots)
+hangard: safety: ready
+hangard: call safety.arm by admin:bluerov2: call 40, deadline 1000 ms
+hangard: safety: pid 16929 killed by signal 9 (Killed)
+hangard: safety: backoff: pid 16929 killed by signal 9 (Killed); restarting in 0.1 s (failure 1)
+hangard: safety: skipping step 2 (cgroup): not running as root
+hangard: safety: skipping steps 7-9 (capabilities, user hangar, group hangar): not running as root
+hangard: safety: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/safety.log
+hangard: safety: started, pid 17106
+hangard: safety: starting
+hangard: safety: opened safety.params (params:safety, 16 slots)
+hangard: safety: opened safety.state (safety_state, 16 slots)
+hangard: safety: opened safety.req (req:safety, 16 slots)
+hangard: safety: opened safety.rep (rep:safety, 16 slots)
+hangard: safety: ready
+hangard: safety: stopping: restart requested
+hangard: safety: pid 17106 exited with status 0
+hangard: safety: skipping step 2 (cgroup): not running as root
+hangard: safety: skipping steps 7-9 (capabilities, user hangar, group hangar): not running as root
+hangard: safety: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/safety.log
+hangard: safety: started, pid 17108
+hangard: safety: starting
+hangard: safety: opened safety.params (params:safety, 16 slots)
+hangard: safety: opened safety.state (safety_state, 16 slots)
+hangard: safety: opened safety.req (req:safety, 16 slots)
+hangard: safety: opened safety.rep (rep:safety, 16 slots)
+hangard: safety: ready
+hangard: call safety.arm by admin:bluerov2: call 41, deadline 1000 ms
+hangar-mavlink --neutral: neutral manual control and disarm sent to ArduSub (system 1) over udp, signed no
+hangard: mavlink: Neutral command ran
+hangard: mavlink: pid 9672 killed by signal 9 (Killed)
+hangard: mavlink: backoff: pid 9672 killed by signal 9 (Killed); restarting in 0.1 s (failure 1)
+hangard: mavlink: skipping step 2 (cgroup): not running as root
+hangard: mavlink: skipping steps 7-9 (capabilities, user hg-mavlink, group hangar): not running as root
+hangard: mavlink: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/mavlink.log
+hangard: mavlink: started, pid 17291
+hangard: mavlink: starting
+hangard: mavlink: opened ardusub.manual_control (manual_control, 16 slots)
+hangard: mavlink: opened ardusub.state (ardusub_state, 16 slots)
+hangard: mavlink: opened ardusub.param (ardusub_param, 16 slots)
+hangard: mavlink: opened nav.attitude (attitude, 16 slots)
+hangard: mavlink: opened nav.imu (imu, 16 slots)
+hangard: mavlink: opened nav.depth (depth, 16 slots)
+hangard: mavlink: opened power.battery (battery, 16 slots)
+hangard: mavlink: opened thr.out (thruster_out, 16 slots)
+hangard: mavlink: opened ardusub.params_job (params_job, 16 slots)
+hangard: mavlink: opened mavlink.rep (rep:mavlink, 16 slots)
+hangard: mavlink: ready
+hangard: call safety.clear by admin:bluerov2: call 42, deadline 1000 ms
+hangard: mavlink: stopping: restart requested
+hangar-mavlink --neutral: neutral manual control and disarm sent to ArduSub (system 1) over udp, signed no
+hangard: mavlink: Neutral command ran
+hangard: mavlink: pid 17291 exited with status 0
+hangard: mavlink: skipping step 2 (cgroup): not running as root
+hangard: mavlink: skipping steps 7-9 (capabilities, user hg-mavlink, group hangar): not running as root
+hangard: mavlink: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/mavlink.log
+hangard: mavlink: started, pid 17303
+hangard: mavlink: starting
+hangard: mavlink: opened ardusub.manual_control (manual_control, 16 slots)
+hangard: mavlink: opened ardusub.state (ardusub_state, 16 slots)
+hangard: mavlink: opened ardusub.param (ardusub_param, 16 slots)
+hangard: mavlink: opened nav.attitude (attitude, 16 slots)
+hangard: mavlink: opened nav.imu (imu, 16 slots)
+hangard: mavlink: opened nav.depth (depth, 16 slots)
+hangard: mavlink: opened power.battery (battery, 16 slots)
+hangard: mavlink: opened thr.out (thruster_out, 16 slots)
+hangard: mavlink: opened ardusub.params_job (params_job, 16 slots)
+hangard: mavlink: opened mavlink.rep (rep:mavlink, 16 slots)
+hangard: mavlink: ready
+hangard: call safety.arm by admin:bluerov2: call 43, deadline 1000 ms
+hangar-mavlink --neutral: neutral manual control and disarm sent to ArduSub (system 1) over udp, signed no
+hangard: mavlink: Neutral command ran
+hangard: mavlink: pid 17303 killed by signal 9 (Killed)
+hangard: mavlink: backoff: pid 17303 killed by signal 9 (Killed); restarting in 0.1 s (failure 1)
+hangard: mavlink: skipping step 2 (cgroup): not running as root
+hangard: mavlink: skipping steps 7-9 (capabilities, user hg-mavlink, group hangar): not running as root
+hangard: mavlink: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/mavlink.log
+hangard: mavlink: started, pid 17492
+hangard: mavlink: starting
+hangard: mavlink: opened ardusub.manual_control (manual_control, 16 slots)
+hangard: mavlink: opened ardusub.state (ardusub_state, 16 slots)
+hangard: mavlink: opened ardusub.param (ardusub_param, 16 slots)
+hangard: mavlink: opened nav.attitude (attitude, 16 slots)
+hangard: mavlink: opened nav.imu (imu, 16 slots)
+hangard: mavlink: opened nav.depth (depth, 16 slots)
+hangard: mavlink: opened power.battery (battery, 16 slots)
+hangard: mavlink: opened thr.out (thruster_out, 16 slots)
+hangard: mavlink: opened ardusub.params_job (params_job, 16 slots)
+hangard: mavlink: opened mavlink.rep (rep:mavlink, 16 slots)
+hangard: mavlink: ready
+hangard: call safety.clear by admin:bluerov2: call 44, deadline 1000 ms
+hangard: mavlink: stopping: restart requested
+hangar-mavlink --neutral: neutral manual control and disarm sent to ArduSub (system 1) over udp, signed no
+hangard: mavlink: Neutral command ran
+hangard: mavlink: pid 17492 exited with status 0
+hangard: mavlink: skipping step 2 (cgroup): not running as root
+hangard: mavlink: skipping steps 7-9 (capabilities, user hg-mavlink, group hangar): not running as root
+hangard: mavlink: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/mavlink.log
+hangard: mavlink: started, pid 17504
+hangard: mavlink: starting
+hangard: mavlink: opened ardusub.manual_control (manual_control, 16 slots)
+hangard: mavlink: opened ardusub.state (ardusub_state, 16 slots)
+hangard: mavlink: opened ardusub.param (ardusub_param, 16 slots)
+hangard: mavlink: opened nav.attitude (attitude, 16 slots)
+hangard: mavlink: opened nav.imu (imu, 16 slots)
+hangard: mavlink: opened nav.depth (depth, 16 slots)
+hangard: mavlink: opened power.battery (battery, 16 slots)
+hangard: mavlink: opened thr.out (thruster_out, 16 slots)
+hangard: mavlink: opened ardusub.params_job (params_job, 16 slots)
+hangard: mavlink: opened mavlink.rep (rep:mavlink, 16 slots)
+hangard: mavlink: ready
+hangard: call safety.arm by admin:bluerov2: call 45, deadline 1000 ms
+hangar-mavlink --neutral: neutral manual control and disarm sent to ArduSub (system 1) over udp, signed no
+hangard: mavlink: Neutral command ran
+hangard: mavlink: pid 17504 killed by signal 9 (Killed)
+hangard: mavlink: backoff: pid 17504 killed by signal 9 (Killed); restarting in 0.1 s (failure 1)
+hangard: mavlink: skipping step 2 (cgroup): not running as root
+hangard: mavlink: skipping steps 7-9 (capabilities, user hg-mavlink, group hangar): not running as root
+hangard: mavlink: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/mavlink.log
+hangard: mavlink: started, pid 17683
+hangard: mavlink: starting
+hangard: mavlink: opened ardusub.manual_control (manual_control, 16 slots)
+hangard: mavlink: opened ardusub.state (ardusub_state, 16 slots)
+hangard: mavlink: opened ardusub.param (ardusub_param, 16 slots)
+hangard: mavlink: opened nav.attitude (attitude, 16 slots)
+hangard: mavlink: opened nav.imu (imu, 16 slots)
+hangard: mavlink: opened nav.depth (depth, 16 slots)
+hangard: mavlink: opened power.battery (battery, 16 slots)
+hangard: mavlink: opened thr.out (thruster_out, 16 slots)
+hangard: mavlink: opened ardusub.params_job (params_job, 16 slots)
+hangard: mavlink: opened mavlink.rep (rep:mavlink, 16 slots)
+hangard: mavlink: ready
+hangard: call safety.clear by admin:bluerov2: call 46, deadline 1000 ms
+hangard: mavlink: stopping: restart requested
+hangar-mavlink --neutral: neutral manual control and disarm sent to ArduSub (system 1) over udp, signed no
+hangard: mavlink: Neutral command ran
+hangard: mavlink: pid 17683 exited with status 0
+hangard: mavlink: skipping step 2 (cgroup): not running as root
+hangard: mavlink: skipping steps 7-9 (capabilities, user hg-mavlink, group hangar): not running as root
+hangard: mavlink: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/mavlink.log
+hangard: mavlink: started, pid 17694
+hangard: mavlink: starting
+hangard: mavlink: opened ardusub.manual_control (manual_control, 16 slots)
+hangard: mavlink: opened ardusub.state (ardusub_state, 16 slots)
+hangard: mavlink: opened ardusub.param (ardusub_param, 16 slots)
+hangard: mavlink: opened nav.attitude (attitude, 16 slots)
+hangard: mavlink: opened nav.imu (imu, 16 slots)
+hangard: mavlink: opened nav.depth (depth, 16 slots)
+hangard: mavlink: opened power.battery (battery, 16 slots)
+hangard: mavlink: opened thr.out (thruster_out, 16 slots)
+hangard: mavlink: opened ardusub.params_job (params_job, 16 slots)
+hangard: mavlink: opened mavlink.rep (rep:mavlink, 16 slots)
+hangard: mavlink: ready
+hangard: call safety.arm by admin:bluerov2: call 47, deadline 1000 ms
+hangar-mavlink --neutral: neutral manual control and disarm sent to ArduSub (system 1) over udp, signed no
+hangard: mavlink: Neutral command ran
+hangard: mavlink: pid 17694 killed by signal 9 (Killed)
+hangard: mavlink: backoff: pid 17694 killed by signal 9 (Killed); restarting in 0.1 s (failure 1)
+hangard: mavlink: skipping step 2 (cgroup): not running as root
+hangard: mavlink: skipping steps 7-9 (capabilities, user hg-mavlink, group hangar): not running as root
+hangard: mavlink: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/mavlink.log
+hangard: mavlink: started, pid 17879
+hangard: mavlink: starting
+hangard: mavlink: opened ardusub.manual_control (manual_control, 16 slots)
+hangard: mavlink: opened ardusub.state (ardusub_state, 16 slots)
+hangard: mavlink: opened ardusub.param (ardusub_param, 16 slots)
+hangard: mavlink: opened nav.attitude (attitude, 16 slots)
+hangard: mavlink: opened nav.imu (imu, 16 slots)
+hangard: mavlink: opened nav.depth (depth, 16 slots)
+hangard: mavlink: opened power.battery (battery, 16 slots)
+hangard: mavlink: opened thr.out (thruster_out, 16 slots)
+hangard: mavlink: opened ardusub.params_job (params_job, 16 slots)
+hangard: mavlink: opened mavlink.rep (rep:mavlink, 16 slots)
+hangard: mavlink: ready
+hangard: call safety.clear by admin:bluerov2: call 48, deadline 1000 ms
+hangard: mavlink: stopping: restart requested
+hangar-mavlink --neutral: neutral manual control and disarm sent to ArduSub (system 1) over udp, signed no
+hangard: mavlink: Neutral command ran
+hangard: mavlink: pid 17879 exited with status 0
+hangard: mavlink: skipping step 2 (cgroup): not running as root
+hangard: mavlink: skipping steps 7-9 (capabilities, user hg-mavlink, group hangar): not running as root
+hangard: mavlink: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/mavlink.log
+hangard: mavlink: started, pid 17884
+hangard: mavlink: starting
+hangard: mavlink: opened ardusub.manual_control (manual_control, 16 slots)
+hangard: mavlink: opened ardusub.state (ardusub_state, 16 slots)
+hangard: mavlink: opened ardusub.param (ardusub_param, 16 slots)
+hangard: mavlink: opened nav.attitude (attitude, 16 slots)
+hangard: mavlink: opened nav.imu (imu, 16 slots)
+hangard: mavlink: opened nav.depth (depth, 16 slots)
+hangard: mavlink: opened power.battery (battery, 16 slots)
+hangard: mavlink: opened thr.out (thruster_out, 16 slots)
+hangard: mavlink: opened ardusub.params_job (params_job, 16 slots)
+hangard: mavlink: opened mavlink.rep (rep:mavlink, 16 slots)
+hangard: mavlink: ready
+hangard: call safety.arm by admin:bluerov2: call 49, deadline 1000 ms
+hangar-mavlink --neutral: neutral manual control and disarm sent to ArduSub (system 1) over udp, signed no
+hangard: mavlink: Neutral command ran
+hangard: mavlink: pid 17884 killed by signal 9 (Killed)
+hangard: mavlink: backoff: pid 17884 killed by signal 9 (Killed); restarting in 0.1 s (failure 1)
+hangard: mavlink: skipping step 2 (cgroup): not running as root
+hangard: mavlink: skipping steps 7-9 (capabilities, user hg-mavlink, group hangar): not running as root
+hangard: mavlink: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/mavlink.log
+hangard: mavlink: started, pid 18069
+hangard: mavlink: starting
+hangard: mavlink: opened ardusub.manual_control (manual_control, 16 slots)
+hangard: mavlink: opened ardusub.state (ardusub_state, 16 slots)
+hangard: mavlink: opened ardusub.param (ardusub_param, 16 slots)
+hangard: mavlink: opened nav.attitude (attitude, 16 slots)
+hangard: mavlink: opened nav.imu (imu, 16 slots)
+hangard: mavlink: opened nav.depth (depth, 16 slots)
+hangard: mavlink: opened power.battery (battery, 16 slots)
+hangard: mavlink: opened thr.out (thruster_out, 16 slots)
+hangard: mavlink: opened ardusub.params_job (params_job, 16 slots)
+hangard: mavlink: opened mavlink.rep (rep:mavlink, 16 slots)
+hangard: mavlink: ready
+hangard: call safety.clear by admin:bluerov2: call 50, deadline 1000 ms
+hangard: mavlink: stopping: restart requested
+hangar-mavlink --neutral: neutral manual control and disarm sent to ArduSub (system 1) over udp, signed no
+hangard: mavlink: Neutral command ran
+hangard: mavlink: pid 18069 exited with status 0
+hangard: mavlink: skipping step 2 (cgroup): not running as root
+hangard: mavlink: skipping steps 7-9 (capabilities, user hg-mavlink, group hangar): not running as root
+hangard: mavlink: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/mavlink.log
+hangard: mavlink: started, pid 18080
+hangard: mavlink: starting
+hangard: mavlink: opened ardusub.manual_control (manual_control, 16 slots)
+hangard: mavlink: opened ardusub.state (ardusub_state, 16 slots)
+hangard: mavlink: opened ardusub.param (ardusub_param, 16 slots)
+hangard: mavlink: opened nav.attitude (attitude, 16 slots)
+hangard: mavlink: opened nav.imu (imu, 16 slots)
+hangard: mavlink: opened nav.depth (depth, 16 slots)
+hangard: mavlink: opened power.battery (battery, 16 slots)
+hangard: mavlink: opened thr.out (thruster_out, 16 slots)
+hangard: mavlink: opened ardusub.params_job (params_job, 16 slots)
+hangard: mavlink: opened mavlink.rep (rep:mavlink, 16 slots)
+hangard: mavlink: ready
+hangard: call safety.arm by admin:bluerov2: call 51, deadline 1000 ms
+hangard: mux: pid 9673 killed by signal 9 (Killed)
+hangard: mux: backoff: pid 9673 killed by signal 9 (Killed); restarting in 0.1 s (failure 1)
+hangard: mux: skipping step 2 (cgroup): not running as root
+hangard: mux: skipping steps 7-9 (capabilities, user hangar, group hangar): not running as root
+hangard: mux: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/mux.log
+hangard: mux: started, pid 18259
+hangard: mux: starting
+hangard: mux: opened mux.params (params:mux, 16 slots)
+hangard: mux: opened ctl.wrench (wrench, 16 slots)
+hangard: mux: opened mux.state (mux_state, 16 slots)
+hangard: mux: opened mux.rep (rep:mux, 16 slots)
+hangard: mux: ready
+hangard: call safety.disarm by admin:bluerov2: call 52, deadline 1000 ms
+hangard: mux: stopping: restart requested
+hangard: mux: pid 18259 exited with status 0
+hangard: mux: skipping step 2 (cgroup): not running as root
+hangard: mux: skipping steps 7-9 (capabilities, user hangar, group hangar): not running as root
+hangard: mux: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/mux.log
+hangard: mux: started, pid 18270
+hangard: mux: starting
+hangard: mux: opened mux.params (params:mux, 16 slots)
+hangard: mux: opened ctl.wrench (wrench, 16 slots)
+hangard: mux: opened mux.state (mux_state, 16 slots)
+hangard: mux: opened mux.rep (rep:mux, 16 slots)
+hangard: mux: ready
+hangard: call safety.arm by admin:bluerov2: call 53, deadline 1000 ms
+hangard: mux: pid 18270 killed by signal 9 (Killed)
+hangard: mux: backoff: pid 18270 killed by signal 9 (Killed); restarting in 0.1 s (failure 1)
+hangard: mux: skipping step 2 (cgroup): not running as root
+hangard: mux: skipping steps 7-9 (capabilities, user hangar, group hangar): not running as root
+hangard: mux: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/mux.log
+hangard: mux: started, pid 18446
+hangard: mux: starting
+hangard: mux: opened mux.params (params:mux, 16 slots)
+hangard: mux: opened ctl.wrench (wrench, 16 slots)
+hangard: mux: opened mux.state (mux_state, 16 slots)
+hangard: mux: opened mux.rep (rep:mux, 16 slots)
+hangard: mux: ready
+hangard: call safety.disarm by admin:bluerov2: call 54, deadline 1000 ms
+hangard: mux: stopping: restart requested
+hangard: mux: pid 18446 exited with status 0
+hangard: mux: skipping step 2 (cgroup): not running as root
+hangard: mux: skipping steps 7-9 (capabilities, user hangar, group hangar): not running as root
+hangard: mux: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/mux.log
+hangard: mux: started, pid 18449
+hangard: mux: starting
+hangard: mux: opened mux.params (params:mux, 16 slots)
+hangard: mux: opened ctl.wrench (wrench, 16 slots)
+hangard: mux: opened mux.state (mux_state, 16 slots)
+hangard: mux: opened mux.rep (rep:mux, 16 slots)
+hangard: mux: ready
+hangard: call safety.arm by admin:bluerov2: call 55, deadline 1000 ms
+hangard: mux: pid 18449 killed by signal 9 (Killed)
+hangard: mux: backoff: pid 18449 killed by signal 9 (Killed); restarting in 0.1 s (failure 1)
+hangard: mux: skipping step 2 (cgroup): not running as root
+hangard: mux: skipping steps 7-9 (capabilities, user hangar, group hangar): not running as root
+hangard: mux: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/mux.log
+hangard: mux: started, pid 18640
+hangard: mux: starting
+hangard: mux: opened mux.params (params:mux, 16 slots)
+hangard: mux: opened ctl.wrench (wrench, 16 slots)
+hangard: mux: opened mux.state (mux_state, 16 slots)
+hangard: mux: opened mux.rep (rep:mux, 16 slots)
+hangard: mux: ready
+hangard: call safety.disarm by admin:bluerov2: call 56, deadline 1000 ms
+hangard: mux: stopping: restart requested
+hangard: mux: pid 18640 exited with status 0
+hangard: mux: skipping step 2 (cgroup): not running as root
+hangard: mux: skipping steps 7-9 (capabilities, user hangar, group hangar): not running as root
+hangard: mux: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/mux.log
+hangard: mux: started, pid 18643
+hangard: mux: starting
+hangard: mux: opened mux.params (params:mux, 16 slots)
+hangard: mux: opened ctl.wrench (wrench, 16 slots)
+hangard: mux: opened mux.state (mux_state, 16 slots)
+hangard: mux: opened mux.rep (rep:mux, 16 slots)
+hangard: mux: ready
+hangard: call safety.arm by admin:bluerov2: call 57, deadline 1000 ms
+hangard: mux: pid 18643 killed by signal 9 (Killed)
+hangard: mux: backoff: pid 18643 killed by signal 9 (Killed); restarting in 0.1 s (failure 1)
+hangard: mux: skipping step 2 (cgroup): not running as root
+hangard: mux: skipping steps 7-9 (capabilities, user hangar, group hangar): not running as root
+hangard: mux: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/mux.log
+hangard: mux: started, pid 18825
+hangard: mux: starting
+hangard: mux: opened mux.params (params:mux, 16 slots)
+hangard: mux: opened ctl.wrench (wrench, 16 slots)
+hangard: mux: opened mux.state (mux_state, 16 slots)
+hangard: mux: opened mux.rep (rep:mux, 16 slots)
+hangard: mux: ready
+hangard: call safety.disarm by admin:bluerov2: call 58, deadline 1000 ms
+hangard: mux: stopping: restart requested
+hangard: mux: pid 18825 exited with status 0
+hangard: mux: skipping step 2 (cgroup): not running as root
+hangard: mux: skipping steps 7-9 (capabilities, user hangar, group hangar): not running as root
+hangard: mux: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/mux.log
+hangard: mux: started, pid 18828
+hangard: mux: starting
+hangard: mux: opened mux.params (params:mux, 16 slots)
+hangard: mux: opened ctl.wrench (wrench, 16 slots)
+hangard: mux: opened mux.state (mux_state, 16 slots)
+hangard: mux: opened mux.rep (rep:mux, 16 slots)
+hangard: mux: ready
+hangard: call safety.arm by admin:bluerov2: call 59, deadline 1000 ms
+hangard: mux: pid 18828 killed by signal 9 (Killed)
+hangard: mux: backoff: pid 18828 killed by signal 9 (Killed); restarting in 0.1 s (failure 1)
+hangard: mux: skipping step 2 (cgroup): not running as root
+hangard: mux: skipping steps 7-9 (capabilities, user hangar, group hangar): not running as root
+hangard: mux: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/mux.log
+hangard: mux: started, pid 19010
+hangard: mux: starting
+hangard: mux: opened mux.params (params:mux, 16 slots)
+hangard: mux: opened ctl.wrench (wrench, 16 slots)
+hangard: mux: opened mux.state (mux_state, 16 slots)
+hangard: mux: opened mux.rep (rep:mux, 16 slots)
+hangard: mux: ready
+hangard: call safety.disarm by admin:bluerov2: call 60, deadline 1000 ms
+hangard: mux: stopping: restart requested
+hangard: mux: pid 19010 exited with status 0
+hangard: mux: skipping step 2 (cgroup): not running as root
+hangard: mux: skipping steps 7-9 (capabilities, user hangar, group hangar): not running as root
+hangard: mux: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/mux.log
+hangard: mux: started, pid 19013
+hangard: mux: starting
+hangard: mux: opened mux.params (params:mux, 16 slots)
+hangard: mux: opened ctl.wrench (wrench, 16 slots)
+hangard: mux: opened mux.state (mux_state, 16 slots)
+hangard: mux: opened mux.rep (rep:mux, 16 slots)
+hangard: mux: ready
+hangard: call safety.arm by admin:bluerov2: call 61, deadline 1000 ms
+hangard: bridge: unhealthy: bridge.vehicle.link stale for 1090 ms
+hangard: bridge: pid 9670 exited with status 0
+hangard: bridge: backoff: bridge.vehicle.link stale for 1090 ms; restarting in 0.1 s (failure 1)
+hangard: bridge: skipping step 2 (cgroup): not running as root
+hangard: bridge: skipping steps 7-9 (capabilities, user hg-bridge, group hangar): not running as root
+hangard: bridge: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/bridge.log
+hangard: bridge: started, pid 19196
+hangard: bridge: starting
+hangard: bridge: opened bridge.vehicle.link (bridge_link, 16 slots)
+hangard: bridge: ready
+hangard: bridge: opened pilot.wrench, mirrored from topside (writer topside_mavlink)
+hangard: bridge: opened pilot.buttons, mirrored from topside (writer topside_mavlink)
+hangard: call safety.clear by admin:bluerov2: call 62, deadline 1000 ms
+hangard: call safety.arm by admin:bluerov2: call 63, deadline 1000 ms
+hangard: bridge: unhealthy: bridge.vehicle.link stale for 1028 ms
+hangard: bridge: pid 19196 exited with status 0
+hangard: bridge: backoff: bridge.vehicle.link stale for 1028 ms; restarting in 0.2 s (failure 2)
+hangard: bridge: skipping step 2 (cgroup): not running as root
+hangard: bridge: skipping steps 7-9 (capabilities, user hg-bridge, group hangar): not running as root
+hangard: bridge: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/bridge.log
+hangard: bridge: started, pid 19386
+hangard: bridge: starting
+hangard: bridge: opened bridge.vehicle.link (bridge_link, 16 slots)
+hangard: bridge: opened pilot.wrench, mirrored from topside (writer topside_mavlink)
+hangard: bridge: opened pilot.buttons, mirrored from topside (writer topside_mavlink)
+hangard: bridge: ready
+hangard: call safety.clear by admin:bluerov2: call 64, deadline 1000 ms
+hangard: call safety.arm by admin:bluerov2: call 65, deadline 1000 ms
+hangard: bridge: unhealthy: bridge.vehicle.link stale for 1050 ms
+hangard: bridge: pid 19386 exited with status 0
+hangard: bridge: backoff: bridge.vehicle.link stale for 1050 ms; restarting in 0.4 s (failure 3)
+hangard: bridge: skipping step 2 (cgroup): not running as root
+hangard: bridge: skipping steps 7-9 (capabilities, user hg-bridge, group hangar): not running as root
+hangard: bridge: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/bridge.log
+hangard: bridge: started, pid 19570
+hangard: bridge: starting
+hangard: bridge: opened bridge.vehicle.link (bridge_link, 16 slots)
+hangard: bridge: ready
+hangard: bridge: opened pilot.wrench, mirrored from topside (writer topside_mavlink)
+hangard: bridge: opened pilot.buttons, mirrored from topside (writer topside_mavlink)
+hangard: call safety.clear by admin:bluerov2: call 66, deadline 1000 ms
+hangard: call safety.arm by admin:bluerov2: call 67, deadline 1000 ms
+hangard: bridge: unhealthy: bridge.vehicle.link stale for 1039 ms
+hangard: bridge: pid 19570 exited with status 0
+hangard: bridge: backoff: bridge.vehicle.link stale for 1039 ms; restarting in 0.8 s (failure 4)
+hangard: bridge: skipping step 2 (cgroup): not running as root
+hangard: bridge: skipping steps 7-9 (capabilities, user hg-bridge, group hangar): not running as root
+hangard: bridge: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/bridge.log
+hangard: bridge: started, pid 19763
+hangard: bridge: starting
+hangard: bridge: opened bridge.vehicle.link (bridge_link, 16 slots)
+hangard: bridge: opened pilot.wrench, mirrored from topside (writer topside_mavlink)
+hangard: bridge: opened pilot.buttons, mirrored from topside (writer topside_mavlink)
+hangard: bridge: ready
+hangard: call safety.clear by admin:bluerov2: call 68, deadline 1000 ms
+hangard: call safety.arm by admin:bluerov2: call 69, deadline 1000 ms
+hangard: bridge: unhealthy: bridge.vehicle.link stale for 1085 ms
+hangard: bridge: pid 19763 exited with status 0
+hangard: bridge: backoff: bridge.vehicle.link stale for 1085 ms; restarting in 1.6 s (failure 5)
+hangard: bridge: skipping step 2 (cgroup): not running as root
+hangard: bridge: skipping steps 7-9 (capabilities, user hg-bridge, group hangar): not running as root
+hangard: bridge: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/bridge.log
+hangard: bridge: started, pid 19950
+hangard: bridge: starting
+hangard: bridge: opened bridge.vehicle.link (bridge_link, 16 slots)
+hangard: bridge: ready
+hangard: bridge: opened pilot.wrench, mirrored from topside (writer topside_mavlink)
+hangard: bridge: opened pilot.buttons, mirrored from topside (writer topside_mavlink)
+hangard: call safety.clear by admin:bluerov2: call 70, deadline 1000 ms
+hangard: call safety.arm by admin:bluerov2: call 71, deadline 1000 ms
+hangard: bridge: unhealthy: bridge.vehicle.link stale for 1054 ms
+hangard: bridge: pid 19950 exited with status 0
+hangard: bridge: backoff: bridge.vehicle.link stale for 1054 ms; restarting in 3.2 s (failure 6)
+hangard: call safety.clear by admin:bluerov2: call 72, deadline 1000 ms
+hangard: bridge: skipping step 2 (cgroup): not running as root
+hangard: bridge: skipping steps 7-9 (capabilities, user hg-bridge, group hangar): not running as root
+hangard: bridge: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/bridge.log
+hangard: bridge: started, pid 20142
+hangard: bridge: starting
+hangard: bridge: opened bridge.vehicle.link (bridge_link, 16 slots)
+hangard: bridge: ready
+hangard: bridge: opened pilot.wrench, mirrored from topside (writer topside_mavlink)
+hangard: bridge: opened pilot.buttons, mirrored from topside (writer topside_mavlink)
+hangard: call safety.clear by admin:bluerov2: call 73, deadline 1000 ms
+hangard: call safety.arm by admin:bluerov2: call 74, deadline 1000 ms
+hangard: bridge: unhealthy: bridge.vehicle.link stale for 1020 ms
+hangard: bridge: pid 20142 exited with status 0
+hangard: bridge: backoff: bridge.vehicle.link stale for 1020 ms; restarting in 6.4 s (failure 7)
+hangard: call safety.clear by admin:bluerov2: call 75, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 76, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 77, deadline 1000 ms
+hangard: bridge: skipping step 2 (cgroup): not running as root
+hangard: bridge: skipping steps 7-9 (capabilities, user hg-bridge, group hangar): not running as root
+hangard: bridge: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/bridge.log
+hangard: bridge: started, pid 20335
+hangard: bridge: starting
+hangard: bridge: opened bridge.vehicle.link (bridge_link, 16 slots)
+hangard: bridge: opened pilot.wrench, mirrored from topside (writer topside_mavlink)
+hangard: bridge: opened pilot.buttons, mirrored from topside (writer topside_mavlink)
+hangard: bridge: ready
+hangard: call safety.clear by admin:bluerov2: call 78, deadline 1000 ms
+hangard: call safety.arm by admin:bluerov2: call 79, deadline 1000 ms
+hangard: bridge: unhealthy: bridge.vehicle.link stale for 1086 ms
+hangard: bridge: pid 20335 exited with status 0
+hangard: bridge: backoff: bridge.vehicle.link stale for 1086 ms; restarting in 10 s (failure 8)
+hangard: call safety.clear by admin:bluerov2: call 80, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 81, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 82, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 83, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 84, deadline 1000 ms
+hangard: bridge: skipping step 2 (cgroup): not running as root
+hangard: bridge: skipping steps 7-9 (capabilities, user hg-bridge, group hangar): not running as root
+hangard: bridge: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/bridge.log
+hangard: bridge: started, pid 20709
+hangard: bridge: starting
+hangard: bridge: opened bridge.vehicle.link (bridge_link, 16 slots)
+hangard: bridge: opened pilot.wrench, mirrored from topside (writer topside_mavlink)
+hangard: bridge: opened pilot.buttons, mirrored from topside (writer topside_mavlink)
+hangard: bridge: ready
+hangard: call safety.clear by admin:bluerov2: call 85, deadline 1000 ms
+hangard: call safety.arm by admin:bluerov2: call 86, deadline 1000 ms
+hangard: bridge: unhealthy: bridge.vehicle.link stale for 1074 ms
+hangard: bridge: pid 20709 exited with status 0
+hangard: bridge: backoff: bridge.vehicle.link stale for 1074 ms; restarting in 10 s (failure 9)
+hangard: call safety.clear by admin:bluerov2: call 87, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 88, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 89, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 90, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 91, deadline 1000 ms
+hangard: bridge: skipping step 2 (cgroup): not running as root
+hangard: bridge: skipping steps 7-9 (capabilities, user hg-bridge, group hangar): not running as root
+hangard: bridge: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/bridge.log
+hangard: bridge: started, pid 20904
+hangard: bridge: starting
+hangard: bridge: opened bridge.vehicle.link (bridge_link, 16 slots)
+hangard: bridge: opened pilot.wrench, mirrored from topside (writer topside_mavlink)
+hangard: bridge: opened pilot.buttons, mirrored from topside (writer topside_mavlink)
+hangard: bridge: ready
+hangard: call safety.clear by admin:bluerov2: call 92, deadline 1000 ms
+hangard: call safety.arm by admin:bluerov2: call 93, deadline 1000 ms
+hangard: bridge: unhealthy: bridge.vehicle.link stale for 1097 ms
+hangard: bridge: pid 20904 exited with status 0
+hangard: bridge: backoff: bridge.vehicle.link stale for 1097 ms; restarting in 10 s (failure 10)
+hangard: call safety.clear by admin:bluerov2: call 94, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 95, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 96, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 97, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 98, deadline 1000 ms
+hangard: bridge: skipping step 2 (cgroup): not running as root
+hangard: bridge: skipping steps 7-9 (capabilities, user hg-bridge, group hangar): not running as root
+hangard: bridge: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/bridge.log
+hangard: bridge: started, pid 21099
+hangard: bridge: starting
+hangard: bridge: opened bridge.vehicle.link (bridge_link, 16 slots)
+hangard: bridge: opened pilot.wrench, mirrored from topside (writer topside_mavlink)
+hangard: bridge: opened pilot.buttons, mirrored from topside (writer topside_mavlink)
+hangard: bridge: ready
+hangard: call safety.clear by admin:bluerov2: call 99, deadline 1000 ms
+hangard: call safety.arm by admin:bluerov2: call 100, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 101, deadline 1000 ms
+hangard: call safety.arm by admin:bluerov2: call 102, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 103, deadline 1000 ms
+hangard: call safety.arm by admin:bluerov2: call 104, deadline 1000 ms
+hangard: bridge: healthy for 30 s: failure count reset
+hangard: call safety.clear by admin:bluerov2: call 105, deadline 1000 ms
+hangard: call safety.arm by admin:bluerov2: call 106, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 107, deadline 1000 ms
+hangard: call safety.arm by admin:bluerov2: call 108, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 109, deadline 1000 ms
+hangard: call safety.arm by admin:bluerov2: call 110, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 111, deadline 1000 ms
+hangard: call safety.arm by admin:bluerov2: call 112, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 113, deadline 1000 ms
+hangard: call safety.arm by admin:bluerov2: call 114, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 115, deadline 1000 ms
+hangard: call safety.arm by admin:bluerov2: call 116, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 117, deadline 1000 ms
+hangard: call safety.arm by admin:bluerov2: call 118, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 119, deadline 1000 ms
+hangard: call safety.arm by admin:bluerov2: call 120, deadline 1000 ms
+hangard: call safety.disarm by admin:bluerov2: call 121, deadline 1000 ms
+hangard: call safety.arm by admin:bluerov2: call 122, deadline 1000 ms
+hangard: call safety.disarm by admin:bluerov2: call 123, deadline 1000 ms
+hangard: call safety.arm by admin:bluerov2: call 124, deadline 1000 ms
+hangard: call safety.disarm by admin:bluerov2: call 125, deadline 1000 ms
+hangard: call safety.arm by admin:bluerov2: call 126, deadline 1000 ms
+hangard: call safety.disarm by admin:bluerov2: call 127, deadline 1000 ms
+hangard: call safety.arm by admin:bluerov2: call 128, deadline 1000 ms
+hangard: call safety.disarm by admin:bluerov2: call 129, deadline 1000 ms
+hangard: call safety.arm by admin:bluerov2: call 130, deadline 1000 ms
+hangard: call safety.disarm by admin:bluerov2: call 131, deadline 1000 ms
+hangard: call safety.arm by admin:bluerov2: call 132, deadline 1000 ms
+hangard: call safety.disarm by admin:bluerov2: call 133, deadline 1000 ms
+hangard: call safety.arm by admin:bluerov2: call 134, deadline 1000 ms
+hangard: call safety.disarm by admin:bluerov2: call 135, deadline 1000 ms
+hangard: call safety.arm by admin:bluerov2: call 136, deadline 1000 ms
+hangard: call safety.disarm by admin:bluerov2: call 137, deadline 1000 ms
+hangard: call safety.arm by admin:bluerov2: call 138, deadline 1000 ms
+hangard: call safety.disarm by admin:bluerov2: call 139, deadline 1000 ms
+hangard: call safety.arm by admin:bluerov2: call 140, deadline 1000 ms
+hangard: call safety.disarm by admin:bluerov2: call 141, deadline 1000 ms
+hangard: call safety.arm by admin:bluerov2: call 142, deadline 1000 ms
+hangard: call safety.disarm by admin:bluerov2: call 143, deadline 1000 ms
+hangard: call safety.arm by admin:bluerov2: call 144, deadline 1000 ms
+hangard: call safety.disarm by admin:bluerov2: call 145, deadline 1000 ms
+hangard: call safety.arm by admin:bluerov2: call 146, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 147, deadline 1000 ms
+hangard: call safety.arm by admin:bluerov2: call 148, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 149, deadline 1000 ms
+hangard: call safety.arm by admin:bluerov2: call 150, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 151, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 152, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 153, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 154, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 155, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 156, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 157, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 158, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 159, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 160, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 161, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 162, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 163, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 164, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 165, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 166, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 167, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 168, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 169, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 170, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 171, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 172, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 173, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 174, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 175, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 176, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 177, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 178, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 179, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 180, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 181, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 182, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 183, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 184, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 185, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 186, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 187, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 188, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 189, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 190, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 191, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 192, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 193, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 194, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 195, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 196, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 197, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 198, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 199, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 200, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 201, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 202, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 203, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 204, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 205, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 206, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 207, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 208, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 209, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 210, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 211, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 212, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 213, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 214, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 215, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 216, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 217, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 218, deadline 1000 ms
+hangard: call safety.disarm by admin:bluerov2: call 219, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 220, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 221, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 222, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 223, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 224, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 225, deadline 1000 ms
+hangard: call safety.arm by admin:bluerov2: call 226, deadline 1000 ms
+hangard: call safety.disarm by admin:bluerov2: call 227, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 228, deadline 1000 ms
+hangard: call safety.arm by admin:bluerov2: call 229, deadline 1000 ms
+hangard: call safety.disarm by admin:bluerov2: call 230, deadline 1000 ms
+hangard: call safety.arm by admin:bluerov2: call 231, deadline 1000 ms
+hangard: call safety.disarm by admin:bluerov2: call 232, deadline 1000 ms
+hangard: call safety.arm by admin:bluerov2: call 233, deadline 1000 ms
+hangard: call safety.disarm by admin:bluerov2: call 234, deadline 1000 ms
+hangard: call safety.arm by admin:bluerov2: call 235, deadline 1000 ms
+hangard: call safety.disarm by admin:bluerov2: call 236, deadline 1000 ms
+hangard: call safety.arm by admin:bluerov2: call 237, deadline 1000 ms
+hangard: call safety.disarm by admin:bluerov2: call 238, deadline 1000 ms
+hangard: call safety.arm by admin:bluerov2: call 239, deadline 1000 ms
+hangard: call safety.disarm by admin:bluerov2: call 240, deadline 1000 ms
+hangard: call safety.arm by admin:bluerov2: call 241, deadline 1000 ms
+hangard: call safety.disarm by admin:bluerov2: call 242, deadline 1000 ms
+hangard: call safety.arm by admin:bluerov2: call 243, deadline 1000 ms
+hangard: call safety.disarm by admin:bluerov2: call 244, deadline 1000 ms
+hangard: call safety.arm by admin:bluerov2: call 245, deadline 1000 ms
+hangard: call safety.disarm by admin:bluerov2: call 246, deadline 1000 ms
+hangard: call safety.disarm by admin:bluerov2: call 247, deadline 1000 ms
+hangard: call safety.arm by admin:bluerov2: call 248, deadline 1000 ms
+hangard: call safety.arm by admin:bluerov2: call 249, deadline 1000 ms
+hangard: call safety.arm by admin:bluerov2: call 250, deadline 1000 ms
+hangard: call safety.arm by admin:bluerov2: call 251, deadline 1000 ms
+hangard: call safety.arm by admin:bluerov2: call 252, deadline 1000 ms
+hangard: call safety.disarm by admin:bluerov2: call 253, deadline 1000 ms
+hangard: call safety.arm by admin:bluerov2: call 254, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 255, deadline 1000 ms
+hangard: call safety.arm by admin:bluerov2: call 256, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 257, deadline 1000 ms
+hangard: call safety.arm by admin:bluerov2: call 258, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 259, deadline 1000 ms
+hangard: call safety.disarm by admin:bluerov2: call 260, deadline 1000 ms
+hangard: call safety.arm by admin:bluerov2: call 261, deadline 1000 ms
+hangard: safety: pid 17108 killed by signal 9 (Killed)
+hangard: safety: backoff: pid 17108 killed by signal 9 (Killed); restarting in 0.1 s (failure 1)
+hangard: safety: skipping step 2 (cgroup): not running as root
+hangard: safety: skipping steps 7-9 (capabilities, user hangar, group hangar): not running as root
+hangard: safety: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/safety.log
+hangard: safety: started, pid 31189
+hangard: safety: starting
+hangard: safety: opened safety.params (params:safety, 16 slots)
+hangard: safety: opened safety.state (safety_state, 16 slots)
+hangard: safety: opened safety.req (req:safety, 16 slots)
+hangard: safety: opened safety.rep (rep:safety, 16 slots)
+hangard: safety: ready
+hangard: safety: stopping: restart requested
+hangard: safety: pid 31189 exited with status 0
+hangard: safety: skipping step 2 (cgroup): not running as root
+hangard: safety: skipping steps 7-9 (capabilities, user hangar, group hangar): not running as root
+hangard: safety: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/safety.log
+hangard: safety: started, pid 31197
+hangard: safety: starting
+hangard: safety: opened safety.params (params:safety, 16 slots)
+hangard: safety: opened safety.state (safety_state, 16 slots)
+hangard: safety: opened safety.req (req:safety, 16 slots)
+hangard: safety: opened safety.rep (rep:safety, 16 slots)
+hangard: safety: ready
+hangard: call safety.arm by admin:bluerov2: call 262, deadline 1000 ms
+hangard: safety: pid 31197 killed by signal 9 (Killed)
+hangard: safety: backoff: pid 31197 killed by signal 9 (Killed); restarting in 0.1 s (failure 1)
+hangard: safety: skipping step 2 (cgroup): not running as root
+hangard: safety: skipping steps 7-9 (capabilities, user hangar, group hangar): not running as root
+hangard: safety: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/safety.log
+hangard: safety: started, pid 31373
+hangard: safety: starting
+hangard: safety: opened safety.params (params:safety, 16 slots)
+hangard: safety: opened safety.state (safety_state, 16 slots)
+hangard: safety: opened safety.req (req:safety, 16 slots)
+hangard: safety: opened safety.rep (rep:safety, 16 slots)
+hangard: safety: ready
+hangard: safety: stopping: restart requested
+hangard: safety: pid 31373 exited with status 0
+hangard: safety: skipping step 2 (cgroup): not running as root
+hangard: safety: skipping steps 7-9 (capabilities, user hangar, group hangar): not running as root
+hangard: safety: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/safety.log
+hangard: safety: started, pid 31381
+hangard: safety: starting
+hangard: safety: opened safety.params (params:safety, 16 slots)
+hangard: safety: opened safety.state (safety_state, 16 slots)
+hangard: safety: opened safety.req (req:safety, 16 slots)
+hangard: safety: opened safety.rep (rep:safety, 16 slots)
+hangard: safety: ready
+hangard: call safety.arm by admin:bluerov2: call 263, deadline 1000 ms
+hangard: safety: pid 31381 killed by signal 9 (Killed)
+hangard: safety: backoff: pid 31381 killed by signal 9 (Killed); restarting in 0.1 s (failure 1)
+hangard: safety: skipping step 2 (cgroup): not running as root
+hangard: safety: skipping steps 7-9 (capabilities, user hangar, group hangar): not running as root
+hangard: safety: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/safety.log
+hangard: safety: started, pid 31557
+hangard: safety: starting
+hangard: safety: opened safety.params (params:safety, 16 slots)
+hangard: safety: opened safety.state (safety_state, 16 slots)
+hangard: safety: opened safety.req (req:safety, 16 slots)
+hangard: safety: opened safety.rep (rep:safety, 16 slots)
+hangard: safety: ready
+hangard: safety: stopping: restart requested
+hangard: safety: pid 31557 exited with status 0
+hangard: safety: skipping step 2 (cgroup): not running as root
+hangard: safety: skipping steps 7-9 (capabilities, user hangar, group hangar): not running as root
+hangard: safety: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/safety.log
+hangard: safety: started, pid 31559
+hangard: safety: starting
+hangard: safety: opened safety.params (params:safety, 16 slots)
+hangard: safety: opened safety.state (safety_state, 16 slots)
+hangard: safety: opened safety.req (req:safety, 16 slots)
+hangard: safety: opened safety.rep (rep:safety, 16 slots)
+hangard: safety: ready
+hangard: call safety.arm by admin:bluerov2: call 264, deadline 1000 ms
+hangard: safety: pid 31559 killed by signal 9 (Killed)
+hangard: safety: backoff: pid 31559 killed by signal 9 (Killed); restarting in 0.1 s (failure 1)
+hangard: safety: skipping step 2 (cgroup): not running as root
+hangard: safety: skipping steps 7-9 (capabilities, user hangar, group hangar): not running as root
+hangard: safety: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/safety.log
+hangard: safety: started, pid 31742
+hangard: safety: starting
+hangard: safety: opened safety.params (params:safety, 16 slots)
+hangard: safety: opened safety.state (safety_state, 16 slots)
+hangard: safety: opened safety.req (req:safety, 16 slots)
+hangard: safety: opened safety.rep (rep:safety, 16 slots)
+hangard: safety: ready
+hangard: safety: stopping: restart requested
+hangard: safety: pid 31742 exited with status 0
+hangard: safety: skipping step 2 (cgroup): not running as root
+hangard: safety: skipping steps 7-9 (capabilities, user hangar, group hangar): not running as root
+hangard: safety: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/safety.log
+hangard: safety: started, pid 31745
+hangard: safety: starting
+hangard: safety: opened safety.params (params:safety, 16 slots)
+hangard: safety: opened safety.state (safety_state, 16 slots)
+hangard: safety: opened safety.req (req:safety, 16 slots)
+hangard: safety: opened safety.rep (rep:safety, 16 slots)
+hangard: safety: ready
+hangard: call safety.arm by admin:bluerov2: call 265, deadline 1000 ms
+hangard: safety: pid 31745 killed by signal 9 (Killed)
+hangard: safety: backoff: pid 31745 killed by signal 9 (Killed); restarting in 0.1 s (failure 1)
+hangard: safety: skipping step 2 (cgroup): not running as root
+hangard: safety: skipping steps 7-9 (capabilities, user hangar, group hangar): not running as root
+hangard: safety: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/safety.log
+hangard: safety: started, pid 31927
+hangard: safety: starting
+hangard: safety: opened safety.params (params:safety, 16 slots)
+hangard: safety: opened safety.state (safety_state, 16 slots)
+hangard: safety: opened safety.req (req:safety, 16 slots)
+hangard: safety: opened safety.rep (rep:safety, 16 slots)
+hangard: safety: ready
+hangard: safety: stopping: restart requested
+hangard: safety: pid 31927 exited with status 0
+hangard: safety: skipping step 2 (cgroup): not running as root
+hangard: safety: skipping steps 7-9 (capabilities, user hangar, group hangar): not running as root
+hangard: safety: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/safety.log
+hangard: safety: started, pid 31929
+hangard: safety: starting
+hangard: safety: opened safety.params (params:safety, 16 slots)
+hangard: safety: opened safety.state (safety_state, 16 slots)
+hangard: safety: opened safety.req (req:safety, 16 slots)
+hangard: safety: opened safety.rep (rep:safety, 16 slots)
+hangard: safety: ready
+hangard: call safety.disarm by admin:bluerov2: call 266, deadline 1000 ms
+hangard: call safety.arm by admin:bluerov2: call 267, deadline 1000 ms
+hangar-mavlink --neutral: neutral manual control and disarm sent to ArduSub (system 1) over udp, signed no
+hangard: mavlink: Neutral command ran
+hangard: mavlink: pid 18080 killed by signal 9 (Killed)
+hangard: mavlink: backoff: pid 18080 killed by signal 9 (Killed); restarting in 0.1 s (failure 1)
+hangard: mavlink: skipping step 2 (cgroup): not running as root
+hangard: mavlink: skipping steps 7-9 (capabilities, user hg-mavlink, group hangar): not running as root
+hangard: mavlink: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/mavlink.log
+hangard: mavlink: started, pid 32340
+hangard: mavlink: starting
+hangard: mavlink: opened ardusub.manual_control (manual_control, 16 slots)
+hangard: mavlink: opened ardusub.state (ardusub_state, 16 slots)
+hangard: mavlink: opened ardusub.param (ardusub_param, 16 slots)
+hangard: mavlink: opened nav.attitude (attitude, 16 slots)
+hangard: mavlink: opened nav.imu (imu, 16 slots)
+hangard: mavlink: opened nav.depth (depth, 16 slots)
+hangard: mavlink: opened power.battery (battery, 16 slots)
+hangard: mavlink: opened thr.out (thruster_out, 16 slots)
+hangard: mavlink: opened ardusub.params_job (params_job, 16 slots)
+hangard: mavlink: opened mavlink.rep (rep:mavlink, 16 slots)
+hangard: mavlink: ready
+hangard: call safety.clear by admin:bluerov2: call 268, deadline 1000 ms
+hangard: mavlink: stopping: restart requested
+hangar-mavlink --neutral: neutral manual control and disarm sent to ArduSub (system 1) over udp, signed no
+hangard: mavlink: Neutral command ran
+hangard: mavlink: pid 32340 exited with status 0
+hangard: mavlink: skipping step 2 (cgroup): not running as root
+hangard: mavlink: skipping steps 7-9 (capabilities, user hg-mavlink, group hangar): not running as root
+hangard: mavlink: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/mavlink.log
+hangard: mavlink: started, pid 32351
+hangard: mavlink: starting
+hangard: mavlink: opened ardusub.manual_control (manual_control, 16 slots)
+hangard: mavlink: opened ardusub.state (ardusub_state, 16 slots)
+hangard: mavlink: opened ardusub.param (ardusub_param, 16 slots)
+hangard: mavlink: opened nav.attitude (attitude, 16 slots)
+hangard: mavlink: opened nav.imu (imu, 16 slots)
+hangard: mavlink: opened nav.depth (depth, 16 slots)
+hangard: mavlink: opened power.battery (battery, 16 slots)
+hangard: mavlink: opened thr.out (thruster_out, 16 slots)
+hangard: mavlink: opened ardusub.params_job (params_job, 16 slots)
+hangard: mavlink: opened mavlink.rep (rep:mavlink, 16 slots)
+hangard: mavlink: ready
+hangard: call safety.arm by admin:bluerov2: call 269, deadline 1000 ms
+hangar-mavlink --neutral: neutral manual control and disarm sent to ArduSub (system 1) over udp, signed no
+hangard: mavlink: Neutral command ran
+hangard: mavlink: pid 32351 killed by signal 9 (Killed)
+hangard: mavlink: backoff: pid 32351 killed by signal 9 (Killed); restarting in 0.1 s (failure 1)
+hangard: mavlink: skipping step 2 (cgroup): not running as root
+hangard: mavlink: skipping steps 7-9 (capabilities, user hg-mavlink, group hangar): not running as root
+hangard: mavlink: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/mavlink.log
+hangard: mavlink: started, pid 32540
+hangard: mavlink: starting
+hangard: mavlink: opened ardusub.manual_control (manual_control, 16 slots)
+hangard: mavlink: opened ardusub.state (ardusub_state, 16 slots)
+hangard: mavlink: opened ardusub.param (ardusub_param, 16 slots)
+hangard: mavlink: opened nav.attitude (attitude, 16 slots)
+hangard: mavlink: opened nav.imu (imu, 16 slots)
+hangard: mavlink: opened nav.depth (depth, 16 slots)
+hangard: mavlink: opened power.battery (battery, 16 slots)
+hangard: mavlink: opened thr.out (thruster_out, 16 slots)
+hangard: mavlink: opened ardusub.params_job (params_job, 16 slots)
+hangard: mavlink: opened mavlink.rep (rep:mavlink, 16 slots)
+hangard: mavlink: ready
+hangard: call safety.clear by admin:bluerov2: call 270, deadline 1000 ms
+hangard: mavlink: stopping: restart requested
+hangar-mavlink --neutral: neutral manual control and disarm sent to ArduSub (system 1) over udp, signed no
+hangard: mavlink: Neutral command ran
+hangard: mavlink: pid 32540 exited with status 0
+hangard: mavlink: skipping step 2 (cgroup): not running as root
+hangard: mavlink: skipping steps 7-9 (capabilities, user hg-mavlink, group hangar): not running as root
+hangard: mavlink: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/mavlink.log
+hangard: mavlink: started, pid 32551
+hangard: mavlink: starting
+hangard: mavlink: opened ardusub.manual_control (manual_control, 16 slots)
+hangard: mavlink: opened ardusub.state (ardusub_state, 16 slots)
+hangard: mavlink: opened ardusub.param (ardusub_param, 16 slots)
+hangard: mavlink: opened nav.attitude (attitude, 16 slots)
+hangard: mavlink: opened nav.imu (imu, 16 slots)
+hangard: mavlink: opened nav.depth (depth, 16 slots)
+hangard: mavlink: opened power.battery (battery, 16 slots)
+hangard: mavlink: opened thr.out (thruster_out, 16 slots)
+hangard: mavlink: opened ardusub.params_job (params_job, 16 slots)
+hangard: mavlink: opened mavlink.rep (rep:mavlink, 16 slots)
+hangard: mavlink: ready
+hangard: call safety.arm by admin:bluerov2: call 271, deadline 1000 ms
+hangar-mavlink --neutral: neutral manual control and disarm sent to ArduSub (system 1) over udp, signed no
+hangard: mavlink: Neutral command ran
+hangard: mavlink: pid 32551 killed by signal 9 (Killed)
+hangard: mavlink: backoff: pid 32551 killed by signal 9 (Killed); restarting in 0.1 s (failure 1)
+hangard: mavlink: skipping step 2 (cgroup): not running as root
+hangard: mavlink: skipping steps 7-9 (capabilities, user hg-mavlink, group hangar): not running as root
+hangard: mavlink: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/mavlink.log
+hangard: mavlink: started, pid 32736
+hangard: mavlink: starting
+hangard: mavlink: opened ardusub.manual_control (manual_control, 16 slots)
+hangard: mavlink: opened ardusub.state (ardusub_state, 16 slots)
+hangard: mavlink: opened ardusub.param (ardusub_param, 16 slots)
+hangard: mavlink: opened nav.attitude (attitude, 16 slots)
+hangard: mavlink: opened nav.imu (imu, 16 slots)
+hangard: mavlink: opened nav.depth (depth, 16 slots)
+hangard: mavlink: opened power.battery (battery, 16 slots)
+hangard: mavlink: opened thr.out (thruster_out, 16 slots)
+hangard: mavlink: opened ardusub.params_job (params_job, 16 slots)
+hangard: mavlink: opened mavlink.rep (rep:mavlink, 16 slots)
+hangard: mavlink: ready
+hangard: call safety.clear by admin:bluerov2: call 272, deadline 1000 ms
+hangard: mavlink: stopping: restart requested
+hangar-mavlink --neutral: neutral manual control and disarm sent to ArduSub (system 1) over udp, signed no
+hangard: mavlink: Neutral command ran
+hangard: mavlink: pid 32736 exited with status 0
+hangard: mavlink: skipping step 2 (cgroup): not running as root
+hangard: mavlink: skipping steps 7-9 (capabilities, user hg-mavlink, group hangar): not running as root
+hangard: mavlink: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/mavlink.log
+hangard: mavlink: started, pid 32747
+hangard: mavlink: starting
+hangard: mavlink: opened ardusub.manual_control (manual_control, 16 slots)
+hangard: mavlink: opened ardusub.state (ardusub_state, 16 slots)
+hangard: mavlink: opened ardusub.param (ardusub_param, 16 slots)
+hangard: mavlink: opened nav.attitude (attitude, 16 slots)
+hangard: mavlink: opened nav.imu (imu, 16 slots)
+hangard: mavlink: opened nav.depth (depth, 16 slots)
+hangard: mavlink: opened power.battery (battery, 16 slots)
+hangard: mavlink: opened thr.out (thruster_out, 16 slots)
+hangard: mavlink: opened ardusub.params_job (params_job, 16 slots)
+hangard: mavlink: opened mavlink.rep (rep:mavlink, 16 slots)
+hangard: mavlink: ready
+hangard: call safety.arm by admin:bluerov2: call 273, deadline 1000 ms
+hangar-mavlink --neutral: neutral manual control and disarm sent to ArduSub (system 1) over udp, signed no
+hangard: mavlink: Neutral command ran
+hangard: mavlink: pid 32747 killed by signal 9 (Killed)
+hangard: mavlink: backoff: pid 32747 killed by signal 9 (Killed); restarting in 0.1 s (failure 1)
+hangard: mavlink: skipping step 2 (cgroup): not running as root
+hangard: mavlink: skipping steps 7-9 (capabilities, user hg-mavlink, group hangar): not running as root
+hangard: mavlink: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/mavlink.log
+hangard: mavlink: started, pid 32926
+hangard: mavlink: starting
+hangard: mavlink: opened ardusub.manual_control (manual_control, 16 slots)
+hangard: mavlink: opened ardusub.state (ardusub_state, 16 slots)
+hangard: mavlink: opened ardusub.param (ardusub_param, 16 slots)
+hangard: mavlink: opened nav.attitude (attitude, 16 slots)
+hangard: mavlink: opened nav.imu (imu, 16 slots)
+hangard: mavlink: opened nav.depth (depth, 16 slots)
+hangard: mavlink: opened power.battery (battery, 16 slots)
+hangard: mavlink: opened thr.out (thruster_out, 16 slots)
+hangard: mavlink: opened ardusub.params_job (params_job, 16 slots)
+hangard: mavlink: opened mavlink.rep (rep:mavlink, 16 slots)
+hangard: mavlink: ready
+hangard: call safety.clear by admin:bluerov2: call 274, deadline 1000 ms
+hangard: mavlink: stopping: restart requested
+hangar-mavlink --neutral: neutral manual control and disarm sent to ArduSub (system 1) over udp, signed no
+hangard: mavlink: Neutral command ran
+hangard: mavlink: pid 32926 exited with status 0
+hangard: mavlink: skipping step 2 (cgroup): not running as root
+hangard: mavlink: skipping steps 7-9 (capabilities, user hg-mavlink, group hangar): not running as root
+hangard: mavlink: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/mavlink.log
+hangard: mavlink: started, pid 32937
+hangard: mavlink: starting
+hangard: mavlink: opened ardusub.manual_control (manual_control, 16 slots)
+hangard: mavlink: opened ardusub.state (ardusub_state, 16 slots)
+hangard: mavlink: opened ardusub.param (ardusub_param, 16 slots)
+hangard: mavlink: opened nav.attitude (attitude, 16 slots)
+hangard: mavlink: opened nav.imu (imu, 16 slots)
+hangard: mavlink: opened nav.depth (depth, 16 slots)
+hangard: mavlink: opened power.battery (battery, 16 slots)
+hangard: mavlink: opened thr.out (thruster_out, 16 slots)
+hangard: mavlink: opened ardusub.params_job (params_job, 16 slots)
+hangard: mavlink: opened mavlink.rep (rep:mavlink, 16 slots)
+hangard: mavlink: ready
+hangard: call safety.arm by admin:bluerov2: call 275, deadline 1000 ms
+hangar-mavlink --neutral: neutral manual control and disarm sent to ArduSub (system 1) over udp, signed no
+hangard: mavlink: Neutral command ran
+hangard: mavlink: pid 32937 killed by signal 9 (Killed)
+hangard: mavlink: backoff: pid 32937 killed by signal 9 (Killed); restarting in 0.1 s (failure 1)
+hangard: mavlink: skipping step 2 (cgroup): not running as root
+hangard: mavlink: skipping steps 7-9 (capabilities, user hg-mavlink, group hangar): not running as root
+hangard: mavlink: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/mavlink.log
+hangard: mavlink: started, pid 33116
+hangard: mavlink: starting
+hangard: mavlink: opened ardusub.manual_control (manual_control, 16 slots)
+hangard: mavlink: opened ardusub.state (ardusub_state, 16 slots)
+hangard: mavlink: opened ardusub.param (ardusub_param, 16 slots)
+hangard: mavlink: opened nav.attitude (attitude, 16 slots)
+hangard: mavlink: opened nav.imu (imu, 16 slots)
+hangard: mavlink: opened nav.depth (depth, 16 slots)
+hangard: mavlink: opened power.battery (battery, 16 slots)
+hangard: mavlink: opened thr.out (thruster_out, 16 slots)
+hangard: mavlink: opened ardusub.params_job (params_job, 16 slots)
+hangard: mavlink: opened mavlink.rep (rep:mavlink, 16 slots)
+hangard: mavlink: ready
+hangard: call safety.clear by admin:bluerov2: call 276, deadline 1000 ms
+hangard: mavlink: stopping: restart requested
+hangar-mavlink --neutral: neutral manual control and disarm sent to ArduSub (system 1) over udp, signed no
+hangard: mavlink: Neutral command ran
+hangard: mavlink: pid 33116 exited with status 0
+hangard: mavlink: skipping step 2 (cgroup): not running as root
+hangard: mavlink: skipping steps 7-9 (capabilities, user hg-mavlink, group hangar): not running as root
+hangard: mavlink: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/mavlink.log
+hangard: mavlink: started, pid 33127
+hangard: mavlink: starting
+hangard: mavlink: opened ardusub.manual_control (manual_control, 16 slots)
+hangard: mavlink: opened ardusub.state (ardusub_state, 16 slots)
+hangard: mavlink: opened ardusub.param (ardusub_param, 16 slots)
+hangard: mavlink: opened nav.attitude (attitude, 16 slots)
+hangard: mavlink: opened nav.imu (imu, 16 slots)
+hangard: mavlink: opened nav.depth (depth, 16 slots)
+hangard: mavlink: opened power.battery (battery, 16 slots)
+hangard: mavlink: opened thr.out (thruster_out, 16 slots)
+hangard: mavlink: opened ardusub.params_job (params_job, 16 slots)
+hangard: mavlink: opened mavlink.rep (rep:mavlink, 16 slots)
+hangard: mavlink: ready
+hangard: call safety.disarm by admin:bluerov2: call 277, deadline 1000 ms
+hangard: call safety.arm by admin:bluerov2: call 278, deadline 1000 ms
+hangard: mux: pid 19013 killed by signal 9 (Killed)
+hangard: mux: backoff: pid 19013 killed by signal 9 (Killed); restarting in 0.1 s (failure 1)
+hangard: mux: skipping step 2 (cgroup): not running as root
+hangard: mux: skipping steps 7-9 (capabilities, user hangar, group hangar): not running as root
+hangard: mux: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/mux.log
+hangard: mux: started, pid 33539
+hangard: mux: starting
+hangard: mux: opened mux.params (params:mux, 16 slots)
+hangard: mux: opened ctl.wrench (wrench, 16 slots)
+hangard: mux: opened mux.state (mux_state, 16 slots)
+hangard: mux: opened mux.rep (rep:mux, 16 slots)
+hangard: mux: ready
+hangard: call safety.disarm by admin:bluerov2: call 279, deadline 1000 ms
+hangard: mux: stopping: restart requested
+hangard: mux: pid 33539 exited with status 0
+hangard: mux: skipping step 2 (cgroup): not running as root
+hangard: mux: skipping steps 7-9 (capabilities, user hangar, group hangar): not running as root
+hangard: mux: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/mux.log
+hangard: mux: started, pid 33548
+hangard: mux: starting
+hangard: mux: opened mux.params (params:mux, 16 slots)
+hangard: mux: opened ctl.wrench (wrench, 16 slots)
+hangard: mux: opened mux.state (mux_state, 16 slots)
+hangard: mux: opened mux.rep (rep:mux, 16 slots)
+hangard: mux: ready
+hangard: call safety.arm by admin:bluerov2: call 280, deadline 1000 ms
+hangard: mux: pid 33548 killed by signal 9 (Killed)
+hangard: mux: backoff: pid 33548 killed by signal 9 (Killed); restarting in 0.1 s (failure 1)
+hangard: mux: skipping step 2 (cgroup): not running as root
+hangard: mux: skipping steps 7-9 (capabilities, user hangar, group hangar): not running as root
+hangard: mux: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/mux.log
+hangard: mux: started, pid 33733
+hangard: mux: starting
+hangard: mux: opened mux.params (params:mux, 16 slots)
+hangard: mux: opened ctl.wrench (wrench, 16 slots)
+hangard: mux: opened mux.state (mux_state, 16 slots)
+hangard: mux: opened mux.rep (rep:mux, 16 slots)
+hangard: mux: ready
+hangard: call safety.disarm by admin:bluerov2: call 281, deadline 1000 ms
+hangard: mux: stopping: restart requested
+hangard: mux: pid 33733 exited with status 0
+hangard: mux: skipping step 2 (cgroup): not running as root
+hangard: mux: skipping steps 7-9 (capabilities, user hangar, group hangar): not running as root
+hangard: mux: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/mux.log
+hangard: mux: started, pid 33742
+hangard: mux: starting
+hangard: mux: opened mux.params (params:mux, 16 slots)
+hangard: mux: opened ctl.wrench (wrench, 16 slots)
+hangard: mux: opened mux.state (mux_state, 16 slots)
+hangard: mux: opened mux.rep (rep:mux, 16 slots)
+hangard: mux: ready
+hangard: call safety.arm by admin:bluerov2: call 282, deadline 1000 ms
+hangard: mux: pid 33742 killed by signal 9 (Killed)
+hangard: mux: backoff: pid 33742 killed by signal 9 (Killed); restarting in 0.1 s (failure 1)
+hangard: mux: skipping step 2 (cgroup): not running as root
+hangard: mux: skipping steps 7-9 (capabilities, user hangar, group hangar): not running as root
+hangard: mux: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/mux.log
+hangard: mux: started, pid 33918
+hangard: mux: starting
+hangard: mux: opened mux.params (params:mux, 16 slots)
+hangard: mux: opened ctl.wrench (wrench, 16 slots)
+hangard: mux: opened mux.state (mux_state, 16 slots)
+hangard: mux: opened mux.rep (rep:mux, 16 slots)
+hangard: mux: ready
+hangard: call safety.disarm by admin:bluerov2: call 283, deadline 1000 ms
+hangard: mux: stopping: restart requested
+hangard: mux: pid 33918 exited with status 0
+hangard: mux: skipping step 2 (cgroup): not running as root
+hangard: mux: skipping steps 7-9 (capabilities, user hangar, group hangar): not running as root
+hangard: mux: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/mux.log
+hangard: mux: started, pid 33921
+hangard: mux: starting
+hangard: mux: opened mux.params (params:mux, 16 slots)
+hangard: mux: opened ctl.wrench (wrench, 16 slots)
+hangard: mux: opened mux.state (mux_state, 16 slots)
+hangard: mux: opened mux.rep (rep:mux, 16 slots)
+hangard: mux: ready
+hangard: call safety.arm by admin:bluerov2: call 284, deadline 1000 ms
+hangard: mux: pid 33921 killed by signal 9 (Killed)
+hangard: mux: backoff: pid 33921 killed by signal 9 (Killed); restarting in 0.1 s (failure 1)
+hangard: mux: skipping step 2 (cgroup): not running as root
+hangard: mux: skipping steps 7-9 (capabilities, user hangar, group hangar): not running as root
+hangard: mux: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/mux.log
+hangard: mux: started, pid 34103
+hangard: mux: starting
+hangard: mux: opened mux.params (params:mux, 16 slots)
+hangard: mux: opened ctl.wrench (wrench, 16 slots)
+hangard: mux: opened mux.state (mux_state, 16 slots)
+hangard: mux: opened mux.rep (rep:mux, 16 slots)
+hangard: mux: ready
+hangard: call safety.disarm by admin:bluerov2: call 285, deadline 1000 ms
+hangard: mux: stopping: restart requested
+hangard: mux: pid 34103 exited with status 0
+hangard: mux: skipping step 2 (cgroup): not running as root
+hangard: mux: skipping steps 7-9 (capabilities, user hangar, group hangar): not running as root
+hangard: mux: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/mux.log
+hangard: mux: started, pid 34106
+hangard: mux: starting
+hangard: mux: opened mux.params (params:mux, 16 slots)
+hangard: mux: opened ctl.wrench (wrench, 16 slots)
+hangard: mux: opened mux.state (mux_state, 16 slots)
+hangard: mux: opened mux.rep (rep:mux, 16 slots)
+hangard: mux: ready
+hangard: call safety.arm by admin:bluerov2: call 286, deadline 1000 ms
+hangard: mux: pid 34106 killed by signal 9 (Killed)
+hangard: mux: backoff: pid 34106 killed by signal 9 (Killed); restarting in 0.1 s (failure 1)
+hangard: mux: skipping step 2 (cgroup): not running as root
+hangard: mux: skipping steps 7-9 (capabilities, user hangar, group hangar): not running as root
+hangard: mux: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/mux.log
+hangard: mux: started, pid 34288
+hangard: mux: starting
+hangard: mux: opened mux.params (params:mux, 16 slots)
+hangard: mux: opened ctl.wrench (wrench, 16 slots)
+hangard: mux: opened mux.state (mux_state, 16 slots)
+hangard: mux: opened mux.rep (rep:mux, 16 slots)
+hangard: mux: ready
+hangard: call safety.disarm by admin:bluerov2: call 287, deadline 1000 ms
+hangard: mux: stopping: restart requested
+hangard: mux: pid 34288 exited with status 0
+hangard: mux: skipping step 2 (cgroup): not running as root
+hangard: mux: skipping steps 7-9 (capabilities, user hangar, group hangar): not running as root
+hangard: mux: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/mux.log
+hangard: mux: started, pid 34291
+hangard: mux: starting
+hangard: mux: opened mux.params (params:mux, 16 slots)
+hangard: mux: opened ctl.wrench (wrench, 16 slots)
+hangard: mux: opened mux.state (mux_state, 16 slots)
+hangard: mux: opened mux.rep (rep:mux, 16 slots)
+hangard: mux: ready
+hangard: call safety.disarm by admin:bluerov2: call 288, deadline 1000 ms
+hangard: call safety.arm by admin:bluerov2: call 289, deadline 1000 ms
+hangard: bridge: unhealthy: bridge.vehicle.link stale for 1044 ms
+hangard: bridge: pid 21099 exited with status 0
+hangard: bridge: backoff: bridge.vehicle.link stale for 1044 ms; restarting in 0.1 s (failure 1)
+hangard: bridge: skipping step 2 (cgroup): not running as root
+hangard: bridge: skipping steps 7-9 (capabilities, user hg-bridge, group hangar): not running as root
+hangard: bridge: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/bridge.log
+hangard: bridge: started, pid 34709
+hangard: bridge: starting
+hangard: bridge: opened bridge.vehicle.link (bridge_link, 16 slots)
+hangard: bridge: opened pilot.wrench, mirrored from topside (writer topside_mavlink)
+hangard: bridge: opened pilot.buttons, mirrored from topside (writer topside_mavlink)
+hangard: bridge: ready
+hangard: call safety.clear by admin:bluerov2: call 290, deadline 1000 ms
+hangard: call safety.arm by admin:bluerov2: call 291, deadline 1000 ms
+hangard: bridge: unhealthy: bridge.vehicle.link stale for 1048 ms
+hangard: bridge: pid 34709 exited with status 0
+hangard: bridge: backoff: bridge.vehicle.link stale for 1048 ms; restarting in 0.2 s (failure 2)
+hangard: bridge: skipping step 2 (cgroup): not running as root
+hangard: bridge: skipping steps 7-9 (capabilities, user hg-bridge, group hangar): not running as root
+hangard: bridge: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/bridge.log
+hangard: bridge: started, pid 34893
+hangard: bridge: starting
+hangard: bridge: opened bridge.vehicle.link (bridge_link, 16 slots)
+hangard: bridge: opened pilot.wrench, mirrored from topside (writer topside_mavlink)
+hangard: bridge: opened pilot.buttons, mirrored from topside (writer topside_mavlink)
+hangard: bridge: ready
+hangard: call safety.clear by admin:bluerov2: call 292, deadline 1000 ms
+hangard: call safety.arm by admin:bluerov2: call 293, deadline 1000 ms
+hangard: bridge: unhealthy: bridge.vehicle.link stale for 1043 ms
+hangard: bridge: pid 34893 exited with status 0
+hangard: bridge: backoff: bridge.vehicle.link stale for 1043 ms; restarting in 0.4 s (failure 3)
+hangard: bridge: skipping step 2 (cgroup): not running as root
+hangard: bridge: skipping steps 7-9 (capabilities, user hg-bridge, group hangar): not running as root
+hangard: bridge: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/bridge.log
+hangard: bridge: started, pid 35094
+hangard: bridge: starting
+hangard: bridge: opened bridge.vehicle.link (bridge_link, 16 slots)
+hangard: bridge: ready
+hangard: bridge: opened pilot.wrench, mirrored from topside (writer topside_mavlink)
+hangard: bridge: opened pilot.buttons, mirrored from topside (writer topside_mavlink)
+hangard: call safety.clear by admin:bluerov2: call 294, deadline 1000 ms
+hangard: call safety.arm by admin:bluerov2: call 295, deadline 1000 ms
+hangard: bridge: unhealthy: bridge.vehicle.link stale for 1065 ms
+hangard: bridge: pid 35094 exited with status 0
+hangard: bridge: backoff: bridge.vehicle.link stale for 1065 ms; restarting in 0.8 s (failure 4)
+hangard: bridge: skipping step 2 (cgroup): not running as root
+hangard: bridge: skipping steps 7-9 (capabilities, user hg-bridge, group hangar): not running as root
+hangard: bridge: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/bridge.log
+hangard: bridge: started, pid 35279
+hangard: bridge: starting
+hangard: bridge: opened bridge.vehicle.link (bridge_link, 16 slots)
+hangard: bridge: ready
+hangard: bridge: opened pilot.wrench, mirrored from topside (writer topside_mavlink)
+hangard: bridge: opened pilot.buttons, mirrored from topside (writer topside_mavlink)
+hangard: call safety.clear by admin:bluerov2: call 296, deadline 1000 ms
+hangard: call safety.arm by admin:bluerov2: call 297, deadline 1000 ms
+hangard: bridge: unhealthy: bridge.vehicle.link stale for 1011 ms
+hangard: bridge: pid 35279 exited with status 0
+hangard: bridge: backoff: bridge.vehicle.link stale for 1011 ms; restarting in 1.6 s (failure 5)
+hangard: bridge: skipping step 2 (cgroup): not running as root
+hangard: bridge: skipping steps 7-9 (capabilities, user hg-bridge, group hangar): not running as root
+hangard: bridge: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/bridge.log
+hangard: bridge: started, pid 35463
+hangard: bridge: starting
+hangard: bridge: opened bridge.vehicle.link (bridge_link, 16 slots)
+hangard: bridge: opened pilot.wrench, mirrored from topside (writer topside_mavlink)
+hangard: bridge: opened pilot.buttons, mirrored from topside (writer topside_mavlink)
+hangard: bridge: ready
+hangard: call safety.clear by admin:bluerov2: call 298, deadline 1000 ms
+hangard: call safety.disarm by admin:bluerov2: call 299, deadline 1000 ms
+hangard: call safety.disarm by admin:bluerov2: call 300, deadline 1000 ms
+hangard: bridge: healthy for 30 s: failure count reset
+hangard: call safety.arm by admin:bluerov2: call 301, deadline 1000 ms
+hangard: safety: pid 31929 killed by signal 9 (Killed)
+hangard: safety: backoff: pid 31929 killed by signal 9 (Killed); restarting in 0.1 s (failure 1)
+hangard: safety: skipping step 2 (cgroup): not running as root
+hangard: safety: skipping steps 7-9 (capabilities, user hangar, group hangar): not running as root
+hangard: safety: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/safety.log
+hangard: safety: started, pid 36088
+hangard: safety: starting
+hangard: safety: opened safety.params (params:safety, 16 slots)
+hangard: safety: opened safety.state (safety_state, 16 slots)
+hangard: safety: opened safety.req (req:safety, 16 slots)
+hangard: safety: opened safety.rep (rep:safety, 16 slots)
+hangard: safety: ready
+hangard: safety: stopping: restart requested
+hangard: safety: pid 36088 exited with status 0
+hangard: safety: skipping step 2 (cgroup): not running as root
+hangard: safety: skipping steps 7-9 (capabilities, user hangar, group hangar): not running as root
+hangard: safety: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/safety.log
+hangard: safety: started, pid 36090
+hangard: safety: starting
+hangard: safety: opened safety.params (params:safety, 16 slots)
+hangard: safety: opened safety.state (safety_state, 16 slots)
+hangard: safety: opened safety.req (req:safety, 16 slots)
+hangard: safety: opened safety.rep (rep:safety, 16 slots)
+hangard: safety: ready
+hangard: call safety.arm by admin:bluerov2: call 302, deadline 1000 ms
+hangard: safety: pid 36090 killed by signal 9 (Killed)
+hangard: safety: backoff: pid 36090 killed by signal 9 (Killed); restarting in 0.1 s (failure 1)
+hangard: safety: skipping step 2 (cgroup): not running as root
+hangard: safety: skipping steps 7-9 (capabilities, user hangar, group hangar): not running as root
+hangard: safety: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/safety.log
+hangard: safety: started, pid 36268
+hangard: safety: starting
+hangard: safety: opened safety.params (params:safety, 16 slots)
+hangard: safety: opened safety.state (safety_state, 16 slots)
+hangard: safety: opened safety.req (req:safety, 16 slots)
+hangard: safety: opened safety.rep (rep:safety, 16 slots)
+hangard: safety: ready
+hangard: safety: stopping: restart requested
+hangard: safety: pid 36268 exited with status 0
+hangard: safety: skipping step 2 (cgroup): not running as root
+hangard: safety: skipping steps 7-9 (capabilities, user hangar, group hangar): not running as root
+hangard: safety: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/safety.log
+hangard: safety: started, pid 36276
+hangard: safety: starting
+hangard: safety: opened safety.params (params:safety, 16 slots)
+hangard: safety: opened safety.state (safety_state, 16 slots)
+hangard: safety: opened safety.req (req:safety, 16 slots)
+hangard: safety: opened safety.rep (rep:safety, 16 slots)
+hangard: safety: ready
+hangard: call safety.arm by admin:bluerov2: call 303, deadline 1000 ms
+hangard: safety: pid 36276 killed by signal 9 (Killed)
+hangard: safety: backoff: pid 36276 killed by signal 9 (Killed); restarting in 0.1 s (failure 1)
+hangard: safety: skipping step 2 (cgroup): not running as root
+hangard: safety: skipping steps 7-9 (capabilities, user hangar, group hangar): not running as root
+hangard: safety: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/safety.log
+hangard: safety: started, pid 36452
+hangard: safety: starting
+hangard: safety: opened safety.params (params:safety, 16 slots)
+hangard: safety: opened safety.state (safety_state, 16 slots)
+hangard: safety: opened safety.req (req:safety, 16 slots)
+hangard: safety: opened safety.rep (rep:safety, 16 slots)
+hangard: safety: ready
+hangard: safety: stopping: restart requested
+hangard: safety: pid 36452 exited with status 0
+hangard: safety: skipping step 2 (cgroup): not running as root
+hangard: safety: skipping steps 7-9 (capabilities, user hangar, group hangar): not running as root
+hangard: safety: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/safety.log
+hangard: safety: started, pid 36460
+hangard: safety: starting
+hangard: safety: opened safety.params (params:safety, 16 slots)
+hangard: safety: opened safety.state (safety_state, 16 slots)
+hangard: safety: opened safety.req (req:safety, 16 slots)
+hangard: safety: opened safety.rep (rep:safety, 16 slots)
+hangard: safety: ready
+hangard: call safety.arm by admin:bluerov2: call 304, deadline 1000 ms
+hangard: safety: pid 36460 killed by signal 9 (Killed)
+hangard: safety: backoff: pid 36460 killed by signal 9 (Killed); restarting in 0.1 s (failure 1)
+hangard: safety: skipping step 2 (cgroup): not running as root
+hangard: safety: skipping steps 7-9 (capabilities, user hangar, group hangar): not running as root
+hangard: safety: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/safety.log
+hangard: safety: started, pid 36636
+hangard: safety: starting
+hangard: safety: opened safety.params (params:safety, 16 slots)
+hangard: safety: opened safety.state (safety_state, 16 slots)
+hangard: safety: opened safety.req (req:safety, 16 slots)
+hangard: safety: opened safety.rep (rep:safety, 16 slots)
+hangard: safety: ready
+hangard: safety: stopping: restart requested
+hangard: safety: pid 36636 exited with status 0
+hangard: safety: skipping step 2 (cgroup): not running as root
+hangard: safety: skipping steps 7-9 (capabilities, user hangar, group hangar): not running as root
+hangard: safety: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/safety.log
+hangard: safety: started, pid 36638
+hangard: safety: starting
+hangard: safety: opened safety.params (params:safety, 16 slots)
+hangard: safety: opened safety.state (safety_state, 16 slots)
+hangard: safety: opened safety.req (req:safety, 16 slots)
+hangard: safety: opened safety.rep (rep:safety, 16 slots)
+hangard: safety: ready
+hangard: call safety.arm by admin:bluerov2: call 305, deadline 1000 ms
+hangard: safety: pid 36638 killed by signal 9 (Killed)
+hangard: safety: backoff: pid 36638 killed by signal 9 (Killed); restarting in 0.1 s (failure 1)
+hangard: safety: skipping step 2 (cgroup): not running as root
+hangard: safety: skipping steps 7-9 (capabilities, user hangar, group hangar): not running as root
+hangard: safety: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/safety.log
+hangard: safety: started, pid 36820
+hangard: safety: starting
+hangard: safety: opened safety.params (params:safety, 16 slots)
+hangard: safety: opened safety.state (safety_state, 16 slots)
+hangard: safety: opened safety.req (req:safety, 16 slots)
+hangard: safety: opened safety.rep (rep:safety, 16 slots)
+hangard: safety: ready
+hangard: safety: stopping: restart requested
+hangard: safety: pid 36820 exited with status 0
+hangard: safety: skipping step 2 (cgroup): not running as root
+hangard: safety: skipping steps 7-9 (capabilities, user hangar, group hangar): not running as root
+hangard: safety: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/safety.log
+hangard: safety: started, pid 36822
+hangard: safety: starting
+hangard: safety: opened safety.params (params:safety, 16 slots)
+hangard: safety: opened safety.state (safety_state, 16 slots)
+hangard: safety: opened safety.req (req:safety, 16 slots)
+hangard: safety: opened safety.rep (rep:safety, 16 slots)
+hangard: safety: ready
+hangard: call safety.disarm by admin:bluerov2: call 306, deadline 1000 ms
+hangard: call safety.arm by admin:bluerov2: call 307, deadline 1000 ms
+hangar-mavlink --neutral: neutral manual control and disarm sent to ArduSub (system 1) over udp, signed no
+hangard: mavlink: Neutral command ran
+hangard: mavlink: pid 33127 killed by signal 9 (Killed)
+hangard: mavlink: backoff: pid 33127 killed by signal 9 (Killed); restarting in 0.1 s (failure 1)
+hangard: mavlink: skipping step 2 (cgroup): not running as root
+hangard: mavlink: skipping steps 7-9 (capabilities, user hg-mavlink, group hangar): not running as root
+hangard: mavlink: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/mavlink.log
+hangard: mavlink: started, pid 37238
+hangard: mavlink: starting
+hangard: mavlink: opened ardusub.manual_control (manual_control, 16 slots)
+hangard: mavlink: opened ardusub.state (ardusub_state, 16 slots)
+hangard: mavlink: opened ardusub.param (ardusub_param, 16 slots)
+hangard: mavlink: opened nav.attitude (attitude, 16 slots)
+hangard: mavlink: opened nav.imu (imu, 16 slots)
+hangard: mavlink: opened nav.depth (depth, 16 slots)
+hangard: mavlink: opened power.battery (battery, 16 slots)
+hangard: mavlink: opened thr.out (thruster_out, 16 slots)
+hangard: mavlink: opened ardusub.params_job (params_job, 16 slots)
+hangard: mavlink: opened mavlink.rep (rep:mavlink, 16 slots)
+hangard: mavlink: ready
+hangard: call safety.clear by admin:bluerov2: call 308, deadline 1000 ms
+hangard: mavlink: stopping: restart requested
+hangar-mavlink --neutral: neutral manual control and disarm sent to ArduSub (system 1) over udp, signed no
+hangard: mavlink: Neutral command ran
+hangard: mavlink: pid 37238 exited with status 0
+hangard: mavlink: skipping step 2 (cgroup): not running as root
+hangard: mavlink: skipping steps 7-9 (capabilities, user hg-mavlink, group hangar): not running as root
+hangard: mavlink: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/mavlink.log
+hangard: mavlink: started, pid 37249
+hangard: mavlink: starting
+hangard: mavlink: opened ardusub.manual_control (manual_control, 16 slots)
+hangard: mavlink: opened ardusub.state (ardusub_state, 16 slots)
+hangard: mavlink: opened ardusub.param (ardusub_param, 16 slots)
+hangard: mavlink: opened nav.attitude (attitude, 16 slots)
+hangard: mavlink: opened nav.imu (imu, 16 slots)
+hangard: mavlink: opened nav.depth (depth, 16 slots)
+hangard: mavlink: opened power.battery (battery, 16 slots)
+hangard: mavlink: opened thr.out (thruster_out, 16 slots)
+hangard: mavlink: opened ardusub.params_job (params_job, 16 slots)
+hangard: mavlink: opened mavlink.rep (rep:mavlink, 16 slots)
+hangard: mavlink: ready
+hangard: call safety.arm by admin:bluerov2: call 309, deadline 1000 ms
+hangar-mavlink --neutral: neutral manual control and disarm sent to ArduSub (system 1) over udp, signed no
+hangard: mavlink: Neutral command ran
+hangard: mavlink: pid 37249 killed by signal 9 (Killed)
+hangard: mavlink: backoff: pid 37249 killed by signal 9 (Killed); restarting in 0.1 s (failure 1)
+hangard: mavlink: skipping step 2 (cgroup): not running as root
+hangard: mavlink: skipping steps 7-9 (capabilities, user hg-mavlink, group hangar): not running as root
+hangard: mavlink: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/mavlink.log
+hangard: mavlink: started, pid 37443
+hangard: mavlink: starting
+hangard: mavlink: opened ardusub.manual_control (manual_control, 16 slots)
+hangard: mavlink: opened ardusub.state (ardusub_state, 16 slots)
+hangard: mavlink: opened ardusub.param (ardusub_param, 16 slots)
+hangard: mavlink: opened nav.attitude (attitude, 16 slots)
+hangard: mavlink: opened nav.imu (imu, 16 slots)
+hangard: mavlink: opened nav.depth (depth, 16 slots)
+hangard: mavlink: opened power.battery (battery, 16 slots)
+hangard: mavlink: opened thr.out (thruster_out, 16 slots)
+hangard: mavlink: opened ardusub.params_job (params_job, 16 slots)
+hangard: mavlink: opened mavlink.rep (rep:mavlink, 16 slots)
+hangard: mavlink: ready
+hangard: call safety.clear by admin:bluerov2: call 310, deadline 1000 ms
+hangard: mavlink: stopping: restart requested
+hangar-mavlink --neutral: neutral manual control and disarm sent to ArduSub (system 1) over udp, signed no
+hangard: mavlink: Neutral command ran
+hangard: mavlink: pid 37443 exited with status 0
+hangard: mavlink: skipping step 2 (cgroup): not running as root
+hangard: mavlink: skipping steps 7-9 (capabilities, user hg-mavlink, group hangar): not running as root
+hangard: mavlink: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/mavlink.log
+hangard: mavlink: started, pid 37454
+hangard: mavlink: starting
+hangard: mavlink: opened ardusub.manual_control (manual_control, 16 slots)
+hangard: mavlink: opened ardusub.state (ardusub_state, 16 slots)
+hangard: mavlink: opened ardusub.param (ardusub_param, 16 slots)
+hangard: mavlink: opened nav.attitude (attitude, 16 slots)
+hangard: mavlink: opened nav.imu (imu, 16 slots)
+hangard: mavlink: opened nav.depth (depth, 16 slots)
+hangard: mavlink: opened power.battery (battery, 16 slots)
+hangard: mavlink: opened thr.out (thruster_out, 16 slots)
+hangard: mavlink: opened ardusub.params_job (params_job, 16 slots)
+hangard: mavlink: opened mavlink.rep (rep:mavlink, 16 slots)
+hangard: mavlink: ready
+hangard: call safety.arm by admin:bluerov2: call 311, deadline 1000 ms
+hangar-mavlink --neutral: neutral manual control and disarm sent to ArduSub (system 1) over udp, signed no
+hangard: mavlink: Neutral command ran
+hangard: mavlink: pid 37454 killed by signal 9 (Killed)
+hangard: mavlink: backoff: pid 37454 killed by signal 9 (Killed); restarting in 0.1 s (failure 1)
+hangard: mavlink: skipping step 2 (cgroup): not running as root
+hangard: mavlink: skipping steps 7-9 (capabilities, user hg-mavlink, group hangar): not running as root
+hangard: mavlink: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/mavlink.log
+hangard: mavlink: started, pid 37634
+hangard: mavlink: starting
+hangard: mavlink: opened ardusub.manual_control (manual_control, 16 slots)
+hangard: mavlink: opened ardusub.state (ardusub_state, 16 slots)
+hangard: mavlink: opened ardusub.param (ardusub_param, 16 slots)
+hangard: mavlink: opened nav.attitude (attitude, 16 slots)
+hangard: mavlink: opened nav.imu (imu, 16 slots)
+hangard: mavlink: opened nav.depth (depth, 16 slots)
+hangard: mavlink: opened power.battery (battery, 16 slots)
+hangard: mavlink: opened thr.out (thruster_out, 16 slots)
+hangard: mavlink: opened ardusub.params_job (params_job, 16 slots)
+hangard: mavlink: opened mavlink.rep (rep:mavlink, 16 slots)
+hangard: mavlink: ready
+hangard: call safety.clear by admin:bluerov2: call 312, deadline 1000 ms
+hangard: mavlink: stopping: restart requested
+hangar-mavlink --neutral: neutral manual control and disarm sent to ArduSub (system 1) over udp, signed no
+hangard: mavlink: Neutral command ran
+hangard: mavlink: pid 37634 exited with status 0
+hangard: mavlink: skipping step 2 (cgroup): not running as root
+hangard: mavlink: skipping steps 7-9 (capabilities, user hg-mavlink, group hangar): not running as root
+hangard: mavlink: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/mavlink.log
+hangard: mavlink: started, pid 37645
+hangard: mavlink: starting
+hangard: mavlink: opened ardusub.manual_control (manual_control, 16 slots)
+hangard: mavlink: opened ardusub.state (ardusub_state, 16 slots)
+hangard: mavlink: opened ardusub.param (ardusub_param, 16 slots)
+hangard: mavlink: opened nav.attitude (attitude, 16 slots)
+hangard: mavlink: opened nav.imu (imu, 16 slots)
+hangard: mavlink: opened nav.depth (depth, 16 slots)
+hangard: mavlink: opened power.battery (battery, 16 slots)
+hangard: mavlink: opened thr.out (thruster_out, 16 slots)
+hangard: mavlink: opened ardusub.params_job (params_job, 16 slots)
+hangard: mavlink: opened mavlink.rep (rep:mavlink, 16 slots)
+hangard: mavlink: ready
+hangard: call safety.arm by admin:bluerov2: call 313, deadline 1000 ms
+hangar-mavlink --neutral: neutral manual control and disarm sent to ArduSub (system 1) over udp, signed no
+hangard: mavlink: Neutral command ran
+hangard: mavlink: pid 37645 killed by signal 9 (Killed)
+hangard: mavlink: backoff: pid 37645 killed by signal 9 (Killed); restarting in 0.1 s (failure 1)
+hangard: mavlink: skipping step 2 (cgroup): not running as root
+hangard: mavlink: skipping steps 7-9 (capabilities, user hg-mavlink, group hangar): not running as root
+hangard: mavlink: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/mavlink.log
+hangard: mavlink: started, pid 37824
+hangard: mavlink: starting
+hangard: mavlink: opened ardusub.manual_control (manual_control, 16 slots)
+hangard: mavlink: opened ardusub.state (ardusub_state, 16 slots)
+hangard: mavlink: opened ardusub.param (ardusub_param, 16 slots)
+hangard: mavlink: opened nav.attitude (attitude, 16 slots)
+hangard: mavlink: opened nav.imu (imu, 16 slots)
+hangard: mavlink: opened nav.depth (depth, 16 slots)
+hangard: mavlink: opened power.battery (battery, 16 slots)
+hangard: mavlink: opened thr.out (thruster_out, 16 slots)
+hangard: mavlink: opened ardusub.params_job (params_job, 16 slots)
+hangard: mavlink: opened mavlink.rep (rep:mavlink, 16 slots)
+hangard: mavlink: ready
+hangard: call safety.clear by admin:bluerov2: call 314, deadline 1000 ms
+hangard: mavlink: stopping: restart requested
+hangar-mavlink --neutral: neutral manual control and disarm sent to ArduSub (system 1) over udp, signed no
+hangard: mavlink: Neutral command ran
+hangard: mavlink: pid 37824 exited with status 0
+hangard: mavlink: skipping step 2 (cgroup): not running as root
+hangard: mavlink: skipping steps 7-9 (capabilities, user hg-mavlink, group hangar): not running as root
+hangard: mavlink: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/mavlink.log
+hangard: mavlink: started, pid 37835
+hangard: mavlink: starting
+hangard: mavlink: opened ardusub.manual_control (manual_control, 16 slots)
+hangard: mavlink: opened ardusub.state (ardusub_state, 16 slots)
+hangard: mavlink: opened ardusub.param (ardusub_param, 16 slots)
+hangard: mavlink: opened nav.attitude (attitude, 16 slots)
+hangard: mavlink: opened nav.imu (imu, 16 slots)
+hangard: mavlink: opened nav.depth (depth, 16 slots)
+hangard: mavlink: opened power.battery (battery, 16 slots)
+hangard: mavlink: opened thr.out (thruster_out, 16 slots)
+hangard: mavlink: opened ardusub.params_job (params_job, 16 slots)
+hangard: mavlink: opened mavlink.rep (rep:mavlink, 16 slots)
+hangard: mavlink: ready
+hangard: call safety.arm by admin:bluerov2: call 315, deadline 1000 ms
+hangar-mavlink --neutral: neutral manual control and disarm sent to ArduSub (system 1) over udp, signed no
+hangard: mavlink: Neutral command ran
+hangard: mavlink: pid 37835 killed by signal 9 (Killed)
+hangard: mavlink: backoff: pid 37835 killed by signal 9 (Killed); restarting in 0.1 s (failure 1)
+hangard: mavlink: skipping step 2 (cgroup): not running as root
+hangard: mavlink: skipping steps 7-9 (capabilities, user hg-mavlink, group hangar): not running as root
+hangard: mavlink: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/mavlink.log
+hangard: mavlink: started, pid 38019
+hangard: mavlink: starting
+hangard: mavlink: opened ardusub.manual_control (manual_control, 16 slots)
+hangard: mavlink: opened ardusub.state (ardusub_state, 16 slots)
+hangard: mavlink: opened ardusub.param (ardusub_param, 16 slots)
+hangard: mavlink: opened nav.attitude (attitude, 16 slots)
+hangard: mavlink: opened nav.imu (imu, 16 slots)
+hangard: mavlink: opened nav.depth (depth, 16 slots)
+hangard: mavlink: opened power.battery (battery, 16 slots)
+hangard: mavlink: opened thr.out (thruster_out, 16 slots)
+hangard: mavlink: opened ardusub.params_job (params_job, 16 slots)
+hangard: mavlink: opened mavlink.rep (rep:mavlink, 16 slots)
+hangard: mavlink: ready
+hangard: call safety.clear by admin:bluerov2: call 316, deadline 1000 ms
+hangard: mavlink: stopping: restart requested
+hangar-mavlink --neutral: neutral manual control and disarm sent to ArduSub (system 1) over udp, signed no
+hangard: mavlink: Neutral command ran
+hangard: mavlink: pid 38019 exited with status 0
+hangard: mavlink: skipping step 2 (cgroup): not running as root
+hangard: mavlink: skipping steps 7-9 (capabilities, user hg-mavlink, group hangar): not running as root
+hangard: mavlink: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/mavlink.log
+hangard: mavlink: started, pid 38024
+hangard: mavlink: starting
+hangard: mavlink: opened ardusub.manual_control (manual_control, 16 slots)
+hangard: mavlink: opened ardusub.state (ardusub_state, 16 slots)
+hangard: mavlink: opened ardusub.param (ardusub_param, 16 slots)
+hangard: mavlink: opened nav.attitude (attitude, 16 slots)
+hangard: mavlink: opened nav.imu (imu, 16 slots)
+hangard: mavlink: opened nav.depth (depth, 16 slots)
+hangard: mavlink: opened power.battery (battery, 16 slots)
+hangard: mavlink: opened thr.out (thruster_out, 16 slots)
+hangard: mavlink: opened ardusub.params_job (params_job, 16 slots)
+hangard: mavlink: opened mavlink.rep (rep:mavlink, 16 slots)
+hangard: mavlink: ready
+hangard: call safety.disarm by admin:bluerov2: call 317, deadline 1000 ms
+hangard: call safety.arm by admin:bluerov2: call 318, deadline 1000 ms
+hangard: mux: pid 34291 killed by signal 9 (Killed)
+hangard: mux: backoff: pid 34291 killed by signal 9 (Killed); restarting in 0.1 s (failure 1)
+hangard: mux: skipping step 2 (cgroup): not running as root
+hangard: mux: skipping steps 7-9 (capabilities, user hangar, group hangar): not running as root
+hangard: mux: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/mux.log
+hangard: mux: started, pid 38446
+hangard: mux: starting
+hangard: mux: opened mux.params (params:mux, 16 slots)
+hangard: mux: opened ctl.wrench (wrench, 16 slots)
+hangard: mux: opened mux.state (mux_state, 16 slots)
+hangard: mux: opened mux.rep (rep:mux, 16 slots)
+hangard: mux: ready
+hangard: call safety.disarm by admin:bluerov2: call 319, deadline 1000 ms
+hangard: mux: stopping: restart requested
+hangard: mux: pid 38446 exited with status 0
+hangard: mux: skipping step 2 (cgroup): not running as root
+hangard: mux: skipping steps 7-9 (capabilities, user hangar, group hangar): not running as root
+hangard: mux: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/mux.log
+hangard: mux: started, pid 38449
+hangard: mux: starting
+hangard: mux: opened mux.params (params:mux, 16 slots)
+hangard: mux: opened ctl.wrench (wrench, 16 slots)
+hangard: mux: opened mux.state (mux_state, 16 slots)
+hangard: mux: opened mux.rep (rep:mux, 16 slots)
+hangard: mux: ready
+hangard: call safety.arm by admin:bluerov2: call 320, deadline 1000 ms
+hangard: mux: pid 38449 killed by signal 9 (Killed)
+hangard: mux: backoff: pid 38449 killed by signal 9 (Killed); restarting in 0.1 s (failure 1)
+hangard: mux: skipping step 2 (cgroup): not running as root
+hangard: mux: skipping steps 7-9 (capabilities, user hangar, group hangar): not running as root
+hangard: mux: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/mux.log
+hangard: mux: started, pid 38653
+hangard: mux: starting
+hangard: mux: opened mux.params (params:mux, 16 slots)
+hangard: mux: opened ctl.wrench (wrench, 16 slots)
+hangard: mux: opened mux.state (mux_state, 16 slots)
+hangard: mux: opened mux.rep (rep:mux, 16 slots)
+hangard: mux: ready
+hangard: call safety.disarm by admin:bluerov2: call 321, deadline 1000 ms
+hangard: mux: stopping: restart requested
+hangard: mux: pid 38653 exited with status 0
+hangard: mux: skipping step 2 (cgroup): not running as root
+hangard: mux: skipping steps 7-9 (capabilities, user hangar, group hangar): not running as root
+hangard: mux: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/mux.log
+hangard: mux: started, pid 38656
+hangard: mux: starting
+hangard: mux: opened mux.params (params:mux, 16 slots)
+hangard: mux: opened ctl.wrench (wrench, 16 slots)
+hangard: mux: opened mux.state (mux_state, 16 slots)
+hangard: mux: opened mux.rep (rep:mux, 16 slots)
+hangard: mux: ready
+hangard: call safety.arm by admin:bluerov2: call 322, deadline 1000 ms
+hangard: mux: pid 38656 killed by signal 9 (Killed)
+hangard: mux: backoff: pid 38656 killed by signal 9 (Killed); restarting in 0.1 s (failure 1)
+hangard: mux: skipping step 2 (cgroup): not running as root
+hangard: mux: skipping steps 7-9 (capabilities, user hangar, group hangar): not running as root
+hangard: mux: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/mux.log
+hangard: mux: started, pid 38859
+hangard: mux: starting
+hangard: mux: opened mux.params (params:mux, 16 slots)
+hangard: mux: opened ctl.wrench (wrench, 16 slots)
+hangard: mux: opened mux.state (mux_state, 16 slots)
+hangard: mux: opened mux.rep (rep:mux, 16 slots)
+hangard: mux: ready
+hangard: call safety.disarm by admin:bluerov2: call 323, deadline 1000 ms
+hangard: mux: stopping: restart requested
+hangard: mux: pid 38859 exited with status 0
+hangard: mux: skipping step 2 (cgroup): not running as root
+hangard: mux: skipping steps 7-9 (capabilities, user hangar, group hangar): not running as root
+hangard: mux: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/mux.log
+hangard: mux: started, pid 38862
+hangard: mux: starting
+hangard: mux: opened mux.params (params:mux, 16 slots)
+hangard: mux: opened ctl.wrench (wrench, 16 slots)
+hangard: mux: opened mux.state (mux_state, 16 slots)
+hangard: mux: opened mux.rep (rep:mux, 16 slots)
+hangard: mux: ready
+hangard: call safety.arm by admin:bluerov2: call 324, deadline 1000 ms
+hangard: mux: pid 38862 killed by signal 9 (Killed)
+hangard: mux: backoff: pid 38862 killed by signal 9 (Killed); restarting in 0.1 s (failure 1)
+hangard: mux: skipping step 2 (cgroup): not running as root
+hangard: mux: skipping steps 7-9 (capabilities, user hangar, group hangar): not running as root
+hangard: mux: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/mux.log
+hangard: mux: started, pid 39065
+hangard: mux: starting
+hangard: mux: opened mux.params (params:mux, 16 slots)
+hangard: mux: opened ctl.wrench (wrench, 16 slots)
+hangard: mux: opened mux.state (mux_state, 16 slots)
+hangard: mux: opened mux.rep (rep:mux, 16 slots)
+hangard: mux: ready
+hangard: call safety.disarm by admin:bluerov2: call 325, deadline 1000 ms
+hangard: mux: stopping: restart requested
+hangard: mux: pid 39065 exited with status 0
+hangard: mux: skipping step 2 (cgroup): not running as root
+hangard: mux: skipping steps 7-9 (capabilities, user hangar, group hangar): not running as root
+hangard: mux: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/mux.log
+hangard: mux: started, pid 39068
+hangard: mux: starting
+hangard: mux: opened mux.params (params:mux, 16 slots)
+hangard: mux: opened ctl.wrench (wrench, 16 slots)
+hangard: mux: opened mux.state (mux_state, 16 slots)
+hangard: mux: opened mux.rep (rep:mux, 16 slots)
+hangard: mux: ready
+hangard: call safety.arm by admin:bluerov2: call 326, deadline 1000 ms
+hangard: mux: pid 39068 killed by signal 9 (Killed)
+hangard: mux: backoff: pid 39068 killed by signal 9 (Killed); restarting in 0.1 s (failure 1)
+hangard: mux: skipping step 2 (cgroup): not running as root
+hangard: mux: skipping steps 7-9 (capabilities, user hangar, group hangar): not running as root
+hangard: mux: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/mux.log
+hangard: mux: started, pid 39265
+hangard: mux: starting
+hangard: mux: opened mux.params (params:mux, 16 slots)
+hangard: mux: opened ctl.wrench (wrench, 16 slots)
+hangard: mux: opened mux.state (mux_state, 16 slots)
+hangard: mux: opened mux.rep (rep:mux, 16 slots)
+hangard: mux: ready
+hangard: call safety.disarm by admin:bluerov2: call 327, deadline 1000 ms
+hangard: mux: stopping: restart requested
+hangard: mux: pid 39265 exited with status 0
+hangard: mux: skipping step 2 (cgroup): not running as root
+hangard: mux: skipping steps 7-9 (capabilities, user hangar, group hangar): not running as root
+hangard: mux: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/mux.log
+hangard: mux: started, pid 39274
+hangard: mux: starting
+hangard: mux: opened mux.params (params:mux, 16 slots)
+hangard: mux: opened ctl.wrench (wrench, 16 slots)
+hangard: mux: opened mux.state (mux_state, 16 slots)
+hangard: mux: opened mux.rep (rep:mux, 16 slots)
+hangard: mux: ready
+hangard: call safety.disarm by admin:bluerov2: call 328, deadline 1000 ms
+hangard: call safety.arm by admin:bluerov2: call 329, deadline 1000 ms
+hangard: bridge: unhealthy: bridge.vehicle.link stale for 1065 ms
+hangard: bridge: pid 35463 exited with status 0
+hangard: bridge: backoff: bridge.vehicle.link stale for 1065 ms; restarting in 0.1 s (failure 1)
+hangard: bridge: skipping step 2 (cgroup): not running as root
+hangard: bridge: skipping steps 7-9 (capabilities, user hg-bridge, group hangar): not running as root
+hangard: bridge: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/bridge.log
+hangard: bridge: started, pid 39747
+hangard: bridge: starting
+hangard: bridge: opened bridge.vehicle.link (bridge_link, 16 slots)
+hangard: bridge: opened pilot.wrench, mirrored from topside (writer topside_mavlink)
+hangard: bridge: opened pilot.buttons, mirrored from topside (writer topside_mavlink)
+hangard: bridge: ready
+hangard: call safety.clear by admin:bluerov2: call 330, deadline 1000 ms
+hangard: call safety.arm by admin:bluerov2: call 331, deadline 1000 ms
+hangard: bridge: unhealthy: bridge.vehicle.link stale for 1029 ms
+hangard: bridge: pid 39747 exited with status 0
+hangard: bridge: backoff: bridge.vehicle.link stale for 1029 ms; restarting in 0.2 s (failure 2)
+hangard: bridge: skipping step 2 (cgroup): not running as root
+hangard: bridge: skipping steps 7-9 (capabilities, user hg-bridge, group hangar): not running as root
+hangard: bridge: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/bridge.log
+hangard: bridge: started, pid 39952
+hangard: bridge: starting
+hangard: bridge: opened bridge.vehicle.link (bridge_link, 16 slots)
+hangard: bridge: ready
+hangard: bridge: opened pilot.wrench, mirrored from topside (writer topside_mavlink)
+hangard: bridge: opened pilot.buttons, mirrored from topside (writer topside_mavlink)
+hangard: call safety.clear by admin:bluerov2: call 332, deadline 1000 ms
+hangard: call safety.arm by admin:bluerov2: call 333, deadline 1000 ms
+hangard: bridge: unhealthy: bridge.vehicle.link stale for 1097 ms
+hangard: bridge: pid 39952 exited with status 0
+hangard: bridge: backoff: bridge.vehicle.link stale for 1097 ms; restarting in 0.4 s (failure 3)
+hangard: bridge: skipping step 2 (cgroup): not running as root
+hangard: bridge: skipping steps 7-9 (capabilities, user hg-bridge, group hangar): not running as root
+hangard: bridge: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/bridge.log
+hangard: bridge: started, pid 40157
+hangard: bridge: starting
+hangard: bridge: opened bridge.vehicle.link (bridge_link, 16 slots)
+hangard: bridge: ready
+hangard: bridge: opened pilot.wrench, mirrored from topside (writer topside_mavlink)
+hangard: bridge: opened pilot.buttons, mirrored from topside (writer topside_mavlink)
+hangard: call safety.clear by admin:bluerov2: call 334, deadline 1000 ms
+hangard: call safety.arm by admin:bluerov2: call 335, deadline 1000 ms
+hangard: bridge: unhealthy: bridge.vehicle.link stale for 1001 ms
+hangard: bridge: pid 40157 exited with status 0
+hangard: bridge: backoff: bridge.vehicle.link stale for 1001 ms; restarting in 0.8 s (failure 4)
+hangard: bridge: skipping step 2 (cgroup): not running as root
+hangard: bridge: skipping steps 7-9 (capabilities, user hg-bridge, group hangar): not running as root
+hangard: bridge: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/bridge.log
+hangard: bridge: started, pid 40368
+hangard: bridge: starting
+hangard: bridge: opened bridge.vehicle.link (bridge_link, 16 slots)
+hangard: bridge: ready
+hangard: bridge: opened pilot.wrench, mirrored from topside (writer topside_mavlink)
+hangard: bridge: opened pilot.buttons, mirrored from topside (writer topside_mavlink)
+hangard: call safety.clear by admin:bluerov2: call 336, deadline 1000 ms
+hangard: call safety.arm by admin:bluerov2: call 337, deadline 1000 ms
+hangard: bridge: unhealthy: bridge.vehicle.link stale for 1018 ms
+hangard: bridge: pid 40368 exited with status 0
+hangard: bridge: backoff: bridge.vehicle.link stale for 1018 ms; restarting in 1.6 s (failure 5)
+hangard: bridge: skipping step 2 (cgroup): not running as root
+hangard: bridge: skipping steps 7-9 (capabilities, user hg-bridge, group hangar): not running as root
+hangard: bridge: no journald at /dev/shm/hangar-vehicle/run/systemd/journal/stdout: logging to /dev/shm/hangar-vehicle/run/hangar/log/bridge.log
+hangard: bridge: started, pid 40576
+hangard: bridge: starting
+hangard: bridge: opened bridge.vehicle.link (bridge_link, 16 slots)
+hangard: bridge: opened pilot.wrench, mirrored from topside (writer topside_mavlink)
+hangard: bridge: opened pilot.buttons, mirrored from topside (writer topside_mavlink)
+hangard: bridge: ready
+hangard: call safety.clear by admin:bluerov2: call 338, deadline 1000 ms
+hangard: call safety.disarm by admin:bluerov2: call 339, deadline 1000 ms
+hangard: call safety.disarm by admin:bluerov2: call 340, deadline 1000 ms
+hangard: bridge: healthy for 30 s: failure count reset
+hangard: call safety.arm by admin:bluerov2: call 341, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 342, deadline 1000 ms
+hangard: call safety.arm by admin:bluerov2: call 343, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 344, deadline 1000 ms
+hangard: call safety.arm by admin:bluerov2: call 345, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 346, deadline 1000 ms
+hangard: call safety.arm by admin:bluerov2: call 347, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 348, deadline 1000 ms
+hangard: call safety.arm by admin:bluerov2: call 349, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 350, deadline 1000 ms
+hangard: call safety.disarm by admin:bluerov2: call 351, deadline 1000 ms
+hangard: call safety.arm by admin:bluerov2: call 352, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 353, deadline 1000 ms
+hangard: call safety.arm by admin:bluerov2: call 354, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 355, deadline 1000 ms
+hangard: call safety.arm by admin:bluerov2: call 356, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 357, deadline 1000 ms
+hangard: call safety.arm by admin:bluerov2: call 358, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 359, deadline 1000 ms
+hangard: call safety.arm by admin:bluerov2: call 360, deadline 1000 ms
+hangard: call safety.clear by admin:bluerov2: call 361, deadline 1000 ms
+hangard: call safety.disarm by admin:bluerov2: call 362, deadline 1000 ms

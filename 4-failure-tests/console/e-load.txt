@@ -1,0 +1,156 @@
+mavlink              ready       18080     0 -          22m57s  ardusub disarmed mode 19 params 1; gate disarmed; rx 310
+safety               ready       31929     0 -              1s  disarmed: start
+
+== safety-kill-load2, 5 repetitions -> /home/hogib/hangar-results/2026-11-25-failtests/safety-kill-load2.jsonl
+  load: 2 busy loops on the vehicle's computer, ending by themselves within 155 s
+   1  no failsafe; ArduSub disarmed at 5.4 ms; restarted: safety   [temp=69.7'C throttled=0xe0000]
+   2  no failsafe; ArduSub disarmed at 7.2 ms; restarted: safety   [temp=68.6'C throttled=0xe0000]
+   3  no failsafe; ArduSub disarmed at 8.1 ms; restarted: safety   [temp=70.8'C throttled=0xe0000]
+   4  no failsafe; ArduSub disarmed at 6.5 ms; restarted: safety   [temp=70.8'C throttled=0xe0000]
+   5  no failsafe; ArduSub disarmed at 3.9 ms; restarted: safety   [temp=70.3'C throttled=0xe0000]
+  outputs_closed_ms              n=5  min    104.6  median    105.3  max    112.5
+  ardusub_disarming_ms           n=5  min      0.6  median      1.2  max      1.4
+  ardusub_disarmed_ms            n=5  min      3.9  median      6.5  max      8.1
+  longest_silence_ms             n=5  min     18.4  median     18.5  max     19.1
+  failsafe in 0 of 5; not run 0
+
+leaving the vehicle disarmed:
+results in /home/hogib/hangar-results/2026-11-25-failtests
+mavlink              ready       33127     0 -              1s  ardusub disarmed mode 19 params 0; gate disarmed; unansw
+safety               ready       31929     0 -           1m10s  disarmed by admin:bluerov2: failsafe cleared
+
+== mavlink-kill-load2, 5 repetitions -> /home/hogib/hangar-results/2026-11-25-failtests/mavlink-kill-load2.jsonl
+  load: 2 busy loops on the vehicle's computer, ending by themselves within 255 s
+   1  failsafe by autopilot after 173.3 ms; 53.9 ms after the last packet; ArduSub disarmed at 173.2 ms; restarted: mavlink   [temp=73.6'C throttled=0xe0000]
+   2  failsafe by autopilot after 174.1 ms; 34.4 ms after the last packet; ArduSub disarmed at 174.0 ms; restarted: mavlink   [temp=73.6'C throttled=0xe0000]
+   3  failsafe by autopilot after 173.6 ms; 88.4 ms after the last packet; ArduSub disarmed at 173.5 ms; restarted: mavlink   [temp=75.7'C throttled=0xe0000]
+   4  failsafe by autopilot after 169.6 ms; 10.4 ms after the last packet; ArduSub disarmed at 169.2 ms; restarted: mavlink   [temp=74.7'C throttled=0xe0000]
+   5  failsafe by autopilot after 171.4 ms; 33.0 ms after the last packet; ArduSub disarmed at 171.1 ms; restarted: mavlink   [temp=76.3'C throttled=0xe0000]
+  failsafe_ms                    n=5  min    169.6  median    173.3  max    174.1
+  failsafe_after_last_packet_ms  n=5  min     10.4  median     34.4  max     88.4
+  outputs_closed_ms              n=5  min    169.7  median    173.3  max    174.1
+  ardusub_disarmed_ms            n=5  min    169.2  median    173.2  max    174.0
+  longest_silence_ms             n=5  min     18.6  median     18.6  max     20.0
+  failsafe in 5 of 5; not run 0
+
+leaving the vehicle disarmed:
+results in /home/hogib/hangar-results/2026-11-25-failtests
+mavlink              ready       33127     0 -             54s  ardusub disarmed mode 19 params 1; gate disarmed; rx 118
+safety               ready       31929     0 -           2m03s  disarmed by admin:bluerov2
+
+== mux-kill-load2, 5 repetitions -> /home/hogib/hangar-results/2026-11-25-failtests/mux-kill-load2.jsonl
+  load: 2 busy loops on the vehicle's computer, ending by themselves within 180 s
+   1  no failsafe; still armed; restarted: mux   [temp=75.7'C throttled=0xe0000]
+   2  no failsafe; still armed; restarted: mux   [temp=74.1'C throttled=0xe0000]
+   3  no failsafe; still armed; restarted: mux   [temp=74.1'C throttled=0xe0000]
+   4  no failsafe; still armed; restarted: mux   [temp=75.2'C throttled=0xe0000]
+   5  no failsafe; still armed; restarted: mux   [temp=74.7'C throttled=0xe0000]
+  longest_silence_ms             n=5  min     18.7  median     28.6  max     30.3
+  failsafe in 0 of 5; not run 0
+
+leaving the vehicle disarmed:
+results in /home/hogib/hangar-results/2026-11-25-failtests
+mavlink              ready       33127     0 -           2m04s  ardusub disarmed mode 19 params 1; gate disarmed; rx 272
+safety               ready       31929     0 -           3m14s  disarmed by admin:bluerov2: failsafe cleared
+
+== bridge-hang-load2, 5 repetitions -> /home/hogib/hangar-results/2026-11-25-failtests/bridge-hang-load2.jsonl
+  load: 2 busy loops on the vehicle's computer, ending by themselves within 255 s
+   1  failsafe by input after 232.4 ms; 319.0 ms after the last packet; ArduSub disarmed at 236.2 ms; restarted: bridge   [temp=75.2'C throttled=0xe0000]
+   2  failsafe by input after 238.4 ms; 336.2 ms after the last packet; ArduSub disarmed at 243.7 ms; restarted: bridge   [temp=74.1'C throttled=0xe0000]
+   3  failsafe by input after 289.1 ms; 331.2 ms after the last packet; ArduSub disarmed at 294.0 ms; restarted: bridge   [temp=75.2'C throttled=0xe0000]
+   4  failsafe by input after 272.4 ms; 313.6 ms after the last packet; ArduSub disarmed at 278.1 ms; restarted: bridge   [temp=74.1'C throttled=0xe0000]
+   5  failsafe by input after 295.8 ms; 319.5 ms after the last packet; ArduSub disarmed at 301.5 ms; restarted: bridge   [temp=74.7'C throttled=0xe0000]
+  failsafe_ms                    n=5  min    232.4  median    272.4  max    295.8
+  failsafe_after_last_packet_ms  n=5  min    313.6  median    319.5  max    336.2
+  outputs_closed_ms              n=5  min    232.5  median    272.4  max    295.8
+  ardusub_disarming_ms           n=5  min    232.6  median    272.5  max    295.9
+  ardusub_disarmed_ms            n=5  min    236.2  median    278.1  max    301.5
+  longest_silence_ms             n=5  min     12.5  median     17.4  max     27.7
+  failsafe in 5 of 5; not run 0
+
+leaving the vehicle disarmed:
+results in /home/hogib/hangar-results/2026-11-25-failtests
+mavlink              ready       33127     0 -           2m05s  ardusub disarmed mode 19 params 1; gate disarmed; rx 274
+safety               ready       31929     0 -           3m15s  disarmed by admin:bluerov2: failsafe cleared
+
+leaving the vehicle disarmed:
+results in /home/hogib/hangar-results/2026-11-25-failtests
+unknown test silence 5
+mavlink              ready       33127     0 -           4m25s  ardusub disarmed mode 19 params 1; gate disarmed; rx 591
+safety               ready       36822     0 -              1s  disarmed: start
+
+== safety-kill-load4, 5 repetitions -> /home/hogib/hangar-results/2026-11-25-failtests/safety-kill-load4.jsonl
+  load: 4 busy loops on the vehicle's computer, ending by themselves within 155 s
+   1  no failsafe; ArduSub disarmed at 4.3 ms; restarted: safety   [temp=74.7'C throttled=0xe0000]
+   2  no failsafe; ArduSub disarmed at 4.8 ms; restarted: safety   [temp=78.5'C throttled=0xe0000]
+   3  no failsafe; ArduSub disarmed at 8.0 ms; restarted: safety   [temp=80.1'C throttled=0xe0000]
+   4  no failsafe; ArduSub disarmed at 15.3 ms; restarted: safety   [temp=80.7'C throttled=0xe0000]
+   5  no failsafe; ArduSub disarmed at 9.1 ms; restarted: safety   [temp=81.8'C throttled=0xe0000]
+  outputs_closed_ms              n=5  min    107.4  median    110.1  max    123.8
+  ardusub_disarming_ms           n=5  min      0.7  median      1.0  max     10.3
+  ardusub_disarmed_ms            n=5  min      4.3  median      8.0  max     15.3
+  longest_silence_ms             n=5  min     11.9  median     13.8  max     21.5
+  failsafe in 0 of 5; not run 0
+
+leaving the vehicle disarmed:
+results in /home/hogib/hangar-results/2026-11-25-failtests
+mavlink              ready       38024     0 -              1s  ardusub disarmed mode 19 params 1; gate disarmed; rx 563
+safety               ready       36822     0 -           1m13s  disarmed by admin:bluerov2: failsafe cleared
+
+== mavlink-kill-load4, 5 repetitions -> /home/hogib/hangar-results/2026-11-25-failtests/mavlink-kill-load4.jsonl
+  load: 4 busy loops on the vehicle's computer, ending by themselves within 255 s
+   1  failsafe by autopilot after 170.8 ms; 86.4 ms after the last packet; ArduSub disarmed at 170.6 ms; restarted: mavlink   [temp=82.9'C throttled=0xe0008]
+   2  failsafe by autopilot after 182.5 ms; 76.5 ms after the last packet; ArduSub disarmed at 182.2 ms; restarted: mavlink   [temp=84.5'C throttled=0xe0008]
+   3  failsafe by autopilot after 173.0 ms; 36.1 ms after the last packet; ArduSub disarmed at 172.2 ms; restarted: mavlink   [temp=84.5'C throttled=0xe0008]
+   4  failsafe by autopilot after 176.1 ms; 49.7 ms after the last packet; ArduSub disarmed at 176.0 ms; restarted: mavlink   [temp=85.1'C throttled=0xe0008]
+   5  failsafe by autopilot after 177.9 ms; 70.1 ms after the last packet; ArduSub disarmed at 177.7 ms; restarted: mavlink   [temp=84.0'C throttled=0xe0008]
+  failsafe_ms                    n=5  min    170.8  median    176.1  max    182.5
+  failsafe_after_last_packet_ms  n=5  min     36.1  median     70.1  max     86.4
+  outputs_closed_ms              n=5  min    170.8  median    176.2  max    182.5
+  ardusub_disarmed_ms            n=5  min    170.6  median    176.0  max    182.2
+  longest_silence_ms             n=5  min     12.1  median     15.2  max     21.1
+  failsafe in 5 of 5; not run 0
+
+leaving the vehicle disarmed:
+results in /home/hogib/hangar-results/2026-11-25-failtests
+mavlink              ready       38024     0 -             57s  ardusub disarmed mode 19 params 1; gate disarmed; rx 125
+safety               ready       36822     0 -           2m08s  disarmed by admin:bluerov2
+
+== mux-kill-load4, 5 repetitions -> /home/hogib/hangar-results/2026-11-25-failtests/mux-kill-load4.jsonl
+  load: 4 busy loops on the vehicle's computer, ending by themselves within 180 s
+   1  no failsafe; still armed; restarted: mux   [temp=83.4'C throttled=0xe0008]
+   2  no failsafe; still armed; restarted: mux   [temp=83.4'C throttled=0xe0008]
+   3  no failsafe; still armed; restarted: mux   [temp=84.0'C throttled=0xe0008]
+   4  no failsafe; still armed; restarted: mux   [temp=83.4'C throttled=0xe0006]
+   5  no failsafe; still armed; restarted: mux   [temp=83.4'C throttled=0xe0008]
+  longest_silence_ms             n=5  min     11.8  median     14.1  max     21.8
+  failsafe in 0 of 5; not run 0
+
+leaving the vehicle disarmed:
+results in /home/hogib/hangar-results/2026-11-25-failtests
+mavlink              ready       38024     0 -           2m10s  ardusub disarmed mode 19 params 1; gate disarmed; rx 285
+safety               ready       36822     0 -           3m21s  disarmed by admin:bluerov2: failsafe cleared
+
+== bridge-hang-load4, 5 repetitions -> /home/hogib/hangar-results/2026-11-25-failtests/bridge-hang-load4.jsonl
+  load: 4 busy loops on the vehicle's computer, ending by themselves within 255 s
+   1  failsafe by input after 230.5 ms; 307.7 ms after the last packet; ArduSub disarmed at 239.8 ms; restarted: bridge   [temp=84.0'C throttled=0xe0008]
+   2  failsafe by input after 252.1 ms; 322.2 ms after the last packet; ArduSub disarmed at 257.1 ms; restarted: bridge   [temp=83.4'C throttled=0xe0006]
+   3  failsafe by input after 262.9 ms; 316.3 ms after the last packet; ArduSub disarmed at 271.8 ms; restarted: bridge   [temp=83.4'C throttled=0xe0008]
+   4  failsafe by input after 258.5 ms; 311.8 ms after the last packet; ArduSub disarmed at 263.3 ms; restarted: bridge   [temp=84.0'C throttled=0xe0008]
+   5  failsafe by input after 257.3 ms; 308.2 ms after the last packet; ArduSub disarmed at 262.9 ms; restarted: bridge   [temp=84.0'C throttled=0xe0008]
+  failsafe_ms                    n=5  min    230.5  median    257.3  max    262.9
+  failsafe_after_last_packet_ms  n=5  min    307.7  median    311.8  max    322.2
+  outputs_closed_ms              n=5  min    230.9  median    257.3  max    262.9
+  ardusub_disarming_ms           n=5  min    234.0  median    257.6  max    265.8
+  ardusub_disarmed_ms            n=5  min    239.8  median    262.9  max    271.8
+  longest_silence_ms             n=5  min     15.4  median     16.8  max     19.7
+  failsafe in 5 of 5; not run 0
+
+leaving the vehicle disarmed:
+results in /home/hogib/hangar-results/2026-11-25-failtests
+mavlink              ready       38024     0 -           2m11s  ardusub disarmed mode 19 params 1; gate disarmed; rx 287
+safety               ready       36822     0 -           3m22s  disarmed by admin:bluerov2: failsafe cleared
+
+leaving the vehicle disarmed:
+results in /home/hogib/hangar-results/2026-11-25-failtests
+unknown test silence 5

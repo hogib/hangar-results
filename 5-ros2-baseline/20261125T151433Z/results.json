@@ -1,0 +1,6580 @@
+{
+ "bench_ros2": 1,
+ "label": "Raspberry Pi 5 Model B Rev 1.0",
+ "date": "2026-11-25T15:16:00Z",
+ "smoke_test": true,
+ "smoke_reason": "--quick",
+ "args": {
+  "prefix": "/home/bluerov2/hangar-ros2-bench/install/hangar_ros2_bench",
+  "hg_bench": "/home/bluerov2/hangar-root/bin/hg_bench",
+  "out": "/home/bluerov2/hangar-ros2-bench/results/20261125T151433Z",
+  "label": "",
+  "reps": 1,
+  "seconds": 3,
+  "warmup": 1,
+  "idle_seconds": 3,
+  "cost_runs": 3,
+  "hg_count": 200000,
+  "ros_count": 20000,
+  "quick": true,
+  "cpus": null,
+  "configs": null,
+  "domain": 77,
+  "discovery_range": "LOCALHOST",
+  "max_temp": 75.0,
+  "cool_wait": 180.0,
+  "hot": 80.0,
+  "busy": 25.0,
+  "commit": "unknown",
+  "smoke_reason": ""
+ },
+ "environment": {
+  "model": "Raspberry Pi 5 Model B Rev 1.0",
+  "arch": "aarch64",
+  "kernel": "6.8.0-1048-raspi",
+  "cpus": 4,
+  "allowed_cpus": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "writer_cpu": 2,
+  "reader_cpu": 3,
+  "container": false,
+  "ros_distro": "jazzy",
+  "commit": "unknown",
+  "hg_bench": "/home/bluerov2/hangar-root/bin/hg_bench",
+  "governor": [
+   "performance"
+  ],
+  "running_beside": [],
+  "loadavg1": 1.22,
+  "hg_commit": "db2dfc8",
+  "hg_compiler": "Clang 22.1.8"
+ },
+ "configs": {
+  "hangar": {
+   "title": "hg_bench"
+  },
+  "fastdds": {
+   "title": "Fast DDS, as installed (UDP and its shared-memory transport)",
+   "rmw": "rmw_fastrtps_cpp",
+   "env": {}
+  },
+  "fastdds-datasharing": {
+   "title": "Fast DDS, data-sharing delivery and loaned messages (config/fastdds-datasharing.xml)",
+   "rmw": "rmw_fastrtps_cpp",
+   "env": {
+    "FASTRTPS_DEFAULT_PROFILES_FILE": "/home/bluerov2/hangar-bench/bench/ros2/config/fastdds-datasharing.xml",
+    "FASTDDS_DEFAULT_PROFILES_FILE": "/home/bluerov2/hangar-bench/bench/ros2/config/fastdds-datasharing.xml",
+    "RMW_FASTRTPS_USE_QOS_FROM_XML": "1",
+    "ROS_DISABLE_LOANED_MESSAGES": "0"
+   },
+   "loaned": true,
+   "subscription_can_loan": true
+  }
+ },
+ "skipped": [
+  {
+   "config": "cyclonedds",
+   "reason": "rmw_cyclonedds_cpp is not installed; to add it: sudo apt install ros-jazzy-rmw-cyclonedds-cpp"
+  },
+  {
+   "config": "cyclonedds-iceoryx",
+   "reason": "rmw_cyclonedds_cpp is not installed; to add it: sudo apt install ros-jazzy-rmw-cyclonedds-cpp"
+  },
+  {
+   "config": "zenoh",
+   "reason": "rmw_zenoh_cpp is not installed; to add it: sudo apt install ros-jazzy-rmw-zenoh-cpp"
+  },
+  {
+   "config": "zenoh-shm",
+   "reason": "rmw_zenoh_cpp is not installed; to add it: sudo apt install ros-jazzy-rmw-zenoh-cpp"
+  }
+ ],
+ "state_start": {
+  "other_cpus_jiffies": [
+   450739,
+   1698192
+  ],
+  "time": "2026-11-25T15:16:00Z",
+  "temp_c": 61.7,
+  "governor": [
+   "performance"
+  ],
+  "throttled": 917504,
+  "freq_khz": {
+   "2": [
+    2400000,
+    2400000,
+    2400000
+   ],
+   "3": [
+    2400000,
+    2400000,
+    2400000
+   ]
+  },
+  "x86_throttle_count": null,
+  "loadavg1": 1.22
+ },
+ "runs": [
+  {
+   "rep": 0,
+   "config": "hangar",
+   "case": "hg_cost",
+   "cooled_s": 0.0,
+   "before": {
+    "other_cpus_jiffies": [
+     450755,
+     1699813
+    ],
+    "time": "2026-11-25T15:16:08Z",
+    "temp_c": 57.9,
+    "governor": [
+     "performance"
+    ],
+    "throttled": 917504,
+    "freq_khz": {
+     "2": [
+      2400000,
+      2400000,
+      2400000
+     ],
+     "3": [
+      2400000,
+      2400000,
+      2400000
+     ]
+    },
+    "x86_throttle_count": null,
+    "loadavg1": 1.03
+   },
+   "after": {
+    "other_cpus_jiffies": [
+     450757,
+     1700368
+    ],
+    "time": "2026-11-25T15:16:11Z",
+    "temp_c": 60.6,
+    "governor": [
+     "performance"
+    ],
+    "throttled": 917504,
+    "freq_khz": {
+     "2": [
+      2400000,
+      2400000,
+      2400000
+     ],
+     "3": [
+      2400000,
+      2400000,
+      2400000
+     ]
+    },
+    "x86_throttle_count": null,
+    "loadavg1": 1.03
+   },
+   "other_load_pct": 0.4,
+   "flags": [],
+   "result": {
+    "hg_bench": {
+     "hg_commit": "db2dfc8",
+     "compiler": "Clang 22.1.8",
+     "args": "publish latest --runs 3 --count 200000 --json /home/bluerov2/hangar-ros2-bench/results/20261125T151433Z/logs/hg_bench-hg_cost-0.json"
+    },
+    "date": "2026-11-25T15:16:08Z",
+    "machine": {
+     "arch": "aarch64",
+     "kernel": "6.8.0-1048-raspi",
+     "cpu": "Raspberry Pi 5 Model B Rev 1.0",
+     "model": "Raspberry Pi 5 Model B Rev 1.0",
+     "cpus": 1,
+     "governor": "performance",
+     "topic_dir": "/dev/shm/hg-bench-1004-45270"
+    },
+    "publish": {
+     "runs": 3,
+     "sizes": [
+      {
+       "bytes": 16,
+       "count": 200000,
+       "ns": 80.24,
+       "raw": [
+        80.22,
+        80.24,
+        80.49
+       ]
+      },
+      {
+       "bytes": 256,
+       "count": 200000,
+       "ns": 96.11,
+       "raw": [
+        96.05,
+        96.11,
+        96.12
+       ]
+      },
+      {
+       "bytes": 4096,
+       "count": 200000,
+       "ns": 358.64,
+       "raw": [
+        358.49,
+        358.64,
+        358.65
+       ]
+      },
+      {
+       "bytes": 1048576,
+       "count": 782,
+       "ns": 122924.81,
+       "raw": [
+        118094.7,
+        122924.81,
+        136723.6
+       ]
+      }
+     ]
+    },
+    "latest": {
+     "runs": 3,
+     "sizes": [
+      {
+       "bytes": 16,
+       "count": 200000,
+       "ns": 52.92,
+       "no_message": 0,
+       "raw": [
+        52.68,
+        52.92,
+        52.94
+       ]
+      },
+      {
+       "bytes": 256,
+       "count": 200000,
+       "ns": 120.79,
+       "no_message": 0,
+       "raw": [
+        120.61,
+        120.79,
+        121.03
+       ]
+      },
+      {
+       "bytes": 4096,
+       "count": 200000,
+       "ns": 416.17,
+       "no_message": 0,
+       "raw": [
+        414.39,
+        416.17,
+        416.41
+       ]
+      },
+      {
+       "bytes": 1048576,
+       "count": 782,
+       "ns": 198459.08,
+       "no_message": 0,
+       "raw": [
+        190017.31,
+        198459.08,
+        205629.3
+       ]
+      }
+     ]
+    }
+   }
+  },
+  {
+   "rep": 0,
+   "config": "hangar",
+   "case": "hg_pair",
+   "cooled_s": 0.0,
+   "before": {
+    "other_cpus_jiffies": [
+     450758,
+     1700369
+    ],
+    "time": "2026-11-25T15:16:11Z",
+    "temp_c": 61.1,
+    "governor": [
+     "performance"
+    ],
+    "throttled": 917504,
+    "freq_khz": {
+     "2": [
+      2400000,
+      2400000,
+      2400000
+     ],
+     "3": [
+      2400000,
+      2400000,
+      2400000
+     ]
+    },
+    "x86_throttle_count": null,
+    "loadavg1": 1.03
+   },
+   "after": {
+    "other_cpus_jiffies": [
+     450759,
+     1703496
+    ],
+    "time": "2026-11-25T15:16:27Z",
+    "temp_c": 56.8,
+    "governor": [
+     "performance"
+    ],
+    "throttled": 917504,
+    "freq_khz": {
+     "2": [
+      2400000,
+      2400000,
+      2400000
+     ],
+     "3": [
+      2400000,
+      2400000,
+      2400000
+     ]
+    },
+    "x86_throttle_count": null,
+    "loadavg1": 0.74
+   },
+   "other_load_pct": 0.0,
+   "flags": [],
+   "result": {
+    "hg_bench": {
+     "hg_commit": "db2dfc8",
+     "compiler": "Clang 22.1.8",
+     "args": "wake idle rss --idle-seconds 3 --seconds 3 --json /home/bluerov2/hangar-ros2-bench/results/20261125T151433Z/logs/hg_bench-hg_pair-0.json"
+    },
+    "date": "2026-11-25T15:16:11Z",
+    "machine": {
+     "arch": "aarch64",
+     "kernel": "6.8.0-1048-raspi",
+     "cpu": "Raspberry Pi 5 Model B Rev 1.0",
+     "model": "Raspberry Pi 5 Model B Rev 1.0",
+     "cpus": 2,
+     "governor": "performance",
+     "topic_dir": "/dev/shm/hg-bench-1004-45279"
+    },
+    "wake": [
+     {
+      "rate_hz": 100,
+      "seconds": 3,
+      "payload": 256,
+      "slots": 16,
+      "writer_cpu": 2,
+      "reader_cpu": 3,
+      "expected": 300,
+      "published": 300,
+      "msgs": 300,
+      "wakes": 300,
+      "timeouts": 0,
+      "gaps": 0,
+      "torn": 0,
+      "writer_late": 0,
+      "kept_up": true,
+      "samples": 300,
+      "p50_us": 5.4,
+      "p99_us": 8.5,
+      "p999_us": 15.4,
+      "max_us": 15.4,
+      "mean_us": 5.5,
+      "copied_p50_us": 5.6,
+      "copied_p99_us": 10.1,
+      "copied_p999_us": 18.2,
+      "copied_max_us": 18.2,
+      "writer_cpu_s": 0.002,
+      "reader_cpu_s": 0.002,
+      "writer_cpu_pct": 0.07,
+      "reader_cpu_pct": 0.07,
+      "writer_ctxsw": [
+       323,
+       0
+      ],
+      "reader_ctxsw": [
+       301,
+       2
+      ]
+     },
+     {
+      "rate_hz": 1000,
+      "seconds": 3,
+      "payload": 256,
+      "slots": 16,
+      "writer_cpu": 2,
+      "reader_cpu": 3,
+      "expected": 3000,
+      "published": 3000,
+      "msgs": 3000,
+      "wakes": 3000,
+      "timeouts": 0,
+      "gaps": 0,
+      "torn": 0,
+      "writer_late": 0,
+      "kept_up": true,
+      "samples": 3000,
+      "p50_us": 5.5,
+      "p99_us": 5.6,
+      "p999_us": 14.6,
+      "max_us": 149.4,
+      "mean_us": 5.5,
+      "copied_p50_us": 5.6,
+      "copied_p99_us": 5.8,
+      "copied_p999_us": 17.4,
+      "copied_max_us": 149.8,
+      "writer_cpu_s": 0.018,
+      "reader_cpu_s": 0.017,
+      "writer_cpu_pct": 0.6,
+      "reader_cpu_pct": 0.58,
+      "writer_ctxsw": [
+       3023,
+       1
+      ],
+      "reader_ctxsw": [
+       3001,
+       0
+      ]
+     },
+     {
+      "rate_hz": 10000,
+      "seconds": 3,
+      "payload": 256,
+      "slots": 16,
+      "writer_cpu": 2,
+      "reader_cpu": 3,
+      "expected": 30000,
+      "published": 30000,
+      "msgs": 30000,
+      "wakes": 29988,
+      "timeouts": 0,
+      "gaps": 0,
+      "torn": 0,
+      "writer_late": 10,
+      "kept_up": true,
+      "samples": 30000,
+      "p50_us": 5.1,
+      "p99_us": 5.5,
+      "p999_us": 9.6,
+      "max_us": 746.5,
+      "mean_us": 5.3,
+      "copied_p50_us": 5.3,
+      "copied_p99_us": 5.6,
+      "copied_p999_us": 10.0,
+      "copied_max_us": 746.9,
+      "writer_cpu_s": 0.18,
+      "reader_cpu_s": 0.163,
+      "writer_cpu_pct": 6.01,
+      "reader_cpu_pct": 5.43,
+      "writer_ctxsw": [
+       30023,
+       2
+      ],
+      "reader_ctxsw": [
+       29984,
+       0
+      ]
+     }
+    ],
+    "idle": {
+     "seconds": 3,
+     "vol_t0": 1,
+     "vol_t1": 1,
+     "nonvol_t0": 0,
+     "nonvol_t1": 0,
+     "cpu_ticks_t0": 0,
+     "cpu_ticks_t1": 0,
+     "rss_kb_t0": 300,
+     "rss_kb_t1": 300,
+     "vol_delta": 0,
+     "nonvol_delta": 0,
+     "cpu_ticks_delta": 0,
+     "wakes_total": 1,
+     "ok": true
+    },
+    "rss": {
+     "rate_hz": 1000,
+     "seconds": 3,
+     "payload": 256,
+     "slots": 16,
+     "writer_cpu": 2,
+     "reader_cpu": 3,
+     "expected": 3000,
+     "published": 3000,
+     "msgs": 3000,
+     "wakes": 3000,
+     "timeouts": 0,
+     "gaps": 0,
+     "torn": 0,
+     "writer_late": 0,
+     "kept_up": true,
+     "samples": 3000,
+     "p50_us": 5.4,
+     "p99_us": 5.6,
+     "p999_us": 15.6,
+     "max_us": 170.7,
+     "mean_us": 5.5,
+     "copied_p50_us": 5.6,
+     "copied_p99_us": 5.8,
+     "copied_p999_us": 29.9,
+     "copied_max_us": 171.3,
+     "writer_cpu_s": 0.018,
+     "reader_cpu_s": 0.017,
+     "writer_cpu_pct": 0.61,
+     "reader_cpu_pct": 0.57,
+     "writer_ctxsw": [
+      3023,
+      1
+     ],
+     "reader_ctxsw": [
+      3001,
+      0
+     ],
+     "writer": {
+      "rss_kb": 308,
+      "pss_kb": 129,
+      "pss_anon_kb": 69,
+      "pss_file_kb": 49,
+      "pss_shmem_kb": 10,
+      "hwm_kb": 308
+     },
+     "reader": {
+      "rss_kb": 332,
+      "pss_kb": 141,
+      "pss_anon_kb": 73,
+      "pss_file_kb": 49,
+      "pss_shmem_kb": 18,
+      "hwm_kb": 332
+     }
+    }
+   }
+  },
+  {
+   "rep": 0,
+   "config": "hangar",
+   "case": "hg_nopin",
+   "cooled_s": 0.0,
+   "before": {
+    "other_cpus_jiffies": [
+     450759,
+     1703496
+    ],
+    "time": "2026-11-25T15:16:27Z",
+    "temp_c": 56.8,
+    "governor": [
+     "performance"
+    ],
+    "throttled": 917504,
+    "freq_khz": {
+     "2": [
+      2400000,
+      2400000,
+      2400000
+     ],
+     "3": [
+      2400000,
+      2400000,
+      2400000
+     ]
+    },
+    "x86_throttle_count": null,
+    "loadavg1": 0.74
+   },
+   "after": {
+    "other_cpus_jiffies": [
+     450760,
+     1704110
+    ],
+    "time": "2026-11-25T15:16:30Z",
+    "temp_c": 56.8,
+    "governor": [
+     "performance"
+    ],
+    "throttled": 917504,
+    "freq_khz": {
+     "2": [
+      2400000,
+      2400000,
+      2400000
+     ],
+     "3": [
+      2400000,
+      2400000,
+      2400000
+     ]
+    },
+    "x86_throttle_count": null,
+    "loadavg1": 0.74
+   },
+   "other_load_pct": 0.2,
+   "flags": [],
+   "result": {
+    "hg_bench": {
+     "hg_commit": "db2dfc8",
+     "compiler": "Clang 22.1.8",
+     "args": "wake_nopin --seconds 3 --json /home/bluerov2/hangar-ros2-bench/results/20261125T151433Z/logs/hg_bench-hg_nopin-0.json"
+    },
+    "date": "2026-11-25T15:16:27Z",
+    "machine": {
+     "arch": "aarch64",
+     "kernel": "6.8.0-1048-raspi",
+     "cpu": "Raspberry Pi 5 Model B Rev 1.0",
+     "model": "Raspberry Pi 5 Model B Rev 1.0",
+     "cpus": 4,
+     "governor": "performance",
+     "topic_dir": "/dev/shm/hg-bench-1004-45297"
+    },
+    "wake_nopin": {
+     "rate_hz": 1000,
+     "seconds": 3,
+     "payload": 256,
+     "slots": 16,
+     "writer_cpu": -1,
+     "reader_cpu": -1,
+     "expected": 3000,
+     "published": 3000,
+     "msgs": 3000,
+     "wakes": 3000,
+     "timeouts": 0,
+     "gaps": 0,
+     "torn": 0,
+     "writer_late": 0,
+     "kept_up": true,
+     "samples": 3000,
+     "p50_us": 5.5,
+     "p99_us": 5.6,
+     "p999_us": 8.6,
+     "max_us": 13.3,
+     "mean_us": 5.5,
+     "copied_p50_us": 5.7,
+     "copied_p99_us": 5.8,
+     "copied_p999_us": 9.0,
+     "copied_max_us": 15.8,
+     "writer_cpu_s": 0.018,
+     "reader_cpu_s": 0.017,
+     "writer_cpu_pct": 0.61,
+     "reader_cpu_pct": 0.58,
+     "writer_ctxsw": [
+      3023,
+      0
+     ],
+     "reader_ctxsw": [
+      3001,
+      0
+     ]
+    }
+   }
+  },
+  {
+   "rep": 0,
+   "config": "hangar",
+   "case": "hg_frame",
+   "cooled_s": 0.0,
+   "before": {
+    "other_cpus_jiffies": [
+     450761,
+     1704112
+    ],
+    "time": "2026-11-25T15:16:30Z",
+    "temp_c": 56.8,
+    "governor": [
+     "performance"
+    ],
+    "throttled": 917504,
+    "freq_khz": {
+     "2": [
+      2400000,
+      2400000,
+      2400000
+     ],
+     "3": [
+      2400000,
+      2400000,
+      2400000
+     ]
+    },
+    "x86_throttle_count": null,
+    "loadavg1": 0.74
+   },
+   "after": {
+    "other_cpus_jiffies": [
+     450762,
+     1704726
+    ],
+    "time": "2026-11-25T15:16:33Z",
+    "temp_c": 55.6,
+    "governor": [
+     "performance"
+    ],
+    "throttled": 917504,
+    "freq_khz": {
+     "2": [
+      2400000,
+      2400000,
+      2400000
+     ],
+     "3": [
+      2400000,
+      2400000,
+      2400000
+     ]
+    },
+    "x86_throttle_count": null,
+    "loadavg1": 0.76
+   },
+   "other_load_pct": 0.2,
+   "flags": [],
+   "result": {
+    "hg_bench": {
+     "hg_commit": "db2dfc8",
+     "compiler": "Clang 22.1.8",
+     "args": "wake --wake-bytes 1048576 --wake-rate 30 --seconds 3 --json /home/bluerov2/hangar-ros2-bench/results/20261125T151433Z/logs/hg_bench-hg_frame-0.json"
+    },
+    "date": "2026-11-25T15:16:30Z",
+    "machine": {
+     "arch": "aarch64",
+     "kernel": "6.8.0-1048-raspi",
+     "cpu": "Raspberry Pi 5 Model B Rev 1.0",
+     "model": "Raspberry Pi 5 Model B Rev 1.0",
+     "cpus": 2,
+     "governor": "performance",
+     "topic_dir": "/dev/shm/hg-bench-1004-45302"
+    },
+    "wake": [
+     {
+      "rate_hz": 30,
+      "seconds": 3,
+      "payload": 1048576,
+      "slots": 16,
+      "writer_cpu": 2,
+      "reader_cpu": 3,
+      "expected": 90,
+      "published": 90,
+      "msgs": 90,
+      "wakes": 90,
+      "timeouts": 0,
+      "gaps": 0,
+      "torn": 0,
+      "writer_late": 0,
+      "kept_up": true,
+      "samples": 90,
+      "p50_us": 217.6,
+      "p99_us": 1051.3,
+      "p999_us": 1051.3,
+      "max_us": 1051.3,
+      "mean_us": 348.7,
+      "copied_p50_us": 328.6,
+      "copied_p99_us": 1725.1,
+      "copied_p999_us": 1725.1,
+      "copied_max_us": 1725.1,
+      "writer_cpu_s": 0.046,
+      "reader_cpu_s": 0.03,
+      "writer_cpu_pct": 1.54,
+      "reader_cpu_pct": 1.01,
+      "writer_ctxsw": [
+       114,
+       1
+      ],
+      "reader_ctxsw": [
+       90,
+       2
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "rep": 0,
+   "config": "fastdds",
+   "case": "cost_16",
+   "cooled_s": 0.0,
+   "before": {
+    "other_cpus_jiffies": [
+     450763,
+     1704728
+    ],
+    "time": "2026-11-25T15:16:33Z",
+    "temp_c": 56.2,
+    "governor": [
+     "performance"
+    ],
+    "throttled": 917504,
+    "freq_khz": {
+     "2": [
+      2400000,
+      2400000,
+      2400000
+     ],
+     "3": [
+      2400000,
+      2400000,
+      2400000
+     ]
+    },
+    "x86_throttle_count": null,
+    "loadavg1": 0.76
+   },
+   "after": {
+    "other_cpus_jiffies": [
+     450766,
+     1704828
+    ],
+    "time": "2026-11-25T15:16:33Z",
+    "temp_c": 57.3,
+    "governor": [
+     "performance"
+    ],
+    "throttled": 917504,
+    "freq_khz": {
+     "2": [
+      2400000,
+      2400000,
+      2400000
+     ],
+     "3": [
+      2400000,
+      2400000,
+      2400000
+     ]
+    },
+    "x86_throttle_count": null,
+    "loadavg1": 0.76
+   },
+   "other_load_pct": 3.0,
+   "flags": [],
+   "result": {
+    "talker": {
+     "role": "talker",
+     "rmw": "rmw_fastrtps_cpp",
+     "mode": "cost",
+     "qos": "latest",
+     "size": 16,
+     "loan_asked": false,
+     "loaned": false,
+     "count": 20000,
+     "ns": 991.4,
+     "raw": [
+      988.8,
+      991.4,
+      992.9
+     ]
+    }
+   }
+  },
+  {
+   "rep": 0,
+   "config": "fastdds",
+   "case": "cost_256",
+   "cooled_s": 0.0,
+   "before": {
+    "other_cpus_jiffies": [
+     450766,
+     1704830
+    ],
+    "time": "2026-11-25T15:16:33Z",
+    "temp_c": 56.2,
+    "governor": [
+     "performance"
+    ],
+    "throttled": 917504,
+    "freq_khz": {
+     "2": [
+      2400000,
+      2400000,
+      2400000
+     ],
+     "3": [
+      2400000,
+      2400000,
+      2400000
+     ]
+    },
+    "x86_throttle_count": null,
+    "loadavg1": 0.76
+   },
+   "after": {
+    "other_cpus_jiffies": [
+     450771,
+     1704932
+    ],
+    "time": "2026-11-25T15:16:34Z",
+    "temp_c": 57.9,
+    "governor": [
+     "performance"
+    ],
+    "throttled": 917504,
+    "freq_khz": {
+     "2": [
+      2400000,
+      2400000,
+      2400000
+     ],
+     "3": [
+      2400000,
+      2400000,
+      2400000
+     ]
+    },
+    "x86_throttle_count": null,
+    "loadavg1": 0.76
+   },
+   "other_load_pct": 4.9,
+   "flags": [],
+   "result": {
+    "talker": {
+     "role": "talker",
+     "rmw": "rmw_fastrtps_cpp",
+     "mode": "cost",
+     "qos": "latest",
+     "size": 256,
+     "loan_asked": false,
+     "loaned": false,
+     "count": 20000,
+     "ns": 959.7,
+     "raw": [
+      964.4,
+      959.7,
+      959.5
+     ]
+    }
+   }
+  },
+  {
+   "rep": 0,
+   "config": "fastdds",
+   "case": "cost_4096",
+   "cooled_s": 0.0,
+   "before": {
+    "other_cpus_jiffies": [
+     450771,
+     1704932
+    ],
+    "time": "2026-11-25T15:16:34Z",
+    "temp_c": 56.2,
+    "governor": [
+     "performance"
+    ],
+    "throttled": 917504,
+    "freq_khz": {
+     "2": [
+      2400000,
+      2400000,
+      2400000
+     ],
+     "3": [
+      2400000,
+      2400000,
+      2400000
+     ]
+    },
+    "x86_throttle_count": null,
+    "loadavg1": 0.76
+   },
+   "after": {
+    "other_cpus_jiffies": [
+     450775,
+     1705034
+    ],
+    "time": "2026-11-25T15:16:34Z",
+    "temp_c": 57.3,
+    "governor": [
+     "performance"
+    ],
+    "throttled": 917504,
+    "freq_khz": {
+     "2": [
+      2400000,
+      2400000,
+      2400000
+     ],
+     "3": [
+      2400000,
+      2400000,
+      2400000
+     ]
+    },
+    "x86_throttle_count": null,
+    "loadavg1": 0.76
+   },
+   "other_load_pct": 3.9,
+   "flags": [],
+   "result": {
+    "talker": {
+     "role": "talker",
+     "rmw": "rmw_fastrtps_cpp",
+     "mode": "cost",
+     "qos": "latest",
+     "size": 4096,
+     "loan_asked": false,
+     "loaned": false,
+     "count": 20000,
+     "ns": 1080.1,
+     "raw": [
+      1093.6,
+      1080.1,
+      1079.4
+     ]
+    }
+   }
+  },
+  {
+   "rep": 0,
+   "config": "fastdds",
+   "case": "cost_1048576",
+   "cooled_s": 0.0,
+   "before": {
+    "other_cpus_jiffies": [
+     450775,
+     1705035
+    ],
+    "time": "2026-11-25T15:16:34Z",
+    "temp_c": 57.3,
+    "governor": [
+     "performance"
+    ],
+    "throttled": 917504,
+    "freq_khz": {
+     "2": [
+      2400000,
+      2400000,
+      2400000
+     ],
+     "3": [
+      2400000,
+      2400000,
+      2400000
+     ]
+    },
+    "x86_throttle_count": null,
+    "loadavg1": 0.76
+   },
+   "after": {
+    "other_cpus_jiffies": [
+     450778,
+     1705135
+    ],
+    "time": "2026-11-25T15:16:35Z",
+    "temp_c": 55.6,
+    "governor": [
+     "performance"
+    ],
+    "throttled": 917504,
+    "freq_khz": {
+     "2": [
+      2400000,
+      2400000,
+      2400000
+     ],
+     "3": [
+      2400000,
+      2400000,
+      2400000
+     ]
+    },
+    "x86_throttle_count": null,
+    "loadavg1": 0.76
+   },
+   "other_load_pct": 3.0,
+   "flags": [],
+   "result": {
+    "talker": {
+     "role": "talker",
+     "rmw": "rmw_fastrtps_cpp",
+     "mode": "cost",
+     "qos": "latest",
+     "size": 1048576,
+     "loan_asked": false,
+     "loaned": false,
+     "count": 78,
+     "ns": 87928.5,
+     "raw": [
+      105423.8,
+      87928.5,
+      81641.5
+     ]
+    }
+   }
+  },
+  {
+   "rep": 0,
+   "config": "fastdds",
+   "case": "take_16",
+   "cooled_s": 0.0,
+   "before": {
+    "other_cpus_jiffies": [
+     450778,
+     1705135
+    ],
+    "time": "2026-11-25T15:16:35Z",
+    "temp_c": 56.2,
+    "governor": [
+     "performance"
+    ],
+    "throttled": 917504,
+    "freq_khz": {
+     "2": [
+      2400000,
+      2400000,
+      2400000
+     ],
+     "3": [
+      2400000,
+      2400000,
+      2400000
+     ]
+    },
+    "x86_throttle_count": null,
+    "loadavg1": 0.76
+   },
+   "after": {
+    "other_cpus_jiffies": [
+     450782,
+     1705337
+    ],
+    "time": "2026-11-25T15:16:36Z",
+    "temp_c": 57.9,
+    "governor": [
+     "performance"
+    ],
+    "throttled": 917504,
+    "freq_khz": {
+     "2": [
+      2400000,
+      2400000,
+      2400000
+     ],
+     "3": [
+      2400000,
+      2400000,
+      2400000
+     ]
+    },
+    "x86_throttle_count": null,
+    "loadavg1": 0.76
+   },
+   "other_load_pct": 2.0,
+   "flags": [],
+   "result": {
+    "talker": {
+     "role": "talker",
+     "rmw": "rmw_fastrtps_cpp",
+     "mode": "take",
+     "qos": "latest",
+     "size": 16,
+     "loan_asked": false,
+     "loaned": false,
+     "count": 20000,
+     "ns": 1536.1,
+     "empty_polls": 0,
+     "wrong": 0,
+     "gave_up": 0,
+     "raw": [
+      1548.7,
+      1532.3,
+      1536.1
+     ]
+    }
+   }
+  },
+  {
+   "rep": 0,
+   "config": "fastdds",
+   "case": "take_256",
+   "cooled_s": 0.0,
+   "before": {
+    "other_cpus_jiffies": [
+     450783,
+     1705339
+    ],
+    "time": "2026-11-25T15:16:36Z",
+    "temp_c": 56.8,
+    "governor": [
+     "performance"
+    ],
+    "throttled": 917504,
+    "freq_khz": {
+     "2": [
+      2400000,
+      2400000,
+      2400000
+     ],
+     "3": [
+      2400000,
+      2400000,
+      2400000
+     ]
+    },
+    "x86_throttle_count": null,
+    "loadavg1": 0.76
+   },
+   "after": {
+    "other_cpus_jiffies": [
+     450786,
+     1705540
+    ],
+    "time": "2026-11-25T15:16:37Z",
+    "temp_c": 57.3,
+    "governor": [
+     "performance"
+    ],
+    "throttled": 917504,
+    "freq_khz": {
+     "2": [
+      2400000,
+      2400000,
+      2400000
+     ],
+     "3": [
+      2400000,
+      2400000,
+      2400000
+     ]
+    },
+    "x86_throttle_count": null,
+    "loadavg1": 0.7
+   },
+   "other_load_pct": 1.5,
+   "flags": [],
+   "result": {
+    "talker": {
+     "role": "talker",
+     "rmw": "rmw_fastrtps_cpp",
+     "mode": "take",
+     "qos": "latest",
+     "size": 256,
+     "loan_asked": false,
+     "loaned": false,
+     "count": 20000,
+     "ns": 1657.3,
+     "empty_polls": 0,
+     "wrong": 0,
+     "gave_up": 0,
+     "raw": [
+      1653.9,
+      1657.3,
+      1664.4
+     ]
+    }
+   }
+  },
+  {
+   "rep": 0,
+   "config": "fastdds",
+   "case": "take_4096",
+   "cooled_s": 0.0,
+   "before": {
+    "other_cpus_jiffies": [
+     450786,
+     1705540
+    ],
+    "time": "2026-11-25T15:16:37Z",
+    "temp_c": 57.9,
+    "governor": [
+     "performance"
+    ],
+    "throttled": 917504,
+    "freq_khz": {
+     "2": [
+      2400000,
+      2400000,
+      2400000
+     ],
+     "3": [
+      2400000,
+      2400000,
+      2400000
+     ]
+    },
+    "x86_throttle_count": null,
+    "loadavg1": 0.7
+   },
+   "after": {
+    "other_cpus_jiffies": [
+     450789,
+     1705740
+    ],
+    "time": "2026-11-25T15:16:38Z",
+    "temp_c": 56.8,
+    "governor": [
+     "performance"
+    ],
+    "throttled": 917504,
+    "freq_khz": {
+     "2": [
+      2400000,
+      2400000,
+      2400000
+     ],
+     "3": [
+      2400000,
+      2400000,
+      2400000
+     ]
+    },
+    "x86_throttle_count": null,
+    "loadavg1": 0.7
+   },
+   "other_load_pct": 1.5,
+   "flags": [],
+   "result": {
+    "talker": {
+     "role": "talker",
+     "rmw": "rmw_fastrtps_cpp",
+     "mode": "take",
+     "qos": "latest",
+     "size": 4096,
+     "loan_asked": false,
+     "loaned": false,
+     "count": 20000,
+     "ns": 1754.4,
+     "empty_polls": 0,
+     "wrong": 0,
+     "gave_up": 0,
+     "raw": [
+      1754.4,
+      1770.2,
+      1752.1
+     ]
+    }
+   }
+  },
+  {
+   "rep": 0,
+   "config": "fastdds",
+   "case": "take_1048576",
+   "cooled_s": 0.0,
+   "before": {
+    "other_cpus_jiffies": [
+     450791,
+     1705744
+    ],
+    "time": "2026-11-25T15:16:38Z",
+    "temp_c": 56.8,
+    "governor": [
+     "performance"
+    ],
+    "throttled": 917504,
+    "freq_khz": {
+     "2": [
+      2400000,
+      2400000,
+      2400000
+     ],
+     "3": [
+      2400000,
+      2400000,
+      2400000
+     ]
+    },
+    "x86_throttle_count": null,
+    "loadavg1": 0.7
+   },
+   "after": {
+    "other_cpus_jiffies": [
+     450794,
+     1705844
+    ],
+    "time": "2026-11-25T15:16:38Z",
+    "temp_c": 56.8,
+    "governor": [
+     "performance"
+    ],
+    "throttled": 917504,
+    "freq_khz": {
+     "2": [
+      2400000,
+      2400000,
+      2400000
+     ],
+     "3": [
+      2400000,
+      2400000,
+      2400000
+     ]
+    },
+    "x86_throttle_count": null,
+    "loadavg1": 0.7
+   },
+   "other_load_pct": 3.0,
+   "flags": [],
+   "result": {
+    "talker": {
+     "role": "talker",
+     "rmw": "rmw_fastrtps_cpp",
+     "mode": "take",
+     "qos": "latest",
+     "size": 1048576,
+     "loan_asked": false,
+     "loaned": false,
+     "count": 78,
+     "ns": 89929.5,
+     "empty_polls": 0,
+     "wrong": 0,
+     "gave_up": 0,
+     "raw": [
+      84723.4,
+      89929.5,
+      116485.0
+     ]
+    }
+   }
+  },
+  {
+   "rep": 0,
+   "config": "fastdds",
+   "case": "rate_256_100_latest",
+   "cooled_s": 0.0,
+   "before": {
+    "other_cpus_jiffies": [
+     450794,
+     1705844
+    ],
+    "time": "2026-11-25T15:16:38Z",
+    "temp_c": 56.8,
+    "governor": [
+     "performance"
+    ],
+    "throttled": 917504,
+    "freq_khz": {
+     "2": [
+      2400000,
+      2400000,
+      2400000
+     ],
+     "3": [
+      2400000,
+      2400000,
+      2400000
+     ]
+    },
+    "x86_throttle_count": null,
+    "loadavg1": 0.7
+   },
+   "after": {
+    "other_cpus_jiffies": [
+     450802,
+     1706948
+    ],
+    "time": "2026-11-25T15:16:44Z",
+    "temp_c": 55.6,
+    "governor": [
+     "performance"
+    ],
+    "throttled": 917504,
+    "freq_khz": {
+     "2": [
+      2400000,
+      2400000,
+      2400000
+     ],
+     "3": [
+      2400000,
+      2400000,
+      2400000
+     ]
+    },
+    "x86_throttle_count": null,
+    "loadavg1": 0.64
+   },
+   "other_load_pct": 0.7,
+   "flags": [],
+   "result": {
+    "talker": {
+     "role": "talker",
+     "rmw": "rmw_fastrtps_cpp",
+     "mode": "rate",
+     "qos": "latest",
+     "size": 256,
+     "loan_asked": false,
+     "loaned": false,
+     "rate_hz": 100,
+     "seconds": 3,
+     "warmup_msgs": 100,
+     "published": 300,
+     "late": 0,
+     "publish_p50_ns": 13778,
+     "publish_p99_ns": 21722,
+     "publish_mean_ns": 13774,
+     "window_s": 2.99,
+     "cpu_s": 0.0063,
+     "cpu_pct": 0.212,
+     "ctxsw": [
+      327,
+      0
+     ],
+     "threads": 14,
+     "hwm_kb": 26404
+    },
+    "listener": {
+     "role": "listener",
+     "rmw": "rmw_fastrtps_cpp",
+     "mode": "rate",
+     "qos": "latest",
+     "size": 256,
+     "can_loan": false,
+     "rate_hz": 100,
+     "seconds": 3,
+     "expected": 300,
+     "received": 300,
+     "lost": 0,
+     "torn": 0,
+     "out_of_order": 0,
+     "timed_out": false,
+     "samples": 300,
+     "p50_us": 45.4,
+     "p99_us": 72.0,
+     "p999_us": 97.9,
+     "max_us": 97.9,
+     "mean_us": 45.9,
+     "window_s": 2.99,
+     "cpu_s": 0.0137,
+     "cpu_pct": 0.46,
+     "ctxsw": [
+      617,
+      0
+     ],
+     "first_msg_ns": 8669601600385,
+     "threads": 14,
+     "hwm_kb": 26632
+    },
+    "pss_kb": {
+     "talker": 15462,
+     "listener": 15690.0
+    }
+   }
+  },
+  {
+   "rep": 0,
+   "config": "fastdds",
+   "case": "rate_256_100_queue",
+   "cooled_s": 0.0,
+   "before": {
+    "other_cpus_jiffies": [
+     450802,
+     1706949
+    ],
+    "time": "2026-11-25T15:16:44Z",
+    "temp_c": 56.2,
+    "governor": [
+     "performance"
+    ],
+    "throttled": 917504,
+    "freq_khz": {
+     "2": [
+      2400000,
+      2400000,
+      2400000
+     ],
+     "3": [
+      2400000,
+      2400000,
+      2400000
+     ]
+    },
+    "x86_throttle_count": null,
+    "loadavg1": 0.64
+   },
+   "after": {
+    "other_cpus_jiffies": [
+     450810,
+     1708053
+    ],
+    "time": "2026-11-25T15:16:49Z",
+    "temp_c": 55.6,
+    "governor": [
+     "performance"
+    ],
+    "throttled": 917504,
+    "freq_khz": {
+     "2": [
+      2400000,
+      2400000,
+      2400000
+     ],
+     "3": [
+      2400000,
+      2400000,
+      2400000
+     ]
+    },
+    "x86_throttle_count": null,
+    "loadavg1": 0.59
+   },
+   "other_load_pct": 0.7,
+   "flags": [],
+   "result": {
+    "talker": {
+     "role": "talker",
+     "rmw": "rmw_fastrtps_cpp",
+     "mode": "rate",
+     "qos": "queue",
+     "size": 256,
+     "loan_asked": false,
+     "loaned": false,
+     "rate_hz": 100,
+     "seconds": 3,
+     "warmup_msgs": 100,
+     "published": 300,
+     "late": 0,
+     "publish_p50_ns": 11889,
+     "publish_p99_ns": 17852,
+     "publish_mean_ns": 12110,
+     "window_s": 2.99,
+     "cpu_s": 0.0078,
+     "cpu_pct": 0.261,
+     "ctxsw": [
+      634,
+      0
+     ],
+     "threads": 14,
+     "hwm_kb": 26480
+    },
+    "listener": {
+     "role": "listener",
+     "rmw": "rmw_fastrtps_cpp",
+     "mode": "rate",
+     "qos": "queue",
+     "size": 256,
+     "can_loan": false,
+     "rate_hz": 100,
+     "seconds": 3,
+     "expected": 300,
+     "received": 300,
+     "lost": 0,
+     "torn": 0,
+     "out_of_order": 0,
+     "timed_out": false,
+     "samples": 300,
+     "p50_us": 38.0,
+     "p99_us": 58.3,
+     "p999_us": 62.3,
+     "max_us": 62.3,
+     "mean_us": 39.8,
+     "window_s": 2.99,
+     "cpu_s": 0.0125,
+     "cpu_pct": 0.418,
+     "ctxsw": [
+      671,
+      20
+     ],
+     "first_msg_ns": 8675396468160,
+     "threads": 14,
+     "hwm_kb": 26508
+    },
+    "pss_kb": {
+     "talker": 15566,
+     "listener": 15590.0
+    }
+   }
+  },
+  {
+   "rep": 0,
+   "config": "fastdds",
+   "case": "rate_256_1000_latest",
+   "cooled_s": 0.0,
+   "before": {
+    "other_cpus_jiffies": [
+     450810,
+     1708055
+    ],
+    "time": "2026-11-25T15:16:49Z",
+    "temp_c": 57.3,
+    "governor": [
+     "performance"
+    ],
+    "throttled": 917504,
+    "freq_khz": {
+     "2": [
+      2400000,
+      2400000,
+      2400000
+     ],
+     "3": [
+      2400000,
+      2400000,
+      2400000
+     ]
+    },
+    "x86_throttle_count": null,
+    "loadavg1": 0.59
+   },
+   "after": {
+    "other_cpus_jiffies": [
+     450817,
+     1709158
+    ],
+    "time": "2026-11-25T15:16:55Z",
+    "temp_c": 56.8,
+    "governor": [
+     "performance"
+    ],
+    "throttled": 917504,
+    "freq_khz": {
+     "2": [
+      2400000,
+      2400000,
+      2400000
+     ],
+     "3": [
+      2400000,
+      2400000,
+      2400000
+     ]
+    },
+    "x86_throttle_count": null,
+    "loadavg1": 0.54
+   },
+   "other_load_pct": 0.6,
+   "flags": [],
+   "result": {
+    "talker": {
+     "role": "talker",
+     "rmw": "rmw_fastrtps_cpp",
+     "mode": "rate",
+     "qos": "latest",
+     "size": 256,
+     "loan_asked": false,
+     "loaned": false,
+     "rate_hz": 1000,
+     "seconds": 3,
+     "warmup_msgs": 1000,
+     "published": 3000,
+     "late": 0,
+     "publish_p50_ns": 10649,
+     "publish_p99_ns": 11722,
+     "publish_mean_ns": 10552,
+     "window_s": 2.999,
+     "cpu_s": 0.0476,
+     "cpu_pct": 1.586,
+     "ctxsw": [
+      3027,
+      0
+     ],
+     "threads": 14,
+     "hwm_kb": 26504
+    },
+    "listener": {
+     "role": "listener",
+     "rmw": "rmw_fastrtps_cpp",
+     "mode": "rate",
+     "qos": "latest",
+     "size": 256,
+     "can_loan": false,
+     "rate_hz": 1000,
+     "seconds": 3,
+     "expected": 3000,
+     "received": 3000,
+     "lost": 0,
+     "torn": 0,
+     "out_of_order": 0,
+     "timed_out": false,
+     "samples": 3000,
+     "p50_us": 42.7,
+     "p99_us": 45.4,
+     "p999_us": 62.0,
+     "max_us": 424.1,
+     "mean_us": 42.6,
+     "window_s": 2.999,
+     "cpu_s": 0.1327,
+     "cpu_pct": 4.425,
+     "ctxsw": [
+      6017,
+      0
+     ],
+     "first_msg_ns": 8680649691230,
+     "threads": 14,
+     "hwm_kb": 26708
+    },
+    "pss_kb": {
+     "talker": 15490,
+     "listener": 15696.0
+    }
+   }
+  },
+  {
+   "rep": 0,
+   "config": "fastdds",
+   "case": "rate_256_1000_queue",
+   "cooled_s": 0.0,
+   "before": {
+    "other_cpus_jiffies": [
+     450817,
+     1709158
+    ],
+    "time": "2026-11-25T15:16:55Z",
+    "temp_c": 55.6,
+    "governor": [
+     "performance"
+    ],
+    "throttled": 917504,
+    "freq_khz": {
+     "2": [
+      2400000,
+      2400000,
+      2400000
+     ],
+     "3": [
+      2400000,
+      2400000,
+      2400000
+     ]
+    },
+    "x86_throttle_count": null,
+    "loadavg1": 0.54
+   },
+   "after": {
+    "other_cpus_jiffies": [
+     450826,
+     1710265
+    ],
+    "time": "2026-11-25T15:17:00Z",
+    "temp_c": 54.5,
+    "governor": [
+     "performance"
+    ],
+    "throttled": 917504,
+    "freq_khz": {
+     "2": [
+      2400000,
+      2400000,
+      2400000
+     ],
+     "3": [
+      2400000,
+      2400000,
+      2400000
+     ]
+    },
+    "x86_throttle_count": null,
+    "loadavg1": 0.5
+   },
+   "other_load_pct": 0.8,
+   "flags": [],
+   "result": {
+    "talker": {
+     "role": "talker",
+     "rmw": "rmw_fastrtps_cpp",
+     "mode": "rate",
+     "qos": "queue",
+     "size": 256,
+     "loan_asked": false,
+     "loaned": false,
+     "rate_hz": 1000,
+     "seconds": 3,
+     "warmup_msgs": 1000,
+     "published": 3000,
+     "late": 0,
+     "publish_p50_ns": 13982,
+     "publish_p99_ns": 17593,
+     "publish_mean_ns": 14444,
+     "window_s": 2.999,
+     "cpu_s": 0.0859,
+     "cpu_pct": 2.864,
+     "ctxsw": [
+      6161,
+      0
+     ],
+     "threads": 14,
+     "hwm_kb": 26520
+    },
+    "listener": {
+     "role": "listener",
+     "rmw": "rmw_fastrtps_cpp",
+     "mode": "rate",
+     "qos": "queue",
+     "size": 256,
+     "can_loan": false,
+     "rate_hz": 1000,
+     "seconds": 3,
+     "expected": 3000,
+     "received": 3000,
+     "lost": 0,
+     "torn": 0,
+     "out_of_order": 0,
+     "timed_out": false,
+     "samples": 3000,
+     "p50_us": 41.4,
+     "p99_us": 47.6,
+     "p999_us": 65.1,
+     "max_us": 104.0,
+     "mean_us": 42.0,
+     "window_s": 2.999,
+     "cpu_s": 0.1219,
+     "cpu_pct": 4.065,
+     "ctxsw": [
+      6319,
+      20
+     ],
+     "first_msg_ns": 8686180146801,
+     "threads": 14,
+     "hwm_kb": 26532
+    },
+    "pss_kb": {
+     "talker": 15580,
+     "listener": 15592.0
+    }
+   }
+  },
+  {
+   "rep": 0,
+   "config": "fastdds",
+   "case": "rate_256_10000_latest",
+   "cooled_s": 0.0,
+   "before": {
+    "other_cpus_jiffies": [
+     450826,
+     1710265
+    ],
+    "time": "2026-11-25T15:17:00Z",
+    "temp_c": 54.5,
+    "governor": [
+     "performance"
+    ],
+    "throttled": 917504,
+    "freq_khz": {
+     "2": [
+      2400000,
+      2400000,
+      2400000
+     ],
+     "3": [
+      2400000,
+      2400000,
+      2400000
+     ]
+    },
+    "x86_throttle_count": null,
+    "loadavg1": 0.5
+   },
+   "after": {
+    "other_cpus_jiffies": [
+     450833,
+     1711369
+    ],
+    "time": "2026-11-25T15:17:06Z",
+    "temp_c": 55.6,
+    "governor": [
+     "performance"
+    ],
+    "throttled": 917504,
+    "freq_khz": {
+     "2": [
+      2400000,
+      2400000,
+      2400000
+     ],
+     "3": [
+      2400000,
+      2400000,
+      2400000
+     ]
+    },
+    "x86_throttle_count": null,
+    "loadavg1": 0.54
+   },
+   "other_load_pct": 0.6,
+   "flags": [],
+   "result": {
+    "talker": {
+     "role": "talker",
+     "rmw": "rmw_fastrtps_cpp",
+     "mode": "rate",
+     "qos": "latest",
+     "size": 256,
+     "loan_asked": false,
+     "loaned": false,
+     "rate_hz": 10000,
+     "seconds": 3,
+     "warmup_msgs": 10000,
+     "published": 30000,
+     "late": 2,
+     "publish_p50_ns": 11259,
+     "publish_p99_ns": 12037,
+     "publish_mean_ns": 11303,
+     "window_s": 3.0,
+     "cpu_s": 0.506,
+     "cpu_pct": 16.866,
+     "ctxsw": [
+      30027,
+      0
+     ],
+     "threads": 14,
+     "hwm_kb": 26608
+    },
+    "listener": {
+     "role": "listener",
+     "rmw": "rmw_fastrtps_cpp",
+     "mode": "rate",
+     "qos": "latest",
+     "size": 256,
+     "can_loan": false,
+     "rate_hz": 10000,
+     "seconds": 3,
+     "expected": 30000,
+     "received": 29995,
+     "lost": 5,
+     "torn": 0,
+     "out_of_order": 0,
+     "timed_out": false,
+     "samples": 29995,
+     "p50_us": 37.5,
+     "p99_us": 43.7,
+     "p999_us": 46.4,
+     "max_us": 364.5,
+     "mean_us": 38.1,
+     "window_s": 3.0,
+     "cpu_s": 1.1561,
+     "cpu_pct": 38.538,
+     "ctxsw": [
+      60009,
+      7
+     ],
+     "first_msg_ns": 8691707038705,
+     "threads": 14,
+     "hwm_kb": 26640
+    },
+    "pss_kb": {
+     "talker": 15616,
+     "listener": 15634.0
+    }
+   }
+  },
+  {
+   "rep": 0,
+   "config": "fastdds",
+   "case": "rate_256_10000_queue",
+   "cooled_s": 0.0,
+   "before": {
+    "other_cpus_jiffies": [
+     450834,
+     1711370
+    ],
+    "time": "2026-11-25T15:17:06Z",
+    "temp_c": 55.6,
+    "governor": [
+     "performance"
+    ],
+    "throttled": 917504,
+    "freq_khz": {
+     "2": [
+      2400000,
+      2400000,
+      2400000
+     ],
+     "3": [
+      2400000,
+      2400000,
+      2400000
+     ]
+    },
+    "x86_throttle_count": null,
+    "loadavg1": 0.54
+   },
+   "after": {
+    "other_cpus_jiffies": [
+     450841,
+     1712475
+    ],
+    "time": "2026-11-25T15:17:12Z",
+    "temp_c": 57.3,
+    "governor": [
+     "performance"
+    ],
+    "throttled": 917504,
+    "freq_khz": {
+     "2": [
+      2400000,
+      2400000,
+      2400000
+     ],
+     "3": [
+      2400000,
+      2400000,
+      2400000
+     ]
+    },
+    "x86_throttle_count": null,
+    "loadavg1": 0.53
+   },
+   "other_load_pct": 0.6,
+   "flags": [],
+   "result": {
+    "talker": {
+     "role": "talker",
+     "rmw": "rmw_fastrtps_cpp",
+     "mode": "rate",
+     "qos": "queue",
+     "size": 256,
+     "loan_asked": false,
+     "loaned": false,
+     "rate_hz": 10000,
+     "seconds": 3,
+     "warmup_msgs": 10000,
+     "published": 30000,
+     "late": 9,
+     "publish_p50_ns": 12204,
+     "publish_p99_ns": 13149,
+     "publish_mean_ns": 12002,
+     "window_s": 3.0,
+     "cpu_s": 0.7001,
+     "cpu_pct": 23.336,
+     "ctxsw": [
+      60533,
+      20
+     ],
+     "threads": 14,
+     "hwm_kb": 26644
+    },
+    "listener": {
+     "role": "listener",
+     "rmw": "rmw_fastrtps_cpp",
+     "mode": "rate",
+     "qos": "queue",
+     "size": 256,
+     "can_loan": false,
+     "rate_hz": 10000,
+     "seconds": 3,
+     "expected": 30000,
+     "received": 30000,
+     "lost": 0,
+     "torn": 0,
+     "out_of_order": 0,
+     "timed_out": false,
+     "samples": 30000,
+     "p50_us": 41.4,
+     "p99_us": 57.6,
+     "p999_us": 80.4,
+     "max_us": 1019.4,
+     "mean_us": 41.7,
+     "window_s": 3.0,
+     "cpu_s": 1.2104,
+     "cpu_pct": 40.349,
+     "ctxsw": [
+      61020,
+      44
+     ],
+     "first_msg_ns": 8697237140924,
+     "threads": 14,
+     "hwm_kb": 26648
+    },
+    "pss_kb": {
+     "talker": 15648,
+     "listener": 15642.0
+    }
+   }
+  },
+  {
+   "rep": 0,
+   "config": "fastdds",
+   "case": "nopin_256_1000_latest",
+   "cooled_s": 0.0,
+   "before": {
+    "other_cpus_jiffies": [
+     450842,
+     1712476
+    ],
+    "time": "2026-11-25T15:17:12Z",
+    "temp_c": 55.6,
+    "governor": [
+     "performance"
+    ],
+    "throttled": 917504,
+    "freq_khz": {
+     "2": [
+      2400000,
+      2400000,
+      2400000
+     ],
+     "3": [
+      2400000,
+      2400000,
+      2400000
+     ]
+    },
+    "x86_throttle_count": null,
+    "loadavg1": 0.53
+   },
+   "after": {
+    "other_cpus_jiffies": [
+     450859,
+     1713564
+    ],
+    "time": "2026-11-25T15:17:17Z",
+    "temp_c": 56.8,
+    "governor": [
+     "performance"
+    ],
+    "throttled": 917504,
+    "freq_khz": {
+     "2": [
+      2400000,
+      2400000,
+      2400000
+     ],
+     "3": [
+      2400000,
+      2400000,
+      2400000
+     ]
+    },
+    "x86_throttle_count": null,
+    "loadavg1": 0.49
+   },
+   "other_load_pct": 1.6,
+   "flags": [],
+   "result": {
+    "talker": {
+     "role": "talker",
+     "rmw": "rmw_fastrtps_cpp",
+     "mode": "rate",
+     "qos": "latest",
+     "size": 256,
+     "loan_asked": false,
+     "loaned": false,
+     "rate_hz": 1000,
+     "seconds": 3,
+     "warmup_msgs": 1000,
+     "published": 3000,
+     "late": 0,
+     "publish_p50_ns": 14648,
+     "publish_p99_ns": 17592,
+     "publish_mean_ns": 14842,
+     "window_s": 2.999,
+     "cpu_s": 0.0625,
+     "cpu_pct": 2.086,
+     "ctxsw": [
+      3028,
+      0
+     ],
+     "threads": 14,
+     "hwm_kb": 26500
+    },
+    "listener": {
+     "role": "listener",
+     "rmw": "rmw_fastrtps_cpp",
+     "mode": "rate",
+     "qos": "latest",
+     "size": 256,
+     "can_loan": false,
+     "rate_hz": 1000,
+     "seconds": 3,
+     "expected": 3000,
+     "received": 3000,
+     "lost": 0,
+     "torn": 0,
+     "out_of_order": 0,
+     "timed_out": false,
+     "samples": 3000,
+     "p50_us": 37.4,
+     "p99_us": 47.2,
+     "p999_us": 71.2,
+     "max_us": 133.1,
+     "mean_us": 38.8,
+     "window_s": 2.999,
+     "cpu_s": 0.1132,
+     "cpu_pct": 3.776,
+     "ctxsw": [
+      6016,
+      0
+     ],
+     "first_msg_ns": 8702762572328,
+     "threads": 14,
+     "hwm_kb": 26528
+    },
+    "pss_kb": {
+     "talker": 15560,
+     "listener": 15586.0
+    }
+   }
+  },
+  {
+   "rep": 0,
+   "config": "fastdds",
+   "case": "frame_1048576_30_latest",
+   "cooled_s": 0.0,
+   "before": {
+    "other_cpus_jiffies": [
+     450859,
+     1713564
+    ],
+    "time": "2026-11-25T15:17:17Z",
+    "temp_c": 55.6,
+    "governor": [
+     "performance"
+    ],
+    "throttled": 917504,
+    "freq_khz": {
+     "2": [
+      2400000,
+      2400000,
+      2400000
+     ],
+     "3": [
+      2400000,
+      2400000,
+      2400000
+     ]
+    },
+    "x86_throttle_count": null,
+    "loadavg1": 0.49
+   },
+   "after": {
+    "other_cpus_jiffies": [
+     450869,
+     1714670
+    ],
+    "time": "2026-11-25T15:17:23Z",
+    "temp_c": 54.5,
+    "governor": [
+     "performance"
+    ],
+    "throttled": 917504,
+    "freq_khz": {
+     "2": [
+      2400000,
+      2400000,
+      2400000
+     ],
+     "3": [
+      2400000,
+      2400000,
+      2400000
+     ]
+    },
+    "x86_throttle_count": null,
+    "loadavg1": 0.45
+   },
+   "other_load_pct": 0.9,
+   "flags": [],
+   "result": {
+    "talker": {
+     "role": "talker",
+     "rmw": "rmw_fastrtps_cpp",
+     "mode": "rate",
+     "qos": "latest",
+     "size": 1048576,
+     "loan_asked": false,
+     "loaned": false,
+     "rate_hz": 30,
+     "seconds": 3,
+     "warmup_msgs": 30,
+     "published": 90,
+     "late": 0,
+     "publish_p50_ns": 814981,
+     "publish_p99_ns": 1245814,
+     "publish_mean_ns": 829209,
+     "window_s": 2.967,
+     "cpu_s": 0.0764,
+     "cpu_pct": 2.576,
+     "ctxsw": [
+      115,
+      0
+     ],
+     "threads": 14,
+     "hwm_kb": 28536
+    },
+    "listener": {
+     "role": "listener",
+     "rmw": "rmw_fastrtps_cpp",
+     "mode": "rate",
+     "qos": "latest",
+     "size": 1048576,
+     "can_loan": false,
+     "rate_hz": 30,
+     "seconds": 3,
+     "expected": 90,
+     "received": 90,
+     "lost": 0,
+     "torn": 0,
+     "out_of_order": 0,
+     "timed_out": false,
+     "samples": 90,
+     "p50_us": 1087.2,
+     "p99_us": 1648.8,
+     "p999_us": 1648.8,
+     "max_us": 1648.8,
+     "mean_us": 1100.7,
+     "window_s": 2.967,
+     "cpu_s": 0.0856,
+     "cpu_pct": 2.884,
+     "ctxsw": [
+      1038,
+      0
+     ],
+     "first_msg_ns": 8708686673714,
+     "threads": 14,
+     "hwm_kb": 29344
+    },
+    "pss_kb": {
+     "talker": 17402,
+     "listener": 18210.0
+    }
+   }
+  },
+  {
+   "rep": 0,
+   "config": "fastdds",
+   "case": "idle",
+   "cooled_s": 0.0,
+   "before": {
+    "other_cpus_jiffies": [
+     450869,
+     1714670
+    ],
+    "time": "2026-11-25T15:17:23Z",
+    "temp_c": 54.5,
+    "governor": [
+     "performance"
+    ],
+    "throttled": 917504,
+    "freq_khz": {
+     "2": [
+      2400000,
+      2400000,
+      2400000
+     ],
+     "3": [
+      2400000,
+      2400000,
+      2400000
+     ]
+    },
+    "x86_throttle_count": null,
+    "loadavg1": 0.45
+   },
+   "after": {
+    "other_cpus_jiffies": [
+     450877,
+     1715774
+    ],
+    "time": "2026-11-25T15:17:28Z",
+    "temp_c": 55.1,
+    "governor": [
+     "performance"
+    ],
+    "throttled": 917504,
+    "freq_khz": {
+     "2": [
+      2400000,
+      2400000,
+      2400000
+     ],
+     "3": [
+      2400000,
+      2400000,
+      2400000
+     ]
+    },
+    "x86_throttle_count": null,
+    "loadavg1": 0.41
+   },
+   "other_load_pct": 0.7,
+   "flags": [],
+   "result": {
+    "talker": {
+     "role": "talker",
+     "rmw": "rmw_fastrtps_cpp",
+     "mode": "idle",
+     "qos": "latest",
+     "size": 256,
+     "loan_asked": false,
+     "loaned": false,
+     "window_s": 3.0,
+     "cpu_s": 0.0008,
+     "cpu_pct": 0.027,
+     "ctxsw": [
+      40,
+      0
+     ],
+     "threads": 14,
+     "hwm_kb": 26504
+    },
+    "listener": {
+     "role": "listener",
+     "rmw": "rmw_fastrtps_cpp",
+     "mode": "idle",
+     "qos": "latest",
+     "size": 256,
+     "can_loan": false,
+     "window_s": 3.0,
+     "cpu_s": 0.0007,
+     "cpu_pct": 0.023,
+     "ctxsw": [
+      30,
+      0
+     ],
+     "msgs": 0,
+     "threads": 14,
+     "hwm_kb": 26536
+    },
+    "pss_kb": {
+     "talker": 15564,
+     "listener": 15600
+    }
+   }
+  },
+  {
+   "rep": 0,
+   "config": "fastdds",
+   "case": "startup",
+   "cooled_s": 0.0,
+   "before": {
+    "other_cpus_jiffies": [
+     450877,
+     1715774
+    ],
+    "time": "2026-11-25T15:17:28Z",
+    "temp_c": 55.1,
+    "governor": [
+     "performance"
+    ],
+    "throttled": 917504,
+    "freq_khz": {
+     "2": [
+      2400000,
+      2400000,
+      2400000
+     ],
+     "3": [
+      2400000,
+      2400000,
+      2400000
+     ]
+    },
+    "x86_throttle_count": null,
+    "loadavg1": 0.41
+   },
+   "after": {
+    "other_cpus_jiffies": [
+     450883,
+     1715961
+    ],
+    "time": "2026-11-25T15:17:29Z",
+    "temp_c": 55.1,
+    "governor": [
+     "performance"
+    ],
+    "throttled": 917504,
+    "freq_khz": {
+     "2": [
+      2400000,
+      2400000,
+      2400000
+     ],
+     "3": [
+      2400000,
+      2400000,
+      2400000
+     ]
+    },
+    "x86_throttle_count": null,
+    "loadavg1": 0.41
+   },
+   "other_load_pct": 3.2,
+   "flags": [],
+   "result": {
+    "listener": {
+     "role": "listener",
+     "rmw": "rmw_fastrtps_cpp",
+     "mode": "startup",
+     "qos": "latest",
+     "size": 256,
+     "can_loan": false,
+     "first_msg_ns": 8719044071856,
+     "timed_out": false
+    },
+    "start_ns": 8718791432152,
+    "pss_kb": {}
+   }
+  },
+  {
+   "rep": 0,
+   "config": "fastdds",
+   "case": "composed_256_1000_latest",
+   "cooled_s": 0.0,
+   "before": {
+    "other_cpus_jiffies": [
+     450883,
+     1715961
+    ],
+    "time": "2026-11-25T15:17:29Z",
+    "temp_c": 54.5,
+    "governor": [
+     "performance"
+    ],
+    "throttled": 917504,
+    "freq_khz": {
+     "2": [
+      2400000,
+      2400000,
+      2400000
+     ],
+     "3": [
+      2400000,
+      2400000,
+      2400000
+     ]
+    },
+    "x86_throttle_count": null,
+    "loadavg1": 0.41
+   },
+   "after": {
+    "other_cpus_jiffies": [
+     450889,
+     1716865
+    ],
+    "time": "2026-11-25T15:17:34Z",
+    "temp_c": 55.1,
+    "governor": [
+     "performance"
+    ],
+    "throttled": 917504,
+    "freq_khz": {
+     "2": [
+      2400000,
+      2400000,
+      2400000
+     ],
+     "3": [
+      2400000,
+      2400000,
+      2400000
+     ]
+    },
+    "x86_throttle_count": null,
+    "loadavg1": 0.38
+   },
+   "other_load_pct": 0.7,
+   "flags": [],
+   "result": {
+    "composed": {
+     "role": "composed",
+     "rmw": "rmw_fastrtps_cpp",
+     "mode": "rate",
+     "qos": "latest",
+     "size": 256,
+     "intra_process": true,
+     "rate_hz": 1000,
+     "seconds": 3,
+     "expected": 3000,
+     "received": 3000,
+     "lost": 0,
+     "torn": 0,
+     "timed_out": false,
+     "samples": 3000,
+     "p50_us": 4.0,
+     "p99_us": 4.8,
+     "p999_us": 5.5,
+     "max_us": 6.0,
+     "mean_us": 4.1,
+     "window_s": 3.0,
+     "cpu_s": 0.1158,
+     "cpu_pct": 3.86,
+     "ctxsw": [
+      3023,
+      1
+     ],
+     "threads": 14,
+     "hwm_kb": 27708
+    },
+    "pss_kb": {
+     "composed": 23618
+    }
+   }
+  },
+  {
+   "rep": 0,
+   "config": "fastdds-datasharing",
+   "case": "cost_16",
+   "cooled_s": 0.0,
+   "before": {
+    "other_cpus_jiffies": [
+     450890,
+     1716867
+    ],
+    "time": "2026-11-25T15:17:34Z",
+    "temp_c": 54.5,
+    "governor": [
+     "performance"
+    ],
+    "throttled": 917504,
+    "freq_khz": {
+     "2": [
+      2400000,
+      2400000,
+      2400000
+     ],
+     "3": [
+      2400000,
+      2400000,
+      2400000
+     ]
+    },
+    "x86_throttle_count": null,
+    "loadavg1": 0.38
+   },
+   "after": {
+    "other_cpus_jiffies": [
+     450894,
+     1716970
+    ],
+    "time": "2026-11-25T15:17:34Z",
+    "temp_c": 54.5,
+    "governor": [
+     "performance"
+    ],
+    "throttled": 917504,
+    "freq_khz": {
+     "2": [
+      2400000,
+      2400000,
+      2400000
+     ],
+     "3": [
+      2400000,
+      2400000,
+      2400000
+     ]
+    },
+    "x86_throttle_count": null,
+    "loadavg1": 0.38
+   },
+   "other_load_pct": 3.9,
+   "flags": [],
+   "result": {
+    "talker": {
+     "role": "talker",
+     "rmw": "rmw_fastrtps_cpp",
+     "mode": "cost",
+     "qos": "latest",
+     "size": 16,
+     "loan_asked": true,
+     "loaned": true,
+     "count": 20000,
+     "ns": 1333.5,
+     "raw": [
+      1333.5,
+      1328.2,
+      1341.7
+     ]
+    }
+   }
+  },
+  {
+   "rep": 0,
+   "config": "fastdds-datasharing",
+   "case": "cost_256",
+   "cooled_s": 0.0,
+   "before": {
+    "other_cpus_jiffies": [
+     450894,
+     1716970
+    ],
+    "time": "2026-11-25T15:17:34Z",
+    "temp_c": 55.1,
+    "governor": [
+     "performance"
+    ],
+    "throttled": 917504,
+    "freq_khz": {
+     "2": [
+      2400000,
+      2400000,
+      2400000
+     ],
+     "3": [
+      2400000,
+      2400000,
+      2400000
+     ]
+    },
+    "x86_throttle_count": null,
+    "loadavg1": 0.38
+   },
+   "after": {
+    "other_cpus_jiffies": [
+     450897,
+     1717070
+    ],
+    "time": "2026-11-25T15:17:35Z",
+    "temp_c": 55.1,
+    "governor": [
+     "performance"
+    ],
+    "throttled": 917504,
+    "freq_khz": {
+     "2": [
+      2400000,
+      2400000,
+      2400000
+     ],
+     "3": [
+      2400000,
+      2400000,
+      2400000
+     ]
+    },
+    "x86_throttle_count": null,
+    "loadavg1": 0.38
+   },
+   "other_load_pct": 3.0,
+   "flags": [],
+   "result": {
+    "talker": {
+     "role": "talker",
+     "rmw": "rmw_fastrtps_cpp",
+     "mode": "cost",
+     "qos": "latest",
+     "size": 256,
+     "loan_asked": true,
+     "loaned": true,
+     "count": 20000,
+     "ns": 1283.9,
+     "raw": [
+      1289.0,
+      1283.9,
+      1281.9
+     ]
+    }
+   }
+  },
+  {
+   "rep": 0,
+   "config": "fastdds-datasharing",
+   "case": "cost_4096",
+   "cooled_s": 0.0,
+   "before": {
+    "other_cpus_jiffies": [
+     450898,
+     1717072
+    ],
+    "time": "2026-11-25T15:17:35Z",
+    "temp_c": 54.5,
+    "governor": [
+     "performance"
+    ],
+    "throttled": 917504,
+    "freq_khz": {
+     "2": [
+      2400000,
+      2400000,
+      2400000
+     ],
+     "3": [
+      2400000,
+      2400000,
+      2400000
+     ]
+    },
+    "x86_throttle_count": null,
+    "loadavg1": 0.38
+   },
+   "after": {
+    "other_cpus_jiffies": [
+     450901,
+     1717173
+    ],
+    "time": "2026-11-25T15:17:35Z",
+    "temp_c": 54.5,
+    "governor": [
+     "performance"
+    ],
+    "throttled": 917504,
+    "freq_khz": {
+     "2": [
+      2400000,
+      2400000,
+      2400000
+     ],
+     "3": [
+      2400000,
+      2400000,
+      2400000
+     ]
+    },
+    "x86_throttle_count": null,
+    "loadavg1": 0.38
+   },
+   "other_load_pct": 3.0,
+   "flags": [],
+   "result": {
+    "talker": {
+     "role": "talker",
+     "rmw": "rmw_fastrtps_cpp",
+     "mode": "cost",
+     "qos": "latest",
+     "size": 4096,
+     "loan_asked": true,
+     "loaned": true,
+     "count": 20000,
+     "ns": 1331.1,
+     "raw": [
+      1330.0,
+      1331.1,
+      1464.9
+     ]
+    }
+   }
+  },
+  {
+   "rep": 0,
+   "config": "fastdds-datasharing",
+   "case": "cost_1048576",
+   "cooled_s": 0.0,
+   "before": {
+    "other_cpus_jiffies": [
+     450901,
+     1717173
+    ],
+    "time": "2026-11-25T15:17:35Z",
+    "temp_c": 54.5,
+    "governor": [
+     "performance"
+    ],
+    "throttled": 917504,
+    "freq_khz": {
+     "2": [
+      2400000,
+      2400000,
+      2400000
+     ],
+     "3": [
+      2400000,
+      2400000,
+      2400000
+     ]
+    },
+    "x86_throttle_count": null,
+    "loadavg1": 0.38
+   },
+   "after": {
+    "other_cpus_jiffies": [
+     450905,
+     1717275
+    ],
+    "time": "2026-11-25T15:17:36Z",
+    "temp_c": 55.1,
+    "governor": [
+     "performance"
+    ],
+    "throttled": 917504,
+    "freq_khz": {
+     "2": [
+      2400000,
+      2400000,
+      2400000
+     ],
+     "3": [
+      2400000,
+      2400000,
+      2400000
+     ]
+    },
+    "x86_throttle_count": null,
+    "loadavg1": 0.38
+   },
+   "other_load_pct": 3.9,
+   "flags": [],
+   "result": {
+    "talker": {
+     "role": "talker",
+     "rmw": "rmw_fastrtps_cpp",
+     "mode": "cost",
+     "qos": "latest",
+     "size": 1048576,
+     "loan_asked": true,
+     "loaned": true,
+     "count": 78,
+     "ns": 1319.1,
+     "raw": [
+      1827.2,
+      1319.1,
+      1317.2
+     ]
+    }
+   }
+  },
+  {
+   "rep": 0,
+   "config": "fastdds-datasharing",
+   "case": "take_16",
+   "cooled_s": 0.0,
+   "before": {
+    "other_cpus_jiffies": [
+     450905,
+     1717275
+    ],
+    "time": "2026-11-25T15:17:36Z",
+    "temp_c": 56.2,
+    "governor": [
+     "performance"
+    ],
+    "throttled": 917504,
+    "freq_khz": {
+     "2": [
+      2400000,
+      2400000,
+      2400000
+     ],
+     "3": [
+      2400000,
+      2400000,
+      2400000
+     ]
+    },
+    "x86_throttle_count": null,
+    "loadavg1": 0.38
+   },
+   "after": {
+    "other_cpus_jiffies": [
+     450909,
+     1717477
+    ],
+    "time": "2026-11-25T15:17:37Z",
+    "temp_c": 55.1,
+    "governor": [
+     "performance"
+    ],
+    "throttled": 917504,
+    "freq_khz": {
+     "2": [
+      2400000,
+      2400000,
+      2400000
+     ],
+     "3": [
+      2400000,
+      2400000,
+      2400000
+     ]
+    },
+    "x86_throttle_count": null,
+    "loadavg1": 0.35
+   },
+   "other_load_pct": 2.0,
+   "flags": [],
+   "result": {
+    "talker": {
+     "role": "talker",
+     "rmw": "rmw_fastrtps_cpp",
+     "mode": "take",
+     "qos": "latest",
+     "size": 16,
+     "loan_asked": true,
+     "loaned": true,
+     "count": 20000,
+     "ns": 1487.0,
+     "empty_polls": 0,
+     "wrong": 0,
+     "gave_up": 0,
+     "raw": [
+      1487.0,
+      1483.1,
+      1487.7
+     ]
+    }
+   }
+  },
+  {
+   "rep": 0,
+   "config": "fastdds-datasharing",
+   "case": "take_256",
+   "cooled_s": 0.0,
+   "before": {
+    "other_cpus_jiffies": [
+     450909,
+     1717478
+    ],
+    "time": "2026-11-25T15:17:37Z",
+    "temp_c": 56.2,
+    "governor": [
+     "performance"
+    ],
+    "throttled": 917504,
+    "freq_khz": {
+     "2": [
+      2400000,
+      2400000,
+      2400000
+     ],
+     "3": [
+      2400000,
+      2400000,
+      2400000
+     ]
+    },
+    "x86_throttle_count": null,
+    "loadavg1": 0.35
+   },
+   "after": {
+    "other_cpus_jiffies": [
+     450913,
+     1717679
+    ],
+    "time": "2026-11-25T15:17:38Z",
+    "temp_c": 55.6,
+    "governor": [
+     "performance"
+    ],
+    "throttled": 917504,
+    "freq_khz": {
+     "2": [
+      2400000,
+      2400000,
+      2400000
+     ],
+     "3": [
+      2400000,
+      2400000,
+      2400000
+     ]
+    },
+    "x86_throttle_count": null,
+    "loadavg1": 0.35
+   },
+   "other_load_pct": 2.0,
+   "flags": [],
+   "result": {
+    "talker": {
+     "role": "talker",
+     "rmw": "rmw_fastrtps_cpp",
+     "mode": "take",
+     "qos": "latest",
+     "size": 256,
+     "loan_asked": true,
+     "loaned": true,
+     "count": 20000,
+     "ns": 1468.2,
+     "empty_polls": 0,
+     "wrong": 0,
+     "gave_up": 0,
+     "raw": [
+      1435.9,
+      1474.6,
+      1468.2
+     ]
+    }
+   }
+  },
+  {
+   "rep": 0,
+   "config": "fastdds-datasharing",
+   "case": "take_4096",
+   "cooled_s": 0.0,
+   "before": {
+    "other_cpus_jiffies": [
+     450913,
+     1717680
+    ],
+    "time": "2026-11-25T15:17:38Z",
+    "temp_c": 56.8,
+    "governor": [
+     "performance"
+    ],
+    "throttled": 917504,
+    "freq_khz": {
+     "2": [
+      2400000,
+      2400000,
+      2400000
+     ],
+     "3": [
+      2400000,
+      2400000,
+      2400000
+     ]
+    },
+    "x86_throttle_count": null,
+    "loadavg1": 0.35
+   },
+   "after": {
+    "other_cpus_jiffies": [
+     450915,
+     1717880
+    ],
+    "time": "2026-11-25T15:17:39Z",
+    "temp_c": 55.6,
+    "governor": [
+     "performance"
+    ],
+    "throttled": 917504,
+    "freq_khz": {
+     "2": [
+      2400000,
+      2400000,
+      2400000
+     ],
+     "3": [
+      2400000,
+      2400000,
+      2400000
+     ]
+    },
+    "x86_throttle_count": null,
+    "loadavg1": 0.35
+   },
+   "other_load_pct": 1.0,
+   "flags": [],
+   "result": {
+    "talker": {
+     "role": "talker",
+     "rmw": "rmw_fastrtps_cpp",
+     "mode": "take",
+     "qos": "latest",
+     "size": 4096,
+     "loan_asked": true,
+     "loaned": true,
+     "count": 20000,
+     "ns": 1613.3,
+     "empty_polls": 0,
+     "wrong": 0,
+     "gave_up": 0,
+     "raw": [
+      1620.7,
+      1602.2,
+      1613.3
+     ]
+    }
+   }
+  },
+  {
+   "rep": 0,
+   "config": "fastdds-datasharing",
+   "case": "take_1048576",
+   "cooled_s": 0.0,
+   "before": {
+    "other_cpus_jiffies": [
+     450916,
+     1717881
+    ],
+    "time": "2026-11-25T15:17:39Z",
+    "temp_c": 56.2,
+    "governor": [
+     "performance"
+    ],
+    "throttled": 917504,
+    "freq_khz": {
+     "2": [
+      2400000,
+      2400000,
+      2400000
+     ],
+     "3": [
+      2400000,
+      2400000,
+      2400000
+     ]
+    },
+    "x86_throttle_count": null,
+    "loadavg1": 0.35
+   },
+   "after": {
+    "other_cpus_jiffies": [
+     450920,
+     1717984
+    ],
+    "time": "2026-11-25T15:17:39Z",
+    "temp_c": 55.6,
+    "governor": [
+     "performance"
+    ],
+    "throttled": 917504,
+    "freq_khz": {
+     "2": [
+      2400000,
+      2400000,
+      2400000
+     ],
+     "3": [
+      2400000,
+      2400000,
+      2400000
+     ]
+    },
+    "x86_throttle_count": null,
+    "loadavg1": 0.35
+   },
+   "other_load_pct": 3.9,
+   "flags": [],
+   "result": {
+    "talker": {
+     "role": "talker",
+     "rmw": "rmw_fastrtps_cpp",
+     "mode": "take",
+     "qos": "latest",
+     "size": 1048576,
+     "loan_asked": true,
+     "loaned": true,
+     "count": 78,
+     "ns": 135532.5,
+     "empty_polls": 0,
+     "wrong": 0,
+     "gave_up": 0,
+     "raw": [
+      154562.4,
+      134639.6,
+      135532.5
+     ]
+    }
+   }
+  },
+  {
+   "rep": 0,
+   "config": "fastdds-datasharing",
+   "case": "rate_256_100_latest",
+   "cooled_s": 0.0,
+   "before": {
+    "other_cpus_jiffies": [
+     450921,
+     1717985
+    ],
+    "time": "2026-11-25T15:17:39Z",
+    "temp_c": 55.1,
+    "governor": [
+     "performance"
+    ],
+    "throttled": 917504,
+    "freq_khz": {
+     "2": [
+      2400000,
+      2400000,
+      2400000
+     ],
+     "3": [
+      2400000,
+      2400000,
+      2400000
+     ]
+    },
+    "x86_throttle_count": null,
+    "loadavg1": 0.35
+   },
+   "after": {
+    "other_cpus_jiffies": [
+     450930,
+     1719090
+    ],
+    "time": "2026-11-25T15:17:45Z",
+    "temp_c": 54.5,
+    "governor": [
+     "performance"
+    ],
+    "throttled": 917504,
+    "freq_khz": {
+     "2": [
+      2400000,
+      2400000,
+      2400000
+     ],
+     "3": [
+      2400000,
+      2400000,
+      2400000
+     ]
+    },
+    "x86_throttle_count": null,
+    "loadavg1": 0.32
+   },
+   "other_load_pct": 0.8,
+   "flags": [],
+   "result": {
+    "talker": {
+     "role": "talker",
+     "rmw": "rmw_fastrtps_cpp",
+     "mode": "rate",
+     "qos": "latest",
+     "size": 256,
+     "loan_asked": true,
+     "loaned": true,
+     "rate_hz": 100,
+     "seconds": 3,
+     "warmup_msgs": 100,
+     "published": 300,
+     "late": 0,
+     "publish_p50_ns": 6963,
+     "publish_p99_ns": 14703,
+     "publish_mean_ns": 7409,
+     "window_s": 2.99,
+     "cpu_s": 0.0043,
+     "cpu_pct": 0.143,
+     "ctxsw": [
+      327,
+      0
+     ],
+     "threads": 14,
+     "hwm_kb": 26668
+    },
+    "listener": {
+     "role": "listener",
+     "rmw": "rmw_fastrtps_cpp",
+     "mode": "rate",
+     "qos": "latest",
+     "size": 256,
+     "can_loan": true,
+     "rate_hz": 100,
+     "seconds": 3,
+     "expected": 300,
+     "received": 300,
+     "lost": 0,
+     "torn": 0,
+     "out_of_order": 0,
+     "timed_out": false,
+     "samples": 300,
+     "p50_us": 25.8,
+     "p99_us": 43.6,
+     "p999_us": 96.8,
+     "max_us": 96.8,
+     "mean_us": 26.7,
+     "window_s": 2.99,
+     "cpu_s": 0.0107,
+     "cpu_pct": 0.357,
+     "ctxsw": [
+      627,
+      0
+     ],
+     "first_msg_ns": 8730415583442,
+     "threads": 15,
+     "hwm_kb": 26712
+    },
+    "pss_kb": {
+     "talker": 15654,
+     "listener": 15705.0
+    }
+   }
+  },
+  {
+   "rep": 0,
+   "config": "fastdds-datasharing",
+   "case": "rate_256_100_queue",
+   "cooled_s": 0.0,
+   "before": {
+    "other_cpus_jiffies": [
+     450930,
+     1719090
+    ],
+    "time": "2026-11-25T15:17:45Z",
+    "temp_c": 54.5,
+    "governor": [
+     "performance"
+    ],
+    "throttled": 917504,
+    "freq_khz": {
+     "2": [
+      2400000,
+      2400000,
+      2400000
+     ],
+     "3": [
+      2400000,
+      2400000,
+      2400000
+     ]
+    },
+    "x86_throttle_count": null,
+    "loadavg1": 0.32
+   },
+   "after": {
+    "other_cpus_jiffies": [
+     450941,
+     1720194
+    ],
+    "time": "2026-11-25T15:17:50Z",
+    "temp_c": 54.5,
+    "governor": [
+     "performance"
+    ],
+    "throttled": 917504,
+    "freq_khz": {
+     "2": [
+      2400000,
+      2400000,
+      2400000
+     ],
+     "3": [
+      2400000,
+      2400000,
+      2400000
+     ]
+    },
+    "x86_throttle_count": null,
+    "loadavg1": 0.45
+   },
+   "other_load_pct": 1.0,
+   "flags": [],
+   "result": {
+    "talker": {
+     "role": "talker",
+     "rmw": "rmw_fastrtps_cpp",
+     "mode": "rate",
+     "qos": "queue",
+     "size": 256,
+     "loan_asked": true,
+     "loaned": true,
+     "rate_hz": 100,
+     "seconds": 3,
+     "warmup_msgs": 100,
+     "published": 300,
+     "late": 0,
+     "publish_p50_ns": 6241,
+     "publish_p99_ns": 11167,
+     "publish_mean_ns": 6605,
+     "window_s": 2.99,
+     "cpu_s": 0.008,
+     "cpu_pct": 0.267,
+     "ctxsw": [
+      617,
+      0
+     ],
+     "threads": 14,
+     "hwm_kb": 26664
+    },
+    "listener": {
+     "role": "listener",
+     "rmw": "rmw_fastrtps_cpp",
+     "mode": "rate",
+     "qos": "queue",
+     "size": 256,
+     "can_loan": true,
+     "rate_hz": 100,
+     "seconds": 3,
+     "expected": 300,
+     "received": 300,
+     "lost": 0,
+     "torn": 0,
+     "out_of_order": 0,
+     "timed_out": false,
+     "samples": 300,
+     "p50_us": 33.7,
+     "p99_us": 53.4,
+     "p999_us": 60.1,
+     "max_us": 60.1,
+     "mean_us": 34.6,
+     "window_s": 2.99,
+     "cpu_s": 0.0129,
+     "cpu_pct": 0.43,
+     "ctxsw": [
+      626,
+      0
+     ],
+     "first_msg_ns": 8736209403679,
+     "threads": 15,
+     "hwm_kb": 26700
+    },
+    "pss_kb": {
+     "talker": 15646,
+     "listener": 15697.0
+    }
+   }
+  },
+  {
+   "rep": 0,
+   "config": "fastdds-datasharing",
+   "case": "rate_256_1000_latest",
+   "cooled_s": 0.0,
+   "before": {
+    "other_cpus_jiffies": [
+     450941,
+     1720195
+    ],
+    "time": "2026-11-25T15:17:50Z",
+    "temp_c": 54.5,
+    "governor": [
+     "performance"
+    ],
+    "throttled": 917504,
+    "freq_khz": {
+     "2": [
+      2400000,
+      2400000,
+      2400000
+     ],
+     "3": [
+      2400000,
+      2400000,
+      2400000
+     ]
+    },
+    "x86_throttle_count": null,
+    "loadavg1": 0.45
+   },
+   "after": {
+    "other_cpus_jiffies": [
+     450949,
+     1721298
+    ],
+    "time": "2026-11-25T15:17:56Z",
+    "temp_c": 55.6,
+    "governor": [
+     "performance"
+    ],
+    "throttled": 917504,
+    "freq_khz": {
+     "2": [
+      2400000,
+      2400000,
+      2400000
+     ],
+     "3": [
+      2400000,
+      2400000,
+      2400000
+     ]
+    },
+    "x86_throttle_count": null,
+    "loadavg1": 0.42
+   },
+   "other_load_pct": 0.7,
+   "flags": [],
+   "result": {
+    "talker": {
+     "role": "talker",
+     "rmw": "rmw_fastrtps_cpp",
+     "mode": "rate",
+     "qos": "latest",
+     "size": 256,
+     "loan_asked": true,
+     "loaned": true,
+     "rate_hz": 1000,
+     "seconds": 3,
+     "warmup_msgs": 1000,
+     "published": 3000,
+     "late": 0,
+     "publish_p50_ns": 6926,
+     "publish_p99_ns": 7851,
+     "publish_mean_ns": 6967,
+     "window_s": 2.999,
+     "cpu_s": 0.0355,
+     "cpu_pct": 1.184,
+     "ctxsw": [
+      3027,
+      0
+     ],
+     "threads": 14,
+     "hwm_kb": 26704
+    },
+    "listener": {
+     "role": "listener",
+     "rmw": "rmw_fastrtps_cpp",
+     "mode": "rate",
+     "qos": "latest",
+     "size": 256,
+     "can_loan": true,
+     "rate_hz": 1000,
+     "seconds": 3,
+     "expected": 3000,
+     "received": 3000,
+     "lost": 0,
+     "torn": 0,
+     "out_of_order": 0,
+     "timed_out": false,
+     "samples": 3000,
+     "p50_us": 25.2,
+     "p99_us": 26.5,
+     "p999_us": 38.6,
+     "max_us": 235.0,
+     "mean_us": 25.3,
+     "window_s": 2.999,
+     "cpu_s": 0.0968,
+     "cpu_pct": 3.229,
+     "ctxsw": [
+      6026,
+      0
+     ],
+     "first_msg_ns": 8741471400176,
+     "threads": 15,
+     "hwm_kb": 26736
+    },
+    "pss_kb": {
+     "talker": 15686,
+     "listener": 15720.0
+    }
+   }
+  },
+  {
+   "rep": 0,
+   "config": "fastdds-datasharing",
+   "case": "rate_256_1000_queue",
+   "cooled_s": 0.0,
+   "before": {
+    "other_cpus_jiffies": [
+     450949,
+     1721300
+    ],
+    "time": "2026-11-25T15:17:56Z",
+    "temp_c": 55.6,
+    "governor": [
+     "performance"
+    ],
+    "throttled": 917504,
+    "freq_khz": {
+     "2": [
+      2400000,
+      2400000,
+      2400000
+     ],
+     "3": [
+      2400000,
+      2400000,
+      2400000
+     ]
+    },
+    "x86_throttle_count": null,
+    "loadavg1": 0.42
+   },
+   "after": {
+    "other_cpus_jiffies": [
+     450959,
+     1722406
+    ],
+    "time": "2026-11-25T15:18:01Z",
+    "temp_c": 54.5,
+    "governor": [
+     "performance"
+    ],
+    "throttled": 917504,
+    "freq_khz": {
+     "2": [
+      2400000,
+      2400000,
+      2400000
+     ],
+     "3": [
+      2400000,
+      2400000,
+      2400000
+     ]
+    },
+    "x86_throttle_count": null,
+    "loadavg1": 0.35
+   },
+   "other_load_pct": 0.9,
+   "flags": [],
+   "result": {
+    "talker": {
+     "role": "talker",
+     "rmw": "rmw_fastrtps_cpp",
+     "mode": "rate",
+     "qos": "queue",
+     "size": 256,
+     "loan_asked": true,
+     "loaned": true,
+     "rate_hz": 1000,
+     "seconds": 3,
+     "warmup_msgs": 1000,
+     "published": 3000,
+     "late": 0,
+     "publish_p50_ns": 6500,
+     "publish_p99_ns": 8185,
+     "publish_mean_ns": 6624,
+     "window_s": 2.999,
+     "cpu_s": 0.0735,
+     "cpu_pct": 2.451,
+     "ctxsw": [
+      6019,
+      0
+     ],
+     "threads": 14,
+     "hwm_kb": 26692
+    },
+    "listener": {
+     "role": "listener",
+     "rmw": "rmw_fastrtps_cpp",
+     "mode": "rate",
+     "qos": "queue",
+     "size": 256,
+     "can_loan": true,
+     "rate_hz": 1000,
+     "seconds": 3,
+     "expected": 3000,
+     "received": 3000,
+     "lost": 0,
+     "torn": 0,
+     "out_of_order": 0,
+     "timed_out": false,
+     "samples": 3000,
+     "p50_us": 34.7,
+     "p99_us": 41.9,
+     "p999_us": 83.4,
+     "max_us": 530.0,
+     "mean_us": 35.1,
+     "window_s": 2.999,
+     "cpu_s": 0.1246,
+     "cpu_pct": 4.155,
+     "ctxsw": [
+      6026,
+      0
+     ],
+     "first_msg_ns": 8746999598728,
+     "threads": 15,
+     "hwm_kb": 26740
+    },
+    "pss_kb": {
+     "talker": 15670,
+     "listener": 15729.0
+    }
+   }
+  },
+  {
+   "rep": 0,
+   "config": "fastdds-datasharing",
+   "case": "rate_256_10000_latest",
+   "cooled_s": 0.0,
+   "before": {
+    "other_cpus_jiffies": [
+     450959,
+     1722407
+    ],
+    "time": "2026-11-25T15:18:01Z",
+    "temp_c": 56.2,
+    "governor": [
+     "performance"
+    ],
+    "throttled": 917504,
+    "freq_khz": {
+     "2": [
+      2400000,
+      2400000,
+      2400000
+     ],
+     "3": [
+      2400000,
+      2400000,
+      2400000
+     ]
+    },
+    "x86_throttle_count": null,
+    "loadavg1": 0.35
+   },
+   "after": {
+    "other_cpus_jiffies": [
+     450968,
+     1723511
+    ],
+    "time": "2026-11-25T15:18:07Z",
+    "temp_c": 54.5,
+    "governor": [
+     "performance"
+    ],
+    "throttled": 917504,
+    "freq_khz": {
+     "2": [
+      2400000,
+      2400000,
+      2400000
+     ],
+     "3": [
+      2400000,
+      2400000,
+      2400000
+     ]
+    },
+    "x86_throttle_count": null,
+    "loadavg1": 0.41
+   },
+   "other_load_pct": 0.8,
+   "flags": [],
+   "result": {
+    "talker": {
+     "role": "talker",
+     "rmw": "rmw_fastrtps_cpp",
+     "mode": "rate",
+     "qos": "latest",
+     "size": 256,
+     "loan_asked": true,
+     "loaned": true,
+     "rate_hz": 10000,
+     "seconds": 3,
+     "warmup_msgs": 10000,
+     "published": 30000,
+     "late": 4,
+     "publish_p50_ns": 8371,
+     "publish_p99_ns": 12815,
+     "publish_mean_ns": 8532,
+     "window_s": 3.0,
+     "cpu_s": 0.4015,
+     "cpu_pct": 13.385,
+     "ctxsw": [
+      30026,
+      4
+     ],
+     "threads": 14,
+     "hwm_kb": 26720
+    },
+    "listener": {
+     "role": "listener",
+     "rmw": "rmw_fastrtps_cpp",
+     "mode": "rate",
+     "qos": "latest",
+     "size": 256,
+     "can_loan": true,
+     "rate_hz": 10000,
+     "seconds": 3,
+     "expected": 30000,
+     "received": 29996,
+     "lost": 4,
+     "torn": 0,
+     "out_of_order": 0,
+     "timed_out": false,
+     "samples": 29996,
+     "p50_us": 24.4,
+     "p99_us": 26.4,
+     "p999_us": 32.4,
+     "max_us": 131.6,
+     "mean_us": 24.5,
+     "window_s": 3.0,
+     "cpu_s": 0.8887,
+     "cpu_pct": 29.625,
+     "ctxsw": [
+      60027,
+      13
+     ],
+     "first_msg_ns": 8752785774299,
+     "threads": 15,
+     "hwm_kb": 26780
+    },
+    "pss_kb": {
+     "talker": 15675,
+     "listener": 15733.0
+    }
+   }
+  },
+  {
+   "rep": 0,
+   "config": "fastdds-datasharing",
+   "case": "rate_256_10000_queue",
+   "cooled_s": 0.0,
+   "before": {
+    "other_cpus_jiffies": [
+     450968,
+     1723511
+    ],
+    "time": "2026-11-25T15:18:07Z",
+    "temp_c": 56.2,
+    "governor": [
+     "performance"
+    ],
+    "throttled": 917504,
+    "freq_khz": {
+     "2": [
+      2400000,
+      2400000,
+      2400000
+     ],
+     "3": [
+      2400000,
+      2400000,
+      2400000
+     ]
+    },
+    "x86_throttle_count": null,
+    "loadavg1": 0.41
+   },
+   "after": {
+    "other_cpus_jiffies": [
+     450976,
+     1724616
+    ],
+    "time": "2026-11-25T15:18:12Z",
+    "temp_c": 55.6,
+    "governor": [
+     "performance"
+    ],
+    "throttled": 917504,
+    "freq_khz": {
+     "2": [
+      2400000,
+      2400000,
+      2400000
+     ],
+     "3": [
+      2400000,
+      2400000,
+      2400000
+     ]
+    },
+    "x86_throttle_count": null,
+    "loadavg1": 0.37
+   },
+   "other_load_pct": 0.7,
+   "flags": [],
+   "result": {
+    "talker": {
+     "role": "talker",
+     "rmw": "rmw_fastrtps_cpp",
+     "mode": "rate",
+     "qos": "queue",
+     "size": 256,
+     "loan_asked": true,
+     "loaned": true,
+     "rate_hz": 10000,
+     "seconds": 3,
+     "warmup_msgs": 10000,
+     "published": 30000,
+     "late": 3,
+     "publish_p50_ns": 6592,
+     "publish_p99_ns": 7185,
+     "publish_mean_ns": 6612,
+     "window_s": 3.0,
+     "cpu_s": 0.7518,
+     "cpu_pct": 25.06,
+     "ctxsw": [
+      60018,
+      0
+     ],
+     "threads": 14,
+     "hwm_kb": 26776
+    },
+    "listener": {
+     "role": "listener",
+     "rmw": "rmw_fastrtps_cpp",
+     "mode": "rate",
+     "qos": "queue",
+     "size": 256,
+     "can_loan": true,
+     "rate_hz": 10000,
+     "seconds": 3,
+     "expected": 30000,
+     "received": 30000,
+     "lost": 0,
+     "torn": 0,
+     "out_of_order": 0,
+     "timed_out": false,
+     "samples": 30000,
+     "p50_us": 33.9,
+     "p99_us": 36.1,
+     "p999_us": 45.7,
+     "max_us": 337.5,
+     "mean_us": 34.1,
+     "window_s": 3.0,
+     "cpu_s": 1.2,
+     "cpu_pct": 40.0,
+     "ctxsw": [
+      60010,
+      0
+     ],
+     "first_msg_ns": 8758060210814,
+     "threads": 15,
+     "hwm_kb": 26856
+    },
+    "pss_kb": {
+     "talker": 15722,
+     "listener": 15788.0
+    }
+   }
+  },
+  {
+   "rep": 0,
+   "config": "fastdds-datasharing",
+   "case": "nopin_256_1000_latest",
+   "cooled_s": 0.0,
+   "before": {
+    "other_cpus_jiffies": [
+     450976,
+     1724616
+    ],
+    "time": "2026-11-25T15:18:12Z",
+    "temp_c": 55.6,
+    "governor": [
+     "performance"
+    ],
+    "throttled": 917504,
+    "freq_khz": {
+     "2": [
+      2400000,
+      2400000,
+      2400000
+     ],
+     "3": [
+      2400000,
+      2400000,
+      2400000
+     ]
+    },
+    "x86_throttle_count": null,
+    "loadavg1": 0.37
+   },
+   "after": {
+    "other_cpus_jiffies": [
+     450987,
+     1725714
+    ],
+    "time": "2026-11-25T15:18:18Z",
+    "temp_c": 54.5,
+    "governor": [
+     "performance"
+    ],
+    "throttled": 917504,
+    "freq_khz": {
+     "2": [
+      2400000,
+      2400000,
+      2400000
+     ],
+     "3": [
+      2400000,
+      2400000,
+      2400000
+     ]
+    },
+    "x86_throttle_count": null,
+    "loadavg1": 0.34
+   },
+   "other_load_pct": 1.0,
+   "flags": [],
+   "result": {
+    "talker": {
+     "role": "talker",
+     "rmw": "rmw_fastrtps_cpp",
+     "mode": "rate",
+     "qos": "latest",
+     "size": 256,
+     "loan_asked": true,
+     "loaned": true,
+     "rate_hz": 1000,
+     "seconds": 3,
+     "warmup_msgs": 1000,
+     "published": 3000,
+     "late": 0,
+     "publish_p50_ns": 8111,
+     "publish_p99_ns": 11760,
+     "publish_mean_ns": 7981,
+     "window_s": 2.999,
+     "cpu_s": 0.0394,
+     "cpu_pct": 1.313,
+     "ctxsw": [
+      3027,
+      0
+     ],
+     "threads": 14,
+     "hwm_kb": 26660
+    },
+    "listener": {
+     "role": "listener",
+     "rmw": "rmw_fastrtps_cpp",
+     "mode": "rate",
+     "qos": "latest",
+     "size": 256,
+     "can_loan": true,
+     "rate_hz": 1000,
+     "seconds": 3,
+     "expected": 3000,
+     "received": 3000,
+     "lost": 0,
+     "torn": 0,
+     "out_of_order": 0,
+     "timed_out": false,
+     "samples": 3000,
+     "p50_us": 24.7,
+     "p99_us": 33.1,
+     "p999_us": 55.9,
+     "max_us": 62.4,
+     "mean_us": 25.0,
+     "window_s": 2.999,
+     "cpu_s": 0.0982,
+     "cpu_pct": 3.275,
+     "ctxsw": [
+      6025,
+      0
+     ],
+     "first_msg_ns": 8763579730385,
+     "threads": 15,
+     "hwm_kb": 26704
+    },
+    "pss_kb": {
+     "talker": 15644,
+     "listener": 15701.0
+    }
+   }
+  },
+  {
+   "rep": 0,
+   "config": "fastdds-datasharing",
+   "case": "frame_1048576_30_latest",
+   "cooled_s": 0.0,
+   "before": {
+    "other_cpus_jiffies": [
+     450987,
+     1725715
+    ],
+    "time": "2026-11-25T15:18:18Z",
+    "temp_c": 54.5,
+    "governor": [
+     "performance"
+    ],
+    "throttled": 917504,
+    "freq_khz": {
+     "2": [
+      2400000,
+      2400000,
+      2400000
+     ],
+     "3": [
+      2400000,
+      2400000,
+      2400000
+     ]
+    },
+    "x86_throttle_count": null,
+    "loadavg1": 0.34
+   },
+   "after": {
+    "other_cpus_jiffies": [
+     450996,
+     1726820
+    ],
+    "time": "2026-11-25T15:18:23Z",
+    "temp_c": 55.1,
+    "governor": [
+     "performance"
+    ],
+    "throttled": 917504,
+    "freq_khz": {
+     "2": [
+      2400000,
+      2400000,
+      2400000
+     ],
+     "3": [
+      2400000,
+      2400000,
+      2400000
+     ]
+    },
+    "x86_throttle_count": null,
+    "loadavg1": 0.31
+   },
+   "other_load_pct": 0.8,
+   "flags": [],
+   "result": {
+    "talker": {
+     "role": "talker",
+     "rmw": "rmw_fastrtps_cpp",
+     "mode": "rate",
+     "qos": "latest",
+     "size": 1048576,
+     "loan_asked": true,
+     "loaned": true,
+     "rate_hz": 30,
+     "seconds": 3,
+     "warmup_msgs": 30,
+     "published": 90,
+     "late": 0,
+     "publish_p50_ns": 63926,
+     "publish_p99_ns": 182371,
+     "publish_mean_ns": 78057,
+     "window_s": 2.967,
+     "cpu_s": 0.0082,
+     "cpu_pct": 0.276,
+     "ctxsw": [
+      117,
+      0
+     ],
+     "threads": 14,
+     "hwm_kb": 29744
+    },
+    "listener": {
+     "role": "listener",
+     "rmw": "rmw_fastrtps_cpp",
+     "mode": "rate",
+     "qos": "latest",
+     "size": 1048576,
+     "can_loan": true,
+     "rate_hz": 30,
+     "seconds": 3,
+     "expected": 90,
+     "received": 90,
+     "lost": 0,
+     "torn": 0,
+     "out_of_order": 0,
+     "timed_out": false,
+     "samples": 90,
+     "p50_us": 30.5,
+     "p99_us": 138.1,
+     "p999_us": 138.1,
+     "max_us": 138.1,
+     "mean_us": 35.8,
+     "window_s": 2.967,
+     "cpu_s": 0.0175,
+     "cpu_pct": 0.589,
+     "ctxsw": [
+      206,
+      0
+     ],
+     "first_msg_ns": 8769147085456,
+     "threads": 15,
+     "hwm_kb": 29120
+    },
+    "pss_kb": {
+     "talker": 17706,
+     "listener": 17093.0
+    }
+   }
+  },
+  {
+   "rep": 0,
+   "config": "fastdds-datasharing",
+   "case": "idle",
+   "cooled_s": 0.0,
+   "before": {
+    "other_cpus_jiffies": [
+     450997,
+     1726821
+    ],
+    "time": "2026-11-25T15:18:23Z",
+    "temp_c": 55.1,
+    "governor": [
+     "performance"
+    ],
+    "throttled": 917504,
+    "freq_khz": {
+     "2": [
+      2400000,
+      2400000,
+      2400000
+     ],
+     "3": [
+      2400000,
+      2400000,
+      2400000
+     ]
+    },
+    "x86_throttle_count": null,
+    "loadavg1": 0.31
+   },
+   "after": {
+    "other_cpus_jiffies": [
+     451004,
+     1727925
+    ],
+    "time": "2026-11-25T15:18:29Z",
+    "temp_c": 54.0,
+    "governor": [
+     "performance"
+    ],
+    "throttled": 917504,
+    "freq_khz": {
+     "2": [
+      2400000,
+      2400000,
+      2400000
+     ],
+     "3": [
+      2400000,
+      2400000,
+      2400000
+     ]
+    },
+    "x86_throttle_count": null,
+    "loadavg1": 0.29
+   },
+   "other_load_pct": 0.6,
+   "flags": [],
+   "result": {
+    "talker": {
+     "role": "talker",
+     "rmw": "rmw_fastrtps_cpp",
+     "mode": "idle",
+     "qos": "latest",
+     "size": 256,
+     "loan_asked": true,
+     "loaned": true,
+     "window_s": 3.0,
+     "cpu_s": 0.0008,
+     "cpu_pct": 0.027,
+     "ctxsw": [
+      39,
+      0
+     ],
+     "threads": 14,
+     "hwm_kb": 26680
+    },
+    "listener": {
+     "role": "listener",
+     "rmw": "rmw_fastrtps_cpp",
+     "mode": "idle",
+     "qos": "latest",
+     "size": 256,
+     "can_loan": true,
+     "window_s": 3.0,
+     "cpu_s": 0.0007,
+     "cpu_pct": 0.022,
+     "ctxsw": [
+      30,
+      0
+     ],
+     "msgs": 0,
+     "threads": 15,
+     "hwm_kb": 26700
+    },
+    "pss_kb": {
+     "talker": 15666,
+     "listener": 15697
+    }
+   }
+  },
+  {
+   "rep": 0,
+   "config": "fastdds-datasharing",
+   "case": "startup",
+   "cooled_s": 0.0,
+   "before": {
+    "other_cpus_jiffies": [
+     451004,
+     1727926
+    ],
+    "time": "2026-11-25T15:18:29Z",
+    "temp_c": 55.1,
+    "governor": [
+     "performance"
+    ],
+    "throttled": 917504,
+    "freq_khz": {
+     "2": [
+      2400000,
+      2400000,
+      2400000
+     ],
+     "3": [
+      2400000,
+      2400000,
+      2400000
+     ]
+    },
+    "x86_throttle_count": null,
+    "loadavg1": 0.29
+   },
+   "after": {
+    "other_cpus_jiffies": [
+     451011,
+     1728111
+    ],
+    "time": "2026-11-25T15:18:30Z",
+    "temp_c": 54.5,
+    "governor": [
+     "performance"
+    ],
+    "throttled": 917504,
+    "freq_khz": {
+     "2": [
+      2400000,
+      2400000,
+      2400000
+     ],
+     "3": [
+      2400000,
+      2400000,
+      2400000
+     ]
+    },
+    "x86_throttle_count": null,
+    "loadavg1": 0.29
+   },
+   "other_load_pct": 3.8,
+   "flags": [],
+   "result": {
+    "listener": {
+     "role": "listener",
+     "rmw": "rmw_fastrtps_cpp",
+     "mode": "startup",
+     "qos": "latest",
+     "size": 256,
+     "can_loan": true,
+     "first_msg_ns": 8779926734838,
+     "timed_out": false
+    },
+    "start_ns": 8779605865060,
+    "pss_kb": {}
+   }
+  },
+  {
+   "rep": 0,
+   "config": "fastdds-datasharing",
+   "case": "composed_256_1000_latest",
+   "cooled_s": 0.0,
+   "before": {
+    "other_cpus_jiffies": [
+     451012,
+     1728112
+    ],
+    "time": "2026-11-25T15:18:30Z",
+    "temp_c": 55.6,
+    "governor": [
+     "performance"
+    ],
+    "throttled": 917504,
+    "freq_khz": {
+     "2": [
+      2400000,
+      2400000,
+      2400000
+     ],
+     "3": [
+      2400000,
+      2400000,
+      2400000
+     ]
+    },
+    "x86_throttle_count": null,
+    "loadavg1": 0.29
+   },
+   "after": {
+    "other_cpus_jiffies": [
+     451017,
+     1729015
+    ],
+    "time": "2026-11-25T15:18:34Z",
+    "temp_c": 54.5,
+    "governor": [
+     "performance"
+    ],
+    "throttled": 917504,
+    "freq_khz": {
+     "2": [
+      2400000,
+      2400000,
+      2400000
+     ],
+     "3": [
+      2400000,
+      2400000,
+      2400000
+     ]
+    },
+    "x86_throttle_count": null,
+    "loadavg1": 0.27
+   },
+   "other_load_pct": 0.6,
+   "flags": [],
+   "result": {
+    "composed": {
+     "role": "composed",
+     "rmw": "rmw_fastrtps_cpp",
+     "mode": "rate",
+     "qos": "latest",
+     "size": 256,
+     "intra_process": true,
+     "rate_hz": 1000,
+     "seconds": 3,
+     "expected": 3000,
+     "received": 3000,
+     "lost": 0,
+     "torn": 0,
+     "timed_out": false,
+     "samples": 3000,
+     "p50_us": 3.1,
+     "p99_us": 3.6,
+     "p999_us": 4.4,
+     "max_us": 4.9,
+     "mean_us": 3.1,
+     "window_s": 3.0,
+     "cpu_s": 0.1025,
+     "cpu_pct": 3.416,
+     "ctxsw": [
+      3023,
+      1
+     ],
+     "threads": 15,
+     "hwm_kb": 27872
+    },
+    "pss_kb": {
+     "composed": 23782
+    }
+   }
+  }
+ ],
+ "state_end": {
+  "other_cpus_jiffies": [
+   451018,
+   1729018
+  ],
+  "time": "2026-11-25T15:18:34Z",
+  "temp_c": 55.1,
+  "governor": [
+   "performance"
+  ],
+  "throttled": 917504,
+  "freq_khz": {
+   "2": [
+    2400000,
+    2400000,
+    2400000
+   ],
+   "3": [
+    2400000,
+    2400000,
+    2400000
+   ]
+  },
+  "x86_throttle_count": null,
+  "loadavg1": 0.27
+ },
+ "summary": {
+  "publish_ns_16": {
+   "hangar": {
+    "median": 80.24,
+    "min": 80.24,
+    "max": 80.24,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds": {
+    "median": 991.4,
+    "min": 991.4,
+    "max": 991.4,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds-datasharing": {
+    "median": 1333.5,
+    "min": 1333.5,
+    "max": 1333.5,
+    "n": 1,
+    "flagged": 0
+   }
+  },
+  "publish_ns_256": {
+   "hangar": {
+    "median": 96.11,
+    "min": 96.11,
+    "max": 96.11,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds": {
+    "median": 959.7,
+    "min": 959.7,
+    "max": 959.7,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds-datasharing": {
+    "median": 1283.9,
+    "min": 1283.9,
+    "max": 1283.9,
+    "n": 1,
+    "flagged": 0
+   }
+  },
+  "publish_ns_4096": {
+   "hangar": {
+    "median": 358.64,
+    "min": 358.64,
+    "max": 358.64,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds": {
+    "median": 1080.1,
+    "min": 1080.1,
+    "max": 1080.1,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds-datasharing": {
+    "median": 1331.1,
+    "min": 1331.1,
+    "max": 1331.1,
+    "n": 1,
+    "flagged": 0
+   }
+  },
+  "publish_ns_1048576": {
+   "hangar": {
+    "median": 122924.81,
+    "min": 122924.81,
+    "max": 122924.81,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds": {
+    "median": 87928.5,
+    "min": 87928.5,
+    "max": 87928.5,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds-datasharing": {
+    "median": 1319.1,
+    "min": 1319.1,
+    "max": 1319.1,
+    "n": 1,
+    "flagged": 0
+   }
+  },
+  "latest_ns_16": {
+   "hangar": {
+    "median": 52.92,
+    "min": 52.92,
+    "max": 52.92,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds": {
+    "median": 1536.1,
+    "min": 1536.1,
+    "max": 1536.1,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds-datasharing": {
+    "median": 1487.0,
+    "min": 1487.0,
+    "max": 1487.0,
+    "n": 1,
+    "flagged": 0
+   }
+  },
+  "latest_ns_256": {
+   "hangar": {
+    "median": 120.79,
+    "min": 120.79,
+    "max": 120.79,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds": {
+    "median": 1657.3,
+    "min": 1657.3,
+    "max": 1657.3,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds-datasharing": {
+    "median": 1468.2,
+    "min": 1468.2,
+    "max": 1468.2,
+    "n": 1,
+    "flagged": 0
+   }
+  },
+  "latest_ns_4096": {
+   "hangar": {
+    "median": 416.17,
+    "min": 416.17,
+    "max": 416.17,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds": {
+    "median": 1754.4,
+    "min": 1754.4,
+    "max": 1754.4,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds-datasharing": {
+    "median": 1613.3,
+    "min": 1613.3,
+    "max": 1613.3,
+    "n": 1,
+    "flagged": 0
+   }
+  },
+  "latest_ns_1048576": {
+   "hangar": {
+    "median": 198459.08,
+    "min": 198459.08,
+    "max": 198459.08,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds": {
+    "median": 89929.5,
+    "min": 89929.5,
+    "max": 89929.5,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds-datasharing": {
+    "median": 135532.5,
+    "min": 135532.5,
+    "max": 135532.5,
+    "n": 1,
+    "flagged": 0
+   }
+  },
+  "lat_p50_100_latest": {
+   "hangar": {
+    "median": 5.6,
+    "min": 5.6,
+    "max": 5.6,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds": {
+    "median": 45.4,
+    "min": 45.4,
+    "max": 45.4,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds-datasharing": {
+    "median": 25.8,
+    "min": 25.8,
+    "max": 25.8,
+    "n": 1,
+    "flagged": 0
+   }
+  },
+  "lat_p99_100_latest": {
+   "hangar": {
+    "median": 10.1,
+    "min": 10.1,
+    "max": 10.1,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds": {
+    "median": 72.0,
+    "min": 72.0,
+    "max": 72.0,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds-datasharing": {
+    "median": 43.6,
+    "min": 43.6,
+    "max": 43.6,
+    "n": 1,
+    "flagged": 0
+   }
+  },
+  "lat_p999_100_latest": {
+   "hangar": {
+    "median": 18.2,
+    "min": 18.2,
+    "max": 18.2,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds": {
+    "median": 97.9,
+    "min": 97.9,
+    "max": 97.9,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds-datasharing": {
+    "median": 96.8,
+    "min": 96.8,
+    "max": 96.8,
+    "n": 1,
+    "flagged": 0
+   }
+  },
+  "lat_max_100_latest": {
+   "hangar": {
+    "median": 18.2,
+    "min": 18.2,
+    "max": 18.2,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds": {
+    "median": 97.9,
+    "min": 97.9,
+    "max": 97.9,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds-datasharing": {
+    "median": 96.8,
+    "min": 96.8,
+    "max": 96.8,
+    "n": 1,
+    "flagged": 0
+   }
+  },
+  "cpu_pct_100_latest": {
+   "hangar": {
+    "median": 0.14,
+    "min": 0.14,
+    "max": 0.14,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds": {
+    "median": 0.672,
+    "min": 0.672,
+    "max": 0.672,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds-datasharing": {
+    "median": 0.5,
+    "min": 0.5,
+    "max": 0.5,
+    "n": 1,
+    "flagged": 0
+   }
+  },
+  "ctxsw_s_100_latest": {
+   "hangar": {
+    "median": 208.66666666666666,
+    "min": 208.66666666666666,
+    "max": 208.66666666666666,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds": {
+    "median": 315.71906354515045,
+    "min": 315.71906354515045,
+    "max": 315.71906354515045,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds-datasharing": {
+    "median": 319.0635451505017,
+    "min": 319.0635451505017,
+    "max": 319.0635451505017,
+    "n": 1,
+    "flagged": 0
+   }
+  },
+  "lost_pct_100_latest": {
+   "hangar": {
+    "median": 0.0,
+    "min": 0.0,
+    "max": 0.0,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds": {
+    "median": 0.0,
+    "min": 0.0,
+    "max": 0.0,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds-datasharing": {
+    "median": 0.0,
+    "min": 0.0,
+    "max": 0.0,
+    "n": 1,
+    "flagged": 0
+   }
+  },
+  "lat_p50_100_queue": {
+   "hangar": {
+    "median": 5.6,
+    "min": 5.6,
+    "max": 5.6,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds": {
+    "median": 38.0,
+    "min": 38.0,
+    "max": 38.0,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds-datasharing": {
+    "median": 33.7,
+    "min": 33.7,
+    "max": 33.7,
+    "n": 1,
+    "flagged": 0
+   }
+  },
+  "lat_p99_100_queue": {
+   "hangar": {
+    "median": 10.1,
+    "min": 10.1,
+    "max": 10.1,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds": {
+    "median": 58.3,
+    "min": 58.3,
+    "max": 58.3,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds-datasharing": {
+    "median": 53.4,
+    "min": 53.4,
+    "max": 53.4,
+    "n": 1,
+    "flagged": 0
+   }
+  },
+  "lat_p999_100_queue": {
+   "hangar": {
+    "median": 18.2,
+    "min": 18.2,
+    "max": 18.2,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds": {
+    "median": 62.3,
+    "min": 62.3,
+    "max": 62.3,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds-datasharing": {
+    "median": 60.1,
+    "min": 60.1,
+    "max": 60.1,
+    "n": 1,
+    "flagged": 0
+   }
+  },
+  "lat_max_100_queue": {
+   "hangar": {
+    "median": 18.2,
+    "min": 18.2,
+    "max": 18.2,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds": {
+    "median": 62.3,
+    "min": 62.3,
+    "max": 62.3,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds-datasharing": {
+    "median": 60.1,
+    "min": 60.1,
+    "max": 60.1,
+    "n": 1,
+    "flagged": 0
+   }
+  },
+  "cpu_pct_100_queue": {
+   "hangar": {
+    "median": 0.14,
+    "min": 0.14,
+    "max": 0.14,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds": {
+    "median": 0.679,
+    "min": 0.679,
+    "max": 0.679,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds-datasharing": {
+    "median": 0.6970000000000001,
+    "min": 0.6970000000000001,
+    "max": 0.6970000000000001,
+    "n": 1,
+    "flagged": 0
+   }
+  },
+  "ctxsw_s_100_queue": {
+   "hangar": {
+    "median": 208.66666666666666,
+    "min": 208.66666666666666,
+    "max": 208.66666666666666,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds": {
+    "median": 443.14381270903004,
+    "min": 443.14381270903004,
+    "max": 443.14381270903004,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds-datasharing": {
+    "median": 415.71906354515045,
+    "min": 415.71906354515045,
+    "max": 415.71906354515045,
+    "n": 1,
+    "flagged": 0
+   }
+  },
+  "lost_pct_100_queue": {
+   "hangar": {
+    "median": 0.0,
+    "min": 0.0,
+    "max": 0.0,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds": {
+    "median": 0.0,
+    "min": 0.0,
+    "max": 0.0,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds-datasharing": {
+    "median": 0.0,
+    "min": 0.0,
+    "max": 0.0,
+    "n": 1,
+    "flagged": 0
+   }
+  },
+  "lat_p50_1000_latest": {
+   "hangar": {
+    "median": 5.6,
+    "min": 5.6,
+    "max": 5.6,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds": {
+    "median": 42.7,
+    "min": 42.7,
+    "max": 42.7,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds-datasharing": {
+    "median": 25.2,
+    "min": 25.2,
+    "max": 25.2,
+    "n": 1,
+    "flagged": 0
+   }
+  },
+  "lat_p99_1000_latest": {
+   "hangar": {
+    "median": 5.8,
+    "min": 5.8,
+    "max": 5.8,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds": {
+    "median": 45.4,
+    "min": 45.4,
+    "max": 45.4,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds-datasharing": {
+    "median": 26.5,
+    "min": 26.5,
+    "max": 26.5,
+    "n": 1,
+    "flagged": 0
+   }
+  },
+  "lat_p999_1000_latest": {
+   "hangar": {
+    "median": 17.4,
+    "min": 17.4,
+    "max": 17.4,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds": {
+    "median": 62.0,
+    "min": 62.0,
+    "max": 62.0,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds-datasharing": {
+    "median": 38.6,
+    "min": 38.6,
+    "max": 38.6,
+    "n": 1,
+    "flagged": 0
+   }
+  },
+  "lat_max_1000_latest": {
+   "hangar": {
+    "median": 149.8,
+    "min": 149.8,
+    "max": 149.8,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds": {
+    "median": 424.1,
+    "min": 424.1,
+    "max": 424.1,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds-datasharing": {
+    "median": 235.0,
+    "min": 235.0,
+    "max": 235.0,
+    "n": 1,
+    "flagged": 0
+   }
+  },
+  "cpu_pct_1000_latest": {
+   "hangar": {
+    "median": 1.18,
+    "min": 1.18,
+    "max": 1.18,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds": {
+    "median": 6.011,
+    "min": 6.011,
+    "max": 6.011,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds-datasharing": {
+    "median": 4.413,
+    "min": 4.413,
+    "max": 4.413,
+    "n": 1,
+    "flagged": 0
+   }
+  },
+  "ctxsw_s_1000_latest": {
+   "hangar": {
+    "median": 2008.3333333333333,
+    "min": 2008.3333333333333,
+    "max": 2008.3333333333333,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds": {
+    "median": 3015.67189063021,
+    "min": 3015.67189063021,
+    "max": 3015.67189063021,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds-datasharing": {
+    "median": 3018.6728909636545,
+    "min": 3018.6728909636545,
+    "max": 3018.6728909636545,
+    "n": 1,
+    "flagged": 0
+   }
+  },
+  "lost_pct_1000_latest": {
+   "hangar": {
+    "median": 0.0,
+    "min": 0.0,
+    "max": 0.0,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds": {
+    "median": 0.0,
+    "min": 0.0,
+    "max": 0.0,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds-datasharing": {
+    "median": 0.0,
+    "min": 0.0,
+    "max": 0.0,
+    "n": 1,
+    "flagged": 0
+   }
+  },
+  "lat_p50_1000_queue": {
+   "hangar": {
+    "median": 5.6,
+    "min": 5.6,
+    "max": 5.6,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds": {
+    "median": 41.4,
+    "min": 41.4,
+    "max": 41.4,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds-datasharing": {
+    "median": 34.7,
+    "min": 34.7,
+    "max": 34.7,
+    "n": 1,
+    "flagged": 0
+   }
+  },
+  "lat_p99_1000_queue": {
+   "hangar": {
+    "median": 5.8,
+    "min": 5.8,
+    "max": 5.8,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds": {
+    "median": 47.6,
+    "min": 47.6,
+    "max": 47.6,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds-datasharing": {
+    "median": 41.9,
+    "min": 41.9,
+    "max": 41.9,
+    "n": 1,
+    "flagged": 0
+   }
+  },
+  "lat_p999_1000_queue": {
+   "hangar": {
+    "median": 17.4,
+    "min": 17.4,
+    "max": 17.4,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds": {
+    "median": 65.1,
+    "min": 65.1,
+    "max": 65.1,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds-datasharing": {
+    "median": 83.4,
+    "min": 83.4,
+    "max": 83.4,
+    "n": 1,
+    "flagged": 0
+   }
+  },
+  "lat_max_1000_queue": {
+   "hangar": {
+    "median": 149.8,
+    "min": 149.8,
+    "max": 149.8,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds": {
+    "median": 104.0,
+    "min": 104.0,
+    "max": 104.0,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds-datasharing": {
+    "median": 530.0,
+    "min": 530.0,
+    "max": 530.0,
+    "n": 1,
+    "flagged": 0
+   }
+  },
+  "cpu_pct_1000_queue": {
+   "hangar": {
+    "median": 1.18,
+    "min": 1.18,
+    "max": 1.18,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds": {
+    "median": 6.929,
+    "min": 6.929,
+    "max": 6.929,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds-datasharing": {
+    "median": 6.606,
+    "min": 6.606,
+    "max": 6.606,
+    "n": 1,
+    "flagged": 0
+   }
+  },
+  "ctxsw_s_1000_queue": {
+   "hangar": {
+    "median": 2008.3333333333333,
+    "min": 2008.3333333333333,
+    "max": 2008.3333333333333,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds": {
+    "median": 4168.056018672891,
+    "min": 4168.056018672891,
+    "max": 4168.056018672891,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds-datasharing": {
+    "median": 4016.3387795931976,
+    "min": 4016.3387795931976,
+    "max": 4016.3387795931976,
+    "n": 1,
+    "flagged": 0
+   }
+  },
+  "lost_pct_1000_queue": {
+   "hangar": {
+    "median": 0.0,
+    "min": 0.0,
+    "max": 0.0,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds": {
+    "median": 0.0,
+    "min": 0.0,
+    "max": 0.0,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds-datasharing": {
+    "median": 0.0,
+    "min": 0.0,
+    "max": 0.0,
+    "n": 1,
+    "flagged": 0
+   }
+  },
+  "lat_p50_10000_latest": {
+   "hangar": {
+    "median": 5.3,
+    "min": 5.3,
+    "max": 5.3,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds": {
+    "median": 37.5,
+    "min": 37.5,
+    "max": 37.5,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds-datasharing": {
+    "median": 24.4,
+    "min": 24.4,
+    "max": 24.4,
+    "n": 1,
+    "flagged": 0
+   }
+  },
+  "lat_p99_10000_latest": {
+   "hangar": {
+    "median": 5.6,
+    "min": 5.6,
+    "max": 5.6,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds": {
+    "median": 43.7,
+    "min": 43.7,
+    "max": 43.7,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds-datasharing": {
+    "median": 26.4,
+    "min": 26.4,
+    "max": 26.4,
+    "n": 1,
+    "flagged": 0
+   }
+  },
+  "lat_p999_10000_latest": {
+   "hangar": {
+    "median": 10.0,
+    "min": 10.0,
+    "max": 10.0,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds": {
+    "median": 46.4,
+    "min": 46.4,
+    "max": 46.4,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds-datasharing": {
+    "median": 32.4,
+    "min": 32.4,
+    "max": 32.4,
+    "n": 1,
+    "flagged": 0
+   }
+  },
+  "lat_max_10000_latest": {
+   "hangar": {
+    "median": 746.9,
+    "min": 746.9,
+    "max": 746.9,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds": {
+    "median": 364.5,
+    "min": 364.5,
+    "max": 364.5,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds-datasharing": {
+    "median": 131.6,
+    "min": 131.6,
+    "max": 131.6,
+    "n": 1,
+    "flagged": 0
+   }
+  },
+  "cpu_pct_10000_latest": {
+   "hangar": {
+    "median": 11.44,
+    "min": 11.44,
+    "max": 11.44,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds": {
+    "median": 55.403999999999996,
+    "min": 55.403999999999996,
+    "max": 55.403999999999996,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds-datasharing": {
+    "median": 43.01,
+    "min": 43.01,
+    "max": 43.01,
+    "n": 1,
+    "flagged": 0
+   }
+  },
+  "ctxsw_s_10000_latest": {
+   "hangar": {
+    "median": 20003.0,
+    "min": 20003.0,
+    "max": 20003.0,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds": {
+    "median": 30014.333333333332,
+    "min": 30014.333333333332,
+    "max": 30014.333333333332,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds-datasharing": {
+    "median": 30023.333333333332,
+    "min": 30023.333333333332,
+    "max": 30023.333333333332,
+    "n": 1,
+    "flagged": 0
+   }
+  },
+  "lost_pct_10000_latest": {
+   "hangar": {
+    "median": 0.0,
+    "min": 0.0,
+    "max": 0.0,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds": {
+    "median": 0.016666666666666666,
+    "min": 0.016666666666666666,
+    "max": 0.016666666666666666,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds-datasharing": {
+    "median": 0.013333333333333334,
+    "min": 0.013333333333333334,
+    "max": 0.013333333333333334,
+    "n": 1,
+    "flagged": 0
+   }
+  },
+  "lat_p50_10000_queue": {
+   "hangar": {
+    "median": 5.3,
+    "min": 5.3,
+    "max": 5.3,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds": {
+    "median": 41.4,
+    "min": 41.4,
+    "max": 41.4,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds-datasharing": {
+    "median": 33.9,
+    "min": 33.9,
+    "max": 33.9,
+    "n": 1,
+    "flagged": 0
+   }
+  },
+  "lat_p99_10000_queue": {
+   "hangar": {
+    "median": 5.6,
+    "min": 5.6,
+    "max": 5.6,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds": {
+    "median": 57.6,
+    "min": 57.6,
+    "max": 57.6,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds-datasharing": {
+    "median": 36.1,
+    "min": 36.1,
+    "max": 36.1,
+    "n": 1,
+    "flagged": 0
+   }
+  },
+  "lat_p999_10000_queue": {
+   "hangar": {
+    "median": 10.0,
+    "min": 10.0,
+    "max": 10.0,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds": {
+    "median": 80.4,
+    "min": 80.4,
+    "max": 80.4,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds-datasharing": {
+    "median": 45.7,
+    "min": 45.7,
+    "max": 45.7,
+    "n": 1,
+    "flagged": 0
+   }
+  },
+  "lat_max_10000_queue": {
+   "hangar": {
+    "median": 746.9,
+    "min": 746.9,
+    "max": 746.9,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds": {
+    "median": 1019.4,
+    "min": 1019.4,
+    "max": 1019.4,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds-datasharing": {
+    "median": 337.5,
+    "min": 337.5,
+    "max": 337.5,
+    "n": 1,
+    "flagged": 0
+   }
+  },
+  "cpu_pct_10000_queue": {
+   "hangar": {
+    "median": 11.44,
+    "min": 11.44,
+    "max": 11.44,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds": {
+    "median": 63.684999999999995,
+    "min": 63.684999999999995,
+    "max": 63.684999999999995,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds-datasharing": {
+    "median": 65.06,
+    "min": 65.06,
+    "max": 65.06,
+    "n": 1,
+    "flagged": 0
+   }
+  },
+  "ctxsw_s_10000_queue": {
+   "hangar": {
+    "median": 20003.0,
+    "min": 20003.0,
+    "max": 20003.0,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds": {
+    "median": 40539.0,
+    "min": 40539.0,
+    "max": 40539.0,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds-datasharing": {
+    "median": 40009.33333333333,
+    "min": 40009.33333333333,
+    "max": 40009.33333333333,
+    "n": 1,
+    "flagged": 0
+   }
+  },
+  "lost_pct_10000_queue": {
+   "hangar": {
+    "median": 0.0,
+    "min": 0.0,
+    "max": 0.0,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds": {
+    "median": 0.0,
+    "min": 0.0,
+    "max": 0.0,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds-datasharing": {
+    "median": 0.0,
+    "min": 0.0,
+    "max": 0.0,
+    "n": 1,
+    "flagged": 0
+   }
+  },
+  "pss_kb": {
+   "hangar": {
+    "median": 270,
+    "min": 270,
+    "max": 270,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds": {
+    "median": 31186.0,
+    "min": 31186.0,
+    "max": 31186.0,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds-datasharing": {
+    "median": 31406.0,
+    "min": 31406.0,
+    "max": 31406.0,
+    "n": 1,
+    "flagged": 0
+   }
+  },
+  "threads": {
+   "hangar": {
+    "median": 2,
+    "min": 2,
+    "max": 2,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds": {
+    "median": 28,
+    "min": 28,
+    "max": 28,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds-datasharing": {
+    "median": 29,
+    "min": 29,
+    "max": 29,
+    "n": 1,
+    "flagged": 0
+   }
+  },
+  "idle_listener_ctxsw_s": {
+   "hangar": {
+    "median": 0.0,
+    "min": 0.0,
+    "max": 0.0,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds": {
+    "median": 10.0,
+    "min": 10.0,
+    "max": 10.0,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds-datasharing": {
+    "median": 10.0,
+    "min": 10.0,
+    "max": 10.0,
+    "n": 1,
+    "flagged": 0
+   }
+  },
+  "idle_listener_cpu_pct": {
+   "hangar": {
+    "median": 0.0,
+    "min": 0.0,
+    "max": 0.0,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds": {
+    "median": 0.023,
+    "min": 0.023,
+    "max": 0.023,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds-datasharing": {
+    "median": 0.022,
+    "min": 0.022,
+    "max": 0.022,
+    "n": 1,
+    "flagged": 0
+   }
+  },
+  "lat_p50_nopin": {
+   "hangar": {
+    "median": 5.7,
+    "min": 5.7,
+    "max": 5.7,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds": {
+    "median": 37.4,
+    "min": 37.4,
+    "max": 37.4,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds-datasharing": {
+    "median": 24.7,
+    "min": 24.7,
+    "max": 24.7,
+    "n": 1,
+    "flagged": 0
+   }
+  },
+  "lat_p99_nopin": {
+   "hangar": {
+    "median": 5.8,
+    "min": 5.8,
+    "max": 5.8,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds": {
+    "median": 47.2,
+    "min": 47.2,
+    "max": 47.2,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds-datasharing": {
+    "median": 33.1,
+    "min": 33.1,
+    "max": 33.1,
+    "n": 1,
+    "flagged": 0
+   }
+  },
+  "lat_p999_nopin": {
+   "hangar": {
+    "median": 9.0,
+    "min": 9.0,
+    "max": 9.0,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds": {
+    "median": 71.2,
+    "min": 71.2,
+    "max": 71.2,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds-datasharing": {
+    "median": 55.9,
+    "min": 55.9,
+    "max": 55.9,
+    "n": 1,
+    "flagged": 0
+   }
+  },
+  "lat_max_nopin": {
+   "hangar": {
+    "median": 15.8,
+    "min": 15.8,
+    "max": 15.8,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds": {
+    "median": 133.1,
+    "min": 133.1,
+    "max": 133.1,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds-datasharing": {
+    "median": 62.4,
+    "min": 62.4,
+    "max": 62.4,
+    "n": 1,
+    "flagged": 0
+   }
+  },
+  "cpu_pct_nopin": {
+   "hangar": {
+    "median": 1.19,
+    "min": 1.19,
+    "max": 1.19,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds": {
+    "median": 5.862,
+    "min": 5.862,
+    "max": 5.862,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds-datasharing": {
+    "median": 4.588,
+    "min": 4.588,
+    "max": 4.588,
+    "n": 1,
+    "flagged": 0
+   }
+  },
+  "ctxsw_s_nopin": {
+   "hangar": {
+    "median": 2008.0,
+    "min": 2008.0,
+    "max": 2008.0,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds": {
+    "median": 3015.6718906302103,
+    "min": 3015.6718906302103,
+    "max": 3015.6718906302103,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds-datasharing": {
+    "median": 3018.3394464821604,
+    "min": 3018.3394464821604,
+    "max": 3018.3394464821604,
+    "n": 1,
+    "flagged": 0
+   }
+  },
+  "lost_pct_nopin": {
+   "hangar": {
+    "median": 0.0,
+    "min": 0.0,
+    "max": 0.0,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds": {
+    "median": 0.0,
+    "min": 0.0,
+    "max": 0.0,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds-datasharing": {
+    "median": 0.0,
+    "min": 0.0,
+    "max": 0.0,
+    "n": 1,
+    "flagged": 0
+   }
+  },
+  "lat_p50_frame": {
+   "hangar": {
+    "median": 328.6,
+    "min": 328.6,
+    "max": 328.6,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds": {
+    "median": 1087.2,
+    "min": 1087.2,
+    "max": 1087.2,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds-datasharing": {
+    "median": 30.5,
+    "min": 30.5,
+    "max": 30.5,
+    "n": 1,
+    "flagged": 0
+   }
+  },
+  "lat_p99_frame": {
+   "hangar": {
+    "median": 1725.1,
+    "min": 1725.1,
+    "max": 1725.1,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds": {
+    "median": 1648.8,
+    "min": 1648.8,
+    "max": 1648.8,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds-datasharing": {
+    "median": 138.1,
+    "min": 138.1,
+    "max": 138.1,
+    "n": 1,
+    "flagged": 0
+   }
+  },
+  "lat_p999_frame": {
+   "hangar": {
+    "median": 1725.1,
+    "min": 1725.1,
+    "max": 1725.1,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds": {
+    "median": 1648.8,
+    "min": 1648.8,
+    "max": 1648.8,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds-datasharing": {
+    "median": 138.1,
+    "min": 138.1,
+    "max": 138.1,
+    "n": 1,
+    "flagged": 0
+   }
+  },
+  "lat_max_frame": {
+   "hangar": {
+    "median": 1725.1,
+    "min": 1725.1,
+    "max": 1725.1,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds": {
+    "median": 1648.8,
+    "min": 1648.8,
+    "max": 1648.8,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds-datasharing": {
+    "median": 138.1,
+    "min": 138.1,
+    "max": 138.1,
+    "n": 1,
+    "flagged": 0
+   }
+  },
+  "cpu_pct_frame": {
+   "hangar": {
+    "median": 2.55,
+    "min": 2.55,
+    "max": 2.55,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds": {
+    "median": 5.46,
+    "min": 5.46,
+    "max": 5.46,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds-datasharing": {
+    "median": 0.865,
+    "min": 0.865,
+    "max": 0.865,
+    "n": 1,
+    "flagged": 0
+   }
+  },
+  "ctxsw_s_frame": {
+   "hangar": {
+    "median": 69.0,
+    "min": 69.0,
+    "max": 69.0,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds": {
+    "median": 388.60802157061005,
+    "min": 388.60802157061005,
+    "max": 388.60802157061005,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds-datasharing": {
+    "median": 108.86417256488033,
+    "min": 108.86417256488033,
+    "max": 108.86417256488033,
+    "n": 1,
+    "flagged": 0
+   }
+  },
+  "lost_pct_frame": {
+   "hangar": {
+    "median": 0.0,
+    "min": 0.0,
+    "max": 0.0,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds": {
+    "median": 0.0,
+    "min": 0.0,
+    "max": 0.0,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds-datasharing": {
+    "median": 0.0,
+    "min": 0.0,
+    "max": 0.0,
+    "n": 1,
+    "flagged": 0
+   }
+  },
+  "idle_talker_ctxsw_s": {
+   "fastdds": {
+    "median": 13.333333333333334,
+    "min": 13.333333333333334,
+    "max": 13.333333333333334,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds-datasharing": {
+    "median": 13.0,
+    "min": 13.0,
+    "max": 13.0,
+    "n": 1,
+    "flagged": 0
+   }
+  },
+  "idle_talker_cpu_pct": {
+   "fastdds": {
+    "median": 0.027,
+    "min": 0.027,
+    "max": 0.027,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds-datasharing": {
+    "median": 0.027,
+    "min": 0.027,
+    "max": 0.027,
+    "n": 1,
+    "flagged": 0
+   }
+  },
+  "startup_ms": {
+   "fastdds": {
+    "median": 252.639704,
+    "min": 252.639704,
+    "max": 252.639704,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds-datasharing": {
+    "median": 320.869778,
+    "min": 320.869778,
+    "max": 320.869778,
+    "n": 1,
+    "flagged": 0
+   }
+  },
+  "composed_lat_p50": {
+   "fastdds": {
+    "median": 4.0,
+    "min": 4.0,
+    "max": 4.0,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds-datasharing": {
+    "median": 3.1,
+    "min": 3.1,
+    "max": 3.1,
+    "n": 1,
+    "flagged": 0
+   }
+  },
+  "composed_lat_p99": {
+   "fastdds": {
+    "median": 4.8,
+    "min": 4.8,
+    "max": 4.8,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds-datasharing": {
+    "median": 3.6,
+    "min": 3.6,
+    "max": 3.6,
+    "n": 1,
+    "flagged": 0
+   }
+  },
+  "composed_lat_p999": {
+   "fastdds": {
+    "median": 5.5,
+    "min": 5.5,
+    "max": 5.5,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds-datasharing": {
+    "median": 4.4,
+    "min": 4.4,
+    "max": 4.4,
+    "n": 1,
+    "flagged": 0
+   }
+  },
+  "composed_lat_max": {
+   "fastdds": {
+    "median": 6.0,
+    "min": 6.0,
+    "max": 6.0,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds-datasharing": {
+    "median": 4.9,
+    "min": 4.9,
+    "max": 4.9,
+    "n": 1,
+    "flagged": 0
+   }
+  },
+  "composed_cpu_pct": {
+   "fastdds": {
+    "median": 3.86,
+    "min": 3.86,
+    "max": 3.86,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds-datasharing": {
+    "median": 3.416,
+    "min": 3.416,
+    "max": 3.416,
+    "n": 1,
+    "flagged": 0
+   }
+  },
+  "composed_ctxsw_s": {
+   "fastdds": {
+    "median": 1008.0,
+    "min": 1008.0,
+    "max": 1008.0,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds-datasharing": {
+    "median": 1008.0,
+    "min": 1008.0,
+    "max": 1008.0,
+    "n": 1,
+    "flagged": 0
+   }
+  },
+  "composed_pss_kb": {
+   "fastdds": {
+    "median": 23618,
+    "min": 23618,
+    "max": 23618,
+    "n": 1,
+    "flagged": 0
+   },
+   "fastdds-datasharing": {
+    "median": 23782,
+    "min": 23782,
+    "max": 23782,
+    "n": 1,
+    "flagged": 0
+   }
+  }
+ },
+ "factors": {
+  "publish_ns_16": {
+   "fastdds": 12.35543369890329,
+   "fastdds-datasharing": 16.61889332003988
+  },
+  "publish_ns_256": {
+   "fastdds": 9.985433357611072,
+   "fastdds-datasharing": 13.35865154510457
+  },
+  "publish_ns_4096": {
+   "fastdds": 3.011655141646219,
+   "fastdds-datasharing": 3.711521302699085
+  },
+  "publish_ns_1048576": {
+   "fastdds": 0.715303119036751,
+   "fastdds-datasharing": 0.010730950082412167
+  },
+  "latest_ns_16": {
+   "fastdds": 29.02683295540438,
+   "fastdds-datasharing": 28.09901738473167
+  },
+  "latest_ns_256": {
+   "fastdds": 13.720506664458977,
+   "fastdds-datasharing": 12.154979716863979
+  },
+  "latest_ns_4096": {
+   "fastdds": 4.2155849772929335,
+   "fastdds-datasharing": 3.8765408366773193
+  },
+  "latest_ns_1048576": {
+   "fastdds": 0.4531387528350933,
+   "fastdds-datasharing": 0.682924157463594
+  },
+  "lat_p50_100_latest": {
+   "fastdds": 8.107142857142858,
+   "fastdds-datasharing": 4.607142857142858
+  },
+  "lat_p99_100_latest": {
+   "fastdds": 7.128712871287129,
+   "fastdds-datasharing": 4.316831683168317
+  },
+  "lat_p999_100_latest": {
+   "fastdds": 5.3791208791208796,
+   "fastdds-datasharing": 5.318681318681318
+  },
+  "lat_max_100_latest": {
+   "fastdds": 5.3791208791208796,
+   "fastdds-datasharing": 5.318681318681318
+  },
+  "cpu_pct_100_latest": {
+   "fastdds": 4.8,
+   "fastdds-datasharing": 3.571428571428571
+  },
+  "ctxsw_s_100_latest": {
+   "fastdds": 1.5130306559671747,
+   "fastdds-datasharing": 1.5290585230854714
+  },
+  "lat_p50_100_queue": {
+   "fastdds": 6.7857142857142865,
+   "fastdds-datasharing": 6.017857142857144
+  },
+  "lat_p99_100_queue": {
+   "fastdds": 5.772277227722772,
+   "fastdds-datasharing": 5.287128712871287
+  },
+  "lat_p999_100_queue": {
+   "fastdds": 3.423076923076923,
+   "fastdds-datasharing": 3.3021978021978025
+  },
+  "lat_max_100_queue": {
+   "fastdds": 3.423076923076923,
+   "fastdds-datasharing": 3.3021978021978025
+  },
+  "cpu_pct_100_queue": {
+   "fastdds": 4.85,
+   "fastdds-datasharing": 4.978571428571429
+  },
+  "ctxsw_s_100_queue": {
+   "fastdds": 2.1236923931742653,
+   "fastdds-datasharing": 1.9922638828042354
+  },
+  "lat_p50_1000_latest": {
+   "fastdds": 7.625000000000001,
+   "fastdds-datasharing": 4.5
+  },
+  "lat_p99_1000_latest": {
+   "fastdds": 7.827586206896552,
+   "fastdds-datasharing": 4.56896551724138
+  },
+  "lat_p999_1000_latest": {
+   "fastdds": 3.563218390804598,
+   "fastdds-datasharing": 2.218390804597701
+  },
+  "lat_max_1000_latest": {
+   "fastdds": 2.8311081441922563,
+   "fastdds-datasharing": 1.568758344459279
+  },
+  "cpu_pct_1000_latest": {
+   "fastdds": 5.09406779661017,
+   "fastdds-datasharing": 3.7398305084745767
+  },
+  "ctxsw_s_1000_latest": {
+   "fastdds": 1.5015793646291502,
+   "fastdds-datasharing": 1.503073638654102
+  },
+  "lat_p50_1000_queue": {
+   "fastdds": 7.392857142857143,
+   "fastdds-datasharing": 6.196428571428572
+  },
+  "lat_p99_1000_queue": {
+   "fastdds": 8.206896551724139,
+   "fastdds-datasharing": 7.224137931034483
+  },
+  "lat_p999_1000_queue": {
+   "fastdds": 3.7413793103448274,
+   "fastdds-datasharing": 4.793103448275863
+  },
+  "lat_max_1000_queue": {
+   "fastdds": 0.6942590120160214,
+   "fastdds-datasharing": 3.5380507343124163
+  },
+  "cpu_pct_1000_queue": {
+   "fastdds": 5.8720338983050855,
+   "fastdds-datasharing": 5.598305084745763
+  },
+  "ctxsw_s_1000_queue": {
+   "fastdds": 2.075380590210568,
+   "fastdds-datasharing": 1.9998367367269034
+  },
+  "lat_p50_10000_latest": {
+   "fastdds": 7.0754716981132075,
+   "fastdds-datasharing": 4.60377358490566
+  },
+  "lat_p99_10000_latest": {
+   "fastdds": 7.80357142857143,
+   "fastdds-datasharing": 4.714285714285714
+  },
+  "lat_p999_10000_latest": {
+   "fastdds": 4.64,
+   "fastdds-datasharing": 3.2399999999999998
+  },
+  "lat_max_10000_latest": {
+   "fastdds": 0.4880171375016736,
+   "fastdds-datasharing": 0.17619493908153702
+  },
+  "cpu_pct_10000_latest": {
+   "fastdds": 4.843006993006993,
+   "fastdds-datasharing": 3.7596153846153846
+  },
+  "ctxsw_s_10000_latest": {
+   "fastdds": 1.5004915929277274,
+   "fastdds-datasharing": 1.5009415254378509
+  },
+  "lat_p50_10000_queue": {
+   "fastdds": 7.811320754716981,
+   "fastdds-datasharing": 6.39622641509434
+  },
+  "lat_p99_10000_queue": {
+   "fastdds": 10.285714285714286,
+   "fastdds-datasharing": 6.446428571428572
+  },
+  "lat_p999_10000_queue": {
+   "fastdds": 8.040000000000001,
+   "fastdds-datasharing": 4.57
+  },
+  "lat_max_10000_queue": {
+   "fastdds": 1.3648413442227876,
+   "fastdds-datasharing": 0.451867719908957
+  },
+  "cpu_pct_10000_queue": {
+   "fastdds": 5.566870629370629,
+   "fastdds-datasharing": 5.6870629370629375
+  },
+  "ctxsw_s_10000_queue": {
+   "fastdds": 2.0266460030995352,
+   "fastdds-datasharing": 2.000166641670416
+  },
+  "pss_kb": {
+   "fastdds": 115.5037037037037,
+   "fastdds-datasharing": 116.31851851851852
+  },
+  "threads": {
+   "fastdds": 14.0,
+   "fastdds-datasharing": 14.5
+  },
+  "lat_p50_nopin": {
+   "fastdds": 6.56140350877193,
+   "fastdds-datasharing": 4.333333333333333
+  },
+  "lat_p99_nopin": {
+   "fastdds": 8.13793103448276,
+   "fastdds-datasharing": 5.706896551724139
+  },
+  "lat_p999_nopin": {
+   "fastdds": 7.911111111111111,
+   "fastdds-datasharing": 6.211111111111111
+  },
+  "lat_max_nopin": {
+   "fastdds": 8.424050632911392,
+   "fastdds-datasharing": 3.9493670886075947
+  },
+  "cpu_pct_nopin": {
+   "fastdds": 4.9260504201680675,
+   "fastdds-datasharing": 3.8554621848739496
+  },
+  "ctxsw_s_nopin": {
+   "fastdds": 1.5018286307919375,
+   "fastdds-datasharing": 1.5031570948616337
+  },
+  "lat_p50_frame": {
+   "fastdds": 3.3085818624467436,
+   "fastdds-datasharing": 0.09281801582471089
+  },
+  "lat_p99_frame": {
+   "fastdds": 0.9557706799605821,
+   "fastdds-datasharing": 0.08005333024172512
+  },
+  "lat_p999_frame": {
+   "fastdds": 0.9557706799605821,
+   "fastdds-datasharing": 0.08005333024172512
+  },
+  "lat_max_frame": {
+   "fastdds": 0.9557706799605821,
+   "fastdds-datasharing": 0.08005333024172512
+  },
+  "cpu_pct_frame": {
+   "fastdds": 2.1411764705882352,
+   "fastdds-datasharing": 0.3392156862745098
+  },
+  "ctxsw_s_frame": {
+   "fastdds": 5.632000312617537,
+   "fastdds-datasharing": 1.5777416313750774
+  }
+ }
+}

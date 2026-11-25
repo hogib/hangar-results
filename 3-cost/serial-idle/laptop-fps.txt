@@ -1,0 +1,1 @@
+  enp6s0f3u2 over 60 s: in 0.13 Mbit/s, out 0.12 Mbit/s

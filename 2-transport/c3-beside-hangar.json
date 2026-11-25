@@ -1,0 +1,19 @@
+{
+ "hg_bench": {"hg_commit": "db2dfc8", "compiler": "Clang 22.1.8", "args": "publish latest wake --json c3-beside-hangar.json"},
+ "date": "2026-11-25T13:56:07Z",
+ "machine": {"arch": "aarch64", "kernel": "6.8.0-1048-raspi", "cpu": "Raspberry Pi 5 Model B Rev 1.0", "model": "Raspberry Pi 5 Model B Rev 1.0", "cpus": 4, "governor": "performance", "topic_dir": "/dev/shm/hg-bench-1004-9898"},
+ "publish": {"runs": 5, "sizes": [
+  {"bytes": 16, "count": 1000000, "ns": 80.34, "raw": [80.33, 80.34, 80.34, 80.39, 80.52]},
+  {"bytes": 256, "count": 1000000, "ns": 94.61, "raw": [94.52, 94.55, 94.61, 94.63, 94.71]},
+  {"bytes": 4096, "count": 1000000, "ns": 359.87, "raw": [359.72, 359.82, 359.87, 359.88, 360.13]},
+  {"bytes": 1048576, "count": 3907, "ns": 224272.37, "raw": [221662.65, 222773.44, 224272.37, 225803.73, 231163.86]}]},
+ "latest": {"runs": 5, "sizes": [
+  {"bytes": 16, "count": 1000000, "ns": 53.88, "no_message": 0, "raw": [53.67, 53.83, 53.88, 53.90, 53.91]},
+  {"bytes": 256, "count": 1000000, "ns": 120.44, "no_message": 0, "raw": [119.84, 120.25, 120.44, 120.50, 120.73]},
+  {"bytes": 4096, "count": 1000000, "ns": 420.56, "no_message": 0, "raw": [420.30, 420.40, 420.56, 421.68, 422.00]},
+  {"bytes": 1048576, "count": 3907, "ns": 274701.40, "no_message": 0, "raw": [270849.72, 274438.11, 274701.40, 282265.84, 282961.35]}]},
+ "wake": [
+  {"rate_hz": 100, "seconds": 20, "payload": 256, "slots": 16, "writer_cpu": 2, "reader_cpu": 3, "expected": 2000, "published": 2000, "msgs": 2000, "wakes": 2000, "timeouts": 0, "gaps": 0, "torn": 0, "writer_late": 0, "kept_up": true, "samples": 2000, "p50_us": 16.3, "p99_us": 1362.5, "p999_us": 2376.4, "max_us": 2376.7, "mean_us": 45.6, "copied_p50_us": 17.4, "copied_p99_us": 1364.5, "copied_p999_us": 2378.7, "copied_max_us": 2379.5, "writer_cpu_s": 0.039, "reader_cpu_s": 0.041, "writer_cpu_pct": 0.20, "reader_cpu_pct": 0.20, "writer_ctxsw": [2021, 2], "reader_ctxsw": [2001, 0]},
+  {"rate_hz": 1000, "seconds": 20, "payload": 256, "slots": 16, "writer_cpu": 2, "reader_cpu": 3, "expected": 20000, "published": 20000, "msgs": 20000, "wakes": 19617, "timeouts": 0, "gaps": 0, "torn": 0, "writer_late": 223, "kept_up": false, "samples": 20000, "p50_us": 7.0, "p99_us": 1235.1, "p999_us": 1837.6, "max_us": 2842.0, "mean_us": 52.7, "copied_p50_us": 7.3, "copied_p99_us": 1237.5, "copied_p999_us": 1838.6, "copied_max_us": 2843.6, "writer_cpu_s": 0.180, "reader_cpu_s": 0.179, "writer_cpu_pct": 0.90, "reader_cpu_pct": 0.89, "writer_ctxsw": [20020, 2], "reader_ctxsw": [19551, 2]},
+  {"rate_hz": 10000, "seconds": 20, "payload": 256, "slots": 16, "writer_cpu": 2, "reader_cpu": 3, "expected": 200000, "published": 200000, "msgs": 198782, "wakes": 187466, "timeouts": 0, "gaps": 1218, "torn": 0, "writer_late": 10704, "kept_up": false, "samples": 198782, "p50_us": 5.0, "p99_us": 874.5, "p999_us": 1418.5, "max_us": 2148.5, "mean_us": 34.0, "copied_p50_us": 5.2, "copied_p99_us": 876.1, "copied_p999_us": 1420.2, "copied_max_us": 2149.6, "writer_cpu_s": 1.204, "reader_cpu_s": 1.087, "writer_cpu_pct": 6.02, "reader_cpu_pct": 5.43, "writer_ctxsw": [200002, 6], "reader_ctxsw": [184995, 9]}]
+}

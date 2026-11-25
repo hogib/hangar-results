@@ -1,0 +1,34 @@
+mavlink              ready       18080     0 -          16m12s  ardusub disarmed mode 19 params 1; gate disarmed; rx 217
+safety               ready       17108     0 -          17m14s  disarmed by admin:bluerov2
+
+== silence-2.5, 10 repetitions -> /home/hogib/hangar-results/2026-11-25-failtests/silence-2.5.jsonl
+   1  NOT RUN: did not arm: HG_OK | reserved             0    # 0 |; safety.state reason 'autopilot: ArduSub armed while hangar was disarmed'
+   2  no failsafe; still armed; topside_bridge_restarted: True   [temp=59.3'C throttled=0xe0000]
+   3  no failsafe; still armed; topside_bridge_restarted: True   [temp=58.2'C throttled=0xe0000]
+   4  no failsafe; still armed; topside_bridge_restarted: True   [temp=57.6'C throttled=0xe0000]
+   5  no failsafe; still armed; topside_bridge_restarted: True   [temp=58.7'C throttled=0xe0000]
+   6  no failsafe; still armed; topside_bridge_restarted: True   [temp=59.8'C throttled=0xe0000]
+   7  no failsafe; still armed; topside_bridge_restarted: True   [temp=59.3'C throttled=0xe0000]
+   8  no failsafe; still armed; topside_bridge_restarted: True   [temp=58.2'C throttled=0xe0000]
+   9  no failsafe; still armed; topside_bridge_restarted: True   [temp=58.2'C throttled=0xe0000]
+  10  no failsafe; still armed; topside_bridge_restarted: True   [temp=58.7'C throttled=0xe0000]
+  longest_silence_ms             n=9  min   2547.6  median   2588.1  max   2627.9
+  failsafe in 0 of 9; not run 1
+
+leaving the vehicle disarmed:
+results in /home/hogib/hangar-results/2026-11-25-failtests
+mavlink              ready       18080     0 -          17m13s  ardusub disarmed mode 19 params 1; gate disarmed; rx 231
+safety               ready       17108     0 -          18m15s  disarmed by admin:bluerov2: arm refused: tether: no pack
+
+== arm-in-silence, 5 repetitions -> /home/hogib/hangar-results/2026-11-25-failtests/arm-in-silence.jsonl
+   1  no failsafe; arm refused (HG_E_REFUSED: tether: no packet from the topside for 2.0 s |); topside_bridge_restarted: True   [temp=59.3'C throttled=0xe0000]
+   2  no failsafe; arm refused (HG_E_REFUSED: tether: no packet from the topside for 2.0 s |); topside_bridge_restarted: True   [temp=58.2'C throttled=0xe0000]
+   3  no failsafe; arm refused (HG_E_REFUSED: tether: no packet from the topside for 2.0 s |); topside_bridge_restarted: True   [temp=58.2'C throttled=0xe0000]
+   4  no failsafe; arm refused (HG_E_REFUSED: tether: no packet from the topside for 2.0 s |); topside_bridge_restarted: True   [temp=59.3'C throttled=0xe0000]
+   5  no failsafe; arm refused (HG_E_REFUSED: tether: no packet from the topside for 2.0 s |); topside_bridge_restarted: True   [temp=57.6'C throttled=0xe0000]
+  outputs_closed_ms              n=5  min      1.6  median      1.6  max      1.7
+  longest_silence_ms             n=5  min   6316.0  median   6358.3  max   6447.9
+  failsafe in 0 of 5; not run 0
+
+leaving the vehicle disarmed:
+results in /home/hogib/hangar-results/2026-11-25-failtests

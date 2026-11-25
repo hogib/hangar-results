@@ -1,0 +1,8 @@
+60 s on x86_64, 12 cores, the whole machine 2.3 % busy (of all cores), 46.0-47.0 C
+
+hangar
+  hangar-bridge                  1.22 % CPU        - MB PSS     255.6 wake-ups/s   (pid 156810)
+  hangar-mavlink (topside)       0.71 % CPU        - MB PSS     183.1 wake-ups/s   (pid 156813)
+  dawn-patrold (?)               0.10 % CPU        - MB PSS       7.9 wake-ups/s   (pid 156812)
+  hangard (?)                    0.03 % CPU        - MB PSS      11.0 wake-ups/s   (pid 156806)
+  total                          2.05 % CPU     0.00 MB PSS     457.6 wake-ups/s   (4 processes)

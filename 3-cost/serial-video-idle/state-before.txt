@@ -1,0 +1,38 @@
+== the Pi (bluerov2@192.168.2.10)
+  system   nominal  (for 3m31s)
+  bridge               ready       60350     0 -           3m31s  up 192.168.2.1:5614, rtt 4.3 ms, offset +21714198.820 ms
+  console              ready       60351     0 -           3m31s  serving http://127.0.0.1:8080 (role vehicle)
+  encoder              ready       60352     0 -           3m30s  uvc:/dev/video2 to 192.168.2.1:5610: 6790 frames, 227 ke
+  mavlink              ready       60353     0 -           3m31s  serial open; ardusub disarmed mode 19 params 1; gate dis
+  mux                  ready       60354     0 -           3m31s  manual: sources 111111 limits 0
+  recorder             ready       60355     0 -           3m31s  idle 0 bytes, 28 topics, 0 gaps
+  safety               ready       60356     0 -           3m31s  disarmed: start
+  MAVROS relay: not running (--serial: the mavlink module holds /dev/ttyACM0 itself)
+  eeye: inactive
+  hellion: inactive
+  temp=61.5'C throttled=0xe0000 arm Hz=2400037120
+  clock 2026-11-25 16:44:13 UTC, up 3 hours, 52 minutes
+== this laptop
+  system   nominal  (for 3m30s)
+  bridge               ready      159948     0 -           3m30s  up 192.168.2.10:5614, rtt 14.8 ms, offset -21714198.651 
+  console              ready      159950     0 -           3m30s  serving http://127.0.0.1:8081 (role topside)
+  topside_mavlink      ready      159951     0 -           3m30s  no QGC yet; link up; 0 manual_control, 0 calls, 1 texts
+  topside console http://127.0.0.1:8081
+  hellion pid 160011, page http://127.0.0.1:8092
+  [ OK ] pipeline camera-in: source rtp:5610 (1280x720, 40 frames in 1.2s)
+  [ OK ] pipeline camera-in: sink bus:camera (40 frames)
+  [ OK ] pipeline pilot-out: source bus:pilot (1280x720, 40 frames in 1.2s)
+  [ OK ] pipeline pilot-out: sink rtp:127.0.0.1:5600 (40 frames)
+  eeye pid 160098
+  consoles http://127.0.0.1:18080, :18081
+== the session
+  started=2026-11-25T19:40:41+03:00
+  bridge=1
+  serial=1
+  services_stopped=eeye hellion
+  hangar_up=1
+  topside=1
+  params_backup=hangar-rov/lab-20261125-194045-before.params
+  battery_check=off
+  tunnels=1
+  laptop_video=1

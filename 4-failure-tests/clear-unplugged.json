@@ -1,0 +1,39 @@
+{
+ "test": "clear-while-unplugged",
+ "ok": true,
+ "armed": true,
+ "failsafe_reason": "tether: no packet from the topside for 3.0 s",
+ "attempts": [
+  {
+   "link_state": 2,
+   "last_packet_age_ms": 4326.7,
+   "refused": true,
+   "reply": "HG_E_REFUSED: active: tether: tether: no packet from the topside for 4 |",
+   "state_after": 2
+  },
+  {
+   "link_state": 2,
+   "last_packet_age_ms": 5628.4,
+   "refused": true,
+   "reply": "HG_E_REFUSED: active: tether: tether: no packet from the topside for 5 |",
+   "state_after": 2
+  },
+  {
+   "link_state": 2,
+   "last_packet_age_ms": 6930.0,
+   "refused": true,
+   "reply": "HG_E_REFUSED: active: tether: tether: no packet from the topside for 6 |",
+   "state_after": 2
+  }
+ ],
+ "link_back": true,
+ "clear_with_link": {
+  "refused": false,
+  "reply": "HG_OK | reserved             0    # 0 |",
+  "state_after": 0
+ },
+ "end": {
+  "safety_state": 0,
+  "ardusub_armed": 0
+ }
+}

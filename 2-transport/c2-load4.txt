@@ -1,0 +1,13 @@
+machine   aarch64 6.8.0-1048-raspi, 4 cpus, Raspberry Pi 5 Model B Rev 1.0, Raspberry Pi 5 Model B Rev 1.0, governor performance, lib/hg db2dfc8
+publish         16 B       154.8 ns/msg   (median of 5 x 1000000, no reader)
+publish        256 B       113.3 ns/msg   (median of 5 x 1000000, no reader)
+publish       4096 B       525.6 ns/msg   (median of 5 x 1000000, no reader)
+publish    1048576 B    250016.0 ns/msg   (median of 5 x 3907, no reader)
+latest          16 B        98.8 ns/read  (median of 5 x 1000000)
+latest         256 B       202.2 ns/read  (median of 5 x 1000000)
+latest        4096 B       654.9 ns/read  (median of 5 x 1000000)
+latest     1048576 B    334651.1 ns/read  (median of 5 x 3907)
+wake     100 Hz  p50     7.6  p99  2044.8  p99.9  3139.0  max   3178.1 us  (copied out 7.9, 2045.1, 3141.9, 3180.8)   msgs 2000 wakes 2000 gaps 0 late 0  cpu w 0.1% r 0.1%
+wake    1000 Hz  p50     6.6  p99  2634.7  p99.9  5253.2  max   8666.5 us  (copied out 6.9, 2636.2, 5256.8, 8672.1)   msgs 20000 wakes 18875 gaps 0 late 503  cpu w 0.9% r 0.9%  (did not keep up)
+wake   10000 Hz  p50     6.1  p99  1273.9  p99.9  2074.0  max   3275.7 us  (copied out 6.3, 1274.6, 2075.2, 3276.3)   msgs 194080 wakes 181567 gaps 5920 late 29747  cpu w 7.8% r 7.0%  (did not keep up)
+report    c2-load4.json

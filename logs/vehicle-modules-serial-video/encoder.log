@@ -1,0 +1,2 @@
+hangar-encoder: /dev/video2 cannot be asked for a keyframe (V4L2_CID_MPEG_VIDEO_FORCE_KEY_FRAME: Invalid argument): a receiver waits for the camera's own next one
+hangar-encoder: uvc:/dev/video2 to 192.168.2.1:5610, 30 frames/s, packets of at most 1200 bytes, payload type 96

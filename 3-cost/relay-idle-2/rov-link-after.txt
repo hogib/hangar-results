@@ -1,0 +1,24 @@
+--- seq 2905  stamp 4050299180379  gap 0
+state                3    # 0 off, 1 searching, 2 connecting, 3 up, 4 ambiguous, 5 refused
+config_match         1    # 1 when the two sides run the same release, msg/ tree and bridge.conf
+peer_role            2    # 0 unknown, 1 vehicle, 2 topside
+reserved0            0
+peer_id              365463103    # the peer bridge's random id, drawn at its start
+peer_boot_id         [255 26 59 74 15 99 197 24 145 164 99 120 96 191 31 154]    # the other machine's boot id, from the handshake
+peer_addr            "192.168.2.1:5614"    # address:port the link uses
+last_rx_ns           4050291694676    # CLOCK_MONOTONIC: the last datagram whose tag and packet_seq checked
+rtt_ns               4579822    # the last ping's round trip
+rtt_min_ns           3831341    # the smallest round trip of the last 10 s
+loss_rx              2    # datagrams of the peer lost on the way here, from packet_seq
+rejected             0    # datagrams refused: a tag that does not check, a replay, malformed
+clock_offset_ns      21714194303079    # the peer's CLOCK_MONOTONIC minus ours, the estimate in force
+clock_uncertainty_ns 2173098    # half the kept sample's round trip plus its age times 500 ppm
+clock_skew_ppm       0    # 0: not estimated in this stage
+topics_rx            2    # mirrored topics received and published here
+msgs_tx              24527    # mirrored messages sent
+msgs_rx              30560    # mirrored messages published here
+retransmits          0    # reliable datagrams sent again
+clamped              0    # translated stamps clamped to keep a topic's stamps rising
+dropped_old          0    # received messages whose seq was not above the last published
+dropped_late         0    # command messages older than the mirror's MaxAge on arrival
+detail               ""    # one line: why, or what; the two versions when they differ

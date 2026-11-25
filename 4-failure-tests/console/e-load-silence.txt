@@ -1,0 +1,40 @@
+mavlink              ready       38024     0 -           5m11s  ardusub disarmed mode 19 params 1; gate disarmed; rx 700
+safety               ready       36822     0 -           6m22s  disarmed by admin:bluerov2: failsafe cleared
+
+== silence-5-load2, 5 repetitions -> /home/hogib/hangar-results/2026-11-25-failtests/silence-5-load2.jsonl
+  load: 2 busy loops on the vehicle's computer, ending by themselves within 255 s
+   1  failsafe by tether after 3002.0 ms; 3002.1 ms after the last packet; ArduSub disarmed at 3006.7 ms; topside_bridge_restarted: True   [temp=71.9'C throttled=0xe0000]
+   2  failsafe by tether after 3003.8 ms; 3002.2 ms after the last packet; ArduSub disarmed at 3009.5 ms; topside_bridge_restarted: True   [temp=73.0'C throttled=0xe0000]
+   3  failsafe by tether after 3007.9 ms; 3014.7 ms after the last packet; ArduSub disarmed at 3013.8 ms; topside_bridge_restarted: True   [temp=74.7'C throttled=0xe0000]
+   4  failsafe by tether after 3003.7 ms; 3000.0 ms after the last packet; ArduSub disarmed at 3009.2 ms; topside_bridge_restarted: True   [temp=76.8'C throttled=0xe0000]
+   5  failsafe by tether after 3021.8 ms; 3017.5 ms after the last packet; ArduSub disarmed at 3027.6 ms; topside_bridge_restarted: True   [temp=74.1'C throttled=0xe0000]
+  failsafe_ms                    n=5  min   3002.0  median   3003.8  max   3021.8
+  failsafe_after_last_packet_ms  n=5  min   3000.0  median   3002.2  max   3017.5
+  outputs_closed_ms              n=5  min   3002.0  median   3003.9  max   3021.9
+  ardusub_disarming_ms           n=5  min   3002.4  median   3004.1  max   3022.1
+  ardusub_disarmed_ms            n=5  min   3006.7  median   3009.5  max   3027.6
+  longest_silence_ms             n=5  min   5019.5  median   5059.9  max   5109.8
+  failsafe in 5 of 5; not run 0
+
+leaving the vehicle disarmed:
+results in /home/hogib/hangar-results/2026-11-25-failtests
+mavlink              ready       38024     0 -           7m35s  ardusub disarmed mode 19 params 1; gate disarmed; rx 102
+safety               ready       36822     0 -           8m46s  disarmed by admin:bluerov2: failsafe cleared
+
+== silence-5-load4, 5 repetitions -> /home/hogib/hangar-results/2026-11-25-failtests/silence-5-load4.jsonl
+  load: 4 busy loops on the vehicle's computer, ending by themselves within 255 s
+   1  failsafe by tether after 3001.8 ms; 3009.5 ms after the last packet; ArduSub disarmed at 3007.5 ms; topside_bridge_restarted: True   [temp=77.9'C throttled=0xe0000]
+   2  failsafe by tether after 3011.2 ms; 3015.4 ms after the last packet; ArduSub disarmed at 3016.3 ms; topside_bridge_restarted: True   [temp=82.9'C throttled=0xe0000]
+   3  failsafe by tether after 3001.1 ms; 3000.6 ms after the last packet; ArduSub disarmed at 3008.5 ms; topside_bridge_restarted: True   [temp=83.4'C throttled=0xe0008]
+   4  failsafe by tether after 2998.1 ms; 3000.5 ms after the last packet; ArduSub disarmed at 3004.7 ms; topside_bridge_restarted: True   [temp=82.3'C throttled=0xe0008]
+   5  failsafe by tether after 2994.5 ms; 3001.3 ms after the last packet; ArduSub disarmed at 2999.1 ms; topside_bridge_restarted: True   [temp=83.4'C throttled=0xe0008]
+  failsafe_ms                    n=5  min   2994.5  median   3001.1  max   3011.2
+  failsafe_after_last_packet_ms  n=5  min   3000.5  median   3001.3  max   3015.4
+  outputs_closed_ms              n=5  min   2994.6  median   3001.4  max   3011.3
+  ardusub_disarming_ms           n=5  min   2995.4  median   3001.9  max   3011.4
+  ardusub_disarmed_ms            n=5  min   2999.1  median   3007.5  max   3016.3
+  longest_silence_ms             n=5  min   5019.8  median   5089.6  max   5129.3
+  failsafe in 5 of 5; not run 0
+
+leaving the vehicle disarmed:
+results in /home/hogib/hangar-results/2026-11-25-failtests
